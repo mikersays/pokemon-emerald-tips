@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The eight gym leaders of Hoenn, with full team rosters, level caps, counters, and strategic dossiers." />
+  <title>Gym Leaders &middot; Hoenn Field Guide</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <!-- ============================== NAV ============================== -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html" aria-label="Hoenn Field Guide home">
+        <span class="nav__mark" aria-hidden="true">HFG</span>
+        <span class="nav__wordmark">Hoenn <span>Field</span> Guide</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <ul style="display:contents;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="starters.html">Starters</a></li>
+          <li><a href="gyms.html">Gyms</a></li>
+          <li><a href="elite-four.html">Elite Four</a></li>
+          <li><a href="legendaries.html">Legendaries</a></li>
+          <li><a href="tier-list.html">Tier List</a></li>
+          <li><a href="secrets.html">Secrets</a></li>
+          <li><a href="breeding.html">Breeding</a></li>
+          <li><a href="early-game.html">Early Game</a></li>
+          <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+          <li><a href="post-game.html">Post Game</a></li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-drawer">MENU</button>
+    </div>
+    <div class="nav__drawer" id="nav-drawer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="starters.html">Starters</a></li>
+        <li><a href="gyms.html">Gyms</a></li>
+        <li><a href="elite-four.html">Elite Four</a></li>
+        <li><a href="legendaries.html">Legendaries</a></li>
+        <li><a href="tier-list.html">Tier List</a></li>
+        <li><a href="secrets.html">Secrets</a></li>
+        <li><a href="breeding.html">Breeding</a></li>
+        <li><a href="early-game.html">Early Game</a></li>
+        <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+        <li><a href="post-game.html">Post Game</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============================== HEADER ============================== -->
+    <section class="page-header">
+      <div class="riso-blob riso-blob--ember" style="width:280px; height:280px; top:-60px; right:-50px;"></div>
+      <div class="riso-dots" style="width:200px; height:90px; bottom:30px; right:14%; transform: rotate(4deg);"></div>
+
+      <div class="container">
+        <span class="kicker">Chapter 01 &middot; The Gym Circuit</span>
+        <h1 class="page-header__title">
+          The eight<br><em>gym</em> leaders
+        </h1>
+        <p class="lede mt-4" style="max-width: 60ch;">
+          Eight battles, eight badges, eight TMs. Below: full team rosters, level caps, recommended counters,
+          and a strategic note for each leader. Anchor links jump straight to a gym.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================== ANCHOR LIST ============================== -->
+    <section class="section section--tight" style="border-bottom: var(--border-w) solid var(--ink);">
+      <div class="container">
+        <div class="gym-route">
+          <a href="#gym-1" class="gym-tile"><span class="gym-tile__num">01</span><span class="gym-tile__name">Roxanne</span><span class="gym-tile__city">Rustboro</span><span class="gym-tile__type">Rock</span></a>
+          <a href="#gym-2" class="gym-tile"><span class="gym-tile__num">02</span><span class="gym-tile__name">Brawly</span><span class="gym-tile__city">Dewford</span><span class="gym-tile__type">Fighting</span></a>
+          <a href="#gym-3" class="gym-tile"><span class="gym-tile__num">03</span><span class="gym-tile__name">Wattson</span><span class="gym-tile__city">Mauville</span><span class="gym-tile__type">Electric</span></a>
+          <a href="#gym-4" class="gym-tile"><span class="gym-tile__num">04</span><span class="gym-tile__name">Flannery</span><span class="gym-tile__city">Lavaridge</span><span class="gym-tile__type">Fire</span></a>
+          <a href="#gym-5" class="gym-tile"><span class="gym-tile__num">05</span><span class="gym-tile__name">Norman</span><span class="gym-tile__city">Petalburg</span><span class="gym-tile__type">Normal</span></a>
+          <a href="#gym-6" class="gym-tile"><span class="gym-tile__num">06</span><span class="gym-tile__name">Winona</span><span class="gym-tile__city">Fortree</span><span class="gym-tile__type">Flying</span></a>
+          <a href="#gym-7" class="gym-tile"><span class="gym-tile__num">07</span><span class="gym-tile__name">Tate &amp; Liza</span><span class="gym-tile__city">Mossdeep</span><span class="gym-tile__type">Psychic</span></a>
+          <a href="#gym-8" class="gym-tile"><span class="gym-tile__num">08</span><span class="gym-tile__name">Wallace</span><span class="gym-tile__city">Sootopolis</span><span class="gym-tile__type">Water</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== GYM CARDS ============================== -->
+    <section class="section">
+      <div class="container">
+
+        <!-- ============== GYM 1: ROXANNE ============== -->
+        <article id="gym-1" class="card-trainer reveal" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: #8c7855;">
+            <span class="card-trainer__num">No. 01 &middot; Stone Badge</span>
+            <span class="card-trainer__initial">R</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="rock">rock</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Roxanne</h2>
+              <p class="card-trainer__city">Rustboro City &middot; Stone Badge</p>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Ace</dt><dd>Nosepass &middot; <span class="mono text-emerald">Lv 15</span></dd></div>
+              <div class="card-trainer__row"><dt>Level cap</dt><dd><span class="mono">Lv 15</span></dd></div>
+              <div class="card-trainer__row"><dt>Team</dt><dd>
+                <span class="mono">Geodude Lv 12 &middot; Geodude Lv 12 &middot; Nosepass Lv 15</span>
+              </dd></div>
+              <div class="card-trainer__row"><dt>Key move</dt><dd>Rock Tomb + Harden</dd></div>
+              <div class="card-trainer__row"><dt>Counters</dt><dd>Marshtomp (Water Gun), Lombre, Breloom w/ Mach Punch, Treecko (Absorb)</dd></div>
+              <div class="card-trainer__row"><dt>TM reward</dt><dd><span class="badge">TM39 Rock Tomb</span></dd></div>
+              <div class="card-trainer__row"><dt>Badge perk</dt><dd>+Atk in battle &middot; HM01 Cut field use</dd></div>
+            </dl>
+            <div class="card-trainer__strategy">
+              <strong>Strategy.</strong> Nosepass has Harden and Rock Tomb. The Speed drop is what kills slow physical
+              attackers, so prefer Special Attackers. A Lotad from Route 102 evolved into Lombre is excellent.
+              Avoid leading Torchic alone unless it has Double Kick (Lv 16, train one extra level).
+              <p class="mt-3 mono" style="font-size:var(--fs-xs); color:var(--emerald-deep);">FIELD TIP &mdash; Backtrack to Petalburg Woods for a Shroomish; it evolves into Breloom with Mach Punch by Lv 23.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============== GYM 2: BRAWLY ============== -->
+        <article id="gym-2" class="card-trainer reveal" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: #a8351d;">
+            <span class="card-trainer__num">No. 02 &middot; Knuckle Badge</span>
+            <span class="card-trainer__initial">B</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="fighting">fighting</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Brawly</h2>
+              <p class="card-trainer__city">Dewford Town &middot; Knuckle Badge</p>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Ace</dt><dd>Makuhita &middot; <span class="mono text-emerald">Lv 19</span></dd></div>
+              <div class="card-trainer__row"><dt>Level cap</dt><dd><span class="mono">Lv 19</span></dd></div>
+              <div class="card-trainer__row"><dt>Team</dt><dd>
+                <span class="mono">Machop Lv 16 &middot; Meditite Lv 16 &middot; Makuhita Lv 19</span>
+              </dd></div>
+              <div class="card-trainer__row"><dt>Key move</dt><dd>Bulk Up + Arm Thrust + Vital Throw</dd></div>
+              <div class="card-trainer__row"><dt>Counters</dt><dd>Taillow (Wing Attack), Beautifly (Gust), Kadabra (Confusion), Dustox, Spoink</dd></div>
+              <div class="card-trainer__row"><dt>TM reward</dt><dd><span class="badge">TM08 Bulk Up</span></dd></div>
+              <div class="card-trainer__row"><dt>Badge perk</dt><dd>Lv 30 obedience &middot; HM05 Flash field use</dd></div>
+            </dl>
+            <div class="card-trainer__strategy">
+              <strong>Strategy.</strong> Makuhita uses Bulk Up to snowball. Don&rsquo;t let it set up &mdash; hit it on
+              turn one with a strong Flying or Psychic attack. Taillow&rsquo;s Wing Attack makes this gym trivial.
+              Beware Vital Throw, which never misses.
+              <p class="mt-3 mono" style="font-size:var(--fs-xs); color:var(--emerald-deep);">FIELD TIP &mdash; Pick up a Whismur in Rusturf Tunnel; it evolves into Loudred and learns Stomp.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============== GYM 3: WATTSON ============== -->
+        <article id="gym-3" class="card-trainer reveal" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: #ecc94b;">
+            <span class="card-trainer__num" style="background: var(--ink); color: var(--paper);">No. 03 &middot; Dynamo Badge</span>
+            <span class="card-trainer__initial" style="color: var(--ink); text-shadow: 4px 4px 0 #b89a36;">W</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="electric">electric</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Wattson</h2>
+              <p class="card-trainer__city">Mauville City &middot; Dynamo Badge</p>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Ace</dt><dd>Manectric &middot; <span class="mono text-emerald">Lv 24</span></dd></div>
+              <div class="card-trainer__row"><dt>Level cap</dt><dd><span class="mono">Lv 24</span></dd></div>
+              <div class="card-trainer__row"><dt>Team</dt><dd>
+                <span class="mono">Voltorb Lv 20 &middot; Electrike Lv 20 &middot; Magneton Lv 22 &middot; Manectric Lv 24</span>
+              </dd></div>
+              <div class="card-trainer__row"><dt>Watch out</dt><dd>Voltorb&rsquo;s Self-Destruct on low HP</dd></div>
+              <div class="card-trainer__row"><dt>Key move</dt><dd>Quick Attack + Shock Wave + Howl</dd></div>
+              <div class="card-trainer__row"><dt>Counters</dt><dd>Marshtomp (Mud Shot), Geodude/Graveler (Magnitude), Sandshrew, Numel from Fiery Path</dd></div>
+              <div class="card-trainer__row"><dt>TM reward</dt><dd><span class="badge">TM34 Shock Wave</span> <span class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft);">never misses</span></dd></div>
+              <div class="card-trainer__row"><dt>Badge perk</dt><dd>+Def in battle &middot; HM06 Rock Smash field use</dd></div>
+            </dl>
+            <div class="card-trainer__strategy">
+              <strong>Strategy.</strong> A Ground type fully neutralizes Wattson. Marshtomp is the cleanest sweep
+              in the game. Swap to a Rock or Steel type for the Voltorb Boom turn. Magneton is Steel/Electric, so its
+              only weakness here is Ground/Fire/Fighting.
+              <p class="mt-3 mono" style="font-size:var(--fs-xs); color:var(--emerald-deep);">FIELD TIP &mdash; After defeating Wattson, talk to him again for the New Mauville generator quest, rewarding TM24 Thunderbolt.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============== GYM 4: FLANNERY ============== -->
+        <article id="gym-4" class="card-trainer reveal" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: #d94c2b;">
+            <span class="card-trainer__num">No. 04 &middot; Heat Badge</span>
+            <span class="card-trainer__initial">F</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="fire">fire</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Flannery</h2>
+              <p class="card-trainer__city">Lavaridge Town &middot; Heat Badge</p>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Ace</dt><dd>Torkoal &middot; <span class="mono text-emerald">Lv 29</span></dd></div>
+              <div class="card-trainer__row"><dt>Level cap</dt><dd><span class="mono">Lv 29</span></dd></div>
+              <div class="card-trainer__row"><dt>Team</dt><dd>
+                <span class="mono">Numel Lv 26 &middot; Slugma Lv 26 &middot; Camerupt Lv 28 &middot; Torkoal Lv 29</span>
+              </dd></div>
+              <div class="card-trainer__row"><dt>Key move</dt><dd>Overheat + Attract + Sunny Day</dd></div>
+              <div class="card-trainer__row"><dt>Counters</dt><dd>Marshtomp/Swampert, Golduck, Vibrava, Aron/Lairon, Wailmer w/ Surf</dd></div>
+              <div class="card-trainer__row"><dt>TM reward</dt><dd><span class="badge">TM50 Overheat</span></dd></div>
+              <div class="card-trainer__row"><dt>Badge perk</dt><dd>+Spe in battle &middot; HM04 Strength field use</dd></div>
+            </dl>
+            <div class="card-trainer__strategy">
+              <strong>Strategy.</strong> Torkoal opens with Overheat which lowers its own Sp. Atk two stages, so you
+              can stall through it. Watch for Attract, which neuters male attackers &mdash; bring a female Pokemon or a
+              Yellow Flute. Numel and Camerupt are Fire/Ground; Water moves do quadruple damage.
+              <p class="mt-3 mono" style="font-size:var(--fs-xs); color:var(--emerald-deep);">FIELD TIP &mdash; Hot Springs in Lavaridge heal your team for free. The old woman gives you an Egg containing Wynaut.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============== GYM 5: NORMAN ============== -->
+        <article id="gym-5" class="card-trainer reveal" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: #d8c9a8;">
+            <span class="card-trainer__num" style="background: var(--ink); color: var(--paper);">No. 05 &middot; Balance Badge</span>
+            <span class="card-trainer__initial" style="color: var(--ink); text-shadow: 4px 4px 0 #a89a78;">N</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="normal">normal</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Norman</h2>
+              <p class="card-trainer__city">Petalburg City &middot; Balance Badge</p>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Ace</dt><dd>Slaking &middot; <span class="mono text-emerald">Lv 31</span></dd></div>
+              <div class="card-trainer__row"><dt>Level cap</dt><dd><span class="mono">Lv 31</span></dd></div>
+              <div class="card-trainer__row"><dt>Team</dt><dd>
+                <span class="mono">Spinda Lv 27 &middot; Vigoroth Lv 27 &middot; Linoone Lv 29 &middot; Slaking Lv 31</span>
+              </dd></div>
+              <div class="card-trainer__row"><dt>Key move</dt><dd>Facade + Slack Off + Yawn (Truant alternates)</dd></div>
+              <div class="card-trainer__row"><dt>Counters</dt><dd>Hariyama (Vital Throw), Breloom (Sky Uppercut), Combusken/Blaziken, Machoke from Granite Cave</dd></div>
+              <div class="card-trainer__row"><dt>TM reward</dt><dd><span class="badge">TM42 Facade</span></dd></div>
+              <div class="card-trainer__row"><dt>Badge perk</dt><dd>Lv 70 obedience &middot; HM03 Surf field use</dd></div>
+            </dl>
+            <div class="card-trainer__strategy">
+              <strong>Strategy.</strong> Slaking has Truant &mdash; it loafs every other turn. Use the loafing turn to
+              Bulk Up, heal, or switch in a wall. Hariyama with Vital Throw and Belly Drum is the textbook counter.
+              Don&rsquo;t bring a Ghost type &mdash; he carries Faint Attack. Slaking&rsquo;s Yawn forces switches; bring an
+              Awakening or Insomnia/Vital Spirit.
+              <p class="mt-3 mono" style="font-size:var(--fs-xs); color:var(--emerald-deep);">FIELD TIP &mdash; Norman is your father in this game. The dialogue around the gym fight is some of the franchise&rsquo;s best.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============== GYM 6: WINONA ============== -->
+        <article id="gym-6" class="card-trainer reveal" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: #8aa4cf;">
+            <span class="card-trainer__num" style="background: var(--ink); color: var(--paper);">No. 06 &middot; Feather Badge</span>
+            <span class="card-trainer__initial" style="color: var(--paper); text-shadow: 4px 4px 0 #5d7aa4;">W</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="flying">flying</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Winona</h2>
+              <p class="card-trainer__city">Fortree City &middot; Feather Badge</p>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Ace</dt><dd>Altaria &middot; <span class="mono text-emerald">Lv 33</span></dd></div>
+              <div class="card-trainer__row"><dt>Level cap</dt><dd><span class="mono">Lv 33</span></dd></div>
+              <div class="card-trainer__row"><dt>Team</dt><dd>
+                <span class="mono">Swablu Lv 29 &middot; Tropius Lv 29 &middot; Pelipper Lv 30 &middot; Skarmory Lv 31 &middot; Altaria Lv 33</span>
+              </dd></div>
+              <div class="card-trainer__row"><dt>Key move</dt><dd>Dragon Dance + Aerial Ace + Earthquake</dd></div>
+              <div class="card-trainer__row"><dt>Counters</dt><dd>Magneton (Thunderbolt), Manectric (Thunderbolt), Aron/Lairon (Rock Tomb), Ice Beam users</dd></div>
+              <div class="card-trainer__row"><dt>TM reward</dt><dd><span class="badge">TM40 Aerial Ace</span></dd></div>
+              <div class="card-trainer__row"><dt>Badge perk</dt><dd>Lv 80 obedience &middot; HM02 Fly field use</dd></div>
+            </dl>
+            <div class="card-trainer__strategy">
+              <strong>Strategy.</strong> Altaria is Dragon/Flying, so Ice Beam is a one-shot. Skarmory is Steel/Flying
+              &mdash; hit it with Fire or Electric, NOT Rock (it resists). Pelipper is doubly weak to Electric. The whole
+              gym is Electric food &mdash; Manectric or Magneton solo it.
+              <p class="mt-3 mono" style="font-size:var(--fs-xs); color:var(--emerald-deep);">FIELD TIP &mdash; After Winona, head to Mt. Pyre. The team plot kicks off and you&rsquo;ll need Fly to keep up.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============== GYM 7: TATE & LIZA ============== -->
+        <article id="gym-7" class="card-trainer reveal" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: #d96aa8;">
+            <span class="card-trainer__num">No. 07 &middot; Mind Badge</span>
+            <span class="card-trainer__initial">T&amp;L</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="psychic">psychic</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Tate &amp; Liza</h2>
+              <p class="card-trainer__city">Mossdeep City &middot; Mind Badge</p>
+            </div>
+            <div class="callout callout--ember" style="margin: 0 0 var(--s-3);">
+              <span class="callout__label">Format</span>
+              <p style="margin:0;">Mandatory <strong>double battle</strong> &mdash; the only one in the gym circuit.</p>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Aces</dt><dd>Solrock &amp; Lunatone &middot; <span class="mono text-emerald">Lv 42</span></dd></div>
+              <div class="card-trainer__row"><dt>Level cap</dt><dd><span class="mono">Lv 42</span></dd></div>
+              <div class="card-trainer__row"><dt>Team</dt><dd>
+                <span class="mono">Claydol Lv 41 &middot; Xatu Lv 41 &middot; Lunatone Lv 42 &middot; Solrock Lv 42</span>
+              </dd></div>
+              <div class="card-trainer__row"><dt>Key moves</dt><dd>Lunatone: Calm Mind + Psychic + Hypnosis &middot; Solrock: Sunny Day + SolarBeam</dd></div>
+              <div class="card-trainer__row"><dt>Counters</dt><dd>Sharpedo (Crunch), Mightyena (Bite/Crunch), Absol, Banette (Shadow Ball), Sableye (Psychic-immune)</dd></div>
+              <div class="card-trainer__row"><dt>TM reward</dt><dd><span class="badge">TM04 Calm Mind</span></dd></div>
+              <div class="card-trainer__row"><dt>Badge perk</dt><dd>Lv 90 obedience &middot; HM08 Dive field use</dd></div>
+            </dl>
+            <div class="card-trainer__strategy">
+              <strong>Strategy.</strong> Lead with two Dark or Ghost types. Sharpedo&rsquo;s Crunch is a one-shot on either
+              ace. Earthquake hits both opponents &mdash; perfect partners are Flygon, Camerupt, or Swampert paired with
+              a Flying ally. Bring Awakenings: Lunatone has Hypnosis.
+              <p class="mt-3 mono" style="font-size:var(--fs-xs); color:var(--emerald-deep);">FIELD TIP &mdash; Pick up the Sun Stone from the meteorite-loving NPCs near the Space Center after the gym &mdash; the only one available pre-Frontier.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============== GYM 8: WALLACE ============== -->
+        <article id="gym-8" class="card-trainer reveal" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: #2b5d8a;">
+            <span class="card-trainer__num">No. 08 &middot; Rain Badge</span>
+            <span class="card-trainer__initial">W</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="water">water</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Wallace</h2>
+              <p class="card-trainer__city">Sootopolis City &middot; Rain Badge</p>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Ace</dt><dd>Milotic &middot; <span class="mono text-emerald">Lv 43</span></dd></div>
+              <div class="card-trainer__row"><dt>Level cap</dt><dd><span class="mono">Lv 43</span></dd></div>
+              <div class="card-trainer__row"><dt>Team</dt><dd>
+                <span class="mono">Luvdisc Lv 40 &middot; Whiscash Lv 41 &middot; Sealeo Lv 41 &middot; Seaking Lv 42 &middot; Milotic Lv 43</span>
+              </dd></div>
+              <div class="card-trainer__row"><dt>Watch out</dt><dd>Whiscash is Water/Ground &mdash; Grass moves do 4&times;</dd></div>
+              <div class="card-trainer__row"><dt>Key move</dt><dd>Recover + Ice Beam + Surf + Toxic</dd></div>
+              <div class="card-trainer__row"><dt>Counters</dt><dd>Manectric/Magneton (Thunderbolt), Sceptile (Leaf Blade), Breloom (Giga Drain), Roselia</dd></div>
+              <div class="card-trainer__row"><dt>TM reward</dt><dd><span class="badge">TM03 Water Pulse</span></dd></div>
+              <div class="card-trainer__row"><dt>Badge perk</dt><dd>All-level obedience &middot; HM07 Waterfall field use</dd></div>
+            </dl>
+            <div class="card-trainer__strategy">
+              <strong>Strategy.</strong> Milotic has Recover + Marvel Scale, so it&rsquo;s spongy. Status it with Toxic
+              or burn, then chunk with Electric or Grass. Whiscash is doubly weak to Grass. Don&rsquo;t bring the Mudkip
+              line solo &mdash; Milotic outclasses it. In Emerald, Wallace is the gym leader (R/S had him too; remakes split him from Juan).
+              <p class="mt-3 mono" style="font-size:var(--fs-xs); color:var(--emerald-deep);">FIELD TIP &mdash; After Wallace&rsquo;s gym you trigger the Sootopolis Kyogre/Groudon climax. Stock Ultra Balls, Max Repels, and Revives before Cave of Origin.</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============================== NEXT CHAPTER ============================== -->
+    <section class="section section--ink">
+      <div class="container container--narrow text-center">
+        <span class="kicker">Next Chapter</span>
+        <h2 class="h2 mt-4" style="color:var(--paper);">Then comes the <em style="color:var(--ember); font-style:italic; font-weight:400;">Elite Four</em>.</h2>
+        <p class="lede mt-5" style="color:var(--mist); margin-inline:auto;">
+          Sidney, Phoebe, Glacia, Drake &mdash; and Champion Wallace waiting at the end of the hall.
+        </p>
+        <p class="mt-6"><a href="elite-four.html" class="badge badge--ember" style="text-decoration:none;">Open Chapter 02 &rarr;</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">Hoenn <span>Field</span> Guide</div>
+          <p class="mt-3">An editorial companion to Pokemon Emerald, published in print-as-pixels.
+          Pokemon names, characters, and locations are property of Nintendo, Game Freak, and The Pokemon Company.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Chapters</div>
+          <ul class="footer__links">
+            <li><a href="gyms.html">Gym Leaders</a></li>
+            <li><a href="elite-four.html">Elite Four</a></li>
+            <li><a href="legendaries.html">Legendaries</a></li>
+            <li><a href="tier-list.html">Tier List</a></li>
+            <li><a href="secrets.html">Secrets</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Reference</div>
+          <ul class="footer__links">
+            <li><a href="breeding.html">Breeding &amp; IVs</a></li>
+            <li><a href="early-game.html">Early Game</a></li>
+            <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+            <li><a href="post-game.html">Post Game</a></li>
+            <li><a href="https://github.com/" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span data-year>2025</span> &middot; Hoenn Field Guide &middot; Issue 001</span>
+        <span>Set in Fraunces, Instrument Sans &amp; JetBrains Mono</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&uarr; Top</button>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

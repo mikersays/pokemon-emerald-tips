@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Hoenn Field Guide — an editorial strategy companion to Pokemon Emerald. Gym routes, Elite Four counters, legendary captures, breeding and tier lists." />
+  <title>Hoenn Field Guide &middot; A Companion to Pokemon Emerald</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <!-- ============================== NAV ============================== -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html" aria-label="Hoenn Field Guide home">
+        <span class="nav__mark" aria-hidden="true">HFG</span>
+        <span class="nav__wordmark">Hoenn <span>Field</span> Guide</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <ul style="display:contents;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="starters.html">Starters</a></li>
+          <li><a href="gyms.html">Gyms</a></li>
+          <li><a href="elite-four.html">Elite Four</a></li>
+          <li><a href="legendaries.html">Legendaries</a></li>
+          <li><a href="tier-list.html">Tier List</a></li>
+          <li><a href="secrets.html">Secrets</a></li>
+          <li><a href="breeding.html">Breeding</a></li>
+          <li><a href="early-game.html">Early Game</a></li>
+          <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+          <li><a href="post-game.html">Post Game</a></li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-drawer">MENU</button>
+    </div>
+    <div class="nav__drawer" id="nav-drawer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="starters.html">Starters</a></li>
+        <li><a href="gyms.html">Gyms</a></li>
+        <li><a href="elite-four.html">Elite Four</a></li>
+        <li><a href="legendaries.html">Legendaries</a></li>
+        <li><a href="tier-list.html">Tier List</a></li>
+        <li><a href="secrets.html">Secrets</a></li>
+        <li><a href="breeding.html">Breeding</a></li>
+        <li><a href="early-game.html">Early Game</a></li>
+        <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+        <li><a href="post-game.html">Post Game</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============================== HERO ============================== -->
+    <section class="hero">
+      <div class="riso-blob riso-blob--ember" style="width:340px; height:340px; top:-90px; right:-60px;"></div>
+      <div class="riso-dots" style="width:240px; height:120px; bottom:24px; right:8%; transform: rotate(-6deg);"></div>
+      <div class="riso-blob riso-blob--sun" style="width:140px; height:140px; bottom:60px; left:-40px;"></div>
+
+      <div class="container">
+        <div class="hero__inner">
+          <div class="stagger">
+            <span class="kicker">Issue 001 &middot; Hoenn Region &middot; Est. 2004</span>
+            <h1 class="hero__title">
+              The Hoenn<br>
+              <em>field</em> <span class="amp">&amp;</span> guide
+            </h1>
+            <p class="hero__lede">
+              An editorial companion to <strong>Pokemon Emerald</strong> &mdash; gym routes,
+              Elite Four counters, legendary captures, breeding mechanics, and the
+              hidden corners of the Battle Frontier, set in print.
+            </p>
+          </div>
+
+          <dl class="hero__meta reveal" data-stagger>
+            <div class="hero__meta-row reveal"><dt>Game</dt><dd>Pokemon Emerald</dd></div>
+            <div class="hero__meta-row reveal"><dt>Platform</dt><dd>Game Boy Advance</dd></div>
+            <div class="hero__meta-row reveal"><dt>Released</dt><dd>2004</dd></div>
+            <div class="hero__meta-row reveal"><dt>Region</dt><dd>Hoenn</dd></div>
+            <div class="hero__meta-row reveal"><dt>Pokedex</dt><dd>202 species</dd></div>
+            <div class="hero__meta-row reveal"><dt>Badges</dt><dd>8 + Elite Four</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== INTRO ============================== -->
+    <section class="section">
+      <div class="container container--narrow">
+        <span class="kicker kicker--ember">Editor&rsquo;s Note</span>
+        <p class="dropcap" style="font-size: 1.15rem; line-height: 1.6;">
+          Emerald is the version that finally got it right. It merges the best of Ruby and Sapphire, lets you
+          face down both Groudon and Kyogre, hands you the Battle Frontier as a post-game treat, and rebuilds
+          the story around Rayquaza&rsquo;s descent. This guide is your tactical companion &mdash; written for trainers
+          who want to walk through Hoenn deliberately, not just speed-run it. Every gym counter, every roaming
+          legendary, every secret tile has been verified against a vanilla cartridge.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================== STARTERS ============================== -->
+    <section class="section section--alt" id="starters">
+      <div class="container">
+        <div class="split" style="margin-bottom: var(--s-7);">
+          <div>
+            <span class="kicker">Chapter One</span>
+            <h2 class="h1">The three<br><em style="color:var(--ember); font-style:italic; font-weight:400;">starters</em></h2>
+          </div>
+          <p class="lede" style="align-self:end;">
+            Birch hands you a single Poke Ball and asks you to choose. Each path through Hoenn looks different
+            depending on which sapling, spark, or splash you pick. Hover or focus a card to read its full dossier.
+          </p>
+        </div>
+
+        <div class="grid grid--3 stagger">
+          <!-- TREECKO -->
+          <article class="card-starter offset-shadow" data-accent="grass" tabindex="0" aria-label="Treecko starter">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+              <div>
+                <div class="card-starter__num">No. 252</div>
+                <h3 class="card-starter__name">Treecko</h3>
+              </div>
+              <span class="type-chip" data-type="grass">grass</span>
+            </div>
+            <p class="card-starter__evo mono">Treecko &rarr; Grovyle (Lv 16) &rarr; Sceptile (Lv 36)</p>
+            <p class="card-starter__rating">&ldquo;Rewarding but punishing &mdash; 6/10 for new players.&rdquo;</p>
+
+            <div class="card-starter__details">
+              <div class="card-starter__stats">
+                <div><span>Final focus</span><span>Speed &middot; Sp. Atk</span></div>
+                <div><span>Best matchups</span><span>Roxanne, Wattson, Wallace</span></div>
+                <div><span>Worst matchups</span><span>Flannery, Winona, Glacia</span></div>
+                <div><span>Signature move</span><span>Leaf Blade (Lv 29)</span></div>
+              </div>
+              <p style="margin-top: var(--s-3); font-size: var(--fs-sm); line-height: 1.5; color: var(--ink-soft);">
+                Sceptile was the first pure-Grass starter with 120 base Speed. Frail but lethal &mdash; demands smart switching.
+              </p>
+            </div>
+          </article>
+
+          <!-- TORCHIC -->
+          <article class="card-starter offset-shadow--ember" data-accent="fire" tabindex="0" aria-label="Torchic starter">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+              <div>
+                <div class="card-starter__num">No. 255</div>
+                <h3 class="card-starter__name">Torchic</h3>
+              </div>
+              <span class="type-chip" data-type="fire">fire</span>
+            </div>
+            <p class="card-starter__evo mono">Torchic &rarr; Combusken (Lv 16) &rarr; Blaziken (Lv 36)</p>
+            <p class="card-starter__rating">&ldquo;The easiest run in Emerald &mdash; 9/10 for new players.&rdquo;</p>
+
+            <div class="card-starter__details">
+              <div class="card-starter__stats">
+                <div><span>Final focus</span><span>Atk &middot; Sp. Atk (mixed)</span></div>
+                <div><span>Best matchups</span><span>Roxanne, Phoebe, Glacia</span></div>
+                <div><span>Worst matchups</span><span>Wallace, Tate &amp; Liza</span></div>
+                <div><span>Signature combo</span><span>Blaze Kick + Sky Uppercut</span></div>
+              </div>
+              <p style="margin-top: var(--s-3); font-size: var(--fs-sm); line-height: 1.5; color: var(--ink-soft);">
+                Blaziken was the first Fire/Fighting starter, kicking off a Gen-long tradition. Double Kick at Lv 16 trivializes Roxanne.
+              </p>
+            </div>
+          </article>
+
+          <!-- MUDKIP -->
+          <article class="card-starter offset-shadow--ocean" data-accent="water" tabindex="0" aria-label="Mudkip starter">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+              <div>
+                <div class="card-starter__num">No. 258</div>
+                <h3 class="card-starter__name">Mudkip</h3>
+              </div>
+              <span class="type-chip" data-type="water">water</span>
+            </div>
+            <p class="card-starter__evo mono">Mudkip &rarr; Marshtomp (Lv 16) &rarr; Swampert (Lv 36)</p>
+            <p class="card-starter__rating">&ldquo;Statistically the easiest run &mdash; 10/10.&rdquo;</p>
+
+            <div class="card-starter__details">
+              <div class="card-starter__stats">
+                <div><span>Final focus</span><span>Atk &middot; HP &middot; bulk</span></div>
+                <div><span>Best matchups</span><span>Roxanne, Wattson, Flannery, Tate</span></div>
+                <div><span>Worst matchups</span><span>Drake&rsquo;s Salamence, wild Ludicolo</span></div>
+                <div><span>Final typing</span><span>Water / Ground</span></div>
+              </div>
+              <p style="margin-top: var(--s-3); font-size: var(--fs-sm); line-height: 1.5; color: var(--ink-soft);">
+                One of three Water/Ground families in Gen 3. Immune to Electric, only one weakness (4&times; Grass). Bulkiest starter.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== GYM ROUTE ============================== -->
+    <section class="section" id="gym-route">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ember">Chapter Two</span>
+          <h2 class="h1">Plan your<br><em style="color:var(--emerald); font-style:italic; font-weight:400;">gym route</em></h2>
+          <p class="lede mt-4" style="max-width: 60ch;">
+            Eight leaders, eight cities, eight badges &mdash; ordered as the cartridge expects you to challenge them.
+            Tap any tile to jump to the full dossier.
+          </p>
+        </div>
+
+        <div class="gym-route reveal">
+          <a href="gyms.html#gym-1" class="gym-tile">
+            <span class="gym-tile__num">01</span>
+            <span class="gym-tile__name">Roxanne</span>
+            <span class="gym-tile__city">Rustboro</span>
+            <span class="gym-tile__type">Rock</span>
+          </a>
+          <a href="gyms.html#gym-2" class="gym-tile">
+            <span class="gym-tile__num">02</span>
+            <span class="gym-tile__name">Brawly</span>
+            <span class="gym-tile__city">Dewford</span>
+            <span class="gym-tile__type">Fighting</span>
+          </a>
+          <a href="gyms.html#gym-3" class="gym-tile">
+            <span class="gym-tile__num">03</span>
+            <span class="gym-tile__name">Wattson</span>
+            <span class="gym-tile__city">Mauville</span>
+            <span class="gym-tile__type">Electric</span>
+          </a>
+          <a href="gyms.html#gym-4" class="gym-tile">
+            <span class="gym-tile__num">04</span>
+            <span class="gym-tile__name">Flannery</span>
+            <span class="gym-tile__city">Lavaridge</span>
+            <span class="gym-tile__type">Fire</span>
+          </a>
+          <a href="gyms.html#gym-5" class="gym-tile">
+            <span class="gym-tile__num">05</span>
+            <span class="gym-tile__name">Norman</span>
+            <span class="gym-tile__city">Petalburg</span>
+            <span class="gym-tile__type">Normal</span>
+          </a>
+          <a href="gyms.html#gym-6" class="gym-tile">
+            <span class="gym-tile__num">06</span>
+            <span class="gym-tile__name">Winona</span>
+            <span class="gym-tile__city">Fortree</span>
+            <span class="gym-tile__type">Flying</span>
+          </a>
+          <a href="gyms.html#gym-7" class="gym-tile">
+            <span class="gym-tile__num">07</span>
+            <span class="gym-tile__name">Tate &amp; Liza</span>
+            <span class="gym-tile__city">Mossdeep</span>
+            <span class="gym-tile__type">Psychic</span>
+          </a>
+          <a href="gyms.html#gym-8" class="gym-tile">
+            <span class="gym-tile__num">08</span>
+            <span class="gym-tile__name">Wallace</span>
+            <span class="gym-tile__city">Sootopolis</span>
+            <span class="gym-tile__type">Water</span>
+          </a>
+        </div>
+
+        <div class="callout callout--emerald" style="margin-top: var(--s-6);">
+          <span class="callout__label">Field note</span>
+          <p style="margin:0;">
+            In vanilla Emerald, <strong>Wallace</strong> takes the 8th gym (Juan replaces him in remakes), then steps up
+            to Champion. Your level cap progresses 15 &rarr; 19 &rarr; 24 &rarr; 29 &rarr; 31 &rarr; 33 &rarr; 42 &rarr; 43.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== WHAT'S INSIDE ============================== -->
+    <section class="section section--ink" id="contents">
+      <div class="container">
+        <div style="margin-bottom: var(--s-7);">
+          <span class="kicker">The Index</span>
+          <h2 class="h1" style="color:var(--paper);">What&rsquo;s <em style="color:var(--sun); font-style:italic; font-weight:400;">inside</em></h2>
+          <p class="lede" style="color:var(--mist); margin-top: var(--s-4); max-width: 60ch;">
+            Ten chapters, organized as you&rsquo;d encounter them on a careful first playthrough. Each is its own page.
+          </p>
+        </div>
+
+        <div class="grid grid--auto stagger">
+          <a href="gyms.html" class="tile">
+            <div>
+              <div class="tile__num">01 &middot; 8 entries</div>
+              <h3 class="tile__title">Gym Leaders</h3>
+            </div>
+            <p class="tile__desc">Full dossiers for all 8 gym leaders &mdash; teams, level caps, counters, strategies, and the TM each one drops.</p>
+            <span class="tile__arrow">Open chapter &rarr;</span>
+          </a>
+
+          <a href="elite-four.html" class="tile">
+            <div>
+              <div class="tile__num">02 &middot; 5 entries</div>
+              <h3 class="tile__title">Elite Four &amp; Champion</h3>
+            </div>
+            <p class="tile__desc">Sidney, Phoebe, Glacia, Drake, and Champion Wallace &mdash; full movesets and the keystone counters.</p>
+            <span class="tile__arrow">Open chapter &rarr;</span>
+          </a>
+
+          <a href="legendaries.html" class="tile">
+            <div>
+              <div class="tile__num">03 &middot; 10 entries</div>
+              <h3 class="tile__title">Legendaries</h3>
+            </div>
+            <p class="tile__desc">Groudon, Kyogre, Rayquaza, the Latis, the Regis, and the event-only Mew &amp; Deoxys. Catch tactics, Ball math.</p>
+            <span class="tile__arrow">Open chapter &rarr;</span>
+          </a>
+
+          <a href="tier-list.html" class="tile">
+            <div>
+              <div class="tile__num">04 &middot; S/A/B + HM</div>
+              <h3 class="tile__title">Pokemon Tier List</h3>
+            </div>
+            <p class="tile__desc">A working tier list of Hoenn-available Pokemon, sorted by playthrough viability and raw ceiling.</p>
+            <span class="tile__arrow">Open chapter &rarr;</span>
+          </a>
+
+          <a href="secrets.html" class="tile">
+            <div>
+              <div class="tile__num">05 &middot; 15 entries</div>
+              <h3 class="tile__title">Hidden Secrets</h3>
+            </div>
+            <p class="tile__desc">Mirage Island, Berry Master phrases, Feebas tiles, the Sealed Chamber, Trainer Hill &mdash; the things the manual won&rsquo;t tell you.</p>
+            <span class="tile__arrow">Open chapter &rarr;</span>
+          </a>
+
+          <a href="breeding.html" class="tile">
+            <div>
+              <div class="tile__num">06 &middot; mechanics</div>
+              <h3 class="tile__title">Breeding, IVs &amp; EVs</h3>
+            </div>
+            <p class="tile__desc">Day Care logic, Everstone Nature inheritance, Hidden Power, EV training spots, Pokerus, and the Macho Brace.</p>
+            <span class="tile__arrow">Open chapter &rarr;</span>
+          </a>
+
+          <a href="early-game.html" class="tile">
+            <div>
+              <div class="tile__num">07 &middot; first 5 hours</div>
+              <h3 class="tile__title">Early Game</h3>
+            </div>
+            <p class="tile__desc">Phase-by-phase tips for the opening five hours &mdash; from Wurmple grabs to Mt. Chimney.</p>
+            <span class="tile__arrow">Open chapter &rarr;</span>
+          </a>
+
+          <a href="tms-hms.html" class="tile">
+            <div>
+              <div class="tile__num">08 &middot; 24 entries</div>
+              <h3 class="tile__title">TMs &amp; HMs</h3>
+            </div>
+            <p class="tile__desc">Where to find every notable TM and HM, what it&rsquo;s good for, and which Pokemon should learn it.</p>
+            <span class="tile__arrow">Open chapter &rarr;</span>
+          </a>
+
+          <a href="post-game.html" class="tile">
+            <div>
+              <div class="tile__num">09 &middot; Battle Frontier</div>
+              <h3 class="tile__title">Post Game</h3>
+            </div>
+            <p class="tile__desc">All seven Frontier facilities, the brain who runs each, the gimmick to beat, and the Symbols you&rsquo;re after.</p>
+            <span class="tile__arrow">Open chapter &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== CLOSER ============================== -->
+    <section class="section">
+      <div class="container container--narrow text-center">
+        <span class="kicker kicker--ember">Closing transmission</span>
+        <h2 class="h2 mt-4" style="margin-inline:auto;">Travel light. <em style="color:var(--ember); font-weight:400; font-style:italic;">Train smart.</em><br>Catch Rayquaza last.</h2>
+        <p class="lede mt-5" style="margin-inline:auto;">
+          The Hoenn Field Guide is a static, dependency-free site. No tracking, no ads, no analytics &mdash;
+          just type on paper.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">Hoenn <span>Field</span> Guide</div>
+          <p class="mt-3">An editorial companion to Pokemon Emerald, published in print-as-pixels.
+          Pokemon names, characters, and locations are property of Nintendo, Game Freak, and The Pokemon Company.
+          This is a fan reference; no affiliation.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Chapters</div>
+          <ul class="footer__links">
+            <li><a href="gyms.html">Gym Leaders</a></li>
+            <li><a href="elite-four.html">Elite Four</a></li>
+            <li><a href="legendaries.html">Legendaries</a></li>
+            <li><a href="tier-list.html">Tier List</a></li>
+            <li><a href="secrets.html">Secrets</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Reference</div>
+          <ul class="footer__links">
+            <li><a href="breeding.html">Breeding &amp; IVs</a></li>
+            <li><a href="early-game.html">Early Game</a></li>
+            <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+            <li><a href="post-game.html">Post Game</a></li>
+            <li><a href="https://github.com/" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span data-year>2025</span> &middot; Hoenn Field Guide &middot; Issue 001</span>
+        <span>Set in Fraunces, Instrument Sans &amp; JetBrains Mono</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&uarr; Top</button>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The legendary Pokemon of Hoenn &mdash; Groudon, Kyogre, Rayquaza, the Latis, the Regis, and event-only Mew &amp; Deoxys. Locations, prerequisites, and catch tactics." />
+  <title>Legendaries &middot; Hoenn Field Guide</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <!-- ============================== NAV ============================== -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html" aria-label="Hoenn Field Guide home">
+        <span class="nav__mark" aria-hidden="true">HFG</span>
+        <span class="nav__wordmark">Hoenn <span>Field</span> Guide</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <ul style="display:contents;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="starters.html">Starters</a></li>
+          <li><a href="gyms.html">Gyms</a></li>
+          <li><a href="elite-four.html">Elite Four</a></li>
+          <li><a href="legendaries.html">Legendaries</a></li>
+          <li><a href="tier-list.html">Tier List</a></li>
+          <li><a href="secrets.html">Secrets</a></li>
+          <li><a href="breeding.html">Breeding</a></li>
+          <li><a href="early-game.html">Early Game</a></li>
+          <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+          <li><a href="post-game.html">Post Game</a></li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-drawer">MENU</button>
+    </div>
+    <div class="nav__drawer" id="nav-drawer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="starters.html">Starters</a></li>
+        <li><a href="gyms.html">Gyms</a></li>
+        <li><a href="elite-four.html">Elite Four</a></li>
+        <li><a href="legendaries.html">Legendaries</a></li>
+        <li><a href="tier-list.html">Tier List</a></li>
+        <li><a href="secrets.html">Secrets</a></li>
+        <li><a href="breeding.html">Breeding</a></li>
+        <li><a href="early-game.html">Early Game</a></li>
+        <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+        <li><a href="post-game.html">Post Game</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============================== HEADER ============================== -->
+    <section class="page-header">
+      <div class="riso-blob riso-blob--ocean" style="width:320px; height:320px; top:-100px; right:-60px;"></div>
+      <div class="riso-dots" style="width:240px; height:110px; bottom:36px; right:10%; transform: rotate(-4deg);"></div>
+      <div class="riso-blob riso-blob--ember" style="width:160px; height:160px; bottom:50px; left:-50px;"></div>
+
+      <div class="container">
+        <span class="kicker">Chapter 03 &middot; Beyond the Eight Badges</span>
+        <h1 class="page-header__title">
+          The Hoenn<br><em>legendaries</em>
+        </h1>
+        <p class="lede mt-4 dropcap" style="max-width: 62ch;">
+          Ten captures, ten puzzles, ten quiet endings to a long playthrough. The Weather Trio anchors Hoenn
+          mythology; the Eon Twins roam its skies; the Regis sleep behind Braille and a Wailord. Below: where
+          to find each, what gates them, and the math of the perfect ball.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================== ANCHOR LIST ============================== -->
+    <section class="section section--tight" style="border-bottom: var(--border-w) solid var(--ink);">
+      <div class="container">
+        <div class="grid grid--auto">
+          <a href="#legendary-groudon" class="poke-mini" style="text-decoration:none;">
+            <span class="poke-mini__lv">Lv 70</span>
+            <span class="poke-mini__name">Groudon</span>
+            <span class="poke-mini__type">Ground &middot; Terra Cave</span>
+          </a>
+          <a href="#legendary-kyogre" class="poke-mini" style="text-decoration:none;">
+            <span class="poke-mini__lv">Lv 70</span>
+            <span class="poke-mini__name">Kyogre</span>
+            <span class="poke-mini__type">Water &middot; Marine Cave</span>
+          </a>
+          <a href="#legendary-rayquaza" class="poke-mini" style="text-decoration:none;">
+            <span class="poke-mini__lv">Lv 70</span>
+            <span class="poke-mini__name">Rayquaza</span>
+            <span class="poke-mini__type">Dragon &middot; Sky Pillar</span>
+          </a>
+          <a href="#legendary-latios" class="poke-mini" style="text-decoration:none;">
+            <span class="poke-mini__lv">Lv 40</span>
+            <span class="poke-mini__name">Latios</span>
+            <span class="poke-mini__type">Dragon &middot; Roaming</span>
+          </a>
+          <a href="#legendary-latias" class="poke-mini" style="text-decoration:none;">
+            <span class="poke-mini__lv">Lv 40</span>
+            <span class="poke-mini__name">Latias</span>
+            <span class="poke-mini__type">Dragon &middot; Roaming</span>
+          </a>
+          <a href="#legendary-regirock" class="poke-mini" style="text-decoration:none;">
+            <span class="poke-mini__lv">Lv 40</span>
+            <span class="poke-mini__name">Regirock</span>
+            <span class="poke-mini__type">Rock &middot; Desert Ruins</span>
+          </a>
+          <a href="#legendary-regice" class="poke-mini" style="text-decoration:none;">
+            <span class="poke-mini__lv">Lv 40</span>
+            <span class="poke-mini__name">Regice</span>
+            <span class="poke-mini__type">Ice &middot; Island Cave</span>
+          </a>
+          <a href="#legendary-registeel" class="poke-mini" style="text-decoration:none;">
+            <span class="poke-mini__lv">Lv 40</span>
+            <span class="poke-mini__name">Registeel</span>
+            <span class="poke-mini__type">Steel &middot; Ancient Tomb</span>
+          </a>
+          <a href="#legendary-mew" class="poke-mini" style="text-decoration:none;">
+            <span class="poke-mini__lv">Lv 30</span>
+            <span class="poke-mini__name">Mew</span>
+            <span class="poke-mini__type">Psychic &middot; Event</span>
+          </a>
+          <a href="#legendary-deoxys" class="poke-mini" style="text-decoration:none;">
+            <span class="poke-mini__lv">Lv 30</span>
+            <span class="poke-mini__name">Deoxys</span>
+            <span class="poke-mini__type">Psychic &middot; Event</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== WEATHER TRIO ============================== -->
+    <section class="section">
+      <div class="container">
+
+        <header style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ember">Section I</span>
+          <h2 class="h2 mt-3">The Weather Trio</h2>
+          <p class="lede mt-3" style="max-width:60ch;">Groudon raises continents, Kyogre floods them, Rayquaza ends the argument. All three sit at Lv 70.</p>
+        </header>
+
+        <!-- ============== GROUDON ============== -->
+        <article id="legendary-groudon" class="card-trainer reveal" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: #c4925a;">
+            <span class="card-trainer__num" style="background: var(--ink); color: var(--paper);">No. 383 &middot; Lv 70</span>
+            <span class="card-trainer__initial" style="color: var(--ink); text-shadow: 4px 4px 0 #8c6940;">G</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="ground">ground</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Groudon</h2>
+              <p class="card-trainer__city">Terra Cave &middot; Roaming Anchor</p>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Location</dt><dd>Terra Cave (rotates &mdash; check Hoenn TV news)</dd></div>
+              <div class="card-trainer__row"><dt>Ability</dt><dd>Drought &mdash; boosts Fire, weakens Water</dd></div>
+              <div class="card-trainer__row"><dt>Moves</dt><dd>Earthquake &middot; Fire Blast &middot; Hyper Beam &middot; Bulk Up</dd></div>
+              <div class="card-trainer__row"><dt>Best ball</dt><dd><span class="badge">Timer Ball</span> after turn 10 &middot; <span class="badge">Dusk Ball</span> at night</dd></div>
+            </dl>
+
+            <div>
+              <span class="kicker">Access requirements</span>
+              <ul class="bullet-list bullet-list--emerald mt-3">
+                <li>Beat the Elite Four.</li>
+                <li>Speak to Professor Cozmo and check the news on TV in any Pokemon Center.</li>
+                <li>Terra Cave&rsquo;s location rotates &mdash; check the Hoenn news report each day.</li>
+              </ul>
+            </div>
+
+            <div class="card-trainer__strategy">
+              <strong>Catching tips.</strong> False Swipe with Sceptile to leave 1 HP, then status it
+              (Hypnosis from Gardevoir or Thunder Wave). Drought boosts its Fire moves and weakens Water,
+              so don&rsquo;t try to chip with Surf. Use Ultra Balls or a Timer Ball after 10+ turns. Strong, bulky,
+              and packing Bulk Up &mdash; don&rsquo;t let it set up.
+              <p class="mt-3 mono" style="font-size:var(--fs-xs); color:var(--emerald-deep);">FIELD TIP &mdash; Soft-reset before each capture attempt to roll a different Nature.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============== KYOGRE ============== -->
+        <article id="legendary-kyogre" class="card-trainer reveal" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: #1d4163;">
+            <span class="card-trainer__num">No. 382 &middot; Lv 70</span>
+            <span class="card-trainer__initial">K</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="water">water</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Kyogre</h2>
+              <p class="card-trainer__city">Marine Cave &middot; Roaming Anchor</p>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Location</dt><dd>Marine Cave (random water route after Sootopolis)</dd></div>
+              <div class="card-trainer__row"><dt>Ability</dt><dd>Drizzle &mdash; doubles Water damage, weakens Fire</dd></div>
+              <div class="card-trainer__row"><dt>Watch out</dt><dd>Sheer Cold &mdash; OHKO move</dd></div>
+              <div class="card-trainer__row"><dt>Best ball</dt><dd><span class="badge">Timer Ball</span> &middot; <span class="badge">Net Ball</span> (Water type)</dd></div>
+            </dl>
+
+            <div>
+              <span class="kicker">Access requirements</span>
+              <ul class="bullet-list bullet-list--emerald mt-3">
+                <li>Beat the Elite Four.</li>
+                <li>Marine Cave appears on a random water route &mdash; check Hoenn TV news.</li>
+                <li>Surf required to reach it.</li>
+              </ul>
+            </div>
+
+            <div class="card-trainer__strategy">
+              <strong>Catching tips.</strong> Drizzle forces rain, doubling its own Water move damage and
+              weakening Fire. Don&rsquo;t bring a Fire attacker. Use a Whismur/Loudred with Sing for sleep, or a
+              Gengar with Hypnosis. <em>Save before engaging</em> &mdash; Kyogre&rsquo;s moveset includes Sheer Cold,
+              and a one-shot KO will end the encounter. Same Timer Ball math as Groudon.
+              <p class="mt-3 mono" style="font-size:var(--fs-xs); color:var(--emerald-deep);">FIELD TIP &mdash; Net Ball gets a 3&times; modifier on Water types &mdash; arguably better than Timer Ball before turn 10.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============== RAYQUAZA ============== -->
+        <article id="legendary-rayquaza" class="card-trainer reveal offset-shadow--emerald" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: #0d5c3f;">
+            <span class="card-trainer__num">No. 384 &middot; Lv 70</span>
+            <span class="card-trainer__initial">R</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="dragon">dragon</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:var(--s-3); flex-wrap:wrap;">
+              <div>
+                <h2 class="card-trainer__name">Rayquaza</h2>
+                <p class="card-trainer__city">Sky Pillar &middot; Route 131</p>
+              </div>
+              <span class="badge badge--ember">680 BST</span>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Typing</dt><dd><span class="type-chip" data-type="dragon">dragon</span> <span class="type-chip" data-type="flying">flying</span></dd></div>
+              <div class="card-trainer__row"><dt>Moves</dt><dd>Outrage &middot; Extreme Speed &middot; Fly &middot; Rest</dd></div>
+              <div class="card-trainer__row"><dt>Watch out</dt><dd>Outrage hits hard &mdash; can KO False Swipers</dd></div>
+              <div class="card-trainer__row"><dt>Best ball</dt><dd><span class="badge">Timer Ball</span> after ~30 turns &middot; <span class="badge">Ultra Ball</span></dd></div>
+            </dl>
+
+            <div>
+              <span class="kicker">Access requirements</span>
+              <ul class="bullet-list bullet-list--emerald mt-3">
+                <li>Reach Sky Pillar via Mach Bike navigation &mdash; the cracked floors require speed.</li>
+                <li>Climb 5 floors of bike puzzles.</li>
+                <li>Story-mandatory encounter to settle Groudon vs Kyogre. Knocked out? Re-encounter post-Hall of Fame.</li>
+              </ul>
+            </div>
+
+            <div class="card-trainer__strategy">
+              <strong>Catching tips.</strong> Highest base stat total of any Pokemon you can catch on the
+              cartridge. Don&rsquo;t let Outrage lock it in if you&rsquo;re using a Dragon &mdash; the recoil-confusion is
+              brutal. False Swipe doesn&rsquo;t work (Outrage hits back hard). Lower with strong neutral moves, then
+              status (paralyze ideally &mdash; it can&rsquo;t sleep with Rest unless you remove Chesto Berry first).
+              <em>Save before engaging.</em>
+              <p class="mt-3 mono" style="font-size:var(--fs-xs); color:var(--emerald-deep);">FIELD TIP &mdash; Knock off the Chesto Berry with a Trick or Knock Off user before initiating sleep.</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============================== EON TWINS ============================== -->
+    <section class="section section--alt">
+      <div class="container">
+        <header style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ocean">Section II</span>
+          <h2 class="h2 mt-3">The Eon Twins</h2>
+          <p class="lede mt-3" style="max-width:60ch;">Latios and Latias roam Hoenn after the 7th badge. One via the news event, one via the Eon Ticket.</p>
+        </header>
+
+        <!-- ============== LATIOS ============== -->
+        <article id="legendary-latios" class="card-trainer reveal" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: #2b5d8a;">
+            <span class="card-trainer__num">No. 381 &middot; Lv 40</span>
+            <span class="card-trainer__initial">L</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="dragon">dragon</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Latios</h2>
+              <p class="card-trainer__city">Roaming Hoenn &middot; Post-7th Badge</p>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Typing</dt><dd><span class="type-chip" data-type="dragon">dragon</span> <span class="type-chip" data-type="psychic">psychic</span></dd></div>
+              <div class="card-trainer__row"><dt>Behavior</dt><dd>Roaming &mdash; flees on turn 1</dd></div>
+              <div class="card-trainer__row"><dt>Tools needed</dt><dd>Mean Look (Crobat) or Block</dd></div>
+              <div class="card-trainer__row"><dt>Best ball</dt><dd><span class="badge badge--emerald">Master Ball</span> recommended &middot; <span class="badge">Net Ball</span> after Mean Look</dd></div>
+            </dl>
+
+            <div>
+              <span class="kicker">Access requirements</span>
+              <ul class="bullet-list bullet-list--ocean mt-3">
+                <li>Watch the news at home with your mom after the 7th badge.</li>
+                <li>Choice in dialogue determines which Lati you get; the other comes via Eon Ticket.</li>
+                <li>Eon Ticket (Mystery Gift event item) lets you sail to Southern Island for the other Lati.</li>
+              </ul>
+            </div>
+
+            <div class="card-trainer__strategy">
+              <strong>Catching tips.</strong> A roaming legendary &mdash; it flees turn 1. Use Mean Look with a
+              Crobat (Lv 30+ learns it via breeding/move tutor) or Block. Repels gate lower-level encounters
+              so you only run into Latios while biking. Use the Master Ball if you want to skip the chase
+              entirely &mdash; this is the most justified Master Ball use in the game.
+              <p class="mt-3 mono" style="font-size:var(--fs-xs); color:var(--emerald-deep);">FIELD TIP &mdash; Track its location on the PokeNav map. It moves between routes after each encounter.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============== LATIAS ============== -->
+        <article id="legendary-latias" class="card-trainer reveal" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: #d96aa8;">
+            <span class="card-trainer__num">No. 380 &middot; Lv 40</span>
+            <span class="card-trainer__initial">L</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="psychic">psychic</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Latias</h2>
+              <p class="card-trainer__city">Roaming Hoenn &middot; Post-7th Badge</p>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Typing</dt><dd><span class="type-chip" data-type="dragon">dragon</span> <span class="type-chip" data-type="psychic">psychic</span></dd></div>
+              <div class="card-trainer__row"><dt>Behavior</dt><dd>Roaming &mdash; same as Latios</dd></div>
+              <div class="card-trainer__row"><dt>Profile</dt><dd>Slightly more defensive than Latios</dd></div>
+              <div class="card-trainer__row"><dt>Best ball</dt><dd><span class="badge badge--emerald">Master Ball</span> &middot; <span class="badge">Net Ball</span> after Mean Look</dd></div>
+            </dl>
+
+            <div>
+              <span class="kicker">Access requirements</span>
+              <ul class="bullet-list bullet-list--ocean mt-3">
+                <li>Identical event chain to Latios &mdash; news choice determines roamer.</li>
+                <li>Eon Ticket unlocks the other Lati on Southern Island.</li>
+              </ul>
+            </div>
+
+            <div class="card-trainer__strategy">
+              <strong>Catching tips.</strong> Identical mechanics to Latios. Slightly more defensively
+              oriented. Both have access to a Mega Stone in later games, but in Emerald you&rsquo;ll just want
+              them for the <em>Soul Dew</em> &mdash; a held item that boosts their Sp. Atk and Sp. Def by 50%.
+              <p class="mt-3 mono" style="font-size:var(--fs-xs); color:var(--emerald-deep);">FIELD TIP &mdash; Soul Dew is held by the Southern Island encounter. Don&rsquo;t Knock Off your own Lati.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================== REGI TRIO ============================== -->
+    <section class="section">
+      <div class="container">
+        <header style="margin-bottom: var(--s-6);">
+          <span class="kicker">Section III</span>
+          <h2 class="h2 mt-3">The Regi Trio</h2>
+          <p class="lede mt-3" style="max-width:60ch;">
+            All three sit behind the Sealed Chamber Braille puzzle. You&rsquo;ll need a <strong>Wailord</strong> at
+            the head of your party and a <strong>Relicanth</strong> at the tail to read the script &mdash; only
+            then do their caves open. All three are Lv 40, all three carry Explosion. Bring Damp.
+          </p>
+        </header>
+
+        <!-- ============== REGIROCK ============== -->
+        <article id="legendary-regirock" class="card-trainer reveal" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: #8c7855;">
+            <span class="card-trainer__num">No. 377 &middot; Lv 40</span>
+            <span class="card-trainer__initial">R</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="rock">rock</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Regirock</h2>
+              <p class="card-trainer__city">Desert Ruins &middot; Route 111</p>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Defenses</dt><dd>200 base Defense</dd></div>
+              <div class="card-trainer__row"><dt>Moves</dt><dd>Curse &middot; Superpower &middot; Explosion</dd></div>
+              <div class="card-trainer__row"><dt>Counter abilities</dt><dd>Damp (Poliwhirl, Wooper) blocks Explosion</dd></div>
+              <div class="card-trainer__row"><dt>Best ball</dt><dd><span class="badge">Ultra Ball</span> &middot; <span class="badge">Timer Ball</span></dd></div>
+            </dl>
+
+            <div>
+              <span class="kicker">Access requirements</span>
+              <ul class="bullet-list mt-3">
+                <li>Wailord head + Relicanth tail of your party.</li>
+                <li>Read the Braille in Sealed Chamber (under the Route 134 dive spot).</li>
+                <li>Inside Desert Ruins: 2 steps down from center, 2 right, then Rock Smash.</li>
+              </ul>
+            </div>
+
+            <div class="card-trainer__strategy">
+              <strong>Catching tips.</strong> Don&rsquo;t let it Explode &mdash; it WILL kill itself. Bring Pokemon
+              with the Damp ability (Poliwhirl/Wooper) to block Explosion entirely. Use Sleep status; chip
+              with Special Attackers since its Defense is 200 base.
+              <p class="mt-3 mono" style="font-size:var(--fs-xs); color:var(--emerald-deep);">FIELD TIP &mdash; Special Attackers like Gardevoir (Calm Mind + Psychic) bypass its physical wall.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============== REGICE ============== -->
+        <article id="legendary-regice" class="card-trainer reveal" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: #9bcce0;">
+            <span class="card-trainer__num" style="background: var(--ink); color: var(--paper);">No. 378 &middot; Lv 40</span>
+            <span class="card-trainer__initial" style="color: var(--ink); text-shadow: 4px 4px 0 #6e9bb0;">R</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="ice">ice</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Regice</h2>
+              <p class="card-trainer__city">Island Cave &middot; Route 105</p>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Defenses</dt><dd>200 base Sp. Def</dd></div>
+              <div class="card-trainer__row"><dt>Moves</dt><dd>Includes Explosion &mdash; bring Damp</dd></div>
+              <div class="card-trainer__row"><dt>Approach</dt><dd>Use physical attackers &mdash; Special is pitiful</dd></div>
+              <div class="card-trainer__row"><dt>Best ball</dt><dd><span class="badge">Timer Ball</span> after 10+ turns</dd></div>
+            </dl>
+
+            <div>
+              <span class="kicker">Access requirements</span>
+              <ul class="bullet-list mt-3">
+                <li>Same Relicanth/Wailord party requirement.</li>
+                <li>Inside the cave, stand in the center for <strong>2 minutes</strong> without moving.</li>
+                <li>(Older sources say walk a counter-clockwise lap; the proven method is just stand still.)</li>
+              </ul>
+            </div>
+
+            <div class="card-trainer__strategy">
+              <strong>Catching tips.</strong> Massive Special Defense (200 base). Use physical attackers to
+              chip it down &mdash; Hariyama with Brick Break, or a high-Atk Steel-type. Has Explosion, so a Damp
+              partner is mandatory. Avoid Special moves; you&rsquo;ll do pitiful damage even with super effective.
+              <p class="mt-3 mono" style="font-size:var(--fs-xs); color:var(--emerald-deep);">FIELD TIP &mdash; Set a real-world timer. The 2-minute window is exact &mdash; an early step resets it.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============== REGISTEEL ============== -->
+        <article id="legendary-registeel" class="card-trainer reveal" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: #b0a8a0;">
+            <span class="card-trainer__num" style="background: var(--ink); color: var(--paper);">No. 379 &middot; Lv 40</span>
+            <span class="card-trainer__initial" style="color: var(--ink); text-shadow: 4px 4px 0 #807870;">R</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="steel">steel</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Registeel</h2>
+              <p class="card-trainer__city">Ancient Tomb &middot; Route 120</p>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Defenses</dt><dd>200 / 200 (balanced)</dd></div>
+              <div class="card-trainer__row"><dt>Moves</dt><dd>Curse &middot; Explosion &middot; Iron Defense</dd></div>
+              <div class="card-trainer__row"><dt>Resistances</dt><dd>Steel resists everything except Fire/Fighting/Ground</dd></div>
+              <div class="card-trainer__row"><dt>Best ball</dt><dd><span class="badge">Ultra Ball</span> &middot; <span class="badge">Timer Ball</span></dd></div>
+            </dl>
+
+            <div>
+              <span class="kicker">Access requirements</span>
+              <ul class="bullet-list mt-3">
+                <li>Same Relicanth/Wailord party requirement.</li>
+                <li>Use Fly to access Route 120, walk to the small tomb.</li>
+                <li>Inside, use Flash in the center of the room.</li>
+              </ul>
+            </div>
+
+            <div class="card-trainer__strategy">
+              <strong>Catching tips.</strong> Balanced 200/200 defenses. Status it (paralyze, then put to
+              sleep) and chip with Fighting or Fire moves. Watch for Curse (slows it but raises Atk/Def) and
+              Explosion. Steel typing resists everything except Fire, Fighting, and Ground.
+              <p class="mt-3 mono" style="font-size:var(--fs-xs); color:var(--emerald-deep);">FIELD TIP &mdash; A Lv 50+ Hariyama with Brick Break is the cleanest single-Pokemon answer.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================== EVENT-ONLY ============================== -->
+    <section class="section section--alt">
+      <div class="container">
+        <header style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ember">Section IV</span>
+          <h2 class="h2 mt-3">Event-only Pokemon</h2>
+          <p class="lede mt-3" style="max-width:60ch;">
+            These two require Mystery Gift items distributed at long-discontinued Nintendo events. Without
+            trade or hacks, they remain catalog entries.
+          </p>
+        </header>
+
+        <!-- ============== MEW ============== -->
+        <article id="legendary-mew" class="card-trainer reveal" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: #d96aa8;">
+            <span class="card-trainer__num">No. 151 &middot; Lv 30</span>
+            <span class="card-trainer__initial">M</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="psychic">psychic</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:var(--s-3); flex-wrap:wrap;">
+              <div>
+                <h2 class="card-trainer__name">Mew</h2>
+                <p class="card-trainer__city">Faraway Island &middot; Old Sea Map</p>
+              </div>
+              <span class="badge">Event 2006</span>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Required item</dt><dd>Old Sea Map (Mystery Gift)</dd></div>
+              <div class="card-trainer__row"><dt>Encounter</dt><dd>Stealth-track through tall grass on Faraway Island</dd></div>
+              <div class="card-trainer__row"><dt>Tool needed</dt><dd>False Swipe + status</dd></div>
+              <div class="card-trainer__row"><dt>Best ball</dt><dd><span class="badge">Net Ball</span> &middot; <span class="badge">Ultra Ball</span> (no Quick Ball in Gen 3)</dd></div>
+            </dl>
+
+            <div class="card-trainer__strategy">
+              <strong>Catching tips.</strong> Mew runs through tall grass on Faraway Island and you have to
+              track it without being spotted (Solid Snake style). Once cornered, it teleports. After enough
+              loops, you battle it at Lv 30. Use False Swipe and a Net or Ultra Ball.
+              <p class="mt-3 mono" style="font-size:var(--fs-xs); color:var(--emerald-deep);">FIELD TIP &mdash; Old Sea Map is not legitimately obtainable today without trade or hacking.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============== DEOXYS ============== -->
+        <article id="legendary-deoxys" class="card-trainer reveal" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: #6b3a5c;">
+            <span class="card-trainer__num">No. 386 &middot; Lv 30</span>
+            <span class="card-trainer__initial">D</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="psychic">psychic</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:var(--s-3); flex-wrap:wrap;">
+              <div>
+                <h2 class="card-trainer__name">Deoxys</h2>
+                <p class="card-trainer__city">Birth Island &middot; Aurora Ticket</p>
+              </div>
+              <span class="badge">Speed Forme</span>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Required item</dt><dd>Aurora Ticket (Mystery Gift)</dd></div>
+              <div class="card-trainer__row"><dt>Forme in Emerald</dt><dd>Speed Forme &mdash; carries Extreme Speed</dd></div>
+              <div class="card-trainer__row"><dt>Encounter</dt><dd>Triangle puzzle on the island; one shot</dd></div>
+              <div class="card-trainer__row"><dt>Best ball</dt><dd><span class="badge">Ultra Ball</span> &middot; <span class="badge">Timer Ball</span></dd></div>
+            </dl>
+
+            <div class="card-trainer__strategy">
+              <strong>Catching tips.</strong> In Emerald, Deoxys appears in its <em>Speed Forme</em> by default
+              (different from FireRed/LeafGreen, which give Attack/Defense formes). It carries Extreme Speed.
+              Save before the puzzle &mdash; solving it spawns Deoxys and you only get one shot. Use False
+              Swipe and Ultra Balls.
+              <p class="mt-3 mono" style="font-size:var(--fs-xs); color:var(--emerald-deep);">FIELD TIP &mdash; Speed Forme out-speeds nearly everything. False Swipe with a Pokemon holding a Quick Claw helps.</p>
+            </div>
+          </div>
+        </article>
+
+        <div class="callout callout--sun" style="margin-top: var(--s-6);">
+          <span class="callout__label">Editor&rsquo;s Note</span>
+          <p style="margin:0;">
+            Both event Pokemon are part of the Hoenn dex but cannot be obtained through normal play in 2025.
+            They&rsquo;re documented here for completeness. If you have a save with a legitimate event Pokemon, treasure it.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== NEXT CHAPTER ============================== -->
+    <section class="section section--ink">
+      <div class="container container--narrow text-center">
+        <span class="kicker">Continue Reading</span>
+        <h2 class="h2 mt-4" style="color:var(--paper);">Catches in hand. Now <em style="color:var(--ember); font-style:italic; font-weight:400;">build your six</em>.</h2>
+        <p class="lede mt-5" style="color:var(--mist); margin-inline:auto;">
+          Cross-reference the tier list and the Battle Frontier dossiers for endgame team-building.
+        </p>
+        <p class="mt-6" style="display:flex; gap:var(--s-3); justify-content:center; flex-wrap:wrap;">
+          <a href="tier-list.html" class="badge badge--emerald" style="text-decoration:none;">Tier List &rarr;</a>
+          <a href="post-game.html" class="badge badge--ember" style="text-decoration:none;">Post Game &rarr;</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">Hoenn <span>Field</span> Guide</div>
+          <p class="mt-3">An editorial companion to Pokemon Emerald, published in print-as-pixels.
+          Pokemon names, characters, and locations are property of Nintendo, Game Freak, and The Pokemon Company.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Chapters</div>
+          <ul class="footer__links">
+            <li><a href="gyms.html">Gym Leaders</a></li>
+            <li><a href="elite-four.html">Elite Four</a></li>
+            <li><a href="legendaries.html">Legendaries</a></li>
+            <li><a href="tier-list.html">Tier List</a></li>
+            <li><a href="secrets.html">Secrets</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Reference</div>
+          <ul class="footer__links">
+            <li><a href="breeding.html">Breeding &amp; IVs</a></li>
+            <li><a href="early-game.html">Early Game</a></li>
+            <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+            <li><a href="post-game.html">Post Game</a></li>
+            <li><a href="https://github.com/" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span data-year>2025</span> &middot; Hoenn Field Guide &middot; Issue 001</span>
+        <span>Set in Fraunces, Instrument Sans &amp; JetBrains Mono</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&uarr; Top</button>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

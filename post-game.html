@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The post-game of Pokemon Emerald: the Battle Frontier, its seven facilities and brains, Trainer Hill, rematches, post-game legendaries, and the Steven rematch in Meteor Falls." />
+  <title>Post Game &middot; Hoenn Field Guide</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <!-- ============================== NAV ============================== -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html" aria-label="Hoenn Field Guide home">
+        <span class="nav__mark" aria-hidden="true">HFG</span>
+        <span class="nav__wordmark">Hoenn <span>Field</span> Guide</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <ul style="display:contents;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="starters.html">Starters</a></li>
+          <li><a href="gyms.html">Gyms</a></li>
+          <li><a href="elite-four.html">Elite Four</a></li>
+          <li><a href="legendaries.html">Legendaries</a></li>
+          <li><a href="tier-list.html">Tier List</a></li>
+          <li><a href="secrets.html">Secrets</a></li>
+          <li><a href="breeding.html">Breeding</a></li>
+          <li><a href="early-game.html">Early Game</a></li>
+          <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+          <li><a href="post-game.html">Post Game</a></li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-drawer">MENU</button>
+    </div>
+    <div class="nav__drawer" id="nav-drawer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="starters.html">Starters</a></li>
+        <li><a href="gyms.html">Gyms</a></li>
+        <li><a href="elite-four.html">Elite Four</a></li>
+        <li><a href="legendaries.html">Legendaries</a></li>
+        <li><a href="tier-list.html">Tier List</a></li>
+        <li><a href="secrets.html">Secrets</a></li>
+        <li><a href="breeding.html">Breeding</a></li>
+        <li><a href="early-game.html">Early Game</a></li>
+        <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+        <li><a href="post-game.html">Post Game</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============================== HEADER ============================== -->
+    <section class="page-header">
+      <div class="riso-blob riso-blob--ember" style="width:320px; height:320px; top:-90px; right:-70px;"></div>
+      <div class="riso-dots" style="width:240px; height:120px; bottom:30px; right:10%; transform: rotate(-7deg);"></div>
+      <div class="riso-blob riso-blob--ocean" style="width:160px; height:160px; bottom:-40px; left:-30px;"></div>
+
+      <div class="container">
+        <span class="kicker">Chapter 09 &middot; After Wallace</span>
+        <h1 class="page-header__title">
+          The true<br><em>endgame</em> of Hoenn
+        </h1>
+        <p class="lede mt-4" style="max-width: 60ch;">
+          The credits are a comma, not a period. After Hall of Fame, board the ship at Lilycove and the Battle
+          Frontier opens &mdash; seven facilities, seven Brains, fourteen Symbols. Below: every facility, the
+          gimmick that defines it, the legendaries that respawn, and the rematch most players never find.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================== ANCHOR LIST ============================== -->
+    <section class="section section--tight" style="border-bottom: var(--border-w) solid var(--ink);">
+      <div class="container">
+        <div class="gym-route">
+          <a href="#frontier" class="gym-tile">
+            <span class="gym-tile__num">01</span>
+            <span class="gym-tile__name">Frontier</span>
+            <span class="gym-tile__city">Overview</span>
+            <span class="gym-tile__type">Hub</span>
+          </a>
+          <a href="#facilities" class="gym-tile">
+            <span class="gym-tile__num">02</span>
+            <span class="gym-tile__name">Facilities</span>
+            <span class="gym-tile__city">Seven</span>
+            <span class="gym-tile__type">Brains</span>
+          </a>
+          <a href="#sevii" class="gym-tile">
+            <span class="gym-tile__num">03</span>
+            <span class="gym-tile__name">No Sevii</span>
+            <span class="gym-tile__city">Clarification</span>
+            <span class="gym-tile__type">Note</span>
+          </a>
+          <a href="#trainer-hill" class="gym-tile">
+            <span class="gym-tile__num">04</span>
+            <span class="gym-tile__name">Trainer Hill</span>
+            <span class="gym-tile__city">Mauville-Verdanturf</span>
+            <span class="gym-tile__type">Time Trial</span>
+          </a>
+          <a href="#rematches" class="gym-tile">
+            <span class="gym-tile__num">05</span>
+            <span class="gym-tile__name">Rematches</span>
+            <span class="gym-tile__city">PokeNav</span>
+            <span class="gym-tile__type">Trainers</span>
+          </a>
+          <a href="#legendaries" class="gym-tile">
+            <span class="gym-tile__num">06</span>
+            <span class="gym-tile__name">Legendaries</span>
+            <span class="gym-tile__city">Hoenn-Wide</span>
+            <span class="gym-tile__type">Seven</span>
+          </a>
+          <a href="#steven" class="gym-tile">
+            <span class="gym-tile__num">07</span>
+            <span class="gym-tile__name">Steven</span>
+            <span class="gym-tile__city">Mossdeep</span>
+            <span class="gym-tile__type">Rematch</span>
+          </a>
+          <a href="#completion" class="gym-tile">
+            <span class="gym-tile__num">08</span>
+            <span class="gym-tile__name">Completion</span>
+            <span class="gym-tile__city">Long-tail</span>
+            <span class="gym-tile__type">Goals</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== FRONTIER OVERVIEW ============================== -->
+    <section class="section" id="frontier">
+      <div class="container container--narrow">
+        <span class="kicker kicker--ember">The Endgame Engine</span>
+        <h2 class="h1 mt-4">The Battle<br><em style="color:var(--emerald); font-style:italic; font-weight:400;">Frontier</em></h2>
+        <p class="dropcap mt-5" style="font-size: 1.1rem; line-height: 1.6;">
+          Reachable by ferry from Lilycove once you&rsquo;ve cleared the Hall of Fame, the Battle Frontier is an
+          artificial island built around competitive battling. Seven facilities, each run by a Frontier Brain, each
+          earning you a Silver Symbol on first clear and a Gold Symbol on second &mdash; fourteen total. The currency
+          is BP (Battle Points), earned per win streak; spend it on rare items, EV-reset berries, and move tutors.
+          Most facilities offer Open Level (your team as-is) and Level 50 (auto-scaled) modes &mdash; pick whichever
+          your roster fits.
+        </p>
+
+        <div class="callout callout--ocean mt-6">
+          <span class="callout__label">House Rules</span>
+          <p style="margin:0;">
+            <strong>No items in battle</strong> &mdash; you cannot use Potions, Revives, or Full Restores from your bag
+            inside any Frontier facility. Held items (Leftovers, Choice Band, Lum Berry) still work. Two facilities
+            (<strong>Battle Factory</strong>, <strong>Battle Pyramid</strong>) hand you rental Pokemon or strip your
+            held items entirely &mdash; check the per-facility brief before entering.
+          </p>
+        </div>
+
+        <div class="grid grid--3 mt-6 stagger">
+          <div class="card card--alt">
+            <div class="card__subtitle">Location</div>
+            <p class="mt-3"><strong>Artificial island</strong>, ferry from Lilycove Harbor, post-Hall of Fame.</p>
+          </div>
+          <div class="card card--alt">
+            <div class="card__subtitle">Currency</div>
+            <p class="mt-3"><strong>Battle Points (BP)</strong> earned per win streak; spent at the Frontier shops.</p>
+          </div>
+          <div class="card card--alt">
+            <div class="card__subtitle">Symbols</div>
+            <p class="mt-3"><strong>14 total</strong> &mdash; one Silver, one Gold, per facility. Brain rematches scale.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== FACILITIES ============================== -->
+    <section class="section section--alt" id="facilities">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker">Roster of Brains</span>
+          <h2 class="h1">The seven<br><em style="color:var(--emerald); font-style:italic; font-weight:400;">facilities</em></h2>
+          <p class="lede mt-4" style="max-width: 60ch;">
+            Each Brain runs a single facility with a single rule. Read the gimmick before you challenge &mdash;
+            Battle Palace, in particular, will lose for you if you don&rsquo;t pre-tune your team&rsquo;s Natures.
+          </p>
+        </div>
+
+        <!-- ============== FRONTIER 1: TOWER (ANABEL) ============== -->
+        <article id="frontier-1" class="card-trainer reveal" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: var(--ocean);">
+            <span class="card-trainer__num">No. 01 &middot; Ability Symbol</span>
+            <span class="card-trainer__initial">A</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="psychic">psychic</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Battle Tower</h2>
+              <p class="card-trainer__city">Brain &middot; Anabel, the Salon Maiden</p>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Format</dt><dd>Choose 3 Pokemon, win 7 in a row, repeat the cycle.</dd></div>
+              <div class="card-trainer__row"><dt>Level</dt><dd><span class="mono">Lv 50 (auto)</span> or Open Lv 100</dd></div>
+              <div class="card-trainer__row"><dt>Gimmick</dt><dd>Standard 3v3 singles. Pure endurance test &mdash; the only variable is your patience.</dd></div>
+              <div class="card-trainer__row"><dt>Symbol</dt><dd><span class="badge">Silver Ability</span> at 49 wins &middot; <span class="badge badge--ember">Gold</span> at 70 wins</dd></div>
+            </dl>
+            <div class="card-trainer__strategy">
+              <strong>Strategy.</strong> A balanced trio is the only durable answer: a physical wall, a special wall,
+              and a sweeper.
+              <ul class="bullet-list bullet-list--emerald mt-3">
+                <li>Skarmory or Suicune for physical bulk &amp; Toxic stalling.</li>
+                <li>Snorlax or Blissey/Chansey-equivalent for special bulk.</li>
+                <li>A Choice-Band sweeper or Calm Mind setup user as the closer.</li>
+                <li>Avoid gimmick movesets &mdash; the AI will outlast cute strategies.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============== FRONTIER 2: DOME (TUCKER) ============== -->
+        <article id="frontier-2" class="card-trainer reveal" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: var(--ember);">
+            <span class="card-trainer__num">No. 02 &middot; Tactics Symbol</span>
+            <span class="card-trainer__initial">T</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="fire">fire</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Battle Dome</h2>
+              <p class="card-trainer__city">Brain &middot; Tucker, the Dome Ace</p>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Format</dt><dd>Tournament bracket, 16 trainers, 2v2 elimination.</dd></div>
+              <div class="card-trainer__row"><dt>Gimmick</dt><dd>You can scout enemy Pokemon stats and moves before each match.</dd></div>
+              <div class="card-trainer__row"><dt>Watch out</dt><dd>The AI judges victory partly on damage-dealt &mdash; OHKOs win even tied matches.</dd></div>
+              <div class="card-trainer__row"><dt>Symbol</dt><dd><span class="badge">Silver Tactics</span> at first clear &middot; <span class="badge badge--ember">Gold</span> at the rematch</dd></div>
+            </dl>
+            <div class="card-trainer__strategy">
+              <strong>Strategy.</strong> The format favors quick OHKOs over long grinds.
+              <ul class="bullet-list bullet-list--emerald mt-3">
+                <li>Choice Band attackers shine here &mdash; Salamence, Metagross, Heracross.</li>
+                <li>Use the scout screen religiously: pick the move that one-shots the lead.</li>
+                <li>Avoid stall builds &mdash; the bracket is short and damage scoring matters.</li>
+                <li>Tucker&rsquo;s ace is Salamence; pack an Ice Beam or Stone Edge user.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============== FRONTIER 3: PALACE (SPENSER) ============== -->
+        <article id="frontier-3" class="card-trainer reveal" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: var(--plum);">
+            <span class="card-trainer__num">No. 03 &middot; Spirits Symbol</span>
+            <span class="card-trainer__initial">S</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="grass">grass</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Battle Palace</h2>
+              <p class="card-trainer__city">Brain &middot; Spenser, the Palace Maven</p>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Format</dt><dd>3v3 single &mdash; YOU don&rsquo;t pick moves. Pokemon Nature decides each turn.</dd></div>
+              <div class="card-trainer__row"><dt>Gimmick</dt><dd>Aggressive natures attack; defensive ones heal/buff. RNG-heavy.</dd></div>
+              <div class="card-trainer__row"><dt>Watch out</dt><dd>This is the most frustrating facility in the game &mdash; randomness rules.</dd></div>
+              <div class="card-trainer__row"><dt>Symbol</dt><dd><span class="badge">Silver Spirits</span> at 35 wins &middot; <span class="badge badge--ember">Gold</span> at 70</dd></div>
+            </dl>
+            <div class="card-trainer__strategy">
+              <strong>Strategy.</strong> Pre-tune your roster: pick recipients with single-purpose movesets and
+              aggressive natures so the random selection still does work.
+              <ul class="bullet-list bullet-list--emerald mt-3">
+                <li>Adamant/Modest natures with one strong STAB move &mdash; deny the AI bad choices.</li>
+                <li>Skip status moves entirely; they roll defensively and waste turns.</li>
+                <li>Hard-hitting OHKO Pokemon (Snorlax with Body Slam, Salamence with Outrage) ride the dice.</li>
+                <li>Bring Lum Berry &mdash; status from opponents will paralyze your auto-AI for free turns.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============== FRONTIER 4: ARENA (GRETA) ============== -->
+        <article id="frontier-4" class="card-trainer reveal" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: var(--ember-deep);">
+            <span class="card-trainer__num">No. 04 &middot; Guts Symbol</span>
+            <span class="card-trainer__initial">G</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="fighting">fighting</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Battle Arena</h2>
+              <p class="card-trainer__city">Brain &middot; Greta, the Arena Tycoon</p>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Format</dt><dd>1v1 with a 3-turn judging system. After 3 turns, judges score Mind/Skill/Body.</dd></div>
+              <div class="card-trainer__row"><dt>Gimmick</dt><dd>Switching is banned. Status moves are penalized in scoring.</dd></div>
+              <div class="card-trainer__row"><dt>Quirk</dt><dd>Slaking shines here &mdash; Truant doesn&rsquo;t dock the score the way status moves do.</dd></div>
+              <div class="card-trainer__row"><dt>Symbol</dt><dd><span class="badge">Silver Guts</span> at 28 wins &middot; <span class="badge badge--ember">Gold</span> at 56</dd></div>
+            </dl>
+            <div class="card-trainer__strategy">
+              <strong>Strategy.</strong> Offensive natures and STAB moves only. The judges punish hesitation.
+              <ul class="bullet-list bullet-list--emerald mt-3">
+                <li>Hariyama with Cross Chop, Brick Break, Knock Off, Rock Slide is the canonical pick.</li>
+                <li>Slaking with Hyper Beam / Earthquake / Shadow Ball / Return overpowers the 3-turn limit.</li>
+                <li>Avoid setup moves like Bulk Up &mdash; they cost you Mind score.</li>
+                <li>Bring a Lum Berry &mdash; one Hypnosis from a Lunatone ends a run.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============== FRONTIER 5: FACTORY (NOLAND) ============== -->
+        <article id="frontier-5" class="card-trainer reveal" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: #8c7855;">
+            <span class="card-trainer__num">No. 05 &middot; Knowledge Symbol</span>
+            <span class="card-trainer__initial">N</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="steel">steel</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Battle Factory</h2>
+              <p class="card-trainer__city">Brain &middot; Noland, the Factory Head</p>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Format</dt><dd>Rentals &mdash; you get a random pool, choose 3, swap with defeated opponents&rsquo; Pokemon each round.</dd></div>
+              <div class="card-trainer__row"><dt>Gimmick</dt><dd>You don&rsquo;t use your own Pokemon at all. Every Pokemon is held-itemless.</dd></div>
+              <div class="card-trainer__row"><dt>Watch out</dt><dd>Movesets are random per rental; a Choice-locked Pokemon can wreck a run.</dd></div>
+              <div class="card-trainer__row"><dt>Symbol</dt><dd><span class="badge">Silver Knowledge</span> at 21 wins &middot; <span class="badge badge--ember">Gold</span> at 42</dd></div>
+            </dl>
+            <div class="card-trainer__strategy">
+              <strong>Strategy.</strong> Knowledge of base stats and movesets is the entire facility.
+              <ul class="bullet-list bullet-list--emerald mt-3">
+                <li>Round 1: pick a balanced typing trio &mdash; cover Fire/Water/Grass yourself.</li>
+                <li>Always swap into a Pokemon that covers your previous loss&rsquo;s weakness.</li>
+                <li>Memorize ace tiers: Salamence, Metagross, Tyranitar are upper-tier rentals worth holding.</li>
+                <li>Avoid setup-dependent rentals (no Curse Snorlax without Rest support in the moveset).</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============== FRONTIER 6: PIKE (LUCY) ============== -->
+        <article id="frontier-6" class="card-trainer reveal" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: var(--emerald-deep);">
+            <span class="card-trainer__num">No. 06 &middot; Luck Symbol</span>
+            <span class="card-trainer__initial">L</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="poison">poison</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Battle Pike</h2>
+              <p class="card-trainer__city">Brain &middot; Lucy, the Pike Queen</p>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Format</dt><dd>Pick a path through 14 rooms: trainers, wild Pokemon, status traps, NPCs.</dd></div>
+              <div class="card-trainer__row"><dt>Gimmick</dt><dd>Lottery-style; pick from 3 doors blind. Status floors can wipe a run.</dd></div>
+              <div class="card-trainer__row"><dt>Watch out</dt><dd>Lucy&rsquo;s ace is Seviper with Swagger + Toxic &mdash; bring a Lum Berry.</dd></div>
+              <div class="card-trainer__row"><dt>Symbol</dt><dd><span class="badge">Silver Luck</span> at 28 rooms &middot; <span class="badge badge--ember">Gold</span> at 140</dd></div>
+            </dl>
+            <div class="card-trainer__strategy">
+              <strong>Strategy.</strong> Build for survivability over offense.
+              <ul class="bullet-list bullet-list--emerald mt-3">
+                <li>Bring a tank with Rest or Recover &mdash; Suicune, Milotic, or Blissey-class.</li>
+                <li>Lum Berry on every Pokemon &mdash; status traps are the most common run-ending event.</li>
+                <li>Hint signs near doors leak the next room&rsquo;s contents &mdash; read every NPC dialogue.</li>
+                <li>Prefer the &ldquo;safer&rdquo; door even if the prize seems smaller; consistency beats peaks.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============== FRONTIER 7: PYRAMID (BRANDON) ============== -->
+        <article id="frontier-7" class="card-trainer reveal" style="margin-bottom: var(--s-7);">
+          <div class="card-trainer__portrait" style="background: var(--ink);">
+            <span class="card-trainer__num" style="background: var(--sun); color: var(--ink);">No. 07 &middot; Brave Symbol</span>
+            <span class="card-trainer__initial" style="text-shadow: 4px 4px 0 #000;">B</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="ghost">ghost</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Battle Pyramid</h2>
+              <p class="card-trainer__city">Brain &middot; Brandon, the Pyramid King</p>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Format</dt><dd>7-floor dark maze. Wild Pokemon, trainers, items. Find the boss with limited Flash range.</dd></div>
+              <div class="card-trainer__row"><dt>Gimmick</dt><dd>Held items don&rsquo;t carry between floors &mdash; you find new ones in the maze.</dd></div>
+              <div class="card-trainer__row"><dt>Watch out</dt><dd>Brandon&rsquo;s gold rematch uses the Regis (Regirock, Regice, Registeel).</dd></div>
+              <div class="card-trainer__row"><dt>Symbol</dt><dd><span class="badge">Silver Brave</span> at 21 floors &middot; <span class="badge badge--ember">Gold</span> at 70</dd></div>
+            </dl>
+            <div class="card-trainer__strategy">
+              <strong>Strategy.</strong> Endurance, navigation, and HP-recovery built-in.
+              <ul class="bullet-list bullet-list--emerald mt-3">
+                <li>Pokemon with high HP and Leftovers (found mid-maze) self-recover between fights.</li>
+                <li>Memorize floor-tile patterns &mdash; the maze layouts repeat across runs.</li>
+                <li>Prioritize Pokemon that learn Flash naturally so you don&rsquo;t waste an item slot.</li>
+                <li>Kingdra (Hydro Pump, Ice Beam, Surf) handles all three Regis with neutral coverage.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============================== NO SEVII NOTE ============================== -->
+    <section class="section section--tight" id="sevii">
+      <div class="container container--narrow">
+        <div class="callout callout--sun">
+          <span class="callout__label">Clarification</span>
+          <p style="margin:0;">
+            Emerald does <strong>NOT</strong> have the Sevii Islands &mdash; that&rsquo;s a FireRed/LeafGreen feature.
+            Emerald&rsquo;s post-game equivalents are the <a href="#frontier">Battle Frontier</a>, <a href="#trainer-hill">Trainer Hill</a>,
+            and the <a href="#legendaries">legendary trio quest</a> (Regis via the Sealed Chamber, roaming Latios/Latias,
+            and the weather trio). If a guide tells you to sail to One Island, you&rsquo;re reading FireRed by mistake.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== TRAINER HILL ============================== -->
+    <section class="section" id="trainer-hill">
+      <div class="container">
+        <div style="margin-bottom: var(--s-5);">
+          <span class="kicker">The Cable Car Tower</span>
+          <h2 class="h2"><em style="color:var(--emerald); font-style:italic; font-weight:400;">Trainer</em> Hill</h2>
+        </div>
+
+        <article class="card offset-shadow">
+          <div class="card__subtitle">Mauville &mdash; Verdanturf cable car route</div>
+          <h3 class="card__title mt-3">Four floors. One stopwatch.</h3>
+          <div class="card__body stack">
+            <p>
+              Trainer Hill is a four-floor trainer-rush facility tucked alongside the Mauville-to-Verdanturf cable car
+              route. The goal is simple: clear all rooms, reach the top, take the trip down. The catch is that the
+              entire run is timed &mdash; records are saved as floor-by-floor stamps.
+            </p>
+            <ul class="bullet-list bullet-list--emerald">
+              <li><strong>Variety</strong> &mdash; the default theme; mixed trainer types and movesets.</li>
+              <li><strong>Unique</strong> &mdash; gimmick trainers (single-type, status-heavy, etc.).</li>
+              <li><strong>Strong</strong> &mdash; the hardest theme; high-level competitive squads.</li>
+              <li>Records persist across saves; aim for sub-15-minute runs on Variety once your team gels.</li>
+            </ul>
+            <p class="mono" style="font-size:var(--fs-xs); color:var(--emerald-deep);">FIELD TIP &mdash; Trainer Hill rewards in-and-out efficiency, not raw power. A fast Sweeper with Earthquake and Aerial Ace burns through floors faster than a tanky Frontier squad.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================== REMATCHES ============================== -->
+    <section class="section section--alt" id="rematches">
+      <div class="container">
+        <div style="margin-bottom: var(--s-5);">
+          <span class="kicker kicker--ember">PokeNav &amp; the Phone Tree</span>
+          <h2 class="h2">Gym &amp; trainer <em style="color:var(--ember); font-style:italic; font-weight:400;">rematches</em></h2>
+        </div>
+
+        <article class="card">
+          <div class="card__subtitle">What scales, what doesn&rsquo;t</div>
+          <h3 class="card__title mt-3">Hoenn was the cartridge before rematches were standard.</h3>
+          <div class="card__body stack">
+            <p>
+              Two things to know before you start grinding rematches:
+            </p>
+            <ul class="bullet-list bullet-list--emerald">
+              <li>
+                <strong>Gym Leader rematches are NOT in vanilla Emerald.</strong> They were added retroactively in
+                Omega Ruby/Alpha Sapphire. The HeartGold/SoulSilver phone-call rematch system isn&rsquo;t here either.
+                If you want gym-leader rematches, you need ORAS.
+              </li>
+              <li>
+                <strong>Regular trainers across Hoenn DO rematch.</strong> Many of them ask for your PokeNav number
+                during the original fight. After Hall of Fame, they&rsquo;ll call you (or you can call them) and offer
+                rematches with stronger teams.
+              </li>
+              <li>
+                Post-Hall-of-Fame trainer rematches give the largest single-fight EXP in the game &mdash; better than
+                most Frontier streaks for raw level grinding.
+              </li>
+              <li>
+                The Vito Winstrate rematch line on Route 111 is the most efficient grinding route &mdash; five
+                trainers, repeatable, all near a Pokemon Center.
+              </li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================== LEGENDARIES ============================== -->
+    <section class="section" id="legendaries">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker">The Hidden Seven</span>
+          <h2 class="h1">Post-game<br><em style="color:var(--emerald); font-style:italic; font-weight:400;">legendaries</em></h2>
+          <p class="lede mt-4" style="max-width: 60ch;">
+            Seven encounters unlock after the credits roll &mdash; some respawn, some don&rsquo;t, two require event tickets
+            you can no longer get legitimately.
+          </p>
+        </div>
+
+        <div class="grid grid--auto stagger">
+
+          <a href="legendaries.html#groudon" id="postlegend-1" class="tile">
+            <div>
+              <div class="tile__num">01 &middot; Land</div>
+              <h3 class="tile__title">Groudon</h3>
+              <p style="margin-top:var(--s-3);"><span class="type-chip" data-type="ground">ground</span></p>
+            </div>
+            <p class="tile__desc"><strong>Terra Cave.</strong> Random spawn after weather sign appears on the radio. Drought ability triggers harsh sunlight.</p>
+            <span class="tile__arrow">Hoenn route &mdash; weather trio</span>
+          </a>
+
+          <a href="legendaries.html#kyogre" id="postlegend-2" class="tile">
+            <div>
+              <div class="tile__num">02 &middot; Sea</div>
+              <h3 class="tile__title">Kyogre</h3>
+              <p style="margin-top:var(--s-3);"><span class="type-chip" data-type="water">water</span></p>
+            </div>
+            <p class="tile__desc"><strong>Marine Cave.</strong> Random spawn after the rain sign. Drizzle ability sets permanent rain.</p>
+            <span class="tile__arrow">Hoenn route &mdash; weather trio</span>
+          </a>
+
+          <a href="legendaries.html#rayquaza" id="postlegend-3" class="tile">
+            <div>
+              <div class="tile__num">03 &middot; Sky</div>
+              <h3 class="tile__title">Rayquaza</h3>
+              <p style="margin-top:var(--s-3);"><span class="type-chip" data-type="dragon">dragon</span></p>
+            </div>
+            <p class="tile__desc"><strong>Sky Pillar.</strong> Returns to its perch post-game if you defeated it pre-Wallace. Lv 70, no shenanigans.</p>
+            <span class="tile__arrow">Sky Pillar &mdash; respawn</span>
+          </a>
+
+          <a href="legendaries.html#latis" id="postlegend-4" class="tile">
+            <div>
+              <div class="tile__num">04 &middot; Eon Pair</div>
+              <h3 class="tile__title">Latios / Latias</h3>
+              <p style="margin-top:var(--s-3);"><span class="type-chip" data-type="dragon">dragon</span></p>
+            </div>
+            <p class="tile__desc">One roams Hoenn after you pick from the TV broadcast; the other arrives via the <strong>Eon Ticket</strong> event.</p>
+            <span class="tile__arrow">Roaming &mdash; Mean Look it</span>
+          </a>
+
+          <a href="legendaries.html#regis" id="postlegend-5" class="tile">
+            <div>
+              <div class="tile__num">05 &middot; Golems</div>
+              <h3 class="tile__title">Regirock / Regice / Registeel</h3>
+              <p style="margin-top:var(--s-3);"><span class="type-chip" data-type="rock">rock</span></p>
+            </div>
+            <p class="tile__desc">Unlocked via the <strong>Sealed Chamber</strong> puzzle (Dive + Wailord first, Relicanth last). Three locked tombs across Hoenn.</p>
+            <span class="tile__arrow">Sealed Chamber &mdash; trio quest</span>
+          </a>
+
+          <a href="legendaries.html#mew" id="postlegend-6" class="tile">
+            <div>
+              <div class="tile__num">06 &middot; Faraway Isle</div>
+              <h3 class="tile__title">Mew</h3>
+              <p style="margin-top:var(--s-3);"><span class="type-chip" data-type="psychic">psychic</span></p>
+            </div>
+            <p class="tile__desc">Event-only. Requires the <strong>Old Sea Map</strong>, distributed at Nintendo events in 2005. Unobtainable on stock cartridges today.</p>
+            <span class="tile__arrow">Faraway Isle &mdash; event</span>
+          </a>
+
+          <a href="legendaries.html#deoxys" id="postlegend-7" class="tile">
+            <div>
+              <div class="tile__num">07 &middot; Birth Island</div>
+              <h3 class="tile__title">Deoxys</h3>
+              <p style="margin-top:var(--s-3);"><span class="type-chip" data-type="psychic">psychic</span></p>
+            </div>
+            <p class="tile__desc">Event-only. Requires the <strong>Aurora Ticket</strong>. Birth Island puzzle: triangle-pattern walks before the encounter.</p>
+            <span class="tile__arrow">Birth Island &mdash; event</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== STEVEN REMATCH ============================== -->
+    <section class="section section--alt" id="steven">
+      <div class="container">
+        <div style="margin-bottom: var(--s-5);">
+          <span class="kicker kicker--ember">The Hidden Champion</span>
+          <h2 class="h2">A <em style="color:var(--ember); font-style:italic; font-weight:400;">Steven</em> rematch</h2>
+        </div>
+
+        <article class="card-trainer reveal">
+          <div class="card-trainer__portrait" style="background: #b0a8a0;">
+            <span class="card-trainer__num" style="background: var(--ink); color: var(--paper);">Post-game &middot; Mossdeep</span>
+            <span class="card-trainer__initial" style="color: var(--ink); text-shadow: 4px 4px 0 #888078;">S</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="steel">steel</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Steven Stone</h2>
+              <p class="card-trainer__city">Mossdeep City &middot; Steven&rsquo;s House</p>
+            </div>
+            <dl style="display:grid; gap:0;">
+              <div class="card-trainer__row"><dt>Trigger</dt><dd>Become Champion, then visit Steven&rsquo;s house in Mossdeep.</dd></div>
+              <div class="card-trainer__row"><dt>Gift</dt><dd>A <strong>Beldum</strong> with Hold Back &mdash; eventually evolves into Metagross at Lv 45.</dd></div>
+              <div class="card-trainer__row"><dt>Hidden battle</dt><dd>Some emulator/dataminer hex digs reveal unused rematch dialogue; in-cartridge, Steven only chats.</dd></div>
+              <div class="card-trainer__row"><dt>Lore note</dt><dd>His house contains rare Hoenn lore references &mdash; read every bookshelf.</dd></div>
+              <div class="card-trainer__row"><dt>Bonus</dt><dd>Beldum given comes with a Comet Shard / TM in some regional releases.</dd></div>
+            </dl>
+            <div class="card-trainer__strategy">
+              <strong>Strategy.</strong> The Beldum gift is the only way to add Metagross to your dex without trading
+              from Colosseum / XD. Beldum only knows Take Down and Iron Defense at gift time, so plan to grind a few
+              levels at the Frontier before evolution.
+              <p class="mt-3 mono" style="font-size:var(--fs-xs); color:var(--emerald-deep);">FIELD TIP &mdash; Meteor Falls&rsquo; B1F has a hidden chamber rumored to host Steven post-game in some unreleased builds &mdash; in vanilla Emerald, it&rsquo;s only the Bagon habitat. Trust the cartridge, not the wikis.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================== COMPLETION GOALS ============================== -->
+    <section class="section" id="completion">
+      <div class="container container--narrow">
+        <span class="kicker">The Long Tail</span>
+        <h2 class="h2 mt-4">Completion <em style="color:var(--emerald); font-style:italic; font-weight:400;">goals</em></h2>
+        <p class="lede mt-4">
+          Five goals separate &ldquo;beat the game&rdquo; from &ldquo;cleared the cartridge.&rdquo; None are mandatory;
+          each takes 20+ hours.
+        </p>
+
+        <div class="card mt-6">
+          <div class="card__subtitle">Endgame checklist</div>
+          <div class="card__body">
+            <ul class="bullet-list bullet-list--emerald">
+              <li><strong>Catch all 386 Pokemon.</strong> Requires trades with FireRed/LeafGreen and Ruby/Sapphire to fill the National Pokedex. Several Pokemon are unobtainable without those carts.</li>
+              <li><strong>Earn all 14 Battle Frontier Symbols.</strong> Both Silver and Gold from each of the seven Brains. Brandon&rsquo;s Gold is the gauntlet &mdash; he uses the Regi trio.</li>
+              <li><strong>Master all 5 Contest categories.</strong> Cool, Beauty, Cute, Smart, Tough &mdash; clear Master Rank in each. Feebas evolves into Milotic via this loop, so it&rsquo;s an integrated quest.</li>
+              <li><strong>Beat Trainer Hill in record time.</strong> Sub-15 on Variety is the casual goal; speedrunners chase the Strong-theme world record.</li>
+              <li><strong>Find Mirage Island.</strong> The mythical island only appears when your party&rsquo;s personality value matches the day&rsquo;s seed &mdash; roughly 1-in-65,536 odds. The Wynaut you can catch there is purely cosmetic; the real reward is the boast.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="callout callout--emerald mt-6">
+          <span class="callout__label">Final word</span>
+          <p style="margin:0;">
+            The Battle Frontier is the test the rest of Hoenn was preparing you for. If you grew up with this
+            cartridge and never finished a Gold Symbol, this is the year you go back. Bring a Skarmory.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== CLOSER ============================== -->
+    <section class="section section--ink">
+      <div class="container container--narrow text-center">
+        <span class="kicker">End of the Guide</span>
+        <h2 class="h2 mt-4" style="color:var(--paper);">The cartridge keeps <em style="color:var(--ember); font-style:italic; font-weight:400;">going</em>.</h2>
+        <p class="lede mt-5" style="color:var(--mist); margin-inline:auto;">
+          Eight badges, five Elite, seven Frontier brains, three legendary tombs &mdash; and you&rsquo;re still only halfway.
+        </p>
+        <p class="mt-6" style="display:flex; gap:var(--s-3); justify-content:center; flex-wrap:wrap;">
+          <a href="legendaries.html" class="badge badge--ember" style="text-decoration:none;">Legendaries &rarr;</a>
+          <a href="tier-list.html" class="badge badge--emerald" style="text-decoration:none;">Tier List &rarr;</a>
+          <a href="index.html" class="badge" style="text-decoration:none;">Back to hub</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">Hoenn <span>Field</span> Guide</div>
+          <p class="mt-3">An editorial companion to Pokemon Emerald, published in print-as-pixels.
+          Pokemon names, characters, and locations are property of Nintendo, Game Freak, and The Pokemon Company.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Chapters</div>
+          <ul class="footer__links">
+            <li><a href="gyms.html">Gym Leaders</a></li>
+            <li><a href="elite-four.html">Elite Four</a></li>
+            <li><a href="legendaries.html">Legendaries</a></li>
+            <li><a href="tier-list.html">Tier List</a></li>
+            <li><a href="secrets.html">Secrets</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Reference</div>
+          <ul class="footer__links">
+            <li><a href="breeding.html">Breeding &amp; IVs</a></li>
+            <li><a href="early-game.html">Early Game</a></li>
+            <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+            <li><a href="post-game.html">Post Game</a></li>
+            <li><a href="https://github.com/" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span data-year>2025</span> &middot; Hoenn Field Guide &middot; Issue 001</span>
+        <span>Set in Fraunces, Instrument Sans &amp; JetBrains Mono</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&uarr; Top</button>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

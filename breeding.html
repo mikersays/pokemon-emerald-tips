@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Breeding, IVs, and EVs in Pokemon Emerald — Day Care logic, Everstone Nature inheritance, Hidden Power, EV-training spots, Pokerus, and the Macho Brace." />
+  <title>Breeding, IVs &amp; EVs &middot; Hoenn Field Guide</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <!-- ============================== NAV ============================== -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html" aria-label="Hoenn Field Guide home">
+        <span class="nav__mark" aria-hidden="true">HFG</span>
+        <span class="nav__wordmark">Hoenn <span>Field</span> Guide</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <ul style="display:contents;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="starters.html">Starters</a></li>
+          <li><a href="gyms.html">Gyms</a></li>
+          <li><a href="elite-four.html">Elite Four</a></li>
+          <li><a href="legendaries.html">Legendaries</a></li>
+          <li><a href="tier-list.html">Tier List</a></li>
+          <li><a href="secrets.html">Secrets</a></li>
+          <li><a href="breeding.html">Breeding</a></li>
+          <li><a href="early-game.html">Early Game</a></li>
+          <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+          <li><a href="post-game.html">Post Game</a></li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-drawer">MENU</button>
+    </div>
+    <div class="nav__drawer" id="nav-drawer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="starters.html">Starters</a></li>
+        <li><a href="gyms.html">Gyms</a></li>
+        <li><a href="elite-four.html">Elite Four</a></li>
+        <li><a href="legendaries.html">Legendaries</a></li>
+        <li><a href="tier-list.html">Tier List</a></li>
+        <li><a href="secrets.html">Secrets</a></li>
+        <li><a href="breeding.html">Breeding</a></li>
+        <li><a href="early-game.html">Early Game</a></li>
+        <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+        <li><a href="post-game.html">Post Game</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============================== HEADER ============================== -->
+    <section class="page-header">
+      <div class="riso-blob riso-blob--ocean" style="width:300px; height:300px; top:-90px; right:-50px;"></div>
+      <div class="riso-dots" style="width:220px; height:110px; bottom:30px; right:14%; transform: rotate(6deg);"></div>
+      <div class="riso-blob riso-blob--sun" style="width:140px; height:140px; bottom:-30px; left:-30px;"></div>
+
+      <div class="container">
+        <span class="kicker kicker--ocean">Chapter 06 &middot; Inheritance &amp; Stats</span>
+        <h1 class="page-header__title">
+          Breed, train,<br><em>repeat</em>.
+        </h1>
+        <p class="lede mt-4" style="max-width: 62ch;">
+          The hidden numbers behind every Pokemon &mdash; Personality Values, Egg Groups, Individual and Effort Values, the
+          Macho Brace, the Pokerus virus. Three sections, one playbook for the trainer who plans to win the Frontier.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================== 01. BREEDING ============================== -->
+    <section class="section" id="breeding">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker">Section I</span>
+          <h2 class="h1 mt-3">Breeding<br><em style="color:var(--emerald); font-style:italic; font-weight:400;">basics</em></h2>
+          <p class="lede mt-4" style="max-width: 60ch;">
+            Two compatible Pokemon, one Day Care, a long bike ride. The mechanics underneath, however, are mostly hidden &mdash; here&rsquo;s the map.
+          </p>
+        </div>
+
+        <div class="split">
+          <div>
+            <p class="dropcap" style="font-size: 1.1rem; line-height: 1.6;">
+              The Day Care sits on Route 117, on the path from Mauville to Verdanturf. Drop two compatible Pokemon &mdash;
+              opposite genders, sharing at least one Egg Group &mdash; with the old couple and walk in steps. The old man
+              outside paces the path. If he&rsquo;s facing the road, no egg yet. If he&rsquo;s facing the fence, an egg is
+              ready to be picked up. That&rsquo;s the loop.
+            </p>
+            <p class="mt-4">
+              Underneath: the species comes from the female (or the non-Ditto if Ditto is involved). The father teaches
+              compatible TMs and special Egg Moves to the offspring. Three IVs are randomly inherited from the parents,
+              chosen across HP, Attack, Defense, Special Attack, Special Defense, and Speed. Everything else rolls fresh.
+            </p>
+          </div>
+
+          <div class="stack-lg">
+            <div class="callout callout--emerald">
+              <span class="callout__label">Where</span>
+              <p style="margin:0;">Day Care on <strong>Route 117</strong> &mdash; Mauville-to-Verdanturf path. Old man on the road tells you the egg state at a glance.</p>
+            </div>
+            <div class="callout callout--ocean">
+              <span class="callout__label">Ditto&rsquo;s role</span>
+              <p style="margin:0;">Ditto can breed with any non-legendary, non-Ditto Pokemon. Trade one in from FireRed/LeafGreen Trainer Tower or the Pokemon Mansion.</p>
+            </div>
+            <div class="callout callout--sun">
+              <span class="callout__label">The Everstone trick</span>
+              <p style="margin:0;">If the <strong>female</strong> holds an Everstone, the offspring inherits her Nature 50% of the time. This is THE primary way to lock in a specific Nature in Gen 3.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid--3 stagger" style="margin-top: var(--s-7);">
+          <article class="card">
+            <div class="card__subtitle">Inheritance &middot; Species</div>
+            <h3 class="card__title mt-3">From mother</h3>
+            <p class="card__body">The egg hatches into the mother&rsquo;s base species &mdash; or the non-Ditto&rsquo;s base species when Ditto is involved.</p>
+          </article>
+          <article class="card card--alt">
+            <div class="card__subtitle">Inheritance &middot; Moves</div>
+            <h3 class="card__title mt-3">From father</h3>
+            <p class="card__body">The father can pass down compatible TM moves and special Egg Moves listed for the species. Build your father&rsquo;s moveset deliberately.</p>
+          </article>
+          <article class="card">
+            <div class="card__subtitle">Inheritance &middot; Stats</div>
+            <h3 class="card__title mt-3">Three random IVs</h3>
+            <p class="card__body">Three of the six IVs are inherited from the parents at random; the other three roll fresh from 0&ndash;31. Later generations inherit more &mdash; not Gen 3.</p>
+          </article>
+        </div>
+
+        <div class="callout" style="margin-top: var(--s-6);">
+          <span class="callout__label">Egg Groups</span>
+          <p style="margin:0;">Pokemon must share at least one Egg Group. Some &mdash; Salamence, Charizard &mdash; sit in <strong>Monster + Dragon</strong>, giving wide compatibility. Many starters and pseudo-legendaries are dual-group for exactly this reason.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 02. IVs ============================== -->
+    <section class="section section--alt" id="ivs">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ember">Section II</span>
+          <h2 class="h1 mt-3">Individual<br><em style="color:var(--ember); font-style:italic; font-weight:400;">values</em></h2>
+          <p class="lede mt-4" style="max-width: 60ch;">
+            The hidden 0&ndash;31 stats baked into every Pokemon at capture or hatch &mdash; six rolls that never change, a
+            tax on luck the cartridge never shows you.
+          </p>
+        </div>
+
+        <div class="grid grid--2 stagger">
+          <article class="card offset-shadow--ember">
+            <div class="card__subtitle">What they are</div>
+            <h3 class="card__title mt-3">Six numbers, 0&ndash;31</h3>
+            <p class="card__body">
+              IVs are six hidden values &mdash; one per stat &mdash; randomly assigned at capture or hatch and never changing.
+              Higher IV, higher final stat. The difference is largest at level 100.
+            </p>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Stats</span><span class="stat-row__value">HP, Atk, Def, SpA, SpD, Spe</span><span class="stat-row__num">6</span></div>
+              <div class="stat-row"><span class="stat-row__label">Range</span><span class="stat-row__value">0&ndash;31 per stat</span><span class="stat-row__num">31</span></div>
+              <div class="stat-row"><span class="stat-row__label">Lv 100 spread</span><span class="stat-row__value">31 IV vs 0 IV</span><span class="stat-row__num">+31</span></div>
+              <div class="stat-row"><span class="stat-row__label">Mutability</span><span class="stat-row__value">Locked at capture</span><span class="stat-row__num">PERM</span></div>
+            </dl>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">Checking IVs</div>
+            <h3 class="card__title mt-3">No in-game judge</h3>
+            <p class="card__body">
+              Emerald has no IV judge. Use an online IV calculator with your Pokemon&rsquo;s level, Nature, EVs, and current
+              stats to back-calculate the spread. Re-check after every level-up to narrow the range.
+            </p>
+            <div class="callout callout--ocean mt-4">
+              <span class="callout__label">Hidden Power</span>
+              <p style="margin:0;">Hidden Power&rsquo;s type and base power are determined entirely by IVs &mdash; type ranges any of the seventeen, power 30&ndash;70. Used to give Grass-types a Fire move against Steels, Electric-types a Grass move against Ground-types, and so on.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 03. EVs ============================== -->
+    <section class="section" id="evs">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ocean">Section III</span>
+          <h2 class="h1 mt-3">Effort<br><em style="color:var(--ocean); font-style:italic; font-weight:400;">values</em></h2>
+          <p class="lede mt-4" style="max-width: 60ch;">
+            Earned, not given. Defeat a specific Pokemon, gain specific EVs. Cap them, route them, double them with the
+            Macho Brace and Pokerus, and you&rsquo;ve built a Frontier-grade attacker.
+          </p>
+        </div>
+
+        <div class="grid grid--3 stagger" style="margin-bottom: var(--s-6);">
+          <article class="card">
+            <div class="card__subtitle">The math</div>
+            <h3 class="card__title mt-3">510 / 252 / 4</h3>
+            <p class="card__body">510 EVs total per Pokemon. 252 max in any one stat (255 wastes 3). Every 4 EVs in a stat = +1 to that stat at Lv 100.</p>
+          </article>
+          <article class="card card--alt">
+            <div class="card__subtitle">Vitamins</div>
+            <h3 class="card__title mt-3">+10 each, cap 100</h3>
+            <p class="card__body mono" style="font-size: var(--fs-sm);">HP Up, Protein, Iron, Calcium, Zinc, Carbos. +10 EVs each. Capped at 100 EVs per stat from vitamins &mdash; the rest must come from battle.</p>
+          </article>
+          <article class="card">
+            <div class="card__subtitle">Reset berries</div>
+            <h3 class="card__title mt-3">&minus;10 each</h3>
+            <p class="card__body mono" style="font-size: var(--fs-sm);">Pomeg (HP), Kelpsy (Atk), Qualot (Def), Hondew (SpA), Grepa (SpD), Tamato (Spe). Each removes 10 EVs &mdash; useful to fix a mistrained Pokemon.</p>
+          </article>
+        </div>
+
+        <div class="callout callout--ocean">
+          <span class="callout__label">Watch out</span>
+          <p style="margin:0;">Vitamins cap at <strong>100 EVs per stat</strong>. After that, the bottle does nothing. Anything past 100 must come from KO&rsquo;ing the right wild Pokemon.</p>
+        </div>
+
+        <div class="grid grid--2 stagger" style="margin-top: var(--s-6);">
+          <article class="card offset-shadow">
+            <div class="card__subtitle">Doublers</div>
+            <h3 class="card__title mt-3">Macho Brace &amp; Pokerus</h3>
+            <p class="card__body">
+              The <strong>Macho Brace</strong> doubles all EV gain (and halves Speed in battle while held). <strong>Pokerus</strong>,
+              a rare wild status virus, also doubles EV gain &mdash; and stacks with the Brace for 4&times;. Pokerus spreads
+              between adjacent party members, so quarantine carriers and propagate deliberately.
+            </p>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Macho Brace</span><span class="stat-row__value">2&times; EVs &middot; halves Speed</span><span class="stat-row__num">&times;2</span></div>
+              <div class="stat-row"><span class="stat-row__label">Pokerus</span><span class="stat-row__value">2&times; EVs &middot; rare wild status</span><span class="stat-row__num">&times;2</span></div>
+              <div class="stat-row"><span class="stat-row__label">Stacked</span><span class="stat-row__value">Brace + PKRS</span><span class="stat-row__num">&times;4</span></div>
+            </dl>
+          </article>
+
+          <article class="card card--ink">
+            <div class="card__subtitle" style="color: var(--mist);">Method</div>
+            <h3 class="card__title mt-3" style="color: var(--paper);">The grind, distilled</h3>
+            <p class="card__body" style="color: var(--mist);">
+              Equip Macho Brace. Infect with Pokerus. Match a Repel to the target species&rsquo; level so you only roll one
+              encounter. Then KO until the stat&rsquo;s capped. EV training is grindy by design &mdash; routing it well is the
+              only way to make peace with that.
+            </p>
+            <ul class="bullet-list bullet-list--emerald" style="margin-top: var(--s-4);">
+              <li>Brace + PKRS = 4&times; gain</li>
+              <li>Repels gate the encounter table to a single species</li>
+              <li>Reset berries fix overtrains</li>
+              <li>Cap a stat before moving to the next route</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="divider-rule"></div>
+
+        <!-- ============================== EV TRAINING SPOTS ============================== -->
+        <header style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ember">Field map</span>
+          <h2 class="h2 mt-3">Six EV-training <em style="color:var(--ember); font-style:italic; font-weight:400;">spots</em>.</h2>
+          <p class="lede mt-3" style="max-width: 56ch;">
+            One stat, one route, one encounter. Match the Repel level to the target so you don&rsquo;t waste turns on the wrong yield.
+          </p>
+        </header>
+
+        <div class="grid grid--auto stagger">
+
+          <!-- HP -->
+          <article class="card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:var(--s-3);">
+              <div>
+                <div class="card__subtitle">EV &middot; HP</div>
+                <h3 class="card__title mt-3">Marill / Wailmer</h3>
+              </div>
+              <span class="badge badge--emerald">+1 HP</span>
+            </div>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Pokemon</span><span class="stat-row__value">Marill, Wailmer</span><span class="stat-row__num">+1 HP</span></div>
+              <div class="stat-row"><span class="stat-row__label">Location</span><span class="stat-row__value">Route 102, Route 103</span><span class="stat-row__num">EARLY</span></div>
+              <div class="stat-row"><span class="stat-row__label">Levels</span><span class="stat-row__value">3&ndash;5 / 5&ndash;10</span><span class="stat-row__num">LOW</span></div>
+            </dl>
+            <p class="card__body" style="margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--ink-soft);">For 2 HP per KO, hatch a Wynaut from the Lavaridge egg and grind on it.</p>
+          </article>
+
+          <!-- ATTACK -->
+          <article class="card card--alt">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:var(--s-3);">
+              <div>
+                <div class="card__subtitle">EV &middot; Attack</div>
+                <h3 class="card__title mt-3">Poochyena line</h3>
+              </div>
+              <span class="badge badge--ember">+2 Atk</span>
+            </div>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Pokemon</span><span class="stat-row__value">Mightyena / Poochyena</span><span class="stat-row__num">+2 Atk</span></div>
+              <div class="stat-row"><span class="stat-row__label">Location</span><span class="stat-row__value">Route 120</span><span class="stat-row__num">MID</span></div>
+              <div class="stat-row"><span class="stat-row__label">Alt</span><span class="stat-row__value">Vigoroth in Petalburg Woods</span><span class="stat-row__num">+2 Atk</span></div>
+            </dl>
+            <p class="card__body" style="margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--ink-soft);">126 KOs to cap Attack from zero. With Brace + PKRS, 32.</p>
+          </article>
+
+          <!-- DEFENSE -->
+          <article class="card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:var(--s-3);">
+              <div>
+                <div class="card__subtitle">EV &middot; Defense</div>
+                <h3 class="card__title mt-3">Geodude / Trapinch</h3>
+              </div>
+              <span class="badge">+1 Def</span>
+            </div>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Pokemon</span><span class="stat-row__value">Geodude, Trapinch</span><span class="stat-row__num">+1 Def</span></div>
+              <div class="stat-row"><span class="stat-row__label">Location</span><span class="stat-row__value">Granite Cave, Route 111 desert</span><span class="stat-row__num">EARLY</span></div>
+              <div class="stat-row"><span class="stat-row__label">Note</span><span class="stat-row__value">Victory Road also Geodude</span><span class="stat-row__num">+1 Def</span></div>
+            </dl>
+            <p class="card__body" style="margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--ink-soft);">Match a Repel to your active level so you skip Zubat encounters.</p>
+          </article>
+
+          <!-- SP. ATTACK -->
+          <article class="card card--alt">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:var(--s-3);">
+              <div>
+                <div class="card__subtitle">EV &middot; Sp. Atk</div>
+                <h3 class="card__title mt-3">Tentacool / Gulpin</h3>
+              </div>
+              <span class="badge">+1 SpA</span>
+            </div>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Pokemon</span><span class="stat-row__value">Tentacool, Gulpin</span><span class="stat-row__num">+1 SpA</span></div>
+              <div class="stat-row"><span class="stat-row__label">Location</span><span class="stat-row__value">Water routes, Route 110</span><span class="stat-row__num">MID</span></div>
+              <div class="stat-row"><span class="stat-row__label">Alt</span><span class="stat-row__value">Roselia (mixed yield)</span><span class="stat-row__num">VARIES</span></div>
+            </dl>
+            <p class="card__body" style="margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--ink-soft);">Surf Tentacool with Repels active for clean +1 SpA per KO.</p>
+          </article>
+
+          <!-- SP. DEFENSE -->
+          <article class="card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:var(--s-3);">
+              <div>
+                <div class="card__subtitle">EV &middot; Sp. Def</div>
+                <h3 class="card__title mt-3">Spheal in Shoal Cave</h3>
+              </div>
+              <span class="badge">+1 SpD</span>
+            </div>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Pokemon</span><span class="stat-row__value">Spheal</span><span class="stat-row__num">+1 SpD</span></div>
+              <div class="stat-row"><span class="stat-row__label">Location</span><span class="stat-row__value">Shoal Cave</span><span class="stat-row__num">LATE</span></div>
+              <div class="stat-row"><span class="stat-row__label">Note</span><span class="stat-row__value">Tentacruel = mixed SpA/SpD</span><span class="stat-row__num">VARIES</span></div>
+            </dl>
+            <p class="card__body" style="margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--ink-soft);">Spheal is the cleanest pure-SpD source &mdash; Roselia gives 2 SpA, not SpD.</p>
+          </article>
+
+          <!-- SPEED -->
+          <article class="card card--alt">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:var(--s-3);">
+              <div>
+                <div class="card__subtitle">EV &middot; Speed</div>
+                <h3 class="card__title mt-3">Zubat &middot; Magikarp &middot; Electrode</h3>
+              </div>
+              <span class="badge badge--ember">+1 / +2 Spe</span>
+            </div>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Zubat</span><span class="stat-row__value">caves</span><span class="stat-row__num">+1 Spe</span></div>
+              <div class="stat-row"><span class="stat-row__label">Magikarp</span><span class="stat-row__value">Old Rod fishing</span><span class="stat-row__num">+1 Spe</span></div>
+              <div class="stat-row"><span class="stat-row__label">Electrode</span><span class="stat-row__value">New Mauville</span><span class="stat-row__num">+2 Spe</span></div>
+            </dl>
+            <p class="card__body" style="margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--ink-soft);">Electrode in New Mauville is the fastest route &mdash; just respect Self-Destruct.</p>
+          </article>
+
+        </div>
+
+        <div class="callout callout--sun" style="margin-top: var(--s-7);">
+          <span class="callout__label">Editor&rsquo;s shortcut</span>
+          <p style="margin:0;">
+            Hatch from the Day Care &rarr; trade in for Pokerus &rarr; hold Macho Brace &rarr; Repel to the target species &rarr; KO 32 times.
+            That&rsquo;s a maxed stat in roughly twenty real-world minutes. The Frontier rewards exactly this discipline.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== NEXT CHAPTER ============================== -->
+    <section class="section section--ink">
+      <div class="container container--narrow text-center">
+        <span class="kicker">Continue Reading</span>
+        <h2 class="h2 mt-4" style="color:var(--paper);">Then comes the <em style="color:var(--ember); font-style:italic; font-weight:400;">Frontier</em>.</h2>
+        <p class="lede mt-5" style="color:var(--mist); margin-inline:auto;">
+          Bred and trained, your team is finally Brain-ready &mdash; cross-reference the post-game chapter for the seven facilities,
+          or the tier list for which species reward the grind most.
+        </p>
+        <p class="mt-6" style="display:flex; gap:var(--s-3); justify-content:center; flex-wrap:wrap;">
+          <a href="post-game.html" class="badge badge--ember" style="text-decoration:none;">Post Game &rarr;</a>
+          <a href="tier-list.html" class="badge badge--emerald" style="text-decoration:none;">Tier List &rarr;</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">Hoenn <span>Field</span> Guide</div>
+          <p class="mt-3">An editorial companion to Pokemon Emerald, published in print-as-pixels.
+          Pokemon names, characters, and locations are property of Nintendo, Game Freak, and The Pokemon Company.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Chapters</div>
+          <ul class="footer__links">
+            <li><a href="gyms.html">Gym Leaders</a></li>
+            <li><a href="elite-four.html">Elite Four</a></li>
+            <li><a href="legendaries.html">Legendaries</a></li>
+            <li><a href="tier-list.html">Tier List</a></li>
+            <li><a href="secrets.html">Secrets</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Reference</div>
+          <ul class="footer__links">
+            <li><a href="breeding.html">Breeding &amp; IVs</a></li>
+            <li><a href="early-game.html">Early Game</a></li>
+            <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+            <li><a href="post-game.html">Post Game</a></li>
+            <li><a href="https://github.com/" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span data-year>2025</span> &middot; Hoenn Field Guide &middot; Issue 001</span>
+        <span>Set in Fraunces, Instrument Sans &amp; JetBrains Mono</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&uarr; Top</button>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A working tier list of Pokemon available in vanilla Emerald, sorted by playthrough viability and ceiling." />
+  <title>Tier List &middot; Hoenn Field Guide</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <!-- ============================== NAV ============================== -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html" aria-label="Hoenn Field Guide home">
+        <span class="nav__mark" aria-hidden="true">HFG</span>
+        <span class="nav__wordmark">Hoenn <span>Field</span> Guide</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <ul style="display:contents;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="starters.html">Starters</a></li>
+          <li><a href="gyms.html">Gyms</a></li>
+          <li><a href="elite-four.html">Elite Four</a></li>
+          <li><a href="legendaries.html">Legendaries</a></li>
+          <li><a href="tier-list.html">Tier List</a></li>
+          <li><a href="secrets.html">Secrets</a></li>
+          <li><a href="breeding.html">Breeding</a></li>
+          <li><a href="early-game.html">Early Game</a></li>
+          <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+          <li><a href="post-game.html">Post Game</a></li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-drawer">MENU</button>
+    </div>
+    <div class="nav__drawer" id="nav-drawer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="starters.html">Starters</a></li>
+        <li><a href="gyms.html">Gyms</a></li>
+        <li><a href="elite-four.html">Elite Four</a></li>
+        <li><a href="legendaries.html">Legendaries</a></li>
+        <li><a href="tier-list.html">Tier List</a></li>
+        <li><a href="secrets.html">Secrets</a></li>
+        <li><a href="breeding.html">Breeding</a></li>
+        <li><a href="early-game.html">Early Game</a></li>
+        <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+        <li><a href="post-game.html">Post Game</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============================== HEADER ============================== -->
+    <section class="page-header">
+      <div class="riso-blob riso-blob--sun" style="width:280px; height:280px; top:-80px; right:-40px;"></div>
+      <div class="riso-blob riso-blob--ocean" style="width:160px; height:160px; bottom:30px; left:-40px;"></div>
+
+      <div class="container">
+        <span class="kicker kicker--ember">Chapter 04 &middot; Selection Bias</span>
+        <h1 class="page-header__title">
+          The Hoenn<br><em>tier</em> list
+        </h1>
+        <p class="lede mt-4" style="max-width: 60ch;">
+          A working ranking of Pokemon available in <strong>vanilla Emerald</strong>, sorted by playthrough viability,
+          movepool depth, and raw ceiling. S is broken; A is excellent; B is solid; honorable mentions are situational
+          standouts.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================== TIER LIST ============================== -->
+    <section class="section">
+      <div class="container">
+
+        <!-- =============== S TIER =============== -->
+        <article class="tier-row reveal" data-tier="S" id="tier-s">
+          <div class="tier-row__letter">S</div>
+          <div class="tier-row__body">
+            <header style="display:flex; align-items:baseline; justify-content:space-between; gap:var(--s-3); flex-wrap:wrap;">
+              <h2 class="h3" style="font-size:var(--fs-lg);">Run-defining</h2>
+              <span class="mono" style="font-size:var(--fs-xs); letter-spacing:0.12em; color:var(--ink-soft);">5 PICKS</span>
+            </header>
+            <div class="tier-pokemon">
+              <div class="tier-card">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Swampert</h3>
+                  <span class="type-chip" data-type="water">water</span>
+                </div>
+                <div><span class="type-chip" data-type="ground">ground</span></div>
+                <p class="tier-card__just">Best starter. Only one weakness (4&times; Grass). Incredible bulk and movepool. Solos most gyms.</p>
+              </div>
+              <div class="tier-card">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Salamence</h3>
+                  <span class="type-chip" data-type="dragon">dragon</span>
+                </div>
+                <div><span class="type-chip" data-type="flying">flying</span></div>
+                <p class="tier-card__just">Pseudo-legendary, 600 BST. Bagon caught in Meteor Falls (post-7th). Late but world-ending.</p>
+              </div>
+              <div class="tier-card">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Metagross</h3>
+                  <span class="type-chip" data-type="steel">steel</span>
+                </div>
+                <div><span class="type-chip" data-type="psychic">psychic</span></div>
+                <p class="tier-card__just">Pseudo-legendary; Beldum is a gift from Steven post-game. Insane bulk; Meteor Mash sweeps Frontier.</p>
+              </div>
+              <div class="tier-card">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Blaziken</h3>
+                  <span class="type-chip" data-type="fire">fire</span>
+                </div>
+                <div><span class="type-chip" data-type="fighting">fighting</span></div>
+                <p class="tier-card__just">Best dual-STAB starter. Sky Uppercut + Blaze Kick covers most of Hoenn.</p>
+              </div>
+              <div class="tier-card">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Manectric</h3>
+                  <span class="type-chip" data-type="electric">electric</span>
+                </div>
+                <p class="tier-card__just">Lightning Rod ability, fast, learns Thunderbolt/Thunder. Solos Winona and Wallace.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- =============== A TIER =============== -->
+        <article class="tier-row reveal" data-tier="A" id="tier-a">
+          <div class="tier-row__letter">A</div>
+          <div class="tier-row__body">
+            <header style="display:flex; align-items:baseline; justify-content:space-between; gap:var(--s-3); flex-wrap:wrap;">
+              <h2 class="h3" style="font-size:var(--fs-lg);">Excellent &mdash; build a team around any of these</h2>
+              <span class="mono" style="font-size:var(--fs-xs); letter-spacing:0.12em; color:var(--ink-soft);">9 PICKS</span>
+            </header>
+            <div class="tier-pokemon">
+              <div class="tier-card">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Breloom</h3>
+                  <span class="type-chip" data-type="grass">grass</span>
+                </div>
+                <div><span class="type-chip" data-type="fighting">fighting</span></div>
+                <p class="tier-card__just">Mach Punch priority, Effect Spore (status on contact), Sky Uppercut. Beats Roxanne, Norman, Sidney solo.</p>
+              </div>
+              <div class="tier-card">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Sceptile</h3>
+                  <span class="type-chip" data-type="grass">grass</span>
+                </div>
+                <p class="tier-card__just">120 base Speed. Leaf Blade is the best physical Grass move in the game.</p>
+              </div>
+              <div class="tier-card">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Flygon</h3>
+                  <span class="type-chip" data-type="ground">ground</span>
+                </div>
+                <div><span class="type-chip" data-type="dragon">dragon</span></div>
+                <p class="tier-card__just">Trapinch in the desert &rarr; Vibrava (Lv 35) &rarr; Flygon (Lv 45). Levitate immunity to Ground.</p>
+              </div>
+              <div class="tier-card">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Aggron</h3>
+                  <span class="type-chip" data-type="steel">steel</span>
+                </div>
+                <div><span class="type-chip" data-type="rock">rock</span></div>
+                <p class="tier-card__just">Sturdy/Rock Head. Spam Double-Edge with no recoil. Massive Defense.</p>
+              </div>
+              <div class="tier-card">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Gardevoir</h3>
+                  <span class="type-chip" data-type="psychic">psychic</span>
+                </div>
+                <p class="tier-card__just">Ralts on Route 102 is rare but evolves at Lv 20 and Lv 30. Calm Mind + Psychic + T-Bolt + Ice Punch is end-game tier.</p>
+              </div>
+              <div class="tier-card">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Hariyama</h3>
+                  <span class="type-chip" data-type="fighting">fighting</span>
+                </div>
+                <p class="tier-card__just">Massive HP, Thick Fat, Vital Throw + Brick Break. Hard counter to Sidney and Glacia.</p>
+              </div>
+              <div class="tier-card">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Swellow</h3>
+                  <span class="type-chip" data-type="normal">normal</span>
+                </div>
+                <div><span class="type-chip" data-type="flying">flying</span></div>
+                <p class="tier-card__just">Taillow caught Route 104 day one. Guts + Toxic Orb + Facade is a Frontier staple.</p>
+              </div>
+              <div class="tier-card">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Crobat</h3>
+                  <span class="type-chip" data-type="poison">poison</span>
+                </div>
+                <div><span class="type-chip" data-type="flying">flying</span></div>
+                <p class="tier-card__just">Zubat &rarr; Golbat &rarr; Crobat (high friendship). Mean Look catches roaming Latios/Latias.</p>
+              </div>
+              <div class="tier-card">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Milotic</h3>
+                  <span class="type-chip" data-type="water">water</span>
+                </div>
+                <p class="tier-card__just">Marvel Scale + Recover + Ice Beam. Tedious to evolve (Feebas / Beauty contest stat) but elite.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- =============== B TIER =============== -->
+        <article class="tier-row reveal" data-tier="B" id="tier-b">
+          <div class="tier-row__letter">B</div>
+          <div class="tier-row__body">
+            <header style="display:flex; align-items:baseline; justify-content:space-between; gap:var(--s-3); flex-wrap:wrap;">
+              <h2 class="h3" style="font-size:var(--fs-lg);">Solid contributors</h2>
+              <span class="mono" style="font-size:var(--fs-xs); letter-spacing:0.12em; color:var(--ink-soft);">6 PICKS</span>
+            </header>
+            <div class="tier-pokemon">
+              <div class="tier-card">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Walrein</h3>
+                  <span class="type-chip" data-type="ice">ice</span>
+                </div>
+                <div><span class="type-chip" data-type="water">water</span></div>
+                <p class="tier-card__just">Spheal in Shoal Cave &rarr; Sealeo (Lv 32) &rarr; Walrein (Lv 44). Thick Fat Ice attacker that survives Fire moves.</p>
+              </div>
+              <div class="tier-card">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Camerupt</h3>
+                  <span class="type-chip" data-type="fire">fire</span>
+                </div>
+                <div><span class="type-chip" data-type="ground">ground</span></div>
+                <p class="tier-card__just">Numel from Route 112. Magnitude + Flamethrower covers a lot &mdash; but 4&times; Water weak.</p>
+              </div>
+              <div class="tier-card">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Linoone</h3>
+                  <span class="type-chip" data-type="normal">normal</span>
+                </div>
+                <p class="tier-card__just">Belly Drum + Extreme Speed + Pickup ability for free items. Best HM slave with Cut/Surf/Strength/Dig support.</p>
+              </div>
+              <div class="tier-card">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Absol</h3>
+                  <span class="type-chip" data-type="dark">dark</span>
+                </div>
+                <p class="tier-card__just">Route 120 (rare). Super Luck + Slash for crit fishing; Swords Dance + Aerial Ace devastates Phoebe.</p>
+              </div>
+              <div class="tier-card">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Tentacruel</h3>
+                  <span class="type-chip" data-type="water">water</span>
+                </div>
+                <div><span class="type-chip" data-type="poison">poison</span></div>
+                <p class="tier-card__just">Liquid Ooze prevents drain heals against you. Sludge Bomb + Surf + Ice Beam coverage.</p>
+              </div>
+              <div class="tier-card">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Magneton</h3>
+                  <span class="type-chip" data-type="electric">electric</span>
+                </div>
+                <div><span class="type-chip" data-type="steel">steel</span></div>
+                <p class="tier-card__just">Sturdy/Magnet Pull, traps Steels. Magneton-locked in Emerald (Magnezone is a later-gen evo).</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- =============== HONORABLE MENTIONS =============== -->
+        <article class="tier-row reveal" data-tier="HM" id="tier-honorable">
+          <div class="tier-row__letter">HM</div>
+          <div class="tier-row__body">
+            <header style="display:flex; align-items:baseline; justify-content:space-between; gap:var(--s-3); flex-wrap:wrap;">
+              <h2 class="h3" style="font-size:var(--fs-lg);">Honorable mentions &mdash; situational standouts</h2>
+              <span class="mono" style="font-size:var(--fs-xs); letter-spacing:0.12em; color:var(--ink-soft);">3 PICKS</span>
+            </header>
+            <div class="tier-pokemon">
+              <div class="tier-card">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Ludicolo</h3>
+                  <span class="type-chip" data-type="water">water</span>
+                </div>
+                <div><span class="type-chip" data-type="grass">grass</span></div>
+                <p class="tier-card__just">Lotad on Route 102 (rare). Rain Dish + Swift Swim. Unique typing &mdash; only weak to Bug/Flying/Poison.</p>
+              </div>
+              <div class="tier-card">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Slaking</h3>
+                  <span class="type-chip" data-type="normal">normal</span>
+                </div>
+                <p class="tier-card__just">Insane stats but Truant halves uptime. Only viable in Frontier with Skill Swap support.</p>
+              </div>
+              <div class="tier-card">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Altaria</h3>
+                  <span class="type-chip" data-type="dragon">dragon</span>
+                </div>
+                <div><span class="type-chip" data-type="flying">flying</span></div>
+                <p class="tier-card__just">Swablu evolves at Lv 35. Bulky Dragon with Dragon Dance + Earthquake.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- =============== METHOD =============== -->
+        <div class="callout callout--emerald" style="margin-top: var(--s-7);">
+          <span class="callout__label">Method note</span>
+          <p style="margin:0;">
+            Rankings consider availability timing (when you can catch it), evolution speed, movepool, type matchups across
+            Hoenn&rsquo;s gyms and Elite Four, and Battle Frontier ceiling. Trades from FireRed/LeafGreen are excluded.
+            Legendaries are ranked separately on the <a href="legendaries.html">Legendaries</a> page.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================== CLOSER ============================== -->
+    <section class="section section--ink">
+      <div class="container container--narrow text-center">
+        <span class="kicker">Continue Reading</span>
+        <h2 class="h2 mt-4" style="color:var(--paper);">A team is more than tiers.</h2>
+        <p class="lede mt-5" style="color:var(--mist); margin-inline:auto;">
+          Cross-reference the gym dossiers and Elite Four counters before you finalize your six.
+        </p>
+        <p class="mt-6" style="display:flex; gap:var(--s-3); justify-content:center; flex-wrap:wrap;">
+          <a href="gyms.html" class="badge badge--ember" style="text-decoration:none;">Gym Leaders &rarr;</a>
+          <a href="elite-four.html" class="badge badge--emerald" style="text-decoration:none;">Elite Four &rarr;</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">Hoenn <span>Field</span> Guide</div>
+          <p class="mt-3">An editorial companion to Pokemon Emerald, published in print-as-pixels.
+          Pokemon names, characters, and locations are property of Nintendo, Game Freak, and The Pokemon Company.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Chapters</div>
+          <ul class="footer__links">
+            <li><a href="gyms.html">Gym Leaders</a></li>
+            <li><a href="elite-four.html">Elite Four</a></li>
+            <li><a href="legendaries.html">Legendaries</a></li>
+            <li><a href="tier-list.html">Tier List</a></li>
+            <li><a href="secrets.html">Secrets</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Reference</div>
+          <ul class="footer__links">
+            <li><a href="breeding.html">Breeding &amp; IVs</a></li>
+            <li><a href="early-game.html">Early Game</a></li>
+            <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+            <li><a href="post-game.html">Post Game</a></li>
+            <li><a href="https://github.com/" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span data-year>2025</span> &middot; Hoenn Field Guide &middot; Issue 001</span>
+        <span>Set in Fraunces, Instrument Sans &amp; JetBrains Mono</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&uarr; Top</button>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

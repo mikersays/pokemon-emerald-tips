@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The three Hoenn starters &mdash; Treecko, Torchic, Mudkip &mdash; with full evolution chains, movesets, matchups, and ratings for new players." />
+  <title>Starters &middot; Hoenn Field Guide</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <!-- ============================== NAV ============================== -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html" aria-label="Hoenn Field Guide home">
+        <span class="nav__mark" aria-hidden="true">HFG</span>
+        <span class="nav__wordmark">Hoenn <span>Field</span> Guide</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <ul style="display:contents;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="starters.html">Starters</a></li>
+          <li><a href="gyms.html">Gyms</a></li>
+          <li><a href="elite-four.html">Elite Four</a></li>
+          <li><a href="legendaries.html">Legendaries</a></li>
+          <li><a href="tier-list.html">Tier List</a></li>
+          <li><a href="secrets.html">Secrets</a></li>
+          <li><a href="breeding.html">Breeding</a></li>
+          <li><a href="early-game.html">Early Game</a></li>
+          <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+          <li><a href="post-game.html">Post Game</a></li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-drawer">MENU</button>
+    </div>
+    <div class="nav__drawer" id="nav-drawer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="starters.html">Starters</a></li>
+        <li><a href="gyms.html">Gyms</a></li>
+        <li><a href="elite-four.html">Elite Four</a></li>
+        <li><a href="legendaries.html">Legendaries</a></li>
+        <li><a href="tier-list.html">Tier List</a></li>
+        <li><a href="secrets.html">Secrets</a></li>
+        <li><a href="breeding.html">Breeding</a></li>
+        <li><a href="early-game.html">Early Game</a></li>
+        <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+        <li><a href="post-game.html">Post Game</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============================== HEADER ============================== -->
+    <section class="page-header">
+      <div class="riso-blob riso-blob--ember" style="width:300px; height:300px; top:-80px; right:-50px;"></div>
+      <div class="riso-dots" style="width:220px; height:100px; bottom:30px; right:12%; transform: rotate(-5deg);"></div>
+      <div class="riso-blob riso-blob--ocean" style="width:160px; height:160px; bottom:40px; left:-50px;"></div>
+
+      <div class="container">
+        <span class="kicker">Prologue &middot; Choose Your Partner</span>
+        <h1 class="page-header__title">
+          The three starters<br>of <em>Hoenn</em>
+        </h1>
+        <p class="lede mt-4 dropcap" style="max-width: 62ch;">
+          Professor Birch hands you a single Poke Ball on Route 101. Sapling, spark, or splash &mdash; the choice
+          shapes every gym, every rival fight, every routing decision for the next forty hours. Below: complete
+          dossiers for the three starters of Hoenn, written for trainers who want to know exactly what they&rsquo;re
+          signing up for.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================== ANCHOR LIST ============================== -->
+    <section class="section section--tight" style="border-bottom: var(--border-w) solid var(--ink);">
+      <div class="container">
+        <div class="grid grid--3">
+          <a href="#starter-treecko" class="tile">
+            <div>
+              <div class="tile__num">No. 252 &middot; Grass</div>
+              <h3 class="tile__title">Treecko</h3>
+            </div>
+            <p class="tile__desc">Fast, frail, fang-and-claw. The thinking trainer&rsquo;s pick.</p>
+            <span class="tile__arrow">Read dossier &rarr;</span>
+          </a>
+          <a href="#starter-torchic" class="tile">
+            <div>
+              <div class="tile__num">No. 255 &middot; Fire</div>
+              <h3 class="tile__title">Torchic</h3>
+            </div>
+            <p class="tile__desc">Dual STAB by Combusken. The most forgiving line in Hoenn.</p>
+            <span class="tile__arrow">Read dossier &rarr;</span>
+          </a>
+          <a href="#starter-mudkip" class="tile">
+            <div>
+              <div class="tile__num">No. 258 &middot; Water</div>
+              <h3 class="tile__title">Mudkip</h3>
+            </div>
+            <p class="tile__desc">Bulk, immunity to Electric, one weakness. Easy mode.</p>
+            <span class="tile__arrow">Read dossier &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== STARTERS ============================== -->
+    <section class="section">
+      <div class="container">
+
+        <!-- =============== TREECKO =============== -->
+        <article id="starter-treecko" class="card-starter offset-shadow" data-accent="grass" style="margin-bottom: var(--s-8); cursor: default;">
+          <div class="split">
+            <div>
+              <div class="card-starter__num">No. 252 &middot; Hoenn Pokedex</div>
+              <h2 class="card-starter__name">Treecko</h2>
+              <p class="card-starter__evo mono mt-3">Treecko &rarr; Grovyle (Lv 16) &rarr; Sceptile (Lv 36)</p>
+              <div class="mt-4" style="display:flex; gap: var(--s-2); flex-wrap:wrap;">
+                <span class="type-chip type-chip--lg" data-type="grass">grass</span>
+                <span class="badge">Speed &middot; Sp. Atk</span>
+              </div>
+              <p class="card-starter__rating mt-5">&ldquo;Rewarding but punishing &mdash; 6/10 for new players.&rdquo;</p>
+            </div>
+
+            <div class="stack-lg">
+              <div>
+                <span class="kicker">Strengths</span>
+                <ul class="bullet-list bullet-list--emerald mt-3">
+                  <li>Fastest of the three starters at every stage of the run.</li>
+                  <li>Strong against Roxanne, Wattson (with Bullet Seed), Wallace, and Drake&rsquo;s Kingdra.</li>
+                  <li>Learns <strong>Leaf Blade</strong> naturally as Grovyle (Lv 29) &mdash; one of the best moves in Gen 3.</li>
+                  <li>Pure Grass typing: only one weakness multiplier per super-effective hit.</li>
+                </ul>
+              </div>
+
+              <div>
+                <span class="kicker kicker--ember">Weaknesses</span>
+                <ul class="bullet-list mt-3">
+                  <li>Bad matchup against Flannery, Winona, Phoebe, Glacia, and most of the Elite Four.</li>
+                  <li>Off-type movepool is shallow on the cartridge &mdash; mostly Crunch and Dragon Claw via TM.</li>
+                  <li>Frail defensive stats; stray Ice or Flying moves can one-shot.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider-rule"></div>
+
+          <div>
+            <span class="kicker">Recommended Movesets</span>
+            <div class="grid grid--3 mt-4">
+              <div class="card card--alt">
+                <div class="card__title" style="font-size: var(--fs-md);">Early Game</div>
+                <p class="card__subtitle">Lv 5 &rarr; 20</p>
+                <div class="card__body">
+                  <div class="stat-row"><span class="stat-row__label">Slot 1</span><span class="stat-row__value">Pound</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 2</span><span class="stat-row__value">Absorb</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 3</span><span class="stat-row__value">Quick Attack</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 4</span><span class="stat-row__value">Bullet Seed (TM09)</span></div>
+                </div>
+              </div>
+              <div class="card card--alt">
+                <div class="card__title" style="font-size: var(--fs-md);">Mid Game</div>
+                <p class="card__subtitle">Lv 20 &rarr; 40</p>
+                <div class="card__body">
+                  <div class="stat-row"><span class="stat-row__label">Slot 1</span><span class="stat-row__value">Leaf Blade</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 2</span><span class="stat-row__value">Bullet Seed</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 3</span><span class="stat-row__value">Quick Attack</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 4</span><span class="stat-row__value">Rock Tomb (TM39)</span></div>
+                </div>
+              </div>
+              <div class="card card--alt">
+                <div class="card__title" style="font-size: var(--fs-md);">Late Game</div>
+                <p class="card__subtitle">Lv 40 &rarr; Champion</p>
+                <div class="card__body">
+                  <div class="stat-row"><span class="stat-row__label">Slot 1</span><span class="stat-row__value">Leaf Blade</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 2</span><span class="stat-row__value">Dragon Claw (TM02)</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 3</span><span class="stat-row__value">Earthquake (TM26)</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 4</span><span class="stat-row__value">Aerial Ace or Crunch</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout callout--emerald" style="margin-top: var(--s-6);">
+            <span class="callout__label">Trivia</span>
+            <p style="margin:0;">
+              Sceptile was the first <strong>pure Grass</strong> starter final with a base 120 Speed stat,
+              and its design was inspired by the Carolina anole lizard. In Gen 6 it gained a Mega Evolution
+              that turned it Grass/Dragon &mdash; vindicating every trainer who put Dragon Claw on theirs.
+            </p>
+          </div>
+        </article>
+
+        <!-- =============== TORCHIC =============== -->
+        <article id="starter-torchic" class="card-starter offset-shadow--ember" data-accent="fire" style="margin-bottom: var(--s-8); cursor: default;">
+          <div class="split">
+            <div>
+              <div class="card-starter__num">No. 255 &middot; Hoenn Pokedex</div>
+              <h2 class="card-starter__name">Torchic</h2>
+              <p class="card-starter__evo mono mt-3">Torchic &rarr; Combusken (Lv 16, +Fighting) &rarr; Blaziken (Lv 36)</p>
+              <div class="mt-4" style="display:flex; gap: var(--s-2); flex-wrap:wrap;">
+                <span class="type-chip type-chip--lg" data-type="fire">fire</span>
+                <span class="type-chip type-chip--lg" data-type="fighting">fighting</span>
+                <span class="badge badge--ember">Mixed Atk</span>
+              </div>
+              <p class="card-starter__rating mt-5">&ldquo;The easiest run in Emerald &mdash; 9/10 for new players.&rdquo;</p>
+            </div>
+
+            <div class="stack-lg">
+              <div>
+                <span class="kicker">Strengths</span>
+                <ul class="bullet-list bullet-list--emerald mt-3">
+                  <li>Becomes Fire/Fighting at Combusken &mdash; incredible coverage for a 4th-badge run.</li>
+                  <li>Double Kick at Lv 16 trivializes Roxanne&rsquo;s gym.</li>
+                  <li>Sky Uppercut as Combusken hits Phoebe, Sidney, and Glacia for super-effective damage.</li>
+                  <li>Blaze Kick + Sky Uppercut covers most of Hoenn&rsquo;s threats with two STABs.</li>
+                </ul>
+              </div>
+
+              <div>
+                <span class="kicker kicker--ember">Weaknesses</span>
+                <ul class="bullet-list mt-3">
+                  <li>Slow until Blaziken; outsped by many gym aces in the mid-game.</li>
+                  <li>Awful matchup against Wallace and Tate &amp; Liza&rsquo;s Lunatone.</li>
+                  <li>No 4&times; weakness, but stacks Water, Ground, Flying, and Psychic vulnerabilities.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider-rule"></div>
+
+          <div>
+            <span class="kicker kicker--ember">Recommended Movesets</span>
+            <div class="grid grid--3 mt-4">
+              <div class="card card--alt">
+                <div class="card__title" style="font-size: var(--fs-md);">Early Game</div>
+                <p class="card__subtitle">Lv 5 &rarr; 20</p>
+                <div class="card__body">
+                  <div class="stat-row"><span class="stat-row__label">Slot 1</span><span class="stat-row__value">Scratch</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 2</span><span class="stat-row__value">Ember</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 3</span><span class="stat-row__value">Peck</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 4</span><span class="stat-row__value">Focus Energy</span></div>
+                </div>
+              </div>
+              <div class="card card--alt">
+                <div class="card__title" style="font-size: var(--fs-md);">Mid Game</div>
+                <p class="card__subtitle">Lv 20 &rarr; 40</p>
+                <div class="card__body">
+                  <div class="stat-row"><span class="stat-row__label">Slot 1</span><span class="stat-row__value">Double Kick</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 2</span><span class="stat-row__value">Ember / Flamethrower</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 3</span><span class="stat-row__value">Quick Attack</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 4</span><span class="stat-row__value">Bulk Up (TM08)</span></div>
+                </div>
+              </div>
+              <div class="card card--alt">
+                <div class="card__title" style="font-size: var(--fs-md);">Late Game</div>
+                <p class="card__subtitle">Lv 40 &rarr; Champion</p>
+                <div class="card__body">
+                  <div class="stat-row"><span class="stat-row__label">Slot 1</span><span class="stat-row__value">Blaze Kick / Flamethrower</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 2</span><span class="stat-row__value">Sky Uppercut</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 3</span><span class="stat-row__value">Earthquake (TM26)</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 4</span><span class="stat-row__value">Aerial Ace or Rock Slide</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout callout--sun" style="margin-top: var(--s-6);">
+            <span class="callout__label">Trivia</span>
+            <p style="margin:0;">
+              Blaziken was the <strong>first Fire/Fighting starter</strong>, kicking off a Gen-long tradition
+              (Infernape, Emboar, Cinderace). It also became the first Pokemon ever given a Mega Evolution in
+              X/Y &mdash; a quiet acknowledgment of how good it was on the cartridge.
+            </p>
+          </div>
+        </article>
+
+        <!-- =============== MUDKIP =============== -->
+        <article id="starter-mudkip" class="card-starter offset-shadow--ocean" data-accent="water" style="margin-bottom: var(--s-7); cursor: default;">
+          <div class="split">
+            <div>
+              <div class="card-starter__num">No. 258 &middot; Hoenn Pokedex</div>
+              <h2 class="card-starter__name">Mudkip</h2>
+              <p class="card-starter__evo mono mt-3">Mudkip &rarr; Marshtomp (Lv 16, +Ground) &rarr; Swampert (Lv 36)</p>
+              <div class="mt-4" style="display:flex; gap: var(--s-2); flex-wrap:wrap;">
+                <span class="type-chip type-chip--lg" data-type="water">water</span>
+                <span class="type-chip type-chip--lg" data-type="ground">ground</span>
+                <span class="badge badge--emerald">Atk &middot; HP &middot; Bulk</span>
+              </div>
+              <p class="card-starter__rating mt-5">&ldquo;Statistically the easiest run &mdash; 10/10.&rdquo;</p>
+            </div>
+
+            <div class="stack-lg">
+              <div>
+                <span class="kicker">Strengths</span>
+                <ul class="bullet-list bullet-list--emerald mt-3">
+                  <li>Becomes Water/Ground at Marshtomp &mdash; <strong>immune to Electric</strong>, only one weakness (4&times; Grass).</li>
+                  <li>Solos Roxanne, Wattson, Flannery, and Tate &amp; Liza without breaking a sweat.</li>
+                  <li>Highest bulk of any starter; ideal for new trainers learning the systems.</li>
+                  <li>Earthquake, Surf, and Ice Beam by TM give full coverage out of the box.</li>
+                </ul>
+              </div>
+
+              <div>
+                <span class="kicker kicker--ember">Weaknesses</span>
+                <ul class="bullet-list mt-3">
+                  <li>4&times; weak to Grass &mdash; Drake&rsquo;s Salamence and wild Ludicolo can sting.</li>
+                  <li>Slowest of the three starters; rarely outspeeds gym aces.</li>
+                  <li>Predictable; many trainers carry Razor Leaf or Giga Drain.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider-rule"></div>
+
+          <div>
+            <span class="kicker kicker--ocean">Recommended Movesets</span>
+            <div class="grid grid--3 mt-4">
+              <div class="card card--alt">
+                <div class="card__title" style="font-size: var(--fs-md);">Early Game</div>
+                <p class="card__subtitle">Lv 5 &rarr; 20</p>
+                <div class="card__body">
+                  <div class="stat-row"><span class="stat-row__label">Slot 1</span><span class="stat-row__value">Tackle</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 2</span><span class="stat-row__value">Water Gun</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 3</span><span class="stat-row__value">Mud Slap</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 4</span><span class="stat-row__value">Rock Tomb (TM39)</span></div>
+                </div>
+              </div>
+              <div class="card card--alt">
+                <div class="card__title" style="font-size: var(--fs-md);">Mid Game</div>
+                <p class="card__subtitle">Lv 20 &rarr; 40</p>
+                <div class="card__body">
+                  <div class="stat-row"><span class="stat-row__label">Slot 1</span><span class="stat-row__value">Surf (HM03)</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 2</span><span class="stat-row__value">Mud Shot / Mud Slap</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 3</span><span class="stat-row__value">Rock Slide (TM37)</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 4</span><span class="stat-row__value">Take Down</span></div>
+                </div>
+              </div>
+              <div class="card card--alt">
+                <div class="card__title" style="font-size: var(--fs-md);">Late Game</div>
+                <p class="card__subtitle">Lv 40 &rarr; Champion</p>
+                <div class="card__body">
+                  <div class="stat-row"><span class="stat-row__label">Slot 1</span><span class="stat-row__value">Surf</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 2</span><span class="stat-row__value">Earthquake (TM26)</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 3</span><span class="stat-row__value">Ice Beam (TM13)</span></div>
+                  <div class="stat-row"><span class="stat-row__label">Slot 4</span><span class="stat-row__value">Rock Slide or Brick Break</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout callout--ocean" style="margin-top: var(--s-6);">
+            <span class="callout__label">Trivia</span>
+            <p style="margin:0;">
+              Swampert is one of only <strong>three Water/Ground families</strong> in Gen 3 (with Whiscash and
+              Quagsire). The &ldquo;So I herd u liek mudkipz&rdquo; meme originated from a 2007 4chan thread and helped
+              cement Mudkip in pop culture &mdash; long after the cartridge stopped selling.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============================== NEXT CHAPTER ============================== -->
+    <section class="section section--ink">
+      <div class="container container--narrow text-center">
+        <span class="kicker">Next Chapter</span>
+        <h2 class="h2 mt-4" style="color:var(--paper);">Now plan the <em style="color:var(--ember); font-style:italic; font-weight:400;">gym route</em>.</h2>
+        <p class="lede mt-5" style="color:var(--mist); margin-inline:auto;">
+          Eight leaders, eight cities, eight badges &mdash; ordered as the cartridge expects you to challenge them.
+        </p>
+        <p class="mt-6" style="display:flex; gap:var(--s-3); justify-content:center; flex-wrap:wrap;">
+          <a href="gyms.html" class="badge badge--ember" style="text-decoration:none;">Gym Leaders &rarr;</a>
+          <a href="tier-list.html" class="badge badge--emerald" style="text-decoration:none;">Tier List &rarr;</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">Hoenn <span>Field</span> Guide</div>
+          <p class="mt-3">An editorial companion to Pokemon Emerald, published in print-as-pixels.
+          Pokemon names, characters, and locations are property of Nintendo, Game Freak, and The Pokemon Company.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Chapters</div>
+          <ul class="footer__links">
+            <li><a href="gyms.html">Gym Leaders</a></li>
+            <li><a href="elite-four.html">Elite Four</a></li>
+            <li><a href="legendaries.html">Legendaries</a></li>
+            <li><a href="tier-list.html">Tier List</a></li>
+            <li><a href="secrets.html">Secrets</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Reference</div>
+          <ul class="footer__links">
+            <li><a href="breeding.html">Breeding &amp; IVs</a></li>
+            <li><a href="early-game.html">Early Game</a></li>
+            <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+            <li><a href="post-game.html">Post Game</a></li>
+            <li><a href="https://github.com/" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span data-year>2025</span> &middot; Hoenn Field Guide &middot; Issue 001</span>
+        <span>Set in Fraunces, Instrument Sans &amp; JetBrains Mono</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&uarr; Top</button>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,773 @@
+{
+  "meta": {
+    "game": "Pokemon Emerald",
+    "platform": "Game Boy Advance",
+    "release_year": 2004,
+    "region": "Hoenn",
+    "version_quirks": "Emerald merges Ruby and Sapphire content, adds the Battle Frontier, lets you catch both Groudon and Kyogre, introduces a fully animated overworld for Pokemon sprites, and features expanded contests and a refined story focused on Rayquaza."
+  },
+  "starters": [
+    {
+      "name": "Treecko",
+      "dex_number": 252,
+      "type": ["Grass"],
+      "signature_evolution": "Treecko -> Grovyle (Lv 16) -> Sceptile (Lv 36)",
+      "final_stat_focus": "Speed and Special Attack",
+      "strengths": [
+        "Fastest of the three starters at every stage",
+        "Strong against Roxanne, Wattson (with Bullet Seed), Juan/Wallace, and Drake's Kingdra",
+        "Learns Leaf Blade naturally as Grovyle (Lv 29) which is one of the best moves in Gen 3",
+        "Pure Grass typing means only one weakness multiplier per type"
+      ],
+      "weaknesses": [
+        "Bad matchup against Flannery, Winona, Phoebe, Glacia, and most of the Elite Four",
+        "Movepool outside of Grass is shallow on the cartridge (mostly Crunch, Dragon Claw via TM)",
+        "Frail defensive stats; gets one-shot by stray Ice or Flying moves"
+      ],
+      "recommended_movesets": {
+        "early_game": ["Pound", "Absorb", "Quick Attack", "Bullet Seed (TM09 from Cycling Road shop)"],
+        "mid_game": ["Leaf Blade", "Bullet Seed", "Quick Attack", "Rock Tomb (TM39)"],
+        "late_game": ["Leaf Blade", "Dragon Claw (TM02)", "Earthquake (TM26)", "Aerial Ace (TM40) or Crunch"]
+      },
+      "best_for_new_players_rating": "6/10 - rewarding but punishing. Sceptile demands smart switching.",
+      "fun_trivia": "Sceptile was the first pure Grass-type starter final with a base 120 Speed stat, and its design was inspired by the Carolina anole lizard. In Gen 6 it gained a Mega Evolution that turned it Grass/Dragon."
+    },
+    {
+      "name": "Torchic",
+      "dex_number": 255,
+      "type": ["Fire"],
+      "signature_evolution": "Torchic -> Combusken (Lv 16, gains Fighting type) -> Blaziken (Lv 36)",
+      "final_stat_focus": "Attack and Special Attack (mixed)",
+      "strengths": [
+        "Becomes Fire/Fighting at Combusken, which is incredible for a 4th badge run",
+        "Double Kick at Lv 16 trivializes Roxanne's gym",
+        "Sky Uppercut as Combusken hits Phoebe, Sidney, and Glacia",
+        "Blaze Kick + Sky Uppercut covers most of Hoenn's threats"
+      ],
+      "weaknesses": [
+        "Slow until Blaziken; outsped by many gym aces",
+        "Awful matchup against Wallace/Juan and Tate & Liza's Lunatone",
+        "4x weak to nothing but stacks Water/Ground/Flying/Psychic weaknesses"
+      ],
+      "recommended_movesets": {
+        "early_game": ["Scratch", "Ember", "Peck", "Focus Energy"],
+        "mid_game": ["Double Kick", "Ember/Flamethrower", "Quick Attack", "Bulk Up (TM08)"],
+        "late_game": ["Blaze Kick or Flamethrower", "Sky Uppercut", "Earthquake (TM26)", "Aerial Ace or Rock Slide"]
+      },
+      "best_for_new_players_rating": "9/10 - the easiest run in Emerald thanks to dual STAB and great coverage.",
+      "fun_trivia": "Blaziken was the first Fire/Fighting starter, kicking off a Gen-long tradition (Infernape, Emboar, Cinderace). It became the first Pokemon ever given a Mega Evolution in X/Y."
+    },
+    {
+      "name": "Mudkip",
+      "dex_number": 258,
+      "type": ["Water"],
+      "signature_evolution": "Mudkip -> Marshtomp (Lv 16, gains Ground type) -> Swampert (Lv 36)",
+      "final_stat_focus": "Attack, HP, and bulk",
+      "strengths": [
+        "Becomes Water/Ground at Marshtomp - immune to Electric, only one weakness (4x Grass)",
+        "Solo's Roxanne, Wattson, Flannery, and Tate & Liza without breaking a sweat",
+        "Highest bulk of any starter; great for new players",
+        "Learns Earthquake, Surf, and Ice Beam by TM for full coverage"
+      ],
+      "weaknesses": [
+        "4x weak to Grass moves - watch for Winona's no Grass, but Drake's Salamence and wild Ludicolo can sting",
+        "Slowest of the three starters",
+        "Predictable; many trainers carry Razor Leaf or Giga Drain"
+      ],
+      "recommended_movesets": {
+        "early_game": ["Tackle", "Water Gun", "Mud Slap", "Rock Tomb (TM39)"],
+        "mid_game": ["Surf (HM03)", "Mud Shot/Mud Slap", "Rock Slide (TM37)", "Take Down"],
+        "late_game": ["Surf", "Earthquake (TM26)", "Ice Beam (TM13)", "Rock Slide or Brick Break"]
+      },
+      "best_for_new_players_rating": "10/10 - statistically the easiest Emerald playthrough.",
+      "fun_trivia": "Swampert is one of only three Water/Ground Pokemon families in Gen 3 (with Whiscash and Quagsire). The 'So I herd u liek mudkipz' meme originated from a 4chan thread in 2007 and helped cement Mudkip in pop culture."
+    }
+  ],
+  "gym_leaders": [
+    {
+      "order": 1,
+      "name": "Roxanne",
+      "city": "Rustboro City",
+      "type": "Rock",
+      "ace": "Nosepass",
+      "ace_level": 15,
+      "team": [
+        {"pokemon": "Geodude", "level": 12},
+        {"pokemon": "Geodude", "level": 12},
+        {"pokemon": "Nosepass", "level": 15, "key_move": "Rock Tomb + Harden"}
+      ],
+      "level_cap": 15,
+      "counters": ["Marshtomp (Water Gun)", "Lombre", "Breloom with Mach Punch", "Treecko (Absorb)"],
+      "strategy": "Nosepass has Harden and Rock Tomb. The Rock Tomb speed drop is what kills slow physical attackers, so prefer Special Attackers. A Magnemite caught at Cave of Origin route is too high level here, but a Lotad from Route 102 evolved to Lombre is excellent. Avoid using Torchic alone unless it has Double Kick (Lv 16, so train one extra level first).",
+      "badge": "Stone Badge",
+      "badge_perk": "Boosts Attack stat in battle and lets you use HM01 Cut outside of battle.",
+      "tm_given": "TM39 Rock Tomb",
+      "tip": "Backtrack to Petalburg Woods after the gym to grab a Shroomish - it evolves into Breloom with Mach Punch by Lv 23."
+    },
+    {
+      "order": 2,
+      "name": "Brawly",
+      "city": "Dewford Town",
+      "type": "Fighting",
+      "ace": "Makuhita",
+      "ace_level": 19,
+      "team": [
+        {"pokemon": "Machop", "level": 16},
+        {"pokemon": "Meditite", "level": 16},
+        {"pokemon": "Makuhita", "level": 19, "key_move": "Bulk Up + Arm Thrust + Vital Throw"}
+      ],
+      "level_cap": 19,
+      "counters": ["Taillow (Wing Attack)", "Beautifly (Gust)", "Kadabra (Confusion)", "Dustox", "Spoink"],
+      "strategy": "Makuhita uses Bulk Up to snowball. Don't let it set up - hit it on turn 1 with a strong Flying or Psychic attack. Taillow's Wing Attack and Quick Attack make this gym trivial. Beware Vital Throw, which never misses.",
+      "badge": "Knuckle Badge",
+      "badge_perk": "Pokemon up to Lv 30 obey, and you can use HM05 Flash outside battle.",
+      "tm_given": "TM08 Bulk Up",
+      "tip": "Catch a Magnemite in New Mauville later - useless for Brawly, but you can grab a Whismur in Rusturf Tunnel that evolves into Loudred and learns Stomp."
+    },
+    {
+      "order": 3,
+      "name": "Wattson",
+      "city": "Mauville City",
+      "type": "Electric",
+      "ace": "Manectric",
+      "ace_level": 24,
+      "team": [
+        {"pokemon": "Voltorb", "level": 20, "warning": "Self-Destruct on low HP"},
+        {"pokemon": "Electrike", "level": 20},
+        {"pokemon": "Magneton", "level": 22},
+        {"pokemon": "Manectric", "level": 24, "key_move": "Quick Attack + Shock Wave + Howl"}
+      ],
+      "level_cap": 24,
+      "counters": ["Marshtomp (Mud Shot/Mud Slap)", "Geodude/Graveler (Magnitude)", "Sandshrew", "Numel from Fiery Path"],
+      "strategy": "A Ground-type fully neutralizes Wattson. Marshtomp is the cleanest sweep in the game. Watch out for Voltorb's Self-Destruct - swap to a Rock or Steel type for the Boom turn. Magneton is Steel/Electric, so its only weakness here is Ground/Fire/Fighting.",
+      "badge": "Dynamo Badge",
+      "badge_perk": "Boosts Defense in battle and enables HM06 Rock Smash outside battle.",
+      "tm_given": "TM34 Shock Wave (a never-miss Electric attack)",
+      "tip": "After defeating Wattson, talk to him again - he gives you a Thunder Stone-related sidequest to clear out New Mauville's generators, rewarding TM24 Thunderbolt."
+    },
+    {
+      "order": 4,
+      "name": "Flannery",
+      "city": "Lavaridge Town",
+      "type": "Fire",
+      "ace": "Torkoal",
+      "ace_level": 29,
+      "team": [
+        {"pokemon": "Numel", "level": 26},
+        {"pokemon": "Slugma", "level": 26},
+        {"pokemon": "Camerupt", "level": 28},
+        {"pokemon": "Torkoal", "level": 29, "key_move": "Overheat + Attract + Sunny Day"}
+      ],
+      "level_cap": 29,
+      "counters": ["Marshtomp/Swampert", "Golduck", "Vibrava", "Aron/Lairon", "Wailmer with Surf"],
+      "strategy": "Torkoal opens with Overheat which lowers its own Special Attack two stages, so you can stall through it. Watch for Attract, which neuters male attackers - bring a female Pokemon or Yellow Flute to break it. Numel and Camerupt are Fire/Ground, so Water moves do quadruple damage. Slugma is pure Fire.",
+      "badge": "Heat Badge",
+      "badge_perk": "Lets you use HM04 Strength outside battle and boosts Speed in battle.",
+      "tm_given": "TM50 Overheat",
+      "tip": "Hot Springs in Lavaridge heal your team for free - park here while training. The old woman in town gives you an Egg containing Wynaut."
+    },
+    {
+      "order": 5,
+      "name": "Norman",
+      "city": "Petalburg City",
+      "type": "Normal",
+      "ace": "Slaking",
+      "ace_level": 31,
+      "team": [
+        {"pokemon": "Spinda", "level": 27},
+        {"pokemon": "Vigoroth", "level": 27},
+        {"pokemon": "Linoone", "level": 29},
+        {"pokemon": "Slaking", "level": 31, "key_move": "Facade + Slack Off + Yawn (every other turn due to Truant)"}
+      ],
+      "level_cap": 31,
+      "counters": ["Hariyama (Vital Throw)", "Breloom (Sky Uppercut)", "Combusken/Blaziken", "Machoke from Granite Cave"],
+      "strategy": "Slaking has Truant - it loafs every other turn. Use the loafing turn to set up Bulk Up, heal, or switch in a wall. Hariyama with Vital Throw and Belly Drum is the textbook counter. Don't put a Ghost type in - he carries Faint Attack. Slaking's Yawn forces switches; bring an Awakening or use a Pokemon with Insomnia/Vital Spirit.",
+      "badge": "Balance Badge",
+      "badge_perk": "Lets all Pokemon up to Lv 70 obey and enables HM03 Surf outside battle.",
+      "tm_given": "TM42 Facade",
+      "tip": "Norman is your father in this game - the dialogue around the gym fight is some of the best in the franchise. Mom calls you on the PokeNav after."
+    },
+    {
+      "order": 6,
+      "name": "Winona",
+      "city": "Fortree City",
+      "type": "Flying",
+      "ace": "Altaria",
+      "ace_level": 33,
+      "team": [
+        {"pokemon": "Swablu", "level": 29},
+        {"pokemon": "Tropius", "level": 29},
+        {"pokemon": "Pelipper", "level": 30},
+        {"pokemon": "Skarmory", "level": 31},
+        {"pokemon": "Altaria", "level": 33, "key_move": "Dragon Dance + Aerial Ace + Earthquake"}
+      ],
+      "level_cap": 33,
+      "counters": ["Magneton (Thunderbolt)", "Manectric (Thunderbolt)", "Aron/Lairon (Rock Tomb)", "Ice Beam users"],
+      "strategy": "Altaria is Dragon/Flying, so Ice Beam is a one-shot. Skarmory is Steel/Flying - hit it with Fire or Electric, NOT Rock (it resists). Pelipper is doubly weak to Electric. The whole gym is Electric food - Manectric or Magneton solo it. Watch for Altaria's Dragon Dance.",
+      "badge": "Feather Badge",
+      "badge_perk": "Pokemon up to Lv 80 obey, and you can use HM02 Fly outside battle.",
+      "tm_given": "TM40 Aerial Ace",
+      "tip": "After Winona, head to Mt. Pyre next - this is where the team plot really kicks off and you'll need Fly to keep up with the legendary chase."
+    },
+    {
+      "order": 7,
+      "name": "Tate & Liza",
+      "city": "Mossdeep City",
+      "type": "Psychic",
+      "ace": "Solrock & Lunatone (double battle)",
+      "ace_level": 42,
+      "team": [
+        {"pokemon": "Claydol", "level": 41},
+        {"pokemon": "Xatu", "level": 41},
+        {"pokemon": "Lunatone", "level": 42, "key_move": "Calm Mind + Psychic + Hypnosis"},
+        {"pokemon": "Solrock", "level": 42, "key_move": "Sunny Day + SolarBeam + Flamethrower"}
+      ],
+      "level_cap": 42,
+      "battle_format": "DOUBLE BATTLE - this is the only mandatory double-battle gym in the series",
+      "counters": ["Sharpedo (Crunch)", "Mightyena (Bite/Crunch)", "Absol", "Banette (Shadow Ball)", "Sableye (immune to Psychic)"],
+      "strategy": "Lead with two Dark or Ghost types. Sharpedo's Crunch is a one-shot on either ace. Earthquake hits both opponents - perfect partners are Flygon, Camerupt, or Swampert paired with a Flying ally to dodge it. Beware: Solrock has Sunny Day + SolarBeam combo, and Lunatone has Hypnosis. Bring Awakenings.",
+      "badge": "Mind Badge",
+      "badge_perk": "Pokemon up to Lv 90 obey, and you can use HM08 Dive outside battle.",
+      "tm_given": "TM04 Calm Mind",
+      "tip": "Pick up the Sun Stone from the meteorite-loving NPCs near the Space Center after the gym - it's the only one in the early-mid game."
+    },
+    {
+      "order": 8,
+      "name": "Wallace",
+      "city": "Sootopolis City",
+      "type": "Water",
+      "ace": "Milotic",
+      "ace_level": 43,
+      "team": [
+        {"pokemon": "Luvdisc", "level": 40},
+        {"pokemon": "Whiscash", "level": 41, "warning": "Whiscash is Water/Ground - Grass moves do 4x"},
+        {"pokemon": "Sealeo", "level": 41},
+        {"pokemon": "Seaking", "level": 42},
+        {"pokemon": "Milotic", "level": 43, "key_move": "Recover + Ice Beam + Surf + Toxic"}
+      ],
+      "level_cap": 43,
+      "counters": ["Manectric/Magneton (Thunderbolt)", "Sceptile (Leaf Blade)", "Breloom (Giga Drain)", "Roselia"],
+      "strategy": "Note: in vanilla Emerald, Wallace is the gym leader and Juan is replaced. (In Ruby/Sapphire it was Wallace.) Milotic has Recover + Marvel Scale, so it's spongy. Status it with Toxic or burn, then chunk with Electric or Grass. Whiscash is doubly weak to Grass. Don't bring Mudkip line solo - Milotic outclasses it.",
+      "badge": "Rain Badge",
+      "badge_perk": "Pokemon of all levels obey, and you can use HM07 Waterfall outside battle.",
+      "tm_given": "TM03 Water Pulse",
+      "tip": "After Wallace's gym, you trigger the Sootopolis Kyogre/Groudon climax. Stock up on Ultra Balls, Max Repels, and Revives at the Pokemart before entering Cave of Origin."
+    }
+  ],
+  "elite_four": [
+    {
+      "order": 1,
+      "name": "Sidney",
+      "type": "Dark",
+      "team": [
+        {"pokemon": "Mightyena", "level": 46, "moves": ["Crunch", "Roar", "Swagger", "Take Down"]},
+        {"pokemon": "Shiftry", "level": 48, "moves": ["Fake Out", "Torment", "Swagger", "Extrasensory"]},
+        {"pokemon": "Cacturne", "level": 46, "moves": ["Needle Arm", "Cotton Spore", "Faint Attack", "Leech Seed"]},
+        {"pokemon": "Sharpedo", "level": 48, "moves": ["Crunch", "Surf", "Slash", "Swagger"]},
+        {"pokemon": "Absol", "level": 49, "moves": ["Razor Wind", "Slash", "Swords Dance", "Rock Slide"]}
+      ],
+      "weakness": "Fighting, Bug",
+      "key_strategy": "Hariyama with Brick Break or Cross Chop, Blaziken with Sky Uppercut, or Heracross with Megahorn rolls this whole team. Watch for Swagger - it raises your Attack but confuses you. Bring a Persim Berry or use a Special Attacker. Shiftry's Fake Out forces a flinch turn 1, so don't lead with your sweeper at full HP commit."
+    },
+    {
+      "order": 2,
+      "name": "Phoebe",
+      "type": "Ghost",
+      "team": [
+        {"pokemon": "Dusclops", "level": 48, "moves": ["Shadow Punch", "Confuse Ray", "Curse", "Pressure ability"]},
+        {"pokemon": "Banette", "level": 49, "moves": ["Shadow Ball", "Will-O-Wisp", "Faint Attack", "Insomnia"]},
+        {"pokemon": "Sableye", "level": 50, "moves": ["Shadow Ball", "Faint Attack", "Confuse Ray", "Attract"]},
+        {"pokemon": "Banette", "level": 49, "moves": ["Shadow Ball", "Skill Swap", "Curse", "Thunderbolt"]},
+        {"pokemon": "Dusclops", "level": 51, "moves": ["Shadow Punch", "Earthquake", "Ice Beam", "Confuse Ray"]}
+      ],
+      "weakness": "Dark, Ghost",
+      "key_strategy": "Dark moves are super effective AND Ghost types take neutral damage from Normal (they're immune to Normal but Crunch/Bite are Dark, which deals super effective). Sharpedo's Crunch, Houndoom's Crunch, or Absol's Bite/Crunch all dismantle her. Sableye is the trickiest - it has no weakness on its dual typing (Dark/Ghost). Use Earthquake or wear it down with Toxic. Avoid Psychic-types entirely - Phoebe's Ghosts have Crunch/Faint Attack."
+    },
+    {
+      "order": 3,
+      "name": "Glacia",
+      "type": "Ice",
+      "team": [
+        {"pokemon": "Sealeo", "level": 50, "moves": ["Body Slam", "Hail", "Ice Ball", "Encore"]},
+        {"pokemon": "Glalie", "level": 50, "moves": ["Ice Beam", "Crunch", "Light Screen", "Hail"]},
+        {"pokemon": "Sealeo", "level": 52, "moves": ["Body Slam", "Hail", "Ice Ball", "Attract"]},
+        {"pokemon": "Glalie", "level": 52, "moves": ["Ice Beam", "Crunch", "Shadow Ball", "Hail"]},
+        {"pokemon": "Walrein", "level": 53, "moves": ["Surf", "Ice Beam", "Body Slam", "Sheer Cold"]}
+      ],
+      "weakness": "Fire, Fighting, Rock, Steel",
+      "key_strategy": "All her Pokemon are pure Ice except Walrein (Ice/Water). Blaziken with Blaze Kick or Flamethrower obliterates the gym. Hariyama with Brick Break is also fantastic. Watch out for Walrein's Sheer Cold - it's a one-hit KO move. Walrein is doubly weak to Electric due to Water typing. Manectric or Magneton can revenge."
+    },
+    {
+      "order": 4,
+      "name": "Drake",
+      "type": "Dragon",
+      "team": [
+        {"pokemon": "Shelgon", "level": 52, "moves": ["Dragon Claw", "Rock Tomb", "Protect", "Double-Edge"]},
+        {"pokemon": "Altaria", "level": 54, "moves": ["Dragon Dance", "Aerial Ace", "Dragon Breath", "Earthquake"]},
+        {"pokemon": "Flygon", "level": 53, "moves": ["Dragon Claw", "Earthquake", "Crunch", "Fly"]},
+        {"pokemon": "Flygon", "level": 53, "moves": ["Dragon Breath", "Sandstorm", "Fly", "Crunch"]},
+        {"pokemon": "Salamence", "level": 55, "moves": ["Dragon Claw", "Crunch", "Fly", "Flamethrower"]}
+      ],
+      "weakness": "Ice, Dragon",
+      "key_strategy": "Ice Beam is your best friend. Walrein, Glalie, or Lapras (traded) work great. Salamence and Altaria are doubly weak to Ice (Dragon/Flying). Beware Earthquake on Flygon and Salamence - don't lead with Magneton. Kingdra is Dragon/Water and only weak to Dragon, so save it for last with a Dragon Claw user. Glacia's stolen Walrein from your prior fight should still have full Ice Beam PP if you slept through her with Soft-Boiled."
+    },
+    {
+      "order": 5,
+      "name": "Wallace",
+      "title": "Champion",
+      "type": "Water (mixed)",
+      "team": [
+        {"pokemon": "Wailord", "level": 57, "moves": ["Water Spout", "Rest", "Amnesia", "Double-Edge"]},
+        {"pokemon": "Tentacruel", "level": 55, "moves": ["Sludge Bomb", "Hydro Pump", "Toxic", "Barrier"]},
+        {"pokemon": "Ludicolo", "level": 56, "moves": ["Surf", "Giga Drain", "Leech Seed", "Toxic"]},
+        {"pokemon": "Whiscash", "level": 56, "moves": ["Earthquake", "Surf", "Amnesia", "Hyper Beam"]},
+        {"pokemon": "Gyarados", "level": 56, "moves": ["Hyper Beam", "Surf", "Earthquake", "Dragon Dance"]},
+        {"pokemon": "Milotic", "level": 58, "moves": ["Surf", "Ice Beam", "Recover", "Toxic"]}
+      ],
+      "weakness": "Mostly Electric/Grass, but Ludicolo (Water/Grass) is only weak to Bug/Flying/Poison",
+      "key_strategy": "Manectric or Raikou-tier Electric attackers shred most of his team. The catch is Ludicolo - bring Sceptile, Beautifly, or a Crobat to handle it. Whiscash is Water/Ground - 4x weak to Grass. Gyarados is 4x weak to Electric. Milotic with Recover + Marvel Scale is the wall - status it (paralyze with Thunder Wave) before chunking with Electric. Wallace is the only Champion in the franchise to specialize in Water."
+    }
+  ],
+  "legendaries": [
+    {
+      "name": "Groudon",
+      "dex_number": 383,
+      "type": ["Ground"],
+      "level": 70,
+      "location": "Terra Cave (roaming/anchor cave that appears in a random route after the Sootopolis storyline)",
+      "access_requirements": [
+        "Beat the Elite Four",
+        "Speak to Professor Cozmo and check the news on TV in any Pokemon Center",
+        "Terra Cave's location rotates - check the Hoenn news report each day"
+      ],
+      "catching_tips": "False Swipe with a Gallade/Sceptile to leave 1 HP, then status it (Hypnosis from Gardevoir or Thunder Wave). Groudon has Drought ability which boosts Fire moves and weakens Water moves, so don't try to chip with Surf. Use Ultra Balls or a Timer Ball after 10+ turns. Has Earthquake, Fire Blast, Hyper Beam, Bulk Up - strong and bulky.",
+      "recommended_ball": "Timer Ball (after turn 10) or Ultra Ball; Dusk Ball if you can wake it up at night"
+    },
+    {
+      "name": "Kyogre",
+      "dex_number": 382,
+      "type": ["Water"],
+      "level": 70,
+      "location": "Marine Cave (roaming/anchor cave on a random water route after Sootopolis)",
+      "access_requirements": [
+        "Beat the Elite Four",
+        "Marine Cave appears on a random water route; check Hoenn TV/news",
+        "Surf required to reach it"
+      ],
+      "catching_tips": "Has Drizzle which forces rain, doubling its own Water move damage and weakening Fire. Don't bring a Fire attacker. Use a Whismur/Loudred with Sing for sleep or a Gengar with Hypnosis. Its moveset includes Sheer Cold (OHKO!), so save before engaging. Same Timer Ball strategy as Groudon.",
+      "recommended_ball": "Timer Ball or Net Ball (it's part Water)"
+    },
+    {
+      "name": "Rayquaza",
+      "dex_number": 384,
+      "type": ["Dragon", "Flying"],
+      "level": 70,
+      "location": "Sky Pillar (Route 131, accessible after the Sootopolis crisis)",
+      "access_requirements": [
+        "Reach Sky Pillar via Mach Bike navigation - the cracked floors require speed",
+        "Climb 5 floors of bike puzzles",
+        "Story-mandatory encounter to settle Groudon vs Kyogre, but if you knock it out you can re-encounter it after Hall of Fame"
+      ],
+      "catching_tips": "Highest base stat total of any Pokemon you can catch in the cartridge (680). Carries Outrage, Extreme Speed, Fly, Rest. Don't let Outrage lock it in if you're using a Dragon - the recoil-confusion is brutal. False Swipe doesn't work (Outrage hits hard back). Lower with strong neutral moves, then status (paralyze ideally - it can't sleep with Rest unless you remove Chesto Berry). Save before engaging.",
+      "recommended_ball": "Timer Ball is mathematically best after ~30 turns; Ultra Ball as backup"
+    },
+    {
+      "name": "Latios",
+      "dex_number": 381,
+      "type": ["Dragon", "Psychic"],
+      "level": 40,
+      "location": "Roams Hoenn after the Hoenn TV news event with Mom (post-7th badge)",
+      "access_requirements": [
+        "Watch the news at home with your mom after getting the 7th badge",
+        "Choose 'Blue' in the news for Latios (default in Emerald is Latios; Latias if you choose differently in the male/female protagonist version - actually in Emerald it's locked to Latios for male protagonist and Latias for female, with the other obtainable via the Eon Ticket event)",
+        "Eon Ticket (Mystery Gift event item) lets you sail to Southern Island for the OTHER Latios/Latias"
+      ],
+      "catching_tips": "Roaming legendary - it flees on turn 1. Use Mean Look with Crobat (Lv 30+ learns it via breeding/move tutor) or Block. Repels block lower-level encounters so you only run into Latios when biking. Use Master Ball if you want to skip the chase entirely - this is the most justified Master Ball in the game.",
+      "recommended_ball": "Master Ball (highly recommended), or Net Ball after Mean Look"
+    },
+    {
+      "name": "Latias",
+      "dex_number": 380,
+      "type": ["Dragon", "Psychic"],
+      "level": 40,
+      "location": "Same as Latios - which one roams depends on your news choice and Eon Ticket events",
+      "access_requirements": "Same as Latios",
+      "catching_tips": "Identical mechanics to Latios. Slightly more defensively oriented. Both have access to a Latiasite/Latiosite in later games but in Emerald you'll just want them for Soul Dew (held item that boosts their Sp. Atk and Sp. Def).",
+      "recommended_ball": "Master Ball or Net Ball after Mean Look"
+    },
+    {
+      "name": "Regirock",
+      "dex_number": 377,
+      "type": ["Rock"],
+      "level": 40,
+      "location": "Desert Ruins (Route 111, behind Mirage Tower area)",
+      "access_requirements": [
+        "Catch a Relicanth and a Wailord, place them as the head/tail of your party",
+        "Read the Braille in Sealed Chamber (under Route 134 dive spot) - it tells you to 'go straight then right'",
+        "In the Desert Ruins chamber, walk 2 steps down from the center, then 2 right, then use Rock Smash"
+      ],
+      "catching_tips": "Has Curse + Superpower + Explosion. Don't let it Explode - it WILL kill itself. Bring Pokemon with Damp ability (Poliwhirl/Wooper) to block Explosion. Use Sleep status; chip with Special Attackers since its Defense is 200 base.",
+      "recommended_ball": "Ultra Ball or Timer Ball"
+    },
+    {
+      "name": "Regice",
+      "dex_number": 378,
+      "type": ["Ice"],
+      "level": 40,
+      "location": "Island Cave (Route 105)",
+      "access_requirements": [
+        "Same Relicanth/Wailord party requirement",
+        "Inside the cave, stand in the center for 2 minutes WITHOUT MOVING",
+        "(Some sources say walk in a counter-clockwise lap; the proven method is just stand still for 2 minutes)"
+      ],
+      "catching_tips": "Massive Special Defense (200 base). Use physical attackers to chip it down - Hariyama with Brick Break, or a high-attack Steel-type. Has Explosion - use Damp Pokemon. Avoid Special moves; you'll do pitiful damage even with super effective.",
+      "recommended_ball": "Timer Ball after 10+ turns"
+    },
+    {
+      "name": "Registeel",
+      "dex_number": 379,
+      "type": ["Steel"],
+      "level": 40,
+      "location": "Ancient Tomb (Route 120)",
+      "access_requirements": [
+        "Same Relicanth/Wailord party requirement",
+        "Use Fly to access Route 120, walk to the small tomb",
+        "Inside, use Flash in the center of the room"
+      ],
+      "catching_tips": "Balanced 200/200 defenses. Status it (paralyze, then put to sleep) and chip with Fighting or Fire moves. Watch for Curse (slows it but raises attack/defense) and Explosion. Steel typing resists everything except Fire, Fighting, and Ground.",
+      "recommended_ball": "Ultra Ball or Timer Ball"
+    },
+    {
+      "name": "Mew (event only)",
+      "dex_number": 151,
+      "type": ["Psychic"],
+      "level": 30,
+      "location": "Faraway Island (event-only, requires the Old Sea Map item from a Nintendo distribution event in 2006)",
+      "access_requirements": "Old Sea Map distribution item; not legitimately obtainable today without trade or hacking",
+      "catching_tips": "Mew runs through tall grass on Faraway Island and you have to track it without it spotting you (Solid Snake style). Once cornered, it teleports. After enough loops, you battle it at Lv 30. Use False Swipe and a Quick Ball.",
+      "recommended_ball": "Quick Ball (turn 1) - in Gen 3 use Net Ball or Ultra Ball as Quick Ball doesn't exist"
+    },
+    {
+      "name": "Deoxys (event only)",
+      "dex_number": 386,
+      "type": ["Psychic"],
+      "level": 30,
+      "location": "Birth Island (event-only, requires Aurora Ticket)",
+      "access_requirements": "Aurora Ticket distribution event; involves a triangle puzzle on the island",
+      "catching_tips": "In Emerald, Deoxys appears in its Speed Forme by default (different from FireRed/LeafGreen). Has Extreme Speed. Save before the puzzle - solving it spawns Deoxys and you only get one shot. Use False Swipe and Ultra Balls.",
+      "recommended_ball": "Ultra Ball or Timer Ball"
+    }
+  ],
+  "hidden_secrets": [
+    {
+      "title": "Mirage Island",
+      "description": "A tiny island that only appears off Route 130 if your party includes a Pokemon whose Personality Value matches the day's hidden randomly-generated PV (16 bits, so roughly 1-in-65,536 chance per day). The old man on Pacifidlog Town's leftmost house tells you whether it's there today. The only thing on the island is a wild Wynaut horde and a Liechi Berry. It's the rarest non-event location in the game.",
+      "tip": "Build a team with as many Pokemon as possible cycled through to maximize chances. There's no way to game it - just check daily."
+    },
+    {
+      "title": "Trick House",
+      "description": "Route 110, owned by the Trick Master. Each gym you beat unlocks a new puzzle floor. Rewards include TMs (TM12 Taunt, TM31 Brick Break, TM32 Double Team), the Hard Stone, and rare items. The first puzzle (a scroll-burning maze) rewards the Hard Stone.",
+      "tip": "Re-enter after each badge - the Trick Master rebuilds the house with a new puzzle. The 8th puzzle gives a Magnet."
+    },
+    {
+      "title": "Berry Master's Wife (Route 123)",
+      "description": "The Berry Master's wife gives you a rare berry each day if you tell her a phrase. Saying specific phrases gives specific rare berries:",
+      "phrases": [
+        "'GREAT BATTLE' -> Spelon Berry",
+        "'CHALLENGE CONTEST' -> Pamtre Berry",
+        "'OVERWHELMING LATIAS' -> Watmel Berry",
+        "'COOL LATIOS' -> Durin Berry",
+        "'SUPER HUSTLE' -> Belue Berry"
+      ],
+      "tip": "These rare berries can be planted and grown into infinite supplies - they're used to make max-power Pokeblocks for Contests."
+    },
+    {
+      "title": "Mossdeep Space Center NPCs",
+      "description": "Talk to all the NPCs on the second floor of the Space Center. Once Team Magma's plot wraps, talk to the man in the upper-left desk - he gives you the Sun Stone if you've talked to enough scientists. The space center is also the only place in Emerald with NPC dialogue referencing Jirachi's myth.",
+      "tip": "After the main story, the launch goes successfully and you can watch a rocket take off."
+    },
+    {
+      "title": "Lilycove Department Store Rooftop Lottery",
+      "description": "On the rooftop of Lilycove Dept Store, there's a free vending sale during certain in-game events. Also: the Pokemon Lottery in the Pokemon Center checks all Pokemon in your PC for matching ID numbers. Trade with friends to multiply your odds - matching all 5 digits wins a Master Ball!",
+      "tip": "Match 5 digits = Master Ball, 4 = PP Up, 3 = Exp Share, 2 = PP Up, 1 = nothing. Trade often."
+    },
+    {
+      "title": "Battle Frontier Symbols (post-game)",
+      "description": "The Battle Frontier on the artificial island past Lilycove has 7 facilities, each with a Frontier Brain who gives a Symbol when defeated. Earning all 14 Symbols (Silver + Gold for each facility) is the true post-game completion. Frontier Brains: Anabel (Tower), Greta (Arena), Tucker (Dome), Lucy (Pike), Spenser (Palace), Brandon (Pyramid), Noland (Factory).",
+      "tip": "Save before each Brain fight - you only get one shot per streak. Held items don't carry between Pyramid floors."
+    },
+    {
+      "title": "Sealed Chamber and Regi Trio",
+      "description": "Under Route 134's dive spot, there's a chamber with Braille on the walls. You need a Wailord (Pokeball head of party) and a Relicanth (tail) to read the script. This unlocks the three Regi caves around Hoenn. The Braille on the walls is real Braille and translates to the actual instructions in English.",
+      "tip": "Catch Relicanth via Dive on Route 124/126 - it's rare. Wailmer evolves into Wailord at Lv 40."
+    },
+    {
+      "title": "Secret Bases",
+      "description": "Use Secret Power (TM43, given by an NPC in Slateport's market) on certain trees, bushes, walls, and dirt mounds to create a Secret Base. You can decorate it with dolls, mats, posters, and tents. Mix Records with friends via Link Cable to visit each others' bases - their teams become NPC trainers you can battle once per day for free EXP.",
+      "tip": "Secret Bases are the original Pokemon Camp/Joint Avenue and one of the best sources of unlimited daily EXP if you have friends with Emerald carts."
+    },
+    {
+      "title": "Trainer Hill",
+      "description": "Located between Mauville and Verdanturf via the cable car, Trainer Hill is a 4-floor sequential trainer rush. You earn record times. Custom trainer hills can be downloaded via the e-Reader (Japan/US event-only). Beating the default 3-trainer rooms gives a small reward, but the real prize is the speedrun leaderboard.",
+      "tip": "Use Steel/Ground/Ghost coverage to handle the random trainer mix. Stock up on Ethers."
+    },
+    {
+      "title": "Move Tutors of Hoenn",
+      "description": "Several NPCs across Hoenn teach moves for free or for cost:",
+      "tutors": [
+        "Slateport Battle Tent area - Counter, Mimic",
+        "Fallarbor Town - teaches Draco Meteor-equivalent moves like Mega Punch/Mega Kick",
+        "Sootopolis - Explosion, Self-Destruct",
+        "Battle Frontier - Body Slam, Double-Edge, Seismic Toss, Dream Eater, Mega Punch/Kick, etc. (cost: Battle Points)",
+        "Lilycove - the Move Reminder for Heart Scales (find Heart Scales by smashing rocks or using Item Finder on the beach)"
+      ],
+      "tip": "Heart Scales are key for re-learning forgotten moves. Use Pickup-ability Pokemon (Linoone, Zigzagoon) to farm them."
+    },
+    {
+      "title": "Mauville Game Corner",
+      "description": "Slot machines in Mauville City. Win Coins, exchange them for TMs (TM13 Ice Beam, TM23 Iron Tail, TM24 Thunderbolt, TM30 Shadow Ball, TM35 Flamethrower) or rare Pokemon (Abra, Dratini in trade games). Slots are RNG-based but the cherry/replay strategy improves odds.",
+      "tip": "TM24 Thunderbolt is one of the best moves in Gen 3 and 4000 Coins. The 1000 Coin TM35 Flamethrower is also incredible."
+    },
+    {
+      "title": "Contest Halls",
+      "description": "Lilycove (Master), Verdanturf (Normal), Slateport (Super), Fallarbor (Hyper). Five contest categories: Cool, Beauty, Cute, Smart, Tough. Win all 4 ranks in a category to unlock a Pokemon Picture in your Trainer Card and earn rare ribbons. Pokeblocks (made from berries with friends or PokeNav match calls) raise contest stats.",
+      "tip": "Feebas evolves into Milotic only when its Beauty stat is maxed out via blue Pokeblocks, then leveling up. This is the only way to get Milotic in vanilla Emerald."
+    },
+    {
+      "title": "Feebas Tiles",
+      "description": "Feebas only spawns on 6 specific tiles in Route 119, randomly chosen each game. You'll fish (Old/Good/Super Rod) on every tile until you find one with Feebas. Once found, save the location - they're consistent until you alter your Trainer ID.",
+      "tip": "Use a Super Rod and bring a lot of patience. Plant Feebas tiles can be inherited from friends' Trainer IDs in some cases."
+    },
+    {
+      "title": "Trick Master TMs",
+      "description": "Inside the Trick House, the Trick Master rewards puzzle completion with TMs you can't easily get elsewhere: TM12 Taunt, TM32 Double Team, TM31 Brick Break. The Brick Break is essential for Battle Frontier Screen-spammers.",
+      "tip": "Use Cut and Strength frequently inside the puzzles - many tricks involve hidden items behind cuttable trees."
+    },
+    {
+      "title": "Pacifidlog Tides",
+      "description": "Pacifidlog Town's currents shift directionally every few hours. The currents push you in specific directions which can either help (toward Sky Pillar) or hinder you. Use the Mach Bike to outrun them.",
+      "tip": "If you're trying to reach Sky Pillar, the morning current is the most useful direction."
+    }
+  ],
+  "breeding_iv_ev": {
+    "breeding_basics": {
+      "where": "Day Care on Route 117 (Mauville to Verdanturf path). Drop two compatible Pokemon (opposite genders, same Egg Group) and walk in steps. The old man outside paces - if he's facing the road, no egg yet. If he's facing the fence, egg is ready.",
+      "ditto_role": "Ditto can breed with any non-legendary, non-Ditto Pokemon. Trade one in from FireRed/LeafGreen Trainer Tower or Pokemon Mansion.",
+      "egg_groups": "Pokemon must share at least one Egg Group. Some Pokemon are in groups like 'Monster + Dragon' giving wide compatibility.",
+      "everstone": "If the FEMALE holds an Everstone, the offspring inherits her Nature 50% of the time. This is THE primary way to get a specific Nature in Gen 3.",
+      "inheritance": [
+        "The species comes from the female (or non-Ditto if Ditto is involved)",
+        "TMs/Egg Moves: father teaches compatible TMs and special egg moves to the offspring",
+        "IVs: 3 IVs are randomly inherited from parents in Gen 3 (more in later gens). Random across HP/Atk/Def/SpA/SpD/Spe."
+      ]
+    },
+    "iv_basics": {
+      "what_are_ivs": "Individual Values - hidden 0-31 stats per Pokemon for each stat (HP, Atk, Def, SpA, SpD, Spe). They're randomly assigned at capture/hatch and never change. Higher IV = higher final stat.",
+      "checking_ivs": "No in-game IV judge in Emerald. Use online IV calculators with your Pokemon's level/nature/EVs/stats to back-calculate.",
+      "max_iv_impact": "At Lv 100, a 31 IV stat is +31 over a 0 IV stat. For HP, that's +31 HP. Significant.",
+      "hidden_power": "The type and power of Hidden Power are determined entirely by IVs. Can range from any type and 30-70 power. Used to give coverage to Pokemon (e.g., Hidden Power Fire on a Grass-type vs Steel)."
+    },
+    "ev_basics": {
+      "what_are_evs": "Effort Values - earned by defeating Pokemon. Each species gives specific EV yields. Max 510 EVs total per Pokemon, max 252 per stat (rounds to 255 with no benefit past 252). Every 4 EVs in a stat = +1 to that stat at Lv 100.",
+      "vitamins": "HP Up (HP), Protein (Atk), Iron (Def), Calcium (SpA), Zinc (SpD), Carbos (Speed) each give +10 EVs. Cap at 100 EVs per stat from vitamins; rest must come from battle.",
+      "ev_reset_berries": "Pomeg (-HP), Kelpsy (-Atk), Qualot (-Def), Hondew (-SpA), Grepa (-SpD), Tamato (-Spe) each remove 10 EVs. Useful to fix a mistrained Pokemon.",
+      "macho_brace_pokerus": "Macho Brace doubles EV gain (halves Speed). Pokerus (rare wild status virus) ALSO doubles EVs and stacks with Macho Brace for 4x. Pokerus spreads between adjacent party members."
+    },
+    "ev_training_spots_emerald": {
+      "hp": "Marill on Route 102 (1 HP EV) or Wailmer on Route 103 (1 HP EV). For 2 HP: Wynaut hatched from Lavaridge egg.",
+      "attack": "Mightyena/Poochyena on Route 120 (2 Atk). Or Vigoroth in Petalburg Woods (2 Atk).",
+      "defense": "Geodude on Granite Cave/Victory Road (1 Def). Trapinch in the desert (1 Def).",
+      "special_attack": "Tentacool on water routes (1 SpA), or Gulpin (1 SpA) on Route 110.",
+      "special_defense": "Tentacool/Tentacruel give SpD + SpA. For pure SpD: Roselia (2 SpA actually) - cleanest pure SpD is Spheal (1 SpD).",
+      "speed": "Zubat in caves (1 Spe), Magikarp from fishing (1 Spe), or Electrode from New Mauville (2 Spe)."
+    },
+    "tip": "Emerald's EV training is grindy. Always equip Macho Brace, infect your team with Pokerus, and head to a known EV spot. Use Repels matched to the species' level so you only encounter one Pokemon type."
+  },
+  "early_game_tips": [
+    {
+      "phase": "First 30 minutes",
+      "tips": [
+        "Choose Mudkip if it's your first Emerald playthrough - easiest run by far",
+        "Do the bag-grab tutorial in Petalburg Woods - free Potions",
+        "Catch a Wurmple on Route 101 (free Bug coverage; evolves into Beautifly or Dustox at random)",
+        "Talk to your dad in Petalburg Gym - he gives you HM01-related dialogue but the badge comes later"
+      ]
+    },
+    {
+      "phase": "Hour 1-2: Petalburg Woods to Rustboro",
+      "tips": [
+        "Catch Shroomish in Petalburg Woods - it evolves into Breloom and learns Mach Punch (priority Fighting move) at Lv 23. Insane against Roxanne and Norman.",
+        "Battle every trainer for EXP - Emerald's EXP curve is steep early",
+        "Buy 5-10 Potions and 3-5 Antidotes before Petalburg Woods (Poison Sting Wurmples are everywhere)",
+        "Save your money - Poke Balls cost 200 each but the Devon Goods sidequest gives you 5 free Premier Balls"
+      ]
+    },
+    {
+      "phase": "Hour 2-3: Dewford and Granite Cave",
+      "tips": [
+        "Catch Aron in Granite Cave (1F) - it evolves into Lairon (Lv 32) then Aggron (Lv 42). Massive late-game Steel/Rock wall.",
+        "Talk to Steven in the deepest part of Granite Cave - he gives you TM47 Steel Wing for the Devon Goods. Steven is the OG champion (Wallace took over for Emerald) and is foreshadowed throughout.",
+        "Don't waste Repels in Granite Cave - the Aron encounter rate is decent and you want it",
+        "Sail back to Slateport to deliver the Devon Goods - this opens up Cycling Road"
+      ]
+    },
+    {
+      "phase": "Hour 3-4: Mauville and beyond",
+      "tips": [
+        "Get the Mach Bike or Acro Bike at Rydel's Cycles in Mauville. Mach Bike is needed for Mirage Tower (Anorith/Lileep) and Sky Pillar; Acro Bike for some Secret Base spots and Trick House. You can swap anytime by returning to Rydel.",
+        "Catch Electrike on Route 110 - evolves into Manectric, one of the best Electric types in Emerald",
+        "Slot machine the Mauville Game Corner if you're patient - TM24 Thunderbolt for 4000 Coins is a game-changer",
+        "Wattson's Dynamo Badge unlocks Rock Smash - go back and Rock Smash boulders for items, Geodude, and Nosepass"
+      ]
+    },
+    {
+      "phase": "Hour 4-5: Verdanturf, Mt. Chimney, Lavaridge",
+      "tips": [
+        "Mirage Tower in the desert (need Mach Bike + Go-Goggles) - choose ONE: Root Fossil (Lileep/Cradily) or Claw Fossil (Anorith/Armaldo). The other crumbles into the sand forever. Pick Anorith if you're light on a Rock-type, Lileep if you want a tanky Grass/Rock.",
+        "After climbing Mt. Chimney, you fight Team Magma/Aqua at the summit - heal first",
+        "Lavaridge gives you a free Wynaut egg from the old woman near the hot springs - Wobbuffet has utility in doubles",
+        "Always use the Hot Springs - they fully heal your team for free (faster than Pokemon Center for grinders)"
+      ]
+    }
+  ],
+  "pokemon_tier_list": {
+    "S_tier": [
+      {"pokemon": "Swampert", "type": "Water/Ground", "justification": "Best starter, only one weakness (4x Grass), incredible bulk and movepool, solos most gyms."},
+      {"pokemon": "Salamence", "type": "Dragon/Flying", "justification": "Pseudo-legendary with 600 BST. Bagon caught in Meteor Falls (post-7th badge). Late but world-ending."},
+      {"pokemon": "Metagross", "type": "Steel/Psychic", "justification": "Pseudo-legendary; Beldum is a gift from Steven post-game. Insane bulk, Meteor Mash sweeps Frontier."},
+      {"pokemon": "Blaziken", "type": "Fire/Fighting", "justification": "Best dual-STAB starter. Sky Uppercut + Blaze Kick covers most of Hoenn."},
+      {"pokemon": "Manectric", "type": "Electric", "justification": "Lightning Rod ability, fast, learns Thunder/Thunderbolt. Solos Winona and Wallace."}
+    ],
+    "A_tier": [
+      {"pokemon": "Breloom", "type": "Grass/Fighting", "justification": "Mach Punch priority, Effect Spore (status on contact), Sky Uppercut. Beats Roxanne, Norman, Sidney solo."},
+      {"pokemon": "Sceptile", "type": "Grass", "justification": "120 base Speed, Leaf Blade is the best physical Grass move in the game."},
+      {"pokemon": "Flygon", "type": "Ground/Dragon", "justification": "Trapinch in the desert, evolves to Vibrava (Lv 35) and Flygon (Lv 45). Levitate immunity to Ground, great offensive typing."},
+      {"pokemon": "Aggron", "type": "Steel/Rock", "justification": "Sturdy/Rock Head ability, can spam Double-Edge with no recoil. Massive Defense."},
+      {"pokemon": "Gardevoir", "type": "Psychic", "justification": "Ralts on Route 102 is rare but evolves at Lv 20 (Kirlia) and Lv 30 (Gardevoir). Calm Mind + Psychic + Thunderbolt + Ice Punch is end-game tier."},
+      {"pokemon": "Hariyama", "type": "Fighting", "justification": "Massive HP, Thick Fat ability, Vital Throw + Brick Break. Hard counter to Sidney and Glacia."},
+      {"pokemon": "Swellow", "type": "Normal/Flying", "justification": "Taillow caught Route 104 day 1. Guts ability + Toxic Orb + Facade is a Frontier staple. Speedy revenge killer."},
+      {"pokemon": "Crobat", "type": "Poison/Flying", "justification": "Zubat -> Golbat -> Crobat (high friendship). Mean Look catches roaming Latios/Latias."},
+      {"pokemon": "Milotic", "type": "Water", "justification": "Marvel Scale ability + Recover + Ice Beam. Tedious to evolve (Feebas -> Beauty contest stat) but elite once obtained."}
+    ],
+    "B_tier": [
+      {"pokemon": "Walrein", "type": "Ice/Water", "justification": "Spheal in Shoal Cave evolves to Sealeo (Lv 32) and Walrein (Lv 44). Thick Fat Ice attacker that survives Fire moves."},
+      {"pokemon": "Camerupt", "type": "Fire/Ground", "justification": "Numel from Route 112. Magnitude + Flamethrower covers a lot, but 4x Water weak."},
+      {"pokemon": "Linoone", "type": "Normal", "justification": "Belly Drum + Extreme Speed + Pickup ability for free items. Best HM slave with Cut/Surf/Strength/Dig support."},
+      {"pokemon": "Absol", "type": "Dark", "justification": "Route 120 (rare). Super Luck + Slash for crit fishing, Swords Dance + Aerial Ace devastates Phoebe."},
+      {"pokemon": "Tentacruel", "type": "Water/Poison", "justification": "Liquid Ooze prevents drain heals against you. Sludge Bomb + Surf + Ice Beam coverage."},
+      {"pokemon": "Magneton", "type": "Electric/Steel", "justification": "Sturdy/Magnet Pull, traps Steels. Trades have it evolve to Magnezone in later gens but in Emerald it's Magneton-locked."}
+    ],
+    "honorable_mentions": [
+      {"pokemon": "Ludicolo", "type": "Water/Grass", "justification": "Lotad on Route 102 (rare). Rain Dish + Swift Swim. Unique typing only weak to Bug/Flying/Poison."},
+      {"pokemon": "Slaking", "type": "Normal", "justification": "Insane stats but Truant ability halves uptime. Only viable in Frontier with Skill Swap support."},
+      {"pokemon": "Altaria", "type": "Dragon/Flying", "justification": "Swablu evolves at Lv 35. Bulky Dragon with Dragon Dance + Earthquake."}
+    ]
+  },
+  "tm_hm_locations": [
+    {"id": "TM03 Water Pulse", "location": "Wallace gives it after the 8th gym", "notes": "30% confusion chance. Great for Manectric or Surf-less Water types."},
+    {"id": "TM06 Toxic", "location": "Fiery Path (use Strength)", "notes": "Stall staple. Badly Poisons over time."},
+    {"id": "TM08 Bulk Up", "location": "Brawly gives it after the 2nd gym", "notes": "+1 Atk and +1 Def. Blaziken/Hariyama/Breloom love this."},
+    {"id": "TM13 Ice Beam", "location": "Mauville Game Corner (4000 Coins) or Abandoned Ship", "notes": "10% Freeze chance. The premier coverage move for Water types vs Dragons."},
+    {"id": "TM24 Thunderbolt", "location": "Mauville Game Corner (4000 Coins) or post-game New Mauville completion", "notes": "Best Electric STAB. 95 base, 100 acc, 10% Para chance."},
+    {"id": "TM26 Earthquake", "location": "Seafloor Cavern (mid-late game)", "notes": "100 BP STAB for Ground types. Universal coverage move - put it on everything."},
+    {"id": "TM27 Return", "location": "Pacifidlog Town", "notes": "Power scales with friendship; max friendship = 102 BP STAB-able Normal move."},
+    {"id": "TM29 Psychic", "location": "Victory Road or Lilycove Dept Store (3500)", "notes": "Best Psychic STAB; Gardevoir/Alakazam mainstay."},
+    {"id": "TM30 Shadow Ball", "location": "Mauville Game Corner (1500 Coins)", "notes": "Coverage for Psychic and Ghost matchups."},
+    {"id": "TM35 Flamethrower", "location": "Mauville Game Corner (4000 Coins) or Fiery Path", "notes": "Best Fire STAB. Burns 10% of the time."},
+    {"id": "TM38 Fire Blast", "location": "Lavaridge Town (gift) or Lilycove Dept Store", "notes": "120 BP, 85 acc. High-roll alternative to Flamethrower."},
+    {"id": "TM39 Rock Tomb", "location": "Roxanne gives it after the 1st gym", "notes": "Lowers target Speed. Great early-game move for slow attackers."},
+    {"id": "TM40 Aerial Ace", "location": "Winona gives it after the 6th gym", "notes": "Never misses. 60 BP. Standard Flying coverage for non-Flying types."},
+    {"id": "TM43 Secret Power", "location": "Slateport Market (gift from NPC after Norman fight)", "notes": "Required to make Secret Bases. 70 BP Normal move with terrain-based status."},
+    {"id": "TM45 Attract", "location": "Lilycove Dept Store and Slateport gift", "notes": "Stalls opposite-gender opponents. Frontier MVP."},
+    {"id": "TM50 Overheat", "location": "Flannery gives it after the 4th gym", "notes": "140 BP Fire move; lowers user SpA two stages. Hit-and-run."},
+    {"id": "HM01 Cut", "location": "Cutter's House in Rustboro (post-Devon Goods quest)", "notes": "Cuts trees in field. Mediocre move."},
+    {"id": "HM02 Fly", "location": "Route 119 (after defeating May/Brendan rival fight near the weather institute)", "notes": "Flying STAB and fast travel."},
+    {"id": "HM03 Surf", "location": "Wally's uncle in Petalburg City after beating Norman", "notes": "95 BP Water STAB; mandatory for over-water travel."},
+    {"id": "HM04 Strength", "location": "Rusturf Tunnel from the man you rescued earlier", "notes": "80 BP Normal move; pushes boulders."},
+    {"id": "HM05 Flash", "location": "Granite Cave - boy on the first floor", "notes": "Lights dark caves. Drops opponent accuracy."},
+    {"id": "HM06 Rock Smash", "location": "Mauville (NPC house near the gym)", "notes": "Smashes boulders; 40 BP Fighting move with 50% Defense drop."},
+    {"id": "HM07 Waterfall", "location": "Ever Grande City, Champion's island entrance", "notes": "Climb waterfalls. 80 BP Water STAB."},
+    {"id": "HM08 Dive", "location": "Steven gives it after Mossdeep Space Center sidequest", "notes": "Required to descend into Sealed Chamber and Sootopolis. 80 BP Water move."}
+  ],
+  "post_game": {
+    "battle_frontier": {
+      "location": "Artificial island reachable by ship from Lilycove (after Hall of Fame entry)",
+      "currency": "Battle Points (BP) earned from win streaks",
+      "facilities": [
+        {
+          "name": "Battle Tower",
+          "brain": "Anabel",
+          "format": "Choose 3 Pokemon, win 7 battles in a row, repeat",
+          "level": "Lv 50 (with auto-level option) or Open Lv 100",
+          "gimmick": "Standard 3v3 singles. Endurance test.",
+          "tips": "Use a balanced trio: physical wall, special wall, sweeper. Ban yourself from gimmicks."
+        },
+        {
+          "name": "Battle Dome",
+          "brain": "Tucker",
+          "format": "Tournament bracket, 16 trainers, 2v2 elimination",
+          "gimmick": "You can scout enemy Pokemon's stats and moves before battle.",
+          "tips": "Use Choice Band attackers - the format favors quick OHKOs."
+        },
+        {
+          "name": "Battle Palace",
+          "brain": "Spenser",
+          "format": "3v3 single, but YOU don't pick moves - your Pokemon's Nature decides what they do each turn",
+          "gimmick": "Aggressive natures attack, defensive ones heal/buff. RNG-heavy.",
+          "tips": "Use Adamant/Modest natures with high BP single-purpose movesets."
+        },
+        {
+          "name": "Battle Arena",
+          "brain": "Greta",
+          "format": "1v1 with a 3-turn judging system - if both Pokemon are alive after 3 turns, judges decide winner by Mind/Skill/Body scores",
+          "gimmick": "Switching is banned. Status moves are penalized.",
+          "tips": "Use offensive natures and STAB moves only. Slaking shines here (Truant doesn't dock score)."
+        },
+        {
+          "name": "Battle Factory",
+          "brain": "Noland",
+          "format": "Rental Pokemon - you get a random pool, choose 3, then can swap with defeated opponents' Pokemon after each round",
+          "gimmick": "You don't use your own Pokemon at all.",
+          "tips": "Pick balanced typing on round 1. Always swap into a Pokemon that covers your previous loss."
+        },
+        {
+          "name": "Battle Pike",
+          "brain": "Lucy",
+          "format": "Choose a path through 14 rooms, each containing trainers, wild Pokemon, status traps, or NPCs",
+          "gimmick": "Lottery-style; you pick from 3 doors blind. Avoid status floors with Lum Berry.",
+          "tips": "Use a tank with Recover/Rest. Bring Lum Berries on every Pokemon."
+        },
+        {
+          "name": "Battle Pyramid",
+          "brain": "Brandon",
+          "format": "7-floor dark maze with wild Pokemon, trainers, and items. Must find the boss on each floor with limited Flash range.",
+          "gimmick": "Held items don't carry between floors - you find new ones in the maze.",
+          "tips": "Use Pokemon with high HP and self-recovery (Leftovers found in maze). Map memorization helps."
+        }
+      ]
+    },
+    "no_sevii_islands": "Note: Emerald does NOT have Sevii Islands - that's a FireRed/LeafGreen feature. Emerald's post-game equivalents are the Battle Frontier, Trainer Hill, and the legendary trio quest (Regis, roaming Latios/Latias, weather trio).",
+    "trainer_hill": "Located near the Mauville-Verdanturf cable car route. 4-floor trainer rush - clear all rooms in the fastest time. The default has 3 fixed trainer themes (Variety, Unique, Strong). Records are saved as time stamps.",
+    "rematches": {
+      "gym_leaders": "Gym Leader rematches are NOT in vanilla Emerald (they're in HeartGold/SoulSilver). Hoenn rematches were added retroactively in Omega Ruby/Alpha Sapphire.",
+      "regular_trainers": "Trainers across Hoenn give you their PokeNav numbers. Call them or wait for them to call you - they'll offer rematches with stronger teams. The strongest rematches are post-Hall of Fame and give massive EXP."
+    },
+    "post_game_legendaries": [
+      "Groudon (Terra Cave)",
+      "Kyogre (Marine Cave)",
+      "Rayquaza (Sky Pillar - returns post-game if defeated)",
+      "Latios or Latias (roaming, the other via Eon Ticket)",
+      "Regirock, Regice, Registeel (Sealed Chamber unlock)",
+      "Mew (event - Old Sea Map)",
+      "Deoxys (event - Aurora Ticket)"
+    ],
+    "steven_rematch": "After becoming Champion, talk to Steven Stone in his Mossdeep house - he gives you a Beldum (eventual Metagross). He also has secret rematch dialogue in his house referencing Hoenn lore.",
+    "completion_goals": [
+      "Catch all 386 Pokemon (requires trades with FireRed/LeafGreen and Ruby/Sapphire)",
+      "Earn all 14 Battle Frontier Symbols (Silver and Gold)",
+      "Master all 5 Contest categories",
+      "Beat Trainer Hill in record time",
+      "Find Mirage Island"
+    ]
+  }
+}
