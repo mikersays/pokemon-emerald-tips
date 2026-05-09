@@ -85,28 +85,51 @@
 
   /* -----------------------------------------------------------
      5. Reveal-on-scroll using IntersectionObserver
+
+     Arm only elements that are below the initial viewport — above-the-fold
+     content is never hidden so it renders reliably (including in full-page
+     screenshots and when JS is slow). A safety timer kicks any still-armed
+     elements into the visible state after 1.2s, so missed observer firings
+     can't leave content invisible.
      ----------------------------------------------------------- */
   const reveals = document.querySelectorAll('.reveal');
-  if (reveals.length && 'IntersectionObserver' in window) {
-    // Assign stagger delays per parent group
+  if (reveals.length) {
+    const vh = window.innerHeight || 800;
+    const armBelow = vh * 0.85;
+    reveals.forEach((el) => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top > armBelow) el.classList.add('is-armed');
+    });
+
     document.querySelectorAll('[data-stagger]').forEach((parent) => {
       const kids = parent.querySelectorAll('.reveal');
       kids.forEach((el, i) => el.style.setProperty('--delay', String(i)));
     });
 
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-in');
-            io.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
-    );
+    const flushIn = (el) => {
+      el.classList.add('is-in');
+    };
 
-    reveals.forEach((el) => io.observe(el));
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              flushIn(entry.target);
+              io.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.05, rootMargin: '0px 0px 80px 0px' }
+      );
+      reveals.forEach((el) => io.observe(el));
+    } else {
+      reveals.forEach(flushIn);
+    }
+
+    setTimeout(() => {
+      document.querySelectorAll('.reveal.is-armed:not(.is-in)').forEach(flushIn);
+    }, 1200);
   }
 
   /* -----------------------------------------------------------

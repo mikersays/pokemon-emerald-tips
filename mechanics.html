@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>document.documentElement.classList.add("js")</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pokemon Emerald deep mechanics — type chart quirks, status conditions, abilities, the 25 natures, friendship/happiness, and pokeball strategy." />
+  <title>Mechanics &middot; Hoenn Field Guide</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <!-- ============================== NAV ============================== -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html" aria-label="Hoenn Field Guide home">
+        <span class="nav__mark" aria-hidden="true">HFG</span>
+        <span class="nav__wordmark">Hoenn <span>Field</span> Guide</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <ul style="display:contents;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="starters.html">Starters</a></li>
+          <li><a href="gyms.html">Gyms</a></li>
+          <li><a href="elite-four.html">Elite Four</a></li>
+          <li><a href="legendaries.html">Legendaries</a></li>
+          <li><a href="tier-list.html">Tier List</a></li>
+          <li><a href="secrets.html">Secrets</a></li>
+          <li><a href="breeding.html">Breeding</a></li>
+          <li><a href="early-game.html">Early Game</a></li>
+          <li><a href="bikes.html">Bikes</a></li>
+          <li><a href="evolution.html">Evolution</a></li>
+          <li><a href="mechanics.html">Mechanics</a></li>
+          <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+          <li><a href="post-game.html">Post Game</a></li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-drawer">MENU</button>
+    </div>
+    <div class="nav__drawer" id="nav-drawer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="starters.html">Starters</a></li>
+        <li><a href="gyms.html">Gyms</a></li>
+        <li><a href="elite-four.html">Elite Four</a></li>
+        <li><a href="legendaries.html">Legendaries</a></li>
+        <li><a href="tier-list.html">Tier List</a></li>
+        <li><a href="secrets.html">Secrets</a></li>
+        <li><a href="breeding.html">Breeding</a></li>
+        <li><a href="early-game.html">Early Game</a></li>
+        <li><a href="bikes.html">Bikes</a></li>
+        <li><a href="evolution.html">Evolution</a></li>
+        <li><a href="mechanics.html">Mechanics</a></li>
+        <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+        <li><a href="post-game.html">Post Game</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============================== HEADER ============================== -->
+    <section class="page-header">
+      <div class="riso-blob riso-blob--ocean" style="width:300px; height:300px; top:-90px; right:-50px;"></div>
+      <div class="riso-dots" style="width:220px; height:110px; bottom:30px; right:14%; transform: rotate(-3deg);"></div>
+      <div class="riso-blob riso-blob--ember" style="width:140px; height:140px; bottom:-30px; left:-30px;"></div>
+
+      <div class="container">
+        <span class="kicker kicker--ocean">Systems under the surface</span>
+        <h1 class="page-header__title">
+          The hidden<br><em>mechanics</em>.
+        </h1>
+        <p class="lede mt-4" style="max-width: 62ch;">
+          Six systems Emerald never explains in dialogue: the Gen 3 type chart and its quirks, the seven status conditions
+          and their counters, the abilities that change battles outright, the 25 natures and which ones to chase, the
+          friendship value behind every level-up, and the catch-rate math behind every Pokeball. The encyclopedia entry
+          for trainers who want to understand why their plans worked or didn&rsquo;t.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================== ANCHOR STRIP ============================== -->
+    <section class="section section--tight" style="border-bottom: var(--border-w) solid var(--ink);">
+      <div class="container">
+        <div class="grid grid--auto" style="gap: var(--s-3);">
+          <a href="#types" class="tile" style="padding: var(--s-3) var(--s-4);"><span class="tile__num">01</span><span class="tile__title" style="font-size:var(--fs-base);">Type chart</span></a>
+          <a href="#status" class="tile" style="padding: var(--s-3) var(--s-4);"><span class="tile__num">02</span><span class="tile__title" style="font-size:var(--fs-base);">Status</span></a>
+          <a href="#abilities" class="tile" style="padding: var(--s-3) var(--s-4);"><span class="tile__num">03</span><span class="tile__title" style="font-size:var(--fs-base);">Abilities</span></a>
+          <a href="#natures" class="tile" style="padding: var(--s-3) var(--s-4);"><span class="tile__num">04</span><span class="tile__title" style="font-size:var(--fs-base);">Natures</span></a>
+          <a href="#friendship" class="tile" style="padding: var(--s-3) var(--s-4);"><span class="tile__num">05</span><span class="tile__title" style="font-size:var(--fs-base);">Friendship</span></a>
+          <a href="#balls" class="tile" style="padding: var(--s-3) var(--s-4);"><span class="tile__num">06</span><span class="tile__title" style="font-size:var(--fs-base);">Pokeballs</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 01. TYPE CHART ============================== -->
+    <section class="section" id="types">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker">Section I</span>
+          <h2 class="h1 mt-3">The Gen 3<br><em style="color:var(--emerald); font-style:italic; font-weight:400;">type chart</em></h2>
+          <p class="dropcap lede mt-4" style="max-width: 60ch;">
+            Seventeen types. Fairy does not exist yet &mdash; it arrived in Gen 6 and reshaped everything. Steel is the
+            most resistant defensive type in Gen 3 (eleven resistances and one immunity), and it resists Ghost and Dark
+            specifically &mdash; both nerfed in Gen 6. Most other interactions you remember from later games still apply,
+            with three sharp exceptions worth memorizing.
+          </p>
+        </div>
+
+        <!-- TYPE CHIPS DISPLAY -->
+        <div style="margin: var(--s-6) 0;">
+          <span class="kicker kicker--ember">All 17 types</span>
+          <div style="display:flex; flex-wrap:wrap; gap: var(--s-2); margin-top: var(--s-3);">
+            <span class="type-chip" data-type="normal">normal</span>
+            <span class="type-chip" data-type="fire">fire</span>
+            <span class="type-chip" data-type="water">water</span>
+            <span class="type-chip" data-type="grass">grass</span>
+            <span class="type-chip" data-type="electric">electric</span>
+            <span class="type-chip" data-type="ice">ice</span>
+            <span class="type-chip" data-type="fighting">fighting</span>
+            <span class="type-chip" data-type="poison">poison</span>
+            <span class="type-chip" data-type="ground">ground</span>
+            <span class="type-chip" data-type="flying">flying</span>
+            <span class="type-chip" data-type="psychic">psychic</span>
+            <span class="type-chip" data-type="bug">bug</span>
+            <span class="type-chip" data-type="rock">rock</span>
+            <span class="type-chip" data-type="ghost">ghost</span>
+            <span class="type-chip" data-type="dragon">dragon</span>
+            <span class="type-chip" data-type="dark">dark</span>
+            <span class="type-chip" data-type="steel">steel</span>
+          </div>
+        </div>
+
+        <!-- GEN 3 QUIRKS -->
+        <div class="grid grid--3 stagger">
+          <article class="card offset-shadow">
+            <div class="card__subtitle">Quirk 01</div>
+            <h3 class="card__title mt-3">Steel resists Ghost AND Dark</h3>
+            <p class="card__body">Changed in Gen 6. In Gen 3, Steel is the most resistant defensive type &mdash; 11 resistances
+            plus one immunity (Poison). Skarmory, Aggron, and Metagross are anchors.</p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">Quirk 02</div>
+            <h3 class="card__title mt-3">Ghost is immune to Normal AND Fighting</h3>
+            <p class="card__body">Dual immunity. Hariyama with Brick Break does <strong>zero damage</strong> to a Gengar.
+            Use Crunch (Dark) or Shadow Ball (Ghost) instead.</p>
+            <div class="poke-row mt-3">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/94.png" alt="Gengar" loading="lazy">
+              <span class="mono" style="font-size:var(--fs-xs);">Gengar &middot; the textbook Ghost wall</span>
+            </div>
+          </article>
+
+          <article class="card offset-shadow--ocean">
+            <div class="card__subtitle">Quirk 03</div>
+            <h3 class="card__title mt-3">Dark is immune to Psychic</h3>
+            <p class="card__body">Sableye and Sharpedo eat Psychic moves. Tate &amp; Liza&rsquo;s gym is hard-countered by
+            Sharpedo &mdash; Crunch one-shots both aces.</p>
+            <div class="poke-row mt-3">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/319.png" alt="Sharpedo" loading="lazy">
+              <span class="mono" style="font-size:var(--fs-xs);">Sharpedo &middot; psychic-immune</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Quirk 04</div>
+            <h3 class="card__title mt-3">Bug is super effective vs Dark, Psychic, Grass</h3>
+            <p class="card__body">Heracross&rsquo;s Megahorn is a top-tier nuke vs Slowking, Gardevoir, and Sidney&rsquo;s
+            entire team. Bug is the most overlooked offensive type in Gen 3.</p>
+          </article>
+
+          <article class="card card--alt offset-shadow--ember">
+            <div class="card__subtitle">Quirk 05</div>
+            <h3 class="card__title mt-3">Dragon is super effective ONLY vs Dragon</h3>
+            <p class="card__body">No Fairy resistance yet. Outrage from Salamence walls everything that doesn&rsquo;t resist
+            or immune. Steel resists Dragon &mdash; the safest defensive answer.</p>
+            <div class="poke-row mt-3">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/373.png" alt="Salamence" loading="lazy">
+              <span class="mono" style="font-size:var(--fs-xs);">Salamence &middot; the dragon ceiling</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Quirk 06</div>
+            <h3 class="card__title mt-3">Levitate beats Ground</h3>
+            <p class="card__body">Electric is immune to Ground. But <strong>Levitate</strong> ability (Flygon, Gengar,
+            Claydol) makes them immune to Ground regardless of typing. Magneton is Steel/Electric so it&rsquo;s still
+            hit by Ground.</p>
+          </article>
+        </div>
+
+        <!-- DUAL TYPE CALC -->
+        <div class="callout callout--sun" style="margin-top: var(--s-6);">
+          <span class="callout__label">Dual-type calculation</span>
+          <p style="margin:0;">
+            Type effectiveness <strong>multiplies</strong>. A 2&times; weakness on one type and a 2&times; weakness on the
+            other = 4&times;. A 2&times; weakness and a 0.5&times; resist = 1&times; neutral. Salamence (Dragon/Flying)
+            hit by Ice = 4&times;. Swampert (Water/Ground) hit by Grass = 4&times; &mdash; ONLY weakness. Skarmory (Steel/Flying)
+            hit by Rock = 1&times; neutral, NOT 2&times;.
+          </p>
+        </div>
+
+        <!-- TOP 5 TYPES -->
+        <div style="margin-top: var(--s-7);">
+          <span class="kicker kicker--ember">Top 5 offensive types for Hoenn</span>
+          <h3 class="h2 mt-3">The <em style="color:var(--ember); font-style:italic; font-weight:400;">five</em> that solve the gym circuit</h3>
+        </div>
+
+        <div class="grid grid--auto stagger" style="margin-top: var(--s-5);">
+          <article class="tile">
+            <div>
+              <div class="tile__num">01 &middot; HM03</div>
+              <h3 class="tile__title">Water</h3>
+            </div>
+            <p class="tile__desc">Surf is mandatory anyway. Hits Fire/Rock/Ground for 2&times;. Mudkip line dominates 5 of 8 gyms.</p>
+            <span class="tile__arrow"><span class="type-chip" data-type="water">water</span></span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">02 &middot; TM26</div>
+              <h3 class="tile__title">Ground</h3>
+            </div>
+            <p class="tile__desc">Earthquake is universal coverage. Hits Fire/Electric/Poison/Rock/Steel. Swampert and Flygon thrive.</p>
+            <span class="tile__arrow"><span class="type-chip" data-type="ground">ground</span></span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">03 &middot; TM24</div>
+              <h3 class="tile__title">Electric</h3>
+            </div>
+            <p class="tile__desc">Thunderbolt and Thunder hit Water and Flying &mdash; every late gym leader has one or the other.</p>
+            <span class="tile__arrow"><span class="type-chip" data-type="electric">electric</span></span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">04 &middot; TM13</div>
+              <h3 class="tile__title">Ice</h3>
+            </div>
+            <p class="tile__desc">Ice Beam hits Dragon/Flying/Grass/Ground for 2&times;. Drake&rsquo;s gym is solo&rsquo;d by Ice. Walrein/Glalie/Lapras.</p>
+            <span class="tile__arrow"><span class="type-chip" data-type="ice">ice</span></span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">05 &middot; TM31</div>
+              <h3 class="tile__title">Fighting</h3>
+            </div>
+            <p class="tile__desc">Brick Break breaks Light Screen/Reflect AND hits Steel/Rock/Dark/Normal/Ice. Hariyama covers gym/Frontier.</p>
+            <span class="tile__arrow"><span class="type-chip" data-type="fighting">fighting</span></span>
+          </article>
+        </div>
+
+        <div class="callout callout--ember" style="margin-top: var(--s-6);">
+          <span class="callout__label">Common type mistakes</span>
+          <ul class="bullet-list bullet-list--emerald" style="margin: var(--s-3) 0 0;">
+            <li>Fighting on Sableye (Sableye is Dark/Ghost &mdash; Ghost half is immune to Fighting)</li>
+            <li>Psychic on Sharpedo or Mightyena (Dark immunity)</li>
+            <li>Ground on Skarmory (Skarmory is Steel/Flying &mdash; Flying half is immune to Ground)</li>
+            <li>Rock on Skarmory (Skarmory is Steel &mdash; resists Rock; only the Flying half takes 2&times;)</li>
+            <li>Forgetting Levitate on Flygon/Gengar/Claydol when planning Earthquake spam</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 02. STATUS CONDITIONS ============================== -->
+    <section class="section section--alt" id="status">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ember">Section II</span>
+          <h2 class="h1 mt-3">Status<br><em style="color:var(--ember); font-style:italic; font-weight:400;">conditions</em></h2>
+          <p class="lede mt-4" style="max-width: 60ch;">
+            Seven status conditions in Gen 3: Sleep, Paralysis, Burn, Poison (regular and Toxic), Freeze, Confusion, and
+            Attraction. Each has different durations, ability counters, and held-item heals. Lum Berry cures all.
+          </p>
+        </div>
+
+        <div class="grid grid--2 stagger">
+          <!-- SLEEP -->
+          <article class="card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+              <div>
+                <div class="card__subtitle">Status 01</div>
+                <h3 class="card__title">Sleep</h3>
+              </div>
+              <span class="badge badge--ember">1&ndash;7 turns</span>
+            </div>
+            <p class="card__body mt-3">Pokemon cannot select moves; turns spent asleep wake up on their own. The most useful
+            offensive status &mdash; pair with Dream Eater or Nightmare for free damage.</p>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Duration</span><span class="stat-row__value">1&ndash;7 turns random</span><span class="stat-row__num">RNG</span></div>
+              <div class="stat-row"><span class="stat-row__label">Hypnosis</span><span class="stat-row__value">60% accuracy</span><span class="stat-row__num">60</span></div>
+              <div class="stat-row"><span class="stat-row__label">Spore</span><span class="stat-row__value">100% accuracy &middot; Breloom</span><span class="stat-row__num">100</span></div>
+              <div class="stat-row"><span class="stat-row__label">Sleep Powder</span><span class="stat-row__value">75% accuracy</span><span class="stat-row__num">75</span></div>
+            </dl>
+            <div class="poke-row mt-4">
+              <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/94.png" alt="Gengar" loading="lazy">
+              <span class="mono" style="font-size:var(--fs-xs);">Gengar (Hypnosis 60%)</span>
+            </div>
+            <p class="mono mt-3" style="font-size:var(--fs-xs); color:var(--emerald-deep);">COUNTERS &mdash; Insomnia (Hypno, Noctowl), Vital Spirit (Electabuzz), Early Bird halves duration. Awakening / Chesto Berry / Lum Berry / Lava Cookie cure.</p>
+          </article>
+
+          <!-- PARALYSIS -->
+          <article class="card card--alt">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+              <div>
+                <div class="card__subtitle">Status 02</div>
+                <h3 class="card__title">Paralysis</h3>
+              </div>
+              <span class="badge">25% skip</span>
+            </div>
+            <p class="card__body mt-3">25% chance per turn to skip move (full paralysis), AND <strong>Speed reduced to 25%</strong>
+            of normal in Gen 3. Permanent until cured. Outlasts battle.</p>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Speed mult</span><span class="stat-row__value">&times;0.25 (Gen 3)</span><span class="stat-row__num">0.25</span></div>
+              <div class="stat-row"><span class="stat-row__label">Skip chance</span><span class="stat-row__value">25% per turn</span><span class="stat-row__num">25%</span></div>
+              <div class="stat-row"><span class="stat-row__label">Thunder Wave</span><span class="stat-row__value">100% acc, hits Ground in Gen 3</span><span class="stat-row__num">TW</span></div>
+              <div class="stat-row"><span class="stat-row__label">Body Slam</span><span class="stat-row__value">30% on contact</span><span class="stat-row__num">30%</span></div>
+            </dl>
+            <p class="mono mt-3" style="font-size:var(--fs-xs); color:var(--emerald-deep);">COUNTERS &mdash; Limber (no native Hoenn). Electric types are NOT immune to paralysis in Gen 3 (changed Gen 6). Paralyze Heal / Cheri Berry / Lum Berry cure.</p>
+          </article>
+
+          <!-- BURN -->
+          <article class="card offset-shadow--ember">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+              <div>
+                <div class="card__subtitle">Status 03</div>
+                <h3 class="card__title">Burn</h3>
+              </div>
+              <span class="badge badge--ember">1/8 HP &middot; halved Atk</span>
+            </div>
+            <p class="card__body mt-3">1/8 max HP damage at end of turn AND <strong>Atk stat halved</strong> for the duration.
+            The best status against physical sweepers &mdash; Will-O-Wisp from Dusclops or Gengar neuters Salamence and Hariyama.</p>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">EOT damage</span><span class="stat-row__value">1/8 max HP</span><span class="stat-row__num">1/8</span></div>
+              <div class="stat-row"><span class="stat-row__label">Atk mult</span><span class="stat-row__value">&times;0.5</span><span class="stat-row__num">0.5</span></div>
+              <div class="stat-row"><span class="stat-row__label">Will-O-Wisp</span><span class="stat-row__value">75% accuracy</span><span class="stat-row__num">75</span></div>
+              <div class="stat-row"><span class="stat-row__label">Flamethrower proc</span><span class="stat-row__value">10%</span><span class="stat-row__num">10%</span></div>
+            </dl>
+            <p class="mono mt-3" style="font-size:var(--fs-xs); color:var(--emerald-deep);">COUNTERS &mdash; Water Veil (Goldeen, Wailmer), Flame Body (Magmar, Magcargo). Fire types immune. Burn Heal / Rawst Berry / Lum Berry cure.</p>
+          </article>
+
+          <!-- POISON -->
+          <article class="card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+              <div>
+                <div class="card__subtitle">Status 04</div>
+                <h3 class="card__title">Poison (regular)</h3>
+              </div>
+              <span class="badge">1/8 HP/turn</span>
+            </div>
+            <p class="card__body mt-3">1/8 max HP damage at end of turn. Damages overworld walking too &mdash; 1 HP per 4
+            steps in Gen 3. Outlasts battle. Poison and Steel types are immune.</p>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">EOT damage</span><span class="stat-row__value">1/8 max HP</span><span class="stat-row__num">1/8</span></div>
+              <div class="stat-row"><span class="stat-row__label">Overworld</span><span class="stat-row__value">1 HP / 4 steps</span><span class="stat-row__num">OW</span></div>
+              <div class="stat-row"><span class="stat-row__label">Poison Powder</span><span class="stat-row__value">75% accuracy</span><span class="stat-row__num">75</span></div>
+              <div class="stat-row"><span class="stat-row__label">Sludge Bomb proc</span><span class="stat-row__value">30%</span><span class="stat-row__num">30%</span></div>
+            </dl>
+            <p class="mono mt-3" style="font-size:var(--fs-xs); color:var(--emerald-deep);">COUNTERS &mdash; Immunity (Snorlax only in Gen 3). Poison/Steel types immune. Antidote / Pecha Berry / Lum Berry cure.</p>
+          </article>
+
+          <!-- TOXIC -->
+          <article class="card card--alt offset-shadow">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+              <div>
+                <div class="card__subtitle">Status 05</div>
+                <h3 class="card__title">Toxic (badly poisoned)</h3>
+              </div>
+              <span class="badge badge--ember">Escalating</span>
+            </div>
+            <p class="card__body mt-3">Damage increases each turn: 1/16 turn 1, 2/16 turn 2, 3/16 turn 3, capping at 15/16 max
+            HP per turn. <strong>Reverts to regular poison</strong> if Pokemon switches out (counter resets in Gen 3+).</p>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Turn 1</span><span class="stat-row__value">1/16 max HP</span><span class="stat-row__num">1/16</span></div>
+              <div class="stat-row"><span class="stat-row__label">Turn 5</span><span class="stat-row__value">5/16 max HP</span><span class="stat-row__num">5/16</span></div>
+              <div class="stat-row"><span class="stat-row__label">Turn 10</span><span class="stat-row__value">10/16 max HP</span><span class="stat-row__num">10/16</span></div>
+              <div class="stat-row"><span class="stat-row__label">Toxic move</span><span class="stat-row__value">85% acc &middot; TM06</span><span class="stat-row__num">85</span></div>
+            </dl>
+            <p class="mono mt-3" style="font-size:var(--fs-xs); color:var(--emerald-deep);">PAIRINGS &mdash; Milotic with Recover + Toxic = unkillable stall wall. Marvel Scale + self-Toxic = +50% Def.</p>
+          </article>
+
+          <!-- FREEZE -->
+          <article class="card offset-shadow--ocean">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+              <div>
+                <div class="card__subtitle">Status 06</div>
+                <h3 class="card__title">Freeze</h3>
+              </div>
+              <span class="badge">~20%/turn thaw</span>
+            </div>
+            <p class="card__body mt-3">Pokemon cannot move at all. Each turn ~20% chance to thaw, OR thaws when hit by a Fire-type
+            move. Fire-type Pokemon are <strong>immune</strong> to freeze.</p>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Thaw chance</span><span class="stat-row__value">~20% per turn</span><span class="stat-row__num">20%</span></div>
+              <div class="stat-row"><span class="stat-row__label">Ice Beam proc</span><span class="stat-row__value">10%</span><span class="stat-row__num">10%</span></div>
+              <div class="stat-row"><span class="stat-row__label">Blizzard proc</span><span class="stat-row__value">10%</span><span class="stat-row__num">10%</span></div>
+              <div class="stat-row"><span class="stat-row__label">Fire move thaws</span><span class="stat-row__value">on hit</span><span class="stat-row__num">FIRE</span></div>
+            </dl>
+            <p class="mono mt-3" style="font-size:var(--fs-xs); color:var(--emerald-deep);">COUNTERS &mdash; Magma Armor (Slugma, Magcargo, Camerupt). Always carry Aspear Berries against Glacia.</p>
+          </article>
+
+          <!-- CONFUSION -->
+          <article class="card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+              <div>
+                <div class="card__subtitle">Status 07</div>
+                <h3 class="card__title">Confusion</h3>
+              </div>
+              <span class="badge">33% self-hit</span>
+            </div>
+            <p class="card__body mt-3">Pokemon may attack itself instead of the chosen move. <strong>33% per turn</strong> in
+            Gen 3 (changed to 50% in Gen 7). Self-damage is a typeless 40-power physical move using own Atk vs own Def.
+            No STAB, no crits.</p>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Self-hit</span><span class="stat-row__value">33% per turn</span><span class="stat-row__num">33%</span></div>
+              <div class="stat-row"><span class="stat-row__label">Duration</span><span class="stat-row__value">1&ndash;4 turns</span><span class="stat-row__num">RNG</span></div>
+              <div class="stat-row"><span class="stat-row__label">Confuse Ray</span><span class="stat-row__value">100% acc</span><span class="stat-row__num">100</span></div>
+              <div class="stat-row"><span class="stat-row__label">Persim Berry</span><span class="stat-row__value">held auto-cure</span><span class="stat-row__num">PER</span></div>
+            </dl>
+            <p class="mono mt-3" style="font-size:var(--fs-xs); color:var(--emerald-deep);">COUNTERS &mdash; Own Tempo (Spinda, Lickitung). Switch out resets confusion. Persim Berry is the best held item for Sidney&rsquo;s gym (Swagger spam).</p>
+          </article>
+
+          <!-- ATTRACTION -->
+          <article class="card card--alt">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+              <div>
+                <div class="card__subtitle">Status 08</div>
+                <h3 class="card__title">Attraction (Infatuation)</h3>
+              </div>
+              <span class="badge">50% skip</span>
+            </div>
+            <p class="card__body mt-3">Pokemon may be immobilized by love instead of attacking. <strong>50% per turn</strong>
+            while infatuated. Only works against the OPPOSITE gender. Same-gender = no effect. Genderless = no effect.</p>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Skip chance</span><span class="stat-row__value">50% per turn</span><span class="stat-row__num">50%</span></div>
+              <div class="stat-row"><span class="stat-row__label">Attract</span><span class="stat-row__value">100% acc &middot; TM45</span><span class="stat-row__num">100</span></div>
+              <div class="stat-row"><span class="stat-row__label">Cute Charm</span><span class="stat-row__value">30% on contact</span><span class="stat-row__num">30%</span></div>
+              <div class="stat-row"><span class="stat-row__label">Mental Herb</span><span class="stat-row__value">held one-time cure</span><span class="stat-row__num">MH</span></div>
+            </dl>
+            <p class="mono mt-3" style="font-size:var(--fs-xs); color:var(--emerald-deep);">FIELD TIP &mdash; Carry a same-gender or Oblivious (Mr. Mime, Whiscash) Pokemon vs Norman&rsquo;s Slaking and Flannery&rsquo;s Torkoal.</p>
+          </article>
+        </div>
+
+        <!-- LUM BERRY CALLOUT -->
+        <div class="callout callout--emerald" style="margin-top: var(--s-6);">
+          <span class="callout__label">The Lum Berry rule</span>
+          <p style="margin:0;">
+            <strong>Lum Berry</strong> cures any status condition the Pokemon currently has &mdash; including confusion and
+            infatuation &mdash; in one held-item slot. Replant Lum Berries on Soft Soil patches; harvest 2&ndash;4 per tree.
+            Pre-load every Frontier team with Lum Berries.
+          </p>
+        </div>
+
+        <!-- STATUS-SETTING MOVES -->
+        <div style="margin-top: var(--s-7);">
+          <span class="kicker kicker--ocean">Best status moves</span>
+          <h3 class="h2 mt-3">Top setup <em style="color:var(--ocean); font-style:italic; font-weight:400;">moves</em></h3>
+        </div>
+
+        <div class="grid grid--3 stagger" style="margin-top: var(--s-5);">
+          <article class="tile">
+            <div>
+              <div class="tile__num">100% acc</div>
+              <h3 class="tile__title">Spore (Sleep)</h3>
+            </div>
+            <p class="tile__desc">Breloom, Parasect. Top-tier Frontier sleep-setter &mdash; Breloom is the staple.</p>
+            <span class="tile__arrow">Sleep</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">100% acc</div>
+              <h3 class="tile__title">Thunder Wave</h3>
+            </div>
+            <p class="tile__desc">Most Electric types + Manectric/Mareep TM. Cuts opponent Speed to 25%. Hits Ground in Gen 3.</p>
+            <span class="tile__arrow">Paralysis</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">75% acc</div>
+              <h3 class="tile__title">Will-O-Wisp</h3>
+            </div>
+            <p class="tile__desc">Dusclops, Gengar. Halve enemy Atk. Best counter to physical sweepers like Salamence.</p>
+            <span class="tile__arrow">Burn</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">85% acc &middot; TM06</div>
+              <h3 class="tile__title">Toxic</h3>
+            </div>
+            <p class="tile__desc">Many learners &mdash; put it on a wall. Milotic + Recover + Toxic = unkillable.</p>
+            <span class="tile__arrow">Toxic poison</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">100% acc</div>
+              <h3 class="tile__title">Confuse Ray</h3>
+            </div>
+            <p class="tile__desc">Gengar, Mawile, several Ghosts. Stack with Attract for maximum chaos.</p>
+            <span class="tile__arrow">Confusion</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">60% acc</div>
+              <h3 class="tile__title">Hypnosis</h3>
+            </div>
+            <p class="tile__desc">Gengar, Drowzee, Spinda. Powerful but inaccurate &mdash; pair with Lum-Berry-immune attackers.</p>
+            <span class="tile__arrow">Sleep</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 03. ABILITIES ============================== -->
+    <section class="section" id="abilities">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker">Section III</span>
+          <h2 class="h1 mt-3"><em style="color:var(--emerald); font-style:italic; font-weight:400;">Abilities</em><br>worth knowing</h2>
+          <p class="lede mt-4" style="max-width: 60ch;">
+            Gen 3 introduced abilities to the franchise. Each Pokemon has one ability slot &mdash; no Hidden Abilities yet
+            (Gen 5+). Eighteen of them change battles outright; here is the cheat sheet.
+          </p>
+        </div>
+
+        <div class="grid grid--auto stagger">
+          <article class="card">
+            <div class="card__subtitle">Field-changing</div>
+            <h3 class="card__title">Levitate</h3>
+            <p class="card__body">Immune to Ground-type moves and damage from Spikes. Doesn&rsquo;t lose Levitate to Mold Breaker (Gen 4).</p>
+            <div class="poke-row mt-3">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/330.png" alt="Flygon" loading="lazy">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/94.png" alt="Gengar" loading="lazy">
+            </div>
+            <p class="mono mt-3" style="font-size:var(--fs-xs);">Flygon, Gengar, Claydol, Lunatone, Solrock</p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">On switch-in</div>
+            <h3 class="card__title">Intimidate</h3>
+            <p class="card__body">Lowers opposing Pokemon&rsquo;s Atk by 1 stage on switch-in. Stacks with switching &mdash; swap out and back to re-trigger.</p>
+            <div class="poke-row mt-3">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/262.png" alt="Mightyena" loading="lazy">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/373.png" alt="Salamence" loading="lazy">
+            </div>
+            <p class="mono mt-3" style="font-size:var(--fs-xs);">Mightyena, Salamence (only natives)</p>
+          </article>
+
+          <article class="card offset-shadow">
+            <div class="card__subtitle">Frontier-grade</div>
+            <h3 class="card__title">Pressure</h3>
+            <p class="card__body">Opponents use 2 PP per move instead of 1. Slowly drains opposing PP &mdash; useful in long Frontier battles.</p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs);">Regis (Regirock, Regice, Registeel), Absol</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Status-mirror</div>
+            <h3 class="card__title">Synchronize</h3>
+            <p class="card__body">If statused, opponent gets the same status (poison, burn, paralysis &mdash; NOT sleep or freeze).
+            Bonus: lead with this ability to set 50% of wild encounters to your Synchronize Pokemon&rsquo;s Nature.</p>
+            <div class="poke-row mt-3">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/280.png" alt="Ralts" loading="lazy">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/282.png" alt="Gardevoir" loading="lazy">
+            </div>
+            <p class="mono mt-3" style="font-size:var(--fs-xs);">Ralts/Kirlia/Gardevoir, Abra line (import)</p>
+          </article>
+
+          <article class="card card--alt offset-shadow--ocean">
+            <div class="card__subtitle">Copycat</div>
+            <h3 class="card__title">Trace</h3>
+            <p class="card__body">On switch-in, copies opponent&rsquo;s ability for the duration. Trace a Drizzle Kyogre to gain weather; trace Wonder Guard Shedinja for invincibility.</p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs);">Gardevoir (alt to Synchronize)</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">OHKO immune</div>
+            <h3 class="card__title">Sturdy</h3>
+            <p class="card__body">Immune to OHKO moves (Sheer Cold, Fissure, Horn Drill, Guillotine). Does NOT prevent normal damage in Gen 3 &mdash; the &ldquo;survive at 1 HP&rdquo; behavior is Gen 5+.</p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs);">Aron line, Geodude, Onix, Magnemite</p>
+          </article>
+
+          <article class="card offset-shadow--ember">
+            <div class="card__subtitle">Tier-defining</div>
+            <h3 class="card__title">Wonder Guard</h3>
+            <p class="card__body">Only super-effective moves can damage this Pokemon. Status, weather, poison, burn, sandstorm bypass it.</p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs);">Shedinja (only). Evolve Nincada at Lv 20 with empty party slot + spare ball.</p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">Snowball</div>
+            <h3 class="card__title">Speed Boost</h3>
+            <p class="card__body">+1 Speed stage at end of each turn. Compounds quickly. Ninjask + Substitute + Baton Pass is a Frontier strategy.</p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs);">Ninjask (Nincada Lv 20)</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Permanent rain</div>
+            <h3 class="card__title">Drizzle</h3>
+            <p class="card__body">On switch-in, summons rain for the rest of the battle (no 5/8-turn timer in Gen 3 &mdash; permanent until replaced). Doubles Water, halves Fire, Thunder hits 100%.</p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs);">Kyogre (only)</p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">Permanent sun</div>
+            <h3 class="card__title">Drought</h3>
+            <p class="card__body">Permanent sun. Doubles Fire, halves Water. Boosts SolarBeam (no charge turn).</p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs);">Groudon (only)</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Permanent sand</div>
+            <h3 class="card__title">Sand Stream</h3>
+            <p class="card__body">Permanent sandstorm. Boosts Rock-type Special Defense by 50%. Damages non-Rock/Ground/Steel each turn.</p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs);">Tyranitar (Larvitar import)</p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">Type-immune</div>
+            <h3 class="card__title">Flash Fire</h3>
+            <p class="card__body">Immune to Fire moves. When hit by one, gains a +50% Fire-move boost for the rest of the battle.</p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs);">Vulpix line, Houndoom (FRLG import)</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Type-immune</div>
+            <h3 class="card__title">Volt Absorb</h3>
+            <p class="card__body">Immune to Electric moves. When hit by one, recover 1/4 max HP. Free heal vs Wattson&rsquo;s gym mid-fight.</p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs);">Lanturn, Jolteon (FRLG)</p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">Type-immune</div>
+            <h3 class="card__title">Water Absorb</h3>
+            <p class="card__body">Immune to Water moves. When hit by one, recover 1/4 max HP. Counters Wallace&rsquo;s gym.</p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs);">Lanturn, Vaporeon</p>
+          </article>
+
+          <article class="card offset-shadow">
+            <div class="card__subtitle">Starter abilities</div>
+            <h3 class="card__title">Blaze / Torrent / Overgrow</h3>
+            <p class="card__body">When HP &lt; 1/3 max, same-type STAB moves get +50% damage boost. Stay in the red zone for the boost &mdash; controlled risk.</p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs);">Blaziken / Swampert / Sceptile</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Item-finder</div>
+            <h3 class="card__title">Pickup</h3>
+            <p class="card__body">10% chance after a battle to find an item, scaled to level. At Lv 91&ndash;100: Rare Candy,
+            Sun/Moon Stone, Nugget, King&rsquo;s Rock, Full Restore, PP Up.</p>
+            <div class="poke-row mt-3">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/264.png" alt="Linoone" loading="lazy">
+            </div>
+            <p class="mono mt-3" style="font-size:var(--fs-xs);">Linoone (recommended), Zigzagoon</p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">Trade-off</div>
+            <h3 class="card__title">Truant</h3>
+            <p class="card__body">Slaking loafs every other turn (skip move). The cost of Slaking&rsquo;s incredible base stats.</p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs);">Slaking only</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Defensive snowball</div>
+            <h3 class="card__title">Marvel Scale</h3>
+            <p class="card__body">Boosts Defense 1.5&times; while statused. Self-Toxic for permanent boost. Milotic + Marvel Scale + Recover = stall wall.</p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs);">Milotic only</p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">Sleep-immune</div>
+            <h3 class="card__title">Insomnia / Vital Spirit</h3>
+            <p class="card__body">Immune to sleep. Hypno, Noctowl (Insomnia). Electabuzz, Magmar (Vital Spirit). Switch-in safety vs Hypnosis-Gengar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 04. NATURES ============================== -->
+    <section class="section section--alt" id="natures">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ember">Section IV</span>
+          <h2 class="h1 mt-3">All 25<br><em style="color:var(--ember); font-style:italic; font-weight:400;">natures</em></h2>
+          <p class="lede mt-4" style="max-width: 60ch;">
+            25 natures total. 5 are <strong>neutral</strong> (no stat effect): Hardy, Docile, Serious, Bashful, Quirky.
+            The other 20 boost one stat 10% and reduce another 10%. Natures are randomly assigned at generation/encounter
+            and never change.
+          </p>
+        </div>
+
+        <!-- NEUTRAL NATURES CALLOUT -->
+        <div class="callout callout--ocean" style="margin-bottom: var(--s-6);">
+          <span class="callout__label">The 5 neutral natures</span>
+          <p style="margin:0;">
+            <strong>Hardy</strong> (Atk-Atk), <strong>Docile</strong> (Def-Def), <strong>Serious</strong> (Spe-Spe),
+            <strong>Bashful</strong> (SpA-SpA), <strong>Quirky</strong> (SpD-SpD). All five do nothing &mdash; useful only
+            for collectors and balanced unrestricted play.
+          </p>
+        </div>
+
+        <!-- 25 NATURES TABLE -->
+        <div style="margin-bottom: var(--s-5);">
+          <span class="kicker">The complete 25</span>
+          <h3 class="h2 mt-3">Boost &amp; cut <em style="color:var(--emerald); font-style:italic; font-weight:400;">grid</em></h3>
+        </div>
+
+        <div class="grid grid--auto stagger">
+          <article class="tile"><div><div class="tile__num">+Atk</div><h3 class="tile__title">Hardy</h3></div><p class="tile__desc">&minus;Atk &middot; <strong>neutral</strong></p></article>
+          <article class="tile"><div><div class="tile__num">+Atk</div><h3 class="tile__title">Lonely</h3></div><p class="tile__desc">&minus;Def</p></article>
+          <article class="tile"><div><div class="tile__num">+Atk</div><h3 class="tile__title">Brave</h3></div><p class="tile__desc">&minus;Spe</p></article>
+          <article class="tile"><div><div class="tile__num">+Atk</div><h3 class="tile__title">Adamant</h3></div><p class="tile__desc">&minus;SpA &middot; <strong>physical sweeper standard</strong></p></article>
+          <article class="tile"><div><div class="tile__num">+Atk</div><h3 class="tile__title">Naughty</h3></div><p class="tile__desc">&minus;SpD</p></article>
+
+          <article class="tile"><div><div class="tile__num">+Def</div><h3 class="tile__title">Bold</h3></div><p class="tile__desc">&minus;Atk &middot; <strong>physical wall</strong></p></article>
+          <article class="tile"><div><div class="tile__num">+Def</div><h3 class="tile__title">Docile</h3></div><p class="tile__desc">&minus;Def &middot; <strong>neutral</strong></p></article>
+          <article class="tile"><div><div class="tile__num">+Def</div><h3 class="tile__title">Relaxed</h3></div><p class="tile__desc">&minus;Spe</p></article>
+          <article class="tile"><div><div class="tile__num">+Def</div><h3 class="tile__title">Impish</h3></div><p class="tile__desc">&minus;SpA</p></article>
+          <article class="tile"><div><div class="tile__num">+Def</div><h3 class="tile__title">Lax</h3></div><p class="tile__desc">&minus;SpD</p></article>
+
+          <article class="tile"><div><div class="tile__num">+Spe</div><h3 class="tile__title">Timid</h3></div><p class="tile__desc">&minus;Atk &middot; <strong>special speed sweeper</strong></p></article>
+          <article class="tile"><div><div class="tile__num">+Spe</div><h3 class="tile__title">Hasty</h3></div><p class="tile__desc">&minus;Def</p></article>
+          <article class="tile"><div><div class="tile__num">+Spe</div><h3 class="tile__title">Serious</h3></div><p class="tile__desc">&minus;Spe &middot; <strong>neutral</strong></p></article>
+          <article class="tile"><div><div class="tile__num">+Spe</div><h3 class="tile__title">Jolly</h3></div><p class="tile__desc">&minus;SpA &middot; <strong>physical speed sweeper</strong></p></article>
+          <article class="tile"><div><div class="tile__num">+Spe</div><h3 class="tile__title">Naive</h3></div><p class="tile__desc">&minus;SpD</p></article>
+
+          <article class="tile"><div><div class="tile__num">+SpA</div><h3 class="tile__title">Modest</h3></div><p class="tile__desc">&minus;Atk &middot; <strong>special sweeper standard</strong></p></article>
+          <article class="tile"><div><div class="tile__num">+SpA</div><h3 class="tile__title">Mild</h3></div><p class="tile__desc">&minus;Def</p></article>
+          <article class="tile"><div><div class="tile__num">+SpA</div><h3 class="tile__title">Quiet</h3></div><p class="tile__desc">&minus;Spe</p></article>
+          <article class="tile"><div><div class="tile__num">+SpA</div><h3 class="tile__title">Bashful</h3></div><p class="tile__desc">&minus;SpA &middot; <strong>neutral</strong></p></article>
+          <article class="tile"><div><div class="tile__num">+SpA</div><h3 class="tile__title">Rash</h3></div><p class="tile__desc">&minus;SpD</p></article>
+
+          <article class="tile"><div><div class="tile__num">+SpD</div><h3 class="tile__title">Calm</h3></div><p class="tile__desc">&minus;Atk &middot; <strong>special wall</strong></p></article>
+          <article class="tile"><div><div class="tile__num">+SpD</div><h3 class="tile__title">Gentle</h3></div><p class="tile__desc">&minus;Def</p></article>
+          <article class="tile"><div><div class="tile__num">+SpD</div><h3 class="tile__title">Sassy</h3></div><p class="tile__desc">&minus;Spe</p></article>
+          <article class="tile"><div><div class="tile__num">+SpD</div><h3 class="tile__title">Careful</h3></div><p class="tile__desc">&minus;SpA</p></article>
+          <article class="tile"><div><div class="tile__num">+SpD</div><h3 class="tile__title">Quirky</h3></div><p class="tile__desc">&minus;SpD &middot; <strong>neutral</strong></p></article>
+        </div>
+
+        <!-- BEST NATURES FOR HOENN -->
+        <div style="margin-top: var(--s-7);">
+          <span class="kicker kicker--ember">Best natures by Pokemon</span>
+          <h3 class="h2 mt-3">Sixteen <em style="color:var(--ember); font-style:italic; font-weight:400;">recommendations</em></h3>
+          <p class="lede mt-3" style="max-width: 60ch;">For top Hoenn picks &mdash; sweepers, walls, and the Frontier-bound. Synchronize-Ralts in your party gives 50% odds of matching wild encounters to your target nature.</p>
+        </div>
+
+        <div class="grid grid--auto stagger" style="margin-top: var(--s-5);">
+          <article class="tile">
+            <div class="poke-row" style="margin-bottom: var(--s-2);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/373.png" alt="Salamence" loading="lazy">
+              <h3 class="tile__title" style="margin:0;">Salamence</h3>
+            </div>
+            <p class="tile__desc"><strong>Adamant</strong> (+Atk &minus;SpA). Earthquake/Outrage/Brick Break all physical.</p>
+          </article>
+
+          <article class="tile">
+            <div class="poke-row" style="margin-bottom: var(--s-2);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/254.png" alt="Sceptile" loading="lazy">
+              <h3 class="tile__title" style="margin:0;">Sceptile</h3>
+            </div>
+            <p class="tile__desc"><strong>Jolly</strong> (+Spe &minus;SpA). 120 base Speed maxed; Leaf Blade is physical.</p>
+          </article>
+
+          <article class="tile">
+            <div class="poke-row" style="margin-bottom: var(--s-2);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/257.png" alt="Blaziken" loading="lazy">
+              <h3 class="tile__title" style="margin:0;">Blaziken</h3>
+            </div>
+            <p class="tile__desc"><strong>Adamant</strong> (+Atk &minus;SpA). Sky Uppercut + Blaze Kick physical.</p>
+          </article>
+
+          <article class="tile">
+            <div class="poke-row" style="margin-bottom: var(--s-2);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/260.png" alt="Swampert" loading="lazy">
+              <h3 class="tile__title" style="margin:0;">Swampert</h3>
+            </div>
+            <p class="tile__desc"><strong>Adamant</strong> (+Atk &minus;SpA). Earthquake/Waterfall/Ice Punch physical.</p>
+          </article>
+
+          <article class="tile">
+            <div class="poke-row" style="margin-bottom: var(--s-2);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/282.png" alt="Gardevoir" loading="lazy">
+              <h3 class="tile__title" style="margin:0;">Gardevoir</h3>
+            </div>
+            <p class="tile__desc"><strong>Modest</strong> (+SpA &minus;Atk). Special sweeper.</p>
+          </article>
+
+          <article class="tile">
+            <div class="poke-row" style="margin-bottom: var(--s-2);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/310.png" alt="Manectric" loading="lazy">
+              <h3 class="tile__title" style="margin:0;">Manectric</h3>
+            </div>
+            <p class="tile__desc"><strong>Timid</strong> or <strong>Modest</strong>. Speed/power tradeoff.</p>
+          </article>
+
+          <article class="tile">
+            <div class="poke-row" style="margin-bottom: var(--s-2);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/350.png" alt="Milotic" loading="lazy">
+              <h3 class="tile__title" style="margin:0;">Milotic</h3>
+            </div>
+            <p class="tile__desc"><strong>Bold</strong> (+Def &minus;Atk). Marvel Scale + Recover wall.</p>
+          </article>
+
+          <article class="tile">
+            <div class="poke-row" style="margin-bottom: var(--s-2);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/306.png" alt="Aggron" loading="lazy">
+              <h3 class="tile__title" style="margin:0;">Aggron</h3>
+            </div>
+            <p class="tile__desc"><strong>Adamant</strong>. Iron Tail + Earthquake + Steel Wing.</p>
+          </article>
+
+          <article class="tile">
+            <div class="poke-row" style="margin-bottom: var(--s-2);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/297.png" alt="Hariyama" loading="lazy">
+              <h3 class="tile__title" style="margin:0;">Hariyama</h3>
+            </div>
+            <p class="tile__desc"><strong>Adamant</strong>. Belly Drum + Cross Chop. Pure physical.</p>
+          </article>
+
+          <article class="tile">
+            <div class="poke-row" style="margin-bottom: var(--s-2);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/376.png" alt="Metagross" loading="lazy">
+              <h3 class="tile__title" style="margin:0;">Metagross</h3>
+            </div>
+            <p class="tile__desc"><strong>Adamant</strong>. Meteor Mash + Earthquake + Explosion.</p>
+          </article>
+
+          <article class="tile">
+            <div class="poke-row" style="margin-bottom: var(--s-2);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/169.png" alt="Crobat" loading="lazy">
+              <h3 class="tile__title" style="margin:0;">Crobat</h3>
+            </div>
+            <p class="tile__desc"><strong>Jolly</strong> (+Spe &minus;SpA). Aerial Ace + Sludge Bomb.</p>
+          </article>
+
+          <article class="tile">
+            <div class="poke-row" style="margin-bottom: var(--s-2);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/330.png" alt="Flygon" loading="lazy">
+              <h3 class="tile__title" style="margin:0;">Flygon</h3>
+            </div>
+            <p class="tile__desc"><strong>Adamant</strong>. Earthquake + Dragon Claw + Rock Slide.</p>
+          </article>
+
+          <article class="tile">
+            <div class="poke-row" style="margin-bottom: var(--s-2);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/365.png" alt="Walrein" loading="lazy">
+              <h3 class="tile__title" style="margin:0;">Walrein</h3>
+            </div>
+            <p class="tile__desc"><strong>Modest</strong>. Ice Beam + Surf + Toxic. Special wall.</p>
+          </article>
+
+          <article class="tile">
+            <div class="poke-row" style="margin-bottom: var(--s-2);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/286.png" alt="Breloom" loading="lazy">
+              <h3 class="tile__title" style="margin:0;">Breloom</h3>
+            </div>
+            <p class="tile__desc"><strong>Adamant</strong>. Mach Punch + Sky Uppercut + Spore.</p>
+          </article>
+
+          <article class="tile">
+            <div class="poke-row" style="margin-bottom: var(--s-2);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/94.png" alt="Gengar" loading="lazy">
+              <h3 class="tile__title" style="margin:0;">Gengar</h3>
+            </div>
+            <p class="tile__desc"><strong>Timid</strong>. Hypnosis + Shadow Ball + Thunderbolt special.</p>
+          </article>
+
+          <article class="tile">
+            <div class="poke-row" style="margin-bottom: var(--s-2);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/68.png" alt="Machamp" loading="lazy">
+              <h3 class="tile__title" style="margin:0;">Machamp</h3>
+            </div>
+            <p class="tile__desc"><strong>Adamant</strong>. Cross Chop + Earthquake + Rock Slide.</p>
+          </article>
+        </div>
+
+        <div class="callout callout--emerald" style="margin-top: var(--s-6);">
+          <span class="callout__label">Synchronize + Everstone protocol</span>
+          <p style="margin:0;">
+            For breeding: <strong>female</strong> parent holding Everstone passes Nature 50% of the time. For wild captures
+            (legendaries especially): lead with a Synchronize Ralts of your target Nature for 50% encounter match. Stack both
+            for the most reliable Gen 3 Nature lock.
+          </p>
+        </div>
+
+        <div class="callout callout--ember" style="margin-top: var(--s-4);">
+          <span class="callout__label">No Nature in summary screen</span>
+          <p style="margin:0;">
+            Gen 3 Emerald does NOT explicitly display Nature in the summary screen. To check, look at level-1 base stats &mdash;
+            the boosted stat will show numerically higher than baseline. Diamond/Pearl onwards added Nature with color-coded
+            stat indicators. To check via stats: hatch the egg, compare Lv 1 stats to species base values, the +10%/&minus;10%
+            becomes obvious.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 05. FRIENDSHIP ============================== -->
+    <section class="section" id="friendship">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker">Section V</span>
+          <h2 class="h1 mt-3">Friendship<br>&amp; <em style="color:var(--emerald); font-style:italic; font-weight:400;">happiness</em></h2>
+          <p class="lede mt-4" style="max-width: 60ch;">
+            A hidden 0&ndash;255 value per Pokemon. Controls Return move power, Frustration move power, and friendship-based
+            evolutions. Most Pokemon start at 70.
+          </p>
+        </div>
+
+        <div class="split">
+          <div>
+            <p class="dropcap" style="font-size: 1.1rem; line-height: 1.6;">
+              The cartridge tracks your bond with every Pokemon as a number you cannot see in-game. Walking, leveling, and
+              vitamins all add to it. Fainting and bitter herbal items subtract. The value drives two moves (Return and
+              Frustration) and gates five evolutions (Crobat, Pikachu, Marill, Jigglypuff, Clefairy from their baby forms).
+            </p>
+            <p class="mt-4">
+              The fastest path to maxing friendship: <strong>Luxury Ball</strong> capture (2&times; gains) +
+              <strong>Soothe Bell</strong> hold (1.5&times;, stacks). Walk constantly with the Pokemon in party, level up
+              often, feed stat-lowering reset berries. Crobat in &lt;30 minutes of optimized play.
+            </p>
+          </div>
+
+          <div class="stack-lg">
+            <div class="callout callout--emerald">
+              <span class="callout__label">Return (TM27)</span>
+              <p style="margin:0;">Power = friendship / 2.5. Max <strong>102 BP</strong> at 255 friendship. Best move for high-friendship physical attackers like Vigoroth, Linoone, Crobat.</p>
+            </div>
+            <div class="callout callout--ember">
+              <span class="callout__label">Frustration (TM21)</span>
+              <p style="margin:0;">Power = (255 &minus; friendship) / 2.5. Inverse of Return. Use with low-friendship Pokemon. Most playthroughs ignore this.</p>
+            </div>
+            <div class="callout callout--ocean">
+              <span class="callout__label">No checker NPC</span>
+              <p style="margin:0;">There is NO friendship-checker NPC in Emerald (added Gen 4 &mdash; Pokemon Massage Lady). Player must intuit friendship from move power scaling.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- HOW TO RAISE -->
+        <div class="grid grid--2 stagger" style="margin-top: var(--s-7);">
+          <article class="card offset-shadow">
+            <div class="card__subtitle">How friendship rises</div>
+            <h3 class="card__title mt-3">Eight raise actions</h3>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Walk 256 steps</span><span class="stat-row__value">Pokemon in party</span><span class="stat-row__num">+1</span></div>
+              <div class="stat-row"><span class="stat-row__label">Level up</span><span class="stat-row__value">battle or candy</span><span class="stat-row__num">+5/3/2</span></div>
+              <div class="stat-row"><span class="stat-row__label">Vitamin used</span><span class="stat-row__value">HP Up etc.</span><span class="stat-row__num">+5/3/2</span></div>
+              <div class="stat-row"><span class="stat-row__label">Reset berry</span><span class="stat-row__value">Pomeg/Kelpsy/etc.</span><span class="stat-row__num">+10/5/2</span></div>
+              <div class="stat-row"><span class="stat-row__label">Soothe Bell</span><span class="stat-row__value">held multiplier</span><span class="stat-row__num">&times;1.5</span></div>
+              <div class="stat-row"><span class="stat-row__label">Luxury Ball</span><span class="stat-row__value">capture bonus</span><span class="stat-row__num">&times;2</span></div>
+              <div class="stat-row"><span class="stat-row__label">Stacked</span><span class="stat-row__value">Soothe + Luxury</span><span class="stat-row__num">&times;3</span></div>
+            </dl>
+            <p class="mono mt-3" style="font-size:var(--fs-xs); color:var(--emerald-deep);">GAINS &mdash; +X/+Y/+Z = at &lt;100 / 100&ndash;199 / 200+. Diminishing as you approach 255.</p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">How friendship drops</div>
+            <h3 class="card__title mt-3">Five drop actions</h3>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Faint in battle</span><span class="stat-row__value">small loss</span><span class="stat-row__num">&minus;1</span></div>
+              <div class="stat-row"><span class="stat-row__label">Energy Powder</span><span class="stat-row__value">bitter heal</span><span class="stat-row__num">&minus;5</span></div>
+              <div class="stat-row"><span class="stat-row__label">Heal Powder</span><span class="stat-row__value">bitter heal</span><span class="stat-row__num">&minus;5</span></div>
+              <div class="stat-row"><span class="stat-row__label">Energy Root</span><span class="stat-row__value">bitter heal</span><span class="stat-row__num">&minus;10</span></div>
+              <div class="stat-row"><span class="stat-row__label">Revival Herb</span><span class="stat-row__value">bitter revive</span><span class="stat-row__num">&minus;15</span></div>
+              <div class="stat-row"><span class="stat-row__label">Trade</span><span class="stat-row__value">Gen 3 keeps intact</span><span class="stat-row__num">0</span></div>
+            </dl>
+            <p class="mono mt-3" style="font-size:var(--fs-xs); color:var(--emerald-deep);">FRIENDSHIP-EVO TIP &mdash; avoid bitter healing items entirely while raising Crobat or Pikachu.</p>
+          </article>
+        </div>
+
+        <!-- FRIENDSHIP-EVOS WITH SPRITES -->
+        <div style="margin-top: var(--s-7);">
+          <span class="kicker kicker--ember">Friendship-locked evolutions</span>
+          <h3 class="h2 mt-3">Five lines, all <em style="color:var(--ember); font-style:italic; font-weight:400;">220</em></h3>
+        </div>
+
+        <div class="grid grid--3 stagger" style="margin-top: var(--s-5);">
+          <article class="card">
+            <div class="poke-row" style="margin-bottom: var(--s-3);">
+              <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/169.png" alt="Crobat" loading="lazy">
+              <h4 class="card__title" style="margin:0;">Golbat &rarr; Crobat</h4>
+            </div>
+            <p class="card__body">Catch Zubat in caves. Soothe Bell + Luxury Ball &rarr; Crobat fast.</p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="poke-row" style="margin-bottom: var(--s-3);">
+              <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/25.png" alt="Pikachu" loading="lazy">
+              <h4 class="card__title" style="margin:0;">Pichu &rarr; Pikachu</h4>
+            </div>
+            <p class="card__body">Pichu only via breeding Pikachu (Light Ball for egg-move boost).</p>
+          </article>
+
+          <article class="card">
+            <div class="poke-row" style="margin-bottom: var(--s-3);">
+              <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/183.png" alt="Marill" loading="lazy">
+              <h4 class="card__title" style="margin:0;">Azurill &rarr; Marill</h4>
+            </div>
+            <p class="card__body">Misleadingly NOT low-friendship. Hatch from Marill/Azumarill egg.</p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="poke-row" style="margin-bottom: var(--s-3);">
+              <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/39.png" alt="Jigglypuff" loading="lazy">
+              <h4 class="card__title" style="margin:0;">Igglybuff &rarr; Jigglypuff</h4>
+            </div>
+            <p class="card__body">Not native; hatch from Jigglypuff/Wigglytuff egg if traded in.</p>
+          </article>
+
+          <article class="card">
+            <div class="poke-row" style="margin-bottom: var(--s-3);">
+              <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/35.png" alt="Clefairy" loading="lazy">
+              <h4 class="card__title" style="margin:0;">Cleffa &rarr; Clefairy</h4>
+            </div>
+            <p class="card__body">Not Hoenn-native; baby form bred from Clefairy/Clefable.</p>
+          </article>
+
+          <article class="card card--alt offset-shadow">
+            <div class="card__subtitle">Soothe Bell location</div>
+            <h4 class="card__title mt-3">Mr. Briney&rsquo;s House</h4>
+            <p class="card__body">Pacifidlog Town &mdash; after he retires from sailing duties. Or Lilycove Dept Store after gym 8.</p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs); color:var(--emerald-deep);">ALWAYS HOLD &mdash; on a friendship-evolving Pokemon.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 06. POKEBALLS ============================== -->
+    <section class="section section--alt" id="balls">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ocean">Section VI</span>
+          <h2 class="h1 mt-3">Pokeball<br><em style="color:var(--ocean); font-style:italic; font-weight:400;">strategy</em></h2>
+          <p class="lede mt-4" style="max-width: 60ch;">
+            Each ball type has a multiplier on the catch-rate formula. Knowing which ball to use saves Master Balls and
+            frustration. The catch math: ((3 &middot; MaxHP &minus; 2 &middot; CurrentHP) &middot; SpeciesRate &middot; BallBonus &middot; StatusMod) / (3 &middot; MaxHP),
+            then a probability shake check.
+          </p>
+        </div>
+
+        <div class="grid grid--auto stagger">
+          <article class="tile">
+            <div>
+              <div class="tile__num">200</div>
+              <h3 class="tile__title">Poke Ball</h3>
+            </div>
+            <p class="tile__desc"><strong>1&times;</strong>. Every Pokemart from start. Buy 10 to get a free Premier Ball.</p>
+            <span class="tile__arrow">Cheap volume</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">600</div>
+              <h3 class="tile__title">Great Ball</h3>
+            </div>
+            <p class="tile__desc"><strong>1.5&times;</strong>. Most Pokemarts after Rustboro. Default workhorse for non-legendary.</p>
+            <span class="tile__arrow">Mid-game default</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">1200</div>
+              <h3 class="tile__title">Ultra Ball</h3>
+            </div>
+            <p class="tile__desc"><strong>2&times;</strong>. Mauville and beyond. Stock 30+ before facing Groudon/Kyogre/Rayquaza.</p>
+            <span class="tile__arrow">Legendary backup</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">1000</div>
+              <h3 class="tile__title">Net Ball</h3>
+            </div>
+            <p class="tile__desc"><strong>3&times;</strong> on Bug or Water types. Mossdeep Pokemart. Best ball for Kyogre.</p>
+            <span class="tile__arrow">Bug/Water</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">1000</div>
+              <h3 class="tile__title">Nest Ball</h3>
+            </div>
+            <p class="tile__desc"><strong>(40 &minus; level) / 10, min 1&times;</strong>. Lv 5 = 3.5&times;, Lv 25 = 1.5&times;, Lv 40+ = 1&times;. Pointless for legendaries.</p>
+            <span class="tile__arrow">Low-level</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">1000</div>
+              <h3 class="tile__title">Repeat Ball</h3>
+            </div>
+            <p class="tile__desc"><strong>3&times;</strong> if species already in Dex. Lilycove Dept (post-game). Good for breeding stock.</p>
+            <span class="tile__arrow">Already-caught</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">1000</div>
+              <h3 class="tile__title">Timer Ball</h3>
+            </div>
+            <p class="tile__desc"><strong>1 + (turns &times; 0.1), max 4&times;</strong> at turn 30+. Mossdeep/Lilycove. Best legendary ball without Master Ball.</p>
+            <span class="tile__arrow">Long battles</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">1000</div>
+              <h3 class="tile__title">Dive Ball</h3>
+            </div>
+            <p class="tile__desc"><strong>3.5&times;</strong> underwater or while Surfing. Mossdeep (post-Dive). Best ball for Kyogre.</p>
+            <span class="tile__arrow">Surf/Dive</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">free</div>
+              <h3 class="tile__title">Premier Ball</h3>
+            </div>
+            <p class="tile__desc"><strong>1&times;</strong> cosmetic. Free with every 10 Poke Balls. Use one for your starter&rsquo;s evolution.</p>
+            <span class="tile__arrow">Trophy</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">1000</div>
+              <h3 class="tile__title">Luxury Ball</h3>
+            </div>
+            <p class="tile__desc"><strong>1&times;</strong> catch + <strong>2&times;</strong> friendship gain. Lilycove Dept. The Crobat ball.</p>
+            <span class="tile__arrow">Friendship</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">free</div>
+              <h3 class="tile__title">Master Ball</h3>
+            </div>
+            <p class="tile__desc"><strong>100% catch</strong>. Free from Magma/Aqua leader after climax. Lottery 1st prize. Save for Latios/Latias roamer.</p>
+            <span class="tile__arrow">Roamer-only</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">Safari</div>
+              <h3 class="tile__title">Safari Ball</h3>
+            </div>
+            <p class="tile__desc"><strong>1.5&times;</strong>, Safari Zone only. 30 per visit. Use bait/rocks to manipulate catch rate.</p>
+            <span class="tile__arrow">Safari Zone</span>
+          </article>
+        </div>
+
+        <!-- BALL PRIORITY -->
+        <div style="margin-top: var(--s-7);">
+          <span class="kicker">Ball priority chart</span>
+          <h3 class="h2 mt-3">Pick by <em style="color:var(--emerald); font-style:italic; font-weight:400;">target</em></h3>
+        </div>
+
+        <div class="grid grid--2 stagger" style="margin-top: var(--s-5);">
+          <article class="card">
+            <dl>
+              <div class="stat-row"><span class="stat-row__label">Wild Lv 5&ndash;15 fodder</span><span class="stat-row__value">Nest Ball</span><span class="stat-row__num">3.5&times;</span></div>
+              <div class="stat-row"><span class="stat-row__label">Wild Lv 30+ Pokemon</span><span class="stat-row__value">Great or Ultra Ball</span><span class="stat-row__num">2&times;</span></div>
+              <div class="stat-row"><span class="stat-row__label">Wild Bug or Water</span><span class="stat-row__value">Net Ball</span><span class="stat-row__num">3&times;</span></div>
+              <div class="stat-row"><span class="stat-row__label">While Surfing/Dive</span><span class="stat-row__value">Dive Ball</span><span class="stat-row__num">3.5&times;</span></div>
+            </dl>
+          </article>
+
+          <article class="card card--alt">
+            <dl>
+              <div class="stat-row"><span class="stat-row__label">Roaming Latios/Latias</span><span class="stat-row__value">Master Ball</span><span class="stat-row__num">100%</span></div>
+              <div class="stat-row"><span class="stat-row__label">Stationary legendary</span><span class="stat-row__value">Status + False Swipe + Timer</span><span class="stat-row__num">4&times;</span></div>
+              <div class="stat-row"><span class="stat-row__label">Friendship evo target</span><span class="stat-row__value">Luxury Ball</span><span class="stat-row__num">2&times;FR</span></div>
+              <div class="stat-row"><span class="stat-row__label">Trophy/marker</span><span class="stat-row__value">Premier Ball</span><span class="stat-row__num">1&times;</span></div>
+            </dl>
+          </article>
+        </div>
+
+        <!-- STATUS CATCH BONUSES -->
+        <div class="callout callout--sun" style="margin-top: var(--s-6);">
+          <span class="callout__label">Status catch bonuses (multiplicative)</span>
+          <p style="margin:0;">
+            <strong>Sleep or Freeze: 2.0&times;</strong>. <strong>Paralysis / Burn / Poison: 1.5&times;</strong>. Stack with
+            ball multiplier: Net Ball (3&times;) + Sleep (2&times;) on a Wailmer (Water) = 6&times; total catch boost.
+          </p>
+        </div>
+
+        <!-- FALSE SWIPE COMBO -->
+        <div class="callout callout--sun" style="margin-top: var(--s-4);">
+          <span class="callout__label">The legendary capture stack</span>
+          <p style="margin:0;">
+            <strong>False Swipe</strong> (TM54, Slateport gift NPC) is 100% acc and always leaves the target with at least 1 HP.
+            Pair with a status setter (Hypnosis Gengar, Spore Breloom) and Timer Ball after 30 turns. This is the optimal
+            non-Master-Ball legendary capture stack.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== CLOSER ============================== -->
+    <section class="section section--ink">
+      <div class="container container--narrow text-center">
+        <span class="kicker">Closing transmission</span>
+        <h2 class="h2 mt-4" style="color:var(--paper);">Six systems. <em style="color:var(--sun); font-style:italic; font-weight:400;">One</em> cartridge.</h2>
+        <p class="lede mt-5" style="color:var(--mist); margin-inline:auto;">
+          Type chart, status, abilities, natures, friendship, balls. Read them once. Memorize the quirks: Steel resists
+          Ghost and Dark, Ground hits Levitate as zero, paralysis halves Speed by four, sleep is 1&ndash;7 turns. The rest
+          falls out from there.
+        </p>
+        <p class="mt-6">
+          <a href="evolution.html" class="badge badge--ember" style="text-decoration:none;">Evolution &rarr;</a>
+          &nbsp;
+          <a href="breeding.html" class="badge badge--emerald" style="text-decoration:none;">Breeding &amp; IVs &rarr;</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">Hoenn <span>Field</span> Guide</div>
+          <p class="mt-3">An editorial companion to Pokemon Emerald, published in print-as-pixels.
+          Pokemon names, characters, and locations are property of Nintendo, Game Freak, and The Pokemon Company.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Chapters</div>
+          <ul class="footer__links">
+            <li><a href="gyms.html">Gym Leaders</a></li>
+            <li><a href="elite-four.html">Elite Four</a></li>
+            <li><a href="legendaries.html">Legendaries</a></li>
+            <li><a href="tier-list.html">Tier List</a></li>
+            <li><a href="secrets.html">Secrets</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Reference</div>
+          <ul class="footer__links">
+            <li><a href="breeding.html">Breeding &amp; IVs</a></li>
+            <li><a href="early-game.html">Early Game</a></li>
+            <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+            <li><a href="post-game.html">Post Game</a></li>
+            <li><a href="https://github.com/" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span data-year>2025</span> &middot; Hoenn Field Guide &middot; Issue 001</span>
+        <span>Set in Fraunces, Instrument Sans &amp; JetBrains Mono</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&uarr; Top</button>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

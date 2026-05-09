@@ -27,3 +27,11 @@ yarn-error.log*
 # Env
 .env
 .env.local
+
+# Playwright MCP scratch dir
+.playwright-mcp/
+
+# Local screenshot scratch (kept in /tmp normally)
+desktop-*.png
+mobile-*.png
+fix*-*.png

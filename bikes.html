@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>document.documentElement.classList.add("js")</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mach Bike vs Acro Bike — capabilities, where each is required, and the field tricks Acro unlocks. A Hoenn Field Guide reference page." />
+  <title>Bikes &middot; Hoenn Field Guide</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <!-- ============================== NAV ============================== -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html" aria-label="Hoenn Field Guide home">
+        <span class="nav__mark" aria-hidden="true">HFG</span>
+        <span class="nav__wordmark">Hoenn <span>Field</span> Guide</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <ul style="display:contents;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="starters.html">Starters</a></li>
+          <li><a href="gyms.html">Gyms</a></li>
+          <li><a href="elite-four.html">Elite Four</a></li>
+          <li><a href="legendaries.html">Legendaries</a></li>
+          <li><a href="tier-list.html">Tier List</a></li>
+          <li><a href="secrets.html">Secrets</a></li>
+          <li><a href="breeding.html">Breeding</a></li>
+          <li><a href="early-game.html">Early Game</a></li>
+          <li><a href="bikes.html">Bikes</a></li>
+          <li><a href="evolution.html">Evolution</a></li>
+          <li><a href="mechanics.html">Mechanics</a></li>
+          <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+          <li><a href="post-game.html">Post Game</a></li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-drawer">MENU</button>
+    </div>
+    <div class="nav__drawer" id="nav-drawer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="starters.html">Starters</a></li>
+        <li><a href="gyms.html">Gyms</a></li>
+        <li><a href="elite-four.html">Elite Four</a></li>
+        <li><a href="legendaries.html">Legendaries</a></li>
+        <li><a href="tier-list.html">Tier List</a></li>
+        <li><a href="secrets.html">Secrets</a></li>
+        <li><a href="breeding.html">Breeding</a></li>
+        <li><a href="early-game.html">Early Game</a></li>
+        <li><a href="bikes.html">Bikes</a></li>
+        <li><a href="evolution.html">Evolution</a></li>
+        <li><a href="mechanics.html">Mechanics</a></li>
+        <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+        <li><a href="post-game.html">Post Game</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============================== HEADER ============================== -->
+    <section class="page-header">
+      <div class="riso-blob riso-blob--ember" style="width:300px; height:300px; top:-90px; right:-50px;"></div>
+      <div class="riso-dots" style="width:220px; height:110px; bottom:30px; right:14%; transform: rotate(-5deg);"></div>
+      <div class="riso-blob riso-blob--ocean" style="width:140px; height:140px; bottom:-30px; left:-30px;"></div>
+
+      <div class="container">
+        <span class="kicker kicker--ember">Mach or Acro &middot; Two-Wheeled Hoenn</span>
+        <h1 class="page-header__title">
+          Pick a bike,<br>change the <em>map</em>.
+        </h1>
+        <p class="dropcap lede mt-4" style="max-width: 62ch;">
+          Rydel hands you one bike and asks you to choose. The Mach Bike is raw speed and slope-climbing &mdash; the
+          tool of story progression. The Acro Bike is trick movement &mdash; bunny hops, wheelies, and white-rail
+          balance &mdash; the tool of secret access. Emerald lets you swap between them at no cost, any time, and you
+          will. Below: full capabilities, every location each bike is required, and the controls for the four field
+          tricks Acro unlocks.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================== BIKE COMPARISON ============================== -->
+    <section class="section" id="comparison">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker">Section I</span>
+          <h2 class="h1 mt-3">The two<br><em style="color:var(--emerald); font-style:italic; font-weight:400;">bikes</em></h2>
+          <p class="lede mt-4" style="max-width: 60ch;">
+            One at a time, but never permanent. Rydel&rsquo;s Cycles in Mauville will swap your loaner with a smile every
+            time you ask &mdash; the closest thing in Hoenn to a free quality-of-life button.
+          </p>
+        </div>
+
+        <div class="grid grid--2 stagger">
+          <!-- MACH BIKE -->
+          <article class="card offset-shadow--ember">
+            <div style="display:flex; align-items:center; gap:var(--s-4); margin-bottom: var(--s-4);">
+              <div class="poke-sprite-frame poke-sprite-frame--ember" style="width:96px; height:96px; display:flex; align-items:center; justify-content:center;">
+                <span class="mono" style="font-size:2rem; font-weight:700; color:var(--paper);">M</span>
+              </div>
+              <div>
+                <div class="card__subtitle">No. 01 &middot; Speed</div>
+                <h3 class="h2" style="margin:0;">Mach Bike</h3>
+              </div>
+            </div>
+            <p class="card__body">
+              Pure speed. Doubles overworld movement and lets you climb dirt slopes that walking cannot. Speed builds
+              over a few tiles &mdash; you must commit to a straight line before slope climbs and crack-floor jumps.
+            </p>
+            <ul class="bullet-list bullet-list--emerald" style="margin-top: var(--s-4);">
+              <li>Climbs muddy/dirt slopes at full speed (walking is rejected)</li>
+              <li>Breaks cracked floors when ridden over them &mdash; falls through to the floor below</li>
+              <li>Outruns the Pacifidlog tide currents on Routes 132/133/134</li>
+              <li>Doubles your traversal speed on flat ground</li>
+            </ul>
+            <div class="callout callout--ember mt-4">
+              <span class="callout__label">Drawback</span>
+              <p style="margin:0;">No tricks. Cannot bunny-hop, wheelie, or balance on white rails. Inside Sky Pillar
+              this is dangerous &mdash; the Mach Bike will <strong>break</strong> the cracked floors and trap you below.</p>
+            </div>
+            <div class="callout mt-3">
+              <span class="callout__label">Controls</span>
+              <p style="margin:0;">Hold a directional button to accelerate. Speed builds over ~3 tiles. Release to coast,
+              tap perpendicular to lose all speed.</p>
+            </div>
+            <p class="mono mt-4" style="font-size:var(--fs-xs); color:var(--emerald-deep);">
+              FIELD USE &mdash; Story progression, dungeon climbs, escape from Pacifidlog currents toward Sky Pillar approach.
+            </p>
+          </article>
+
+          <!-- ACRO BIKE -->
+          <article class="card card--alt offset-shadow--ocean">
+            <div style="display:flex; align-items:center; gap:var(--s-4); margin-bottom: var(--s-4);">
+              <div class="poke-sprite-frame poke-sprite-frame--ocean" style="width:96px; height:96px; display:flex; align-items:center; justify-content:center;">
+                <span class="mono" style="font-size:2rem; font-weight:700; color:var(--paper);">A</span>
+              </div>
+              <div>
+                <div class="card__subtitle">No. 02 &middot; Tricks</div>
+                <h3 class="h2" style="margin:0;">Acro Bike</h3>
+              </div>
+            </div>
+            <p class="card__body">
+              The trick bike. Slower than Mach but unlocks bunny hops, wheelies, and white-rail traversal. The B button
+              is your trick modifier &mdash; tap, hold, or combine with a direction.
+            </p>
+            <ul class="bullet-list bullet-list--ocean" style="margin-top: var(--s-4);">
+              <li><strong>Bunny Hop:</strong> tap-and-hold B with no direction &mdash; hops in place. Required for yellow Hopping Tiles.</li>
+              <li><strong>Wheelie Hop:</strong> hold B then tap a direction &mdash; one-tile hop without sliding.</li>
+              <li><strong>Wheelie:</strong> hold B and move &mdash; rides on the back wheel. Required for white rails AND for crossing Sky Pillar floors WITHOUT breaking them.</li>
+              <li><strong>Side Hop:</strong> tap B + perpendicular direction while on a rail &mdash; jump on or off rails.</li>
+            </ul>
+            <div class="callout callout--ocean mt-4">
+              <span class="callout__label">Drawback</span>
+              <p style="margin:0;">Slower than Mach &mdash; can't outrun Pacifidlog currents, can't climb dirt slopes. Story
+              dungeons that demand acceleration (Magma Hideout, Mt. Chimney ash) reject this bike entirely.</p>
+            </div>
+            <div class="callout mt-3">
+              <span class="callout__label">Controls</span>
+              <p style="margin:0;">B is the trick modifier. Single tap = hop. Hold = wheelie. B + direction = directional
+              hop. Practice on the empty stretch east of Mauville before committing to puzzles.</p>
+            </div>
+            <p class="mono mt-4" style="font-size:var(--fs-xs); color:var(--emerald-deep);">
+              FIELD USE &mdash; Trick House late puzzles, Sky Pillar (Rayquaza), Safari Zone NE/NW expansions, Berry Master path, several Secret Bases.
+            </p>
+          </article>
+        </div>
+
+        <div class="callout callout--sun" style="margin-top: var(--s-6);">
+          <span class="callout__label">The Emerald difference</span>
+          <p style="margin:0;">
+            Emerald is the only Gen 3 game where you can own <strong>both bikes</strong> (one at a time, free swaps) without
+            needing to find Rydel&rsquo;s missing bike like in Ruby/Sapphire. Just walk into Rydel&rsquo;s in Mauville City
+            and ask for the other one.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== ACQUISITION ============================== -->
+    <section class="section section--alt" id="rydel">
+      <div class="container">
+        <div class="split">
+          <div>
+            <span class="kicker kicker--ocean">Section II</span>
+            <h2 class="h1 mt-3">Rydel&rsquo;s<br><em style="color:var(--ocean); font-style:italic; font-weight:400;">cycles</em></h2>
+            <p class="lede mt-4">
+              Mauville City, central building with the bicycle on the sign. Rydel will hand you a free bike on first visit,
+              and swap your loaner whenever you ask. No item, no cost, no cooldown.
+            </p>
+          </div>
+
+          <div class="stack-lg">
+            <div class="callout callout--emerald">
+              <span class="callout__label">Where</span>
+              <p style="margin:0;">Rydel&rsquo;s Cycles, central <strong>Mauville City</strong>. Two doors down from the Pokemon Center.</p>
+            </div>
+            <div class="callout callout--ocean">
+              <span class="callout__label">When</span>
+              <p style="margin:0;">As soon as you reach Mauville &mdash; after Brawly&rsquo;s Knuckle Badge in Dewford. Grab whichever bike fits the next dungeon.</p>
+            </div>
+            <div class="callout callout--sun">
+              <span class="callout__label">Swap rules</span>
+              <p style="margin:0;">Talk to Rydel any time to exchange bikes. <strong>No cost.</strong> Always swap before
+              entering a long dungeon &mdash; there is no reason to suffer Sky Pillar with a Mach Bike or Magma Hideout
+              with an Acro.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== WHERE EACH BIKE IS REQUIRED ============================== -->
+    <section class="section" id="where-required">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker">Section III</span>
+          <h2 class="h1 mt-3">Where each bike is<br><em style="color:var(--emerald); font-style:italic; font-weight:400;">required</em></h2>
+          <p class="lede mt-4" style="max-width: 60ch;">
+            Ten gates across Hoenn that demand a specific bike. Bring the wrong one and you walk back to Mauville.
+          </p>
+        </div>
+
+        <div class="grid grid--auto stagger">
+          <article class="tile">
+            <div>
+              <div class="tile__num">01 &middot; Route 112 / Jagged Pass</div>
+              <h3 class="tile__title">Mt. Chimney ash slope</h3>
+            </div>
+            <p class="tile__desc">Climb the soft-ash slope from Fiery Path side up toward Lavaridge approach. Walking is rejected outright.</p>
+            <span class="tile__arrow">Mach Bike</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">02 &middot; Jagged Pass entrance</div>
+              <h3 class="tile__title">Magma Hideout</h3>
+            </div>
+            <p class="tile__desc">A series of dirt slopes inside the lava-filled cave. Cannot be navigated without Mach acceleration.</p>
+            <span class="tile__arrow">Mach Bike</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">03 &middot; Route 111 desert</div>
+              <h3 class="tile__title">Mirage Tower</h3>
+            </div>
+            <p class="tile__desc">Cracked floors break under speed &mdash; that&rsquo;s the point here. Drop through to lower floors and grab the Root or Claw Fossil.</p>
+            <span class="tile__arrow">Mach Bike</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">04 &middot; Route 131 &middot; Rayquaza</div>
+              <h3 class="tile__title">Sky Pillar</h3>
+            </div>
+            <p class="tile__desc">Cracked floors here will <strong>break and drop you</strong> if you ride fast. Use Acro Wheelie to traverse them slowly without breaking. Mach traps you on lower floors.</p>
+            <span class="tile__arrow">Acro Bike</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">05 &middot; Trick House</div>
+              <h3 class="tile__title">Puzzle 6 &mdash; Hopping Tiles</h3>
+            </div>
+            <p class="tile__desc">Bunny-hop on yellow circular pads to advance through the puzzle. Walking simply ignores the tiles.</p>
+            <span class="tile__arrow">Acro Bike</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">06 &middot; Route 123</div>
+              <h3 class="tile__title">Berry Master&rsquo;s House</h3>
+            </div>
+            <p class="tile__desc">Wheelie across the white rails to reach the Berry Master and the wife who hands out rare berries for the right phrase.</p>
+            <span class="tile__arrow">Acro Bike</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">07 &middot; Post-Hall of Fame</div>
+              <h3 class="tile__title">Safari Zone expansions</h3>
+            </div>
+            <p class="tile__desc">Hopping Tiles gate entry to the new northeast and northwest areas added after entering the Hall of Fame.</p>
+            <span class="tile__arrow">Acro Bike</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">08 &middot; Route 132/133</div>
+              <h3 class="tile__title">Pacifidlog log bridges</h3>
+            </div>
+            <p class="tile__desc">Several connecting log bridges between houses use white rails &mdash; Acro Bike makes the village navigable instead of awkward.</p>
+            <span class="tile__arrow">Acro Bike</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">09 &middot; Various</div>
+              <h3 class="tile__title">Secret Base entries</h3>
+            </div>
+            <p class="tile__desc">Many tree-and-rail Secret Base entry tiles require wheelie traversal. Pin a flag to a rail-tree before committing.</p>
+            <span class="tile__arrow">Acro Bike</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">10 &middot; Routes 132&ndash;134</div>
+              <h3 class="tile__title">Currents toward Sky Pillar</h3>
+            </div>
+            <p class="tile__desc">You can&rsquo;t outrun water currents on the bike, but bridge sections leading in/out reward Mach speed. Swap once you arrive.</p>
+            <span class="tile__arrow">Mach Bike</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== FIELD TRICKS ============================== -->
+    <section class="section section--alt" id="field-tricks">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ember">Section IV</span>
+          <h2 class="h1 mt-3">Acro field<br><em style="color:var(--ember); font-style:italic; font-weight:400;">tricks</em></h2>
+          <p class="lede mt-4" style="max-width: 60ch;">
+            All four tricks are mapped to the B button alone or in combination with a direction. Practice them on the
+            empty stretch east of Mauville &mdash; there are no consequences for missing a hop on flat ground.
+          </p>
+        </div>
+
+        <div class="grid grid--3 stagger">
+          <article class="card offset-shadow">
+            <div class="card__subtitle">Trick 01</div>
+            <h3 class="card__title mt-3">Bunny Hop</h3>
+            <p class="card__body">
+              Tap-and-hold B with no direction. Your character bounces in place. Required for the yellow Hopping Tiles in
+              Trick House Puzzle 6 and the post-game Safari Zone expansions.
+            </p>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Input</span><span class="stat-row__value">B (held, no dir)</span><span class="stat-row__num">B</span></div>
+              <div class="stat-row"><span class="stat-row__label">Movement</span><span class="stat-row__value">In place</span><span class="stat-row__num">0</span></div>
+              <div class="stat-row"><span class="stat-row__label">Use</span><span class="stat-row__value">Hopping Tiles</span><span class="stat-row__num">YEL</span></div>
+            </dl>
+          </article>
+
+          <article class="card card--alt offset-shadow--ember">
+            <div class="card__subtitle">Trick 02</div>
+            <h3 class="card__title mt-3">Wheelie Hop</h3>
+            <p class="card__body">
+              Hold B, then tap a direction. Hops one tile in that direction with no inertia &mdash; useful for crossing
+              gap tiles and for short, controlled adjustments.
+            </p>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Input</span><span class="stat-row__value">B + dir (tap)</span><span class="stat-row__num">B+&rarr;</span></div>
+              <div class="stat-row"><span class="stat-row__label">Movement</span><span class="stat-row__value">1 tile, directional</span><span class="stat-row__num">1</span></div>
+              <div class="stat-row"><span class="stat-row__label">Use</span><span class="stat-row__value">Gap tiles, alignment</span><span class="stat-row__num">GAP</span></div>
+            </dl>
+          </article>
+
+          <article class="card offset-shadow--ocean">
+            <div class="card__subtitle">Trick 03</div>
+            <h3 class="card__title mt-3">Wheelie (sustained)</h3>
+            <p class="card__body">
+              Hold B and a direction together &mdash; rides on the rear wheel. Required to cross white-bar rails AND to
+              cross Sky Pillar&rsquo;s cracked floors safely without breaking them. The defining Acro trick.
+            </p>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Input</span><span class="stat-row__value">B + dir (held)</span><span class="stat-row__num">HOLD</span></div>
+              <div class="stat-row"><span class="stat-row__label">Movement</span><span class="stat-row__value">Slow, balanced</span><span class="stat-row__num">SLOW</span></div>
+              <div class="stat-row"><span class="stat-row__label">Use</span><span class="stat-row__value">White rails, Sky Pillar</span><span class="stat-row__num">RAIL</span></div>
+            </dl>
+          </article>
+        </div>
+
+        <div class="callout callout--ocean" style="margin-top: var(--s-6);">
+          <span class="callout__label">Slope slide rule</span>
+          <p style="margin:0;">Mach Bike on a dirt slope <strong>climbs</strong>. Walking down a slope works either way; walking
+          UP a slope is impossible without the Mach Bike. The Acro Bike will refuse the climb &mdash; if a slope blocks you, swap.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== CLOSING CALLOUT ============================== -->
+    <section class="section section--ink">
+      <div class="container container--narrow text-center">
+        <span class="kicker">Closing transmission</span>
+        <h2 class="h2 mt-4" style="color:var(--paper);">Always swap <em style="color:var(--sun); font-style:italic; font-weight:400;">before</em><br>the dungeon, not during.</h2>
+        <p class="lede mt-5" style="color:var(--mist); margin-inline:auto;">
+          Rydel is centrally located in Mauville and free. There is no reason to suffer through Sky Pillar with a Mach Bike,
+          Magma Hideout with an Acro, or the post-game Safari with the wrong wheels. Swap, then commit.
+        </p>
+        <p class="mt-6">
+          <a href="secrets.html" class="badge badge--ember" style="text-decoration:none;">Secrets &amp; oddities &rarr;</a>
+          &nbsp;
+          <a href="early-game.html" class="badge badge--emerald" style="text-decoration:none;">Early Game &rarr;</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">Hoenn <span>Field</span> Guide</div>
+          <p class="mt-3">An editorial companion to Pokemon Emerald, published in print-as-pixels.
+          Pokemon names, characters, and locations are property of Nintendo, Game Freak, and The Pokemon Company.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Chapters</div>
+          <ul class="footer__links">
+            <li><a href="gyms.html">Gym Leaders</a></li>
+            <li><a href="elite-four.html">Elite Four</a></li>
+            <li><a href="legendaries.html">Legendaries</a></li>
+            <li><a href="tier-list.html">Tier List</a></li>
+            <li><a href="secrets.html">Secrets</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Reference</div>
+          <ul class="footer__links">
+            <li><a href="breeding.html">Breeding &amp; IVs</a></li>
+            <li><a href="early-game.html">Early Game</a></li>
+            <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+            <li><a href="post-game.html">Post Game</a></li>
+            <li><a href="https://github.com/" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span data-year>2025</span> &middot; Hoenn Field Guide &middot; Issue 001</span>
+        <span>Set in Fraunces, Instrument Sans &amp; JetBrains Mono</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&uarr; Top</button>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

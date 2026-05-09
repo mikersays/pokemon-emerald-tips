@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>document.documentElement.classList.add("js")</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Breeding, IVs, and EVs in Pokemon Emerald — Day Care logic, Everstone Nature inheritance, Hidden Power, EV-training spots, Pokerus, and the Macho Brace." />
@@ -26,6 +27,9 @@
           <li><a href="secrets.html">Secrets</a></li>
           <li><a href="breeding.html">Breeding</a></li>
           <li><a href="early-game.html">Early Game</a></li>
+          <li><a href="bikes.html">Bikes</a></li>
+          <li><a href="evolution.html">Evolution</a></li>
+          <li><a href="mechanics.html">Mechanics</a></li>
           <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
           <li><a href="post-game.html">Post Game</a></li>
         </ul>
@@ -43,6 +47,9 @@
         <li><a href="secrets.html">Secrets</a></li>
         <li><a href="breeding.html">Breeding</a></li>
         <li><a href="early-game.html">Early Game</a></li>
+        <li><a href="bikes.html">Bikes</a></li>
+        <li><a href="evolution.html">Evolution</a></li>
+        <li><a href="mechanics.html">Mechanics</a></li>
         <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
         <li><a href="post-game.html">Post Game</a></li>
       </ul>
@@ -101,7 +108,10 @@
             </div>
             <div class="callout callout--ocean">
               <span class="callout__label">Ditto&rsquo;s role</span>
-              <p style="margin:0;">Ditto can breed with any non-legendary, non-Ditto Pokemon. Trade one in from FireRed/LeafGreen Trainer Tower or the Pokemon Mansion.</p>
+              <div class="poke-row" style="margin-top: var(--s-2);">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/132.png" alt="Ditto" loading="lazy">
+                <p style="margin:0;">Ditto can breed with any non-legendary, non-Ditto Pokemon. Trade one in from FireRed/LeafGreen Trainer Tower or the Pokemon Mansion.</p>
+              </div>
             </div>
             <div class="callout callout--sun">
               <span class="callout__label">The Everstone trick</span>
@@ -131,6 +141,35 @@
         <div class="callout" style="margin-top: var(--s-6);">
           <span class="callout__label">Egg Groups</span>
           <p style="margin:0;">Pokemon must share at least one Egg Group. Some &mdash; Salamence, Charizard &mdash; sit in <strong>Monster + Dragon</strong>, giving wide compatibility. Many starters and pseudo-legendaries are dual-group for exactly this reason.</p>
+        </div>
+
+        <!-- Worked breeding example with sprites -->
+        <div class="card offset-shadow--ocean" style="margin-top: var(--s-7);">
+          <div class="card__subtitle">Worked example</div>
+          <h3 class="card__title mt-3">Mom &times; Dad &rarr; Egg</h3>
+          <p class="card__body">A Modest Latios (no &mdash; legendary, can&rsquo;t breed). A real example: a female Marill holding Everstone bred with a male Azumarill that knows Belly Drum. The egg hatches as a Marill, with a 50% chance of inheriting mom&rsquo;s Modest nature, and Belly Drum from dad.</p>
+          <div style="display:flex; gap:var(--s-5); align-items:center; justify-content:center; flex-wrap:wrap; margin-top: var(--s-5);">
+            <div style="text-align:center;">
+              <span class="poke-sprite-frame poke-sprite-frame--ocean">
+                <img class="poke-sprite poke-sprite--lg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/183.png" alt="Marill (mom)" loading="lazy">
+              </span>
+              <div class="mono" style="font-size: var(--fs-xs); margin-top: var(--s-2);">MOM &middot; Marill + Everstone</div>
+            </div>
+            <div class="mono" style="font-size: var(--fs-lg);" aria-hidden="true">&times;</div>
+            <div style="text-align:center;">
+              <span class="poke-sprite-frame poke-sprite-frame--ocean">
+                <img class="poke-sprite poke-sprite--lg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/184.png" alt="Azumarill (dad)" loading="lazy">
+              </span>
+              <div class="mono" style="font-size: var(--fs-xs); margin-top: var(--s-2);">DAD &middot; Azumarill + Egg Move</div>
+            </div>
+            <div class="mono" style="font-size: var(--fs-lg);" aria-hidden="true">&rarr;</div>
+            <div style="text-align:center;">
+              <span class="poke-sprite-frame poke-sprite-frame--sun">
+                <img class="poke-sprite poke-sprite--lg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/0.png" alt="Egg" loading="lazy">
+              </span>
+              <div class="mono" style="font-size: var(--fs-xs); margin-top: var(--s-2);">EGG &middot; &rarr; Marill</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -175,6 +214,87 @@
               <p style="margin:0;">Hidden Power&rsquo;s type and base power are determined entirely by IVs &mdash; type ranges any of the seventeen, power 30&ndash;70. Used to give Grass-types a Fire move against Steels, Electric-types a Grass move against Ground-types, and so on.</p>
             </div>
           </article>
+        </div>
+
+        <!-- ============================== HIDDEN POWER CALC ============================== -->
+        <div class="divider-rule"></div>
+
+        <header style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ember">Sub-section</span>
+          <h2 class="h2 mt-3">Hidden Power, <em style="color:var(--ember); font-style:italic; font-weight:400;">decoded</em>.</h2>
+          <p class="lede mt-3" style="max-width: 56ch;">
+            Type comes from the parity (odd/even) of all six IVs. Power comes from how many IVs sit at <span class="mono">IV mod 4 &ge; 2</span>. Drop one IV by two to swap types &mdash; same power, different STAB.
+          </p>
+        </header>
+
+        <article class="card offset-shadow--ember">
+          <div class="card__subtitle">Formula</div>
+          <h3 class="card__title mt-3">Type &amp; power, in math</h3>
+          <p class="card__body mono" style="font-size: var(--fs-sm);">
+            type = floor( ((HP_odd + 2&middot;Atk_odd + 4&middot;Def_odd + 8&middot;Spe_odd + 16&middot;SpA_odd + 32&middot;SpD_odd) &times; 15) / 63 )<br>
+            power = floor( (sum_of_IVs_with_(IV mod 4)&ge;2 weighted) / 8 &times; 40 + 30 )
+          </p>
+          <p class="card__body" style="margin-top: var(--s-3); color: var(--ink-soft);">
+            The 0&ndash;15 type index maps Fighting=0, Flying=1, &hellip;, Dark=15. Power lands between 30 and 70.
+          </p>
+        </article>
+
+        <div class="grid grid--auto stagger" style="margin-top: var(--s-6);">
+
+          <article class="card">
+            <div class="card__subtitle">Example A &middot; All max</div>
+            <h3 class="card__title mt-3">31/31/31/31/31/31</h3>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">HP type</span><span class="stat-row__value">Dark</span><span class="stat-row__num">15</span></div>
+              <div class="stat-row"><span class="stat-row__label">HP power</span><span class="stat-row__value">Maxed</span><span class="stat-row__num">70</span></div>
+            </dl>
+            <p class="card__body" style="margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--ink-soft);">All odd, all &ge;2 mod 4. The default &ldquo;perfect&rdquo; nuke &mdash; HP Dark on a 6&times;31 sweeper.</p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">Example B &middot; HP Ice</div>
+            <h3 class="card__title mt-3">31/30/31/31/30/31</h3>
+            <div class="poke-row" style="margin-top: var(--s-3);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/310.png" alt="Manectric" loading="lazy">
+              <span class="mono" style="font-size: var(--fs-xs);">Manectric &middot; HP Ice for Flygon, Salamence</span>
+            </div>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">HP type</span><span class="stat-row__value">Ice</span><span class="stat-row__num">14</span></div>
+              <div class="stat-row"><span class="stat-row__label">HP power</span><span class="stat-row__value">Max</span><span class="stat-row__num">70</span></div>
+            </dl>
+            <p class="card__body" style="margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--ink-soft);">Drop Atk and SpD by 2. Special attackers don&rsquo;t use Atk; SpD loss is minor. Standard HP Ice spread.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Example C &middot; HP Dragon</div>
+            <h3 class="card__title mt-3">31/31/30/31/31/31</h3>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">HP type</span><span class="stat-row__value">Dragon</span><span class="stat-row__num">11</span></div>
+              <div class="stat-row"><span class="stat-row__label">HP power</span><span class="stat-row__value">Max</span><span class="stat-row__num">70</span></div>
+            </dl>
+            <p class="card__body" style="margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--ink-soft);">Lose 2 Defense. Useful on a fast special attacker that wants to hit Salamence and Kingdra without being weak elsewhere.</p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">Example D &middot; HP Fighting</div>
+            <h3 class="card__title mt-3">30/31/30/31/31/30</h3>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">HP type</span><span class="stat-row__value">Fighting</span><span class="stat-row__num">2</span></div>
+              <div class="stat-row"><span class="stat-row__label">HP power</span><span class="stat-row__value">Max</span><span class="stat-row__num">70</span></div>
+            </dl>
+            <p class="card__body" style="margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--ink-soft);">Dropping HP, Def, and Spe to even is the easiest fighting-type roll &mdash; Spe loss hurts most.</p>
+          </article>
+
+        </div>
+
+        <div class="callout callout--ocean" style="margin-top: var(--s-6);">
+          <span class="callout__label">Gen 3 inheritance, briefly</span>
+          <p style="margin:0;">Eggs hatch with <strong>exactly 3 random IVs</strong> copied from the parents (one parent, picked at random, contributes each inherited stat). The other 3 roll fresh 0&ndash;31. <strong>Destiny Knot does NOT exist</strong> in Emerald (Gen 6+). Plan for hundreds of eggs to get 4&ndash;5 perfect IVs.</p>
+        </div>
+
+        <div class="callout callout--sun" style="margin-top: var(--s-4);">
+          <span class="callout__label">Power Items don&rsquo;t exist yet</span>
+          <p style="margin:0;">Power Bracer, Power Belt, Power Anklet, Power Lens, Power Band, Power Weight &mdash; all <strong>Gen 4 items</strong>. They guarantee one IV inheritance from the holder. Gen 3 has Macho Brace (EVs only, doesn&rsquo;t pass IVs). Emerald IV breeding is pure RNG.</p>
         </div>
       </div>
     </section>
@@ -265,16 +385,32 @@
             <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:var(--s-3);">
               <div>
                 <div class="card__subtitle">EV &middot; HP</div>
-                <h3 class="card__title mt-3">Marill / Wailmer</h3>
+                <h3 class="card__title mt-3">Marill leads</h3>
               </div>
-              <span class="badge badge--emerald">+1 HP</span>
+              <span class="badge badge--emerald">HP</span>
             </div>
-            <dl style="margin-top: var(--s-4);">
-              <div class="stat-row"><span class="stat-row__label">Pokemon</span><span class="stat-row__value">Marill, Wailmer</span><span class="stat-row__num">+1 HP</span></div>
-              <div class="stat-row"><span class="stat-row__label">Location</span><span class="stat-row__value">Route 102, Route 103</span><span class="stat-row__num">EARLY</span></div>
-              <div class="stat-row"><span class="stat-row__label">Levels</span><span class="stat-row__value">3&ndash;5 / 5&ndash;10</span><span class="stat-row__num">LOW</span></div>
-            </dl>
-            <p class="card__body" style="margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--ink-soft);">For 2 HP per KO, hatch a Wynaut from the Lavaridge egg and grind on it.</p>
+            <div class="poke-row" style="margin-top: var(--s-4);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/183.png" alt="Marill" loading="lazy">
+              <div>
+                <strong>Marill</strong> &middot; <span class="mono" style="font-size:var(--fs-xs);">+2 HP</span><br>
+                <span style="font-size: var(--fs-sm); color:var(--ink-soft);">Route 117, Route 102 (Lv 13&ndash;15)</span>
+              </div>
+            </div>
+            <div class="poke-row" style="margin-top: var(--s-3);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/320.png" alt="Wailmer" loading="lazy">
+              <div>
+                <strong>Wailmer</strong> &middot; <span class="mono" style="font-size:var(--fs-xs);">+1 HP</span><br>
+                <span style="font-size: var(--fs-sm); color:var(--ink-soft);">Route 103 / 132 fishing</span>
+              </div>
+            </div>
+            <div class="poke-row" style="margin-top: var(--s-3);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/360.png" alt="Wynaut" loading="lazy">
+              <div>
+                <strong>Wynaut</strong> &middot; <span class="mono" style="font-size:var(--fs-xs);">+1 HP</span><br>
+                <span style="font-size: var(--fs-sm); color:var(--ink-soft);">Lavaridge egg, hatch &amp; KO</span>
+              </div>
+            </div>
+            <p class="card__body" style="margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--ink-soft);">Marill at +2 HP, stacked with Brace + Pokerus = 8 HP/KO. 32 KOs to max.</p>
           </article>
 
           <!-- ATTACK -->
@@ -284,14 +420,30 @@
                 <div class="card__subtitle">EV &middot; Attack</div>
                 <h3 class="card__title mt-3">Poochyena line</h3>
               </div>
-              <span class="badge badge--ember">+2 Atk</span>
+              <span class="badge badge--ember">Atk</span>
             </div>
-            <dl style="margin-top: var(--s-4);">
-              <div class="stat-row"><span class="stat-row__label">Pokemon</span><span class="stat-row__value">Mightyena / Poochyena</span><span class="stat-row__num">+2 Atk</span></div>
-              <div class="stat-row"><span class="stat-row__label">Location</span><span class="stat-row__value">Route 120</span><span class="stat-row__num">MID</span></div>
-              <div class="stat-row"><span class="stat-row__label">Alt</span><span class="stat-row__value">Vigoroth in Petalburg Woods</span><span class="stat-row__num">+2 Atk</span></div>
-            </dl>
-            <p class="card__body" style="margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--ink-soft);">126 KOs to cap Attack from zero. With Brace + PKRS, 32.</p>
+            <div class="poke-row" style="margin-top: var(--s-4);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/262.png" alt="Mightyena" loading="lazy">
+              <div>
+                <strong>Mightyena / Poochyena</strong> &middot; <span class="mono" style="font-size:var(--fs-xs);">+2 Atk</span><br>
+                <span style="font-size: var(--fs-sm); color:var(--ink-soft);">Route 120 grass</span>
+              </div>
+            </div>
+            <div class="poke-row" style="margin-top: var(--s-3);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/288.png" alt="Vigoroth" loading="lazy">
+              <div>
+                <strong>Vigoroth</strong> &middot; <span class="mono" style="font-size:var(--fs-xs);">+2 Atk</span><br>
+                <span style="font-size: var(--fs-sm); color:var(--ink-soft);">Petalburg Woods (rare)</span>
+              </div>
+            </div>
+            <div class="poke-row" style="margin-top: var(--s-3);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/279.png" alt="Pelipper" loading="lazy">
+              <div>
+                <strong>Pelipper</strong> &middot; <span class="mono" style="font-size:var(--fs-xs);">+2 Atk</span><br>
+                <span style="font-size: var(--fs-sm); color:var(--ink-soft);">Route 120 surfing</span>
+              </div>
+            </div>
+            <p class="card__body" style="margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--ink-soft);">126 KOs to cap from zero. With Brace + PKRS, 32.</p>
           </article>
 
           <!-- DEFENSE -->
@@ -299,16 +451,32 @@
             <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:var(--s-3);">
               <div>
                 <div class="card__subtitle">EV &middot; Defense</div>
-                <h3 class="card__title mt-3">Geodude / Trapinch</h3>
+                <h3 class="card__title mt-3">Cave dwellers</h3>
               </div>
-              <span class="badge">+1 Def</span>
+              <span class="badge">Def</span>
             </div>
-            <dl style="margin-top: var(--s-4);">
-              <div class="stat-row"><span class="stat-row__label">Pokemon</span><span class="stat-row__value">Geodude, Trapinch</span><span class="stat-row__num">+1 Def</span></div>
-              <div class="stat-row"><span class="stat-row__label">Location</span><span class="stat-row__value">Granite Cave, Route 111 desert</span><span class="stat-row__num">EARLY</span></div>
-              <div class="stat-row"><span class="stat-row__label">Note</span><span class="stat-row__value">Victory Road also Geodude</span><span class="stat-row__num">+1 Def</span></div>
-            </dl>
-            <p class="card__body" style="margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--ink-soft);">Match a Repel to your active level so you skip Zubat encounters.</p>
+            <div class="poke-row" style="margin-top: var(--s-4);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/74.png" alt="Geodude" loading="lazy">
+              <div>
+                <strong>Geodude</strong> &middot; <span class="mono" style="font-size:var(--fs-xs);">+1 Def</span><br>
+                <span style="font-size: var(--fs-sm); color:var(--ink-soft);">Granite Cave / Victory Road / Rusturf Tunnel</span>
+              </div>
+            </div>
+            <div class="poke-row" style="margin-top: var(--s-3);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/328.png" alt="Trapinch" loading="lazy">
+              <div>
+                <strong>Trapinch</strong> &middot; <span class="mono" style="font-size:var(--fs-xs);">+1 Def</span><br>
+                <span style="font-size: var(--fs-sm); color:var(--ink-soft);">Route 111 desert (Mach Bike + Goggles)</span>
+              </div>
+            </div>
+            <div class="poke-row" style="margin-top: var(--s-3);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/304.png" alt="Aron" loading="lazy">
+              <div>
+                <strong>Aron</strong> &middot; <span class="mono" style="font-size:var(--fs-xs);">+1 Def</span><br>
+                <span style="font-size: var(--fs-sm); color:var(--ink-soft);">Granite Cave 1F (lower spawn rate)</span>
+              </div>
+            </div>
+            <p class="card__body" style="margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--ink-soft);">Match a Repel level so you skip Zubat encounters.</p>
           </article>
 
           <!-- SP. ATTACK -->
@@ -316,16 +484,32 @@
             <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:var(--s-3);">
               <div>
                 <div class="card__subtitle">EV &middot; Sp. Atk</div>
-                <h3 class="card__title mt-3">Tentacool / Gulpin</h3>
+                <h3 class="card__title mt-3">Surf for SpA</h3>
               </div>
-              <span class="badge">+1 SpA</span>
+              <span class="badge">SpA</span>
             </div>
-            <dl style="margin-top: var(--s-4);">
-              <div class="stat-row"><span class="stat-row__label">Pokemon</span><span class="stat-row__value">Tentacool, Gulpin</span><span class="stat-row__num">+1 SpA</span></div>
-              <div class="stat-row"><span class="stat-row__label">Location</span><span class="stat-row__value">Water routes, Route 110</span><span class="stat-row__num">MID</span></div>
-              <div class="stat-row"><span class="stat-row__label">Alt</span><span class="stat-row__value">Roselia (mixed yield)</span><span class="stat-row__num">VARIES</span></div>
-            </dl>
-            <p class="card__body" style="margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--ink-soft);">Surf Tentacool with Repels active for clean +1 SpA per KO.</p>
+            <div class="poke-row" style="margin-top: var(--s-4);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/72.png" alt="Tentacool" loading="lazy">
+              <div>
+                <strong>Tentacool</strong> &middot; <span class="mono" style="font-size:var(--fs-xs);">+1 SpA</span><br>
+                <span style="font-size: var(--fs-sm); color:var(--ink-soft);">Routes 124&ndash;126 surfing</span>
+              </div>
+            </div>
+            <div class="poke-row" style="margin-top: var(--s-3);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/316.png" alt="Gulpin" loading="lazy">
+              <div>
+                <strong>Gulpin</strong> &middot; <span class="mono" style="font-size:var(--fs-xs);">+1 SpA</span><br>
+                <span style="font-size: var(--fs-sm); color:var(--ink-soft);">Route 110 grass</span>
+              </div>
+            </div>
+            <div class="poke-row" style="margin-top: var(--s-3);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/281.png" alt="Kirlia" loading="lazy">
+              <div>
+                <strong>Kirlia</strong> &middot; <span class="mono" style="font-size:var(--fs-xs);">+2 SpA</span><br>
+                <span style="font-size: var(--fs-sm); color:var(--ink-soft);">Route 117 grass (rare)</span>
+              </div>
+            </div>
+            <p class="card__body" style="margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--ink-soft);">Tentacool + Brace + Pokerus = 4 SpA per KO. The fastest SpA grind in Hoenn.</p>
           </article>
 
           <!-- SP. DEFENSE -->
@@ -333,16 +517,32 @@
             <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:var(--s-3);">
               <div>
                 <div class="card__subtitle">EV &middot; Sp. Def</div>
-                <h3 class="card__title mt-3">Spheal in Shoal Cave</h3>
+                <h3 class="card__title mt-3">Spheal is king</h3>
               </div>
-              <span class="badge">+1 SpD</span>
+              <span class="badge">SpD</span>
             </div>
-            <dl style="margin-top: var(--s-4);">
-              <div class="stat-row"><span class="stat-row__label">Pokemon</span><span class="stat-row__value">Spheal</span><span class="stat-row__num">+1 SpD</span></div>
-              <div class="stat-row"><span class="stat-row__label">Location</span><span class="stat-row__value">Shoal Cave</span><span class="stat-row__num">LATE</span></div>
-              <div class="stat-row"><span class="stat-row__label">Note</span><span class="stat-row__value">Tentacruel = mixed SpA/SpD</span><span class="stat-row__num">VARIES</span></div>
-            </dl>
-            <p class="card__body" style="margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--ink-soft);">Spheal is the cleanest pure-SpD source &mdash; Roselia gives 2 SpA, not SpD.</p>
+            <div class="poke-row" style="margin-top: var(--s-4);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/363.png" alt="Spheal" loading="lazy">
+              <div>
+                <strong>Spheal</strong> &middot; <span class="mono" style="font-size:var(--fs-xs);">+1 SpD</span><br>
+                <span style="font-size: var(--fs-sm); color:var(--ink-soft);">Shoal Cave low-tide entrance</span>
+              </div>
+            </div>
+            <div class="poke-row" style="margin-top: var(--s-3);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/73.png" alt="Tentacruel" loading="lazy">
+              <div>
+                <strong>Tentacruel</strong> &middot; <span class="mono" style="font-size:var(--fs-xs);">+1 SpD &amp; +1 SpA</span><br>
+                <span style="font-size: var(--fs-sm); color:var(--ink-soft);">Routes 124&ndash;126 (mixed yield)</span>
+              </div>
+            </div>
+            <div class="poke-row" style="margin-top: var(--s-3);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/315.png" alt="Roselia" loading="lazy">
+              <div>
+                <strong>Roselia</strong> &middot; <span class="mono" style="font-size:var(--fs-xs);">+2 SpA (NOT SpD)</span><br>
+                <span style="font-size: var(--fs-sm); color:var(--ink-soft);">Common misconception &mdash; skip for SpD</span>
+              </div>
+            </div>
+            <p class="card__body" style="margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--ink-soft);">Spheal is the only pure-SpD line. Roselia is a SpA trap.</p>
           </article>
 
           <!-- SPEED -->
@@ -350,18 +550,45 @@
             <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:var(--s-3);">
               <div>
                 <div class="card__subtitle">EV &middot; Speed</div>
-                <h3 class="card__title mt-3">Zubat &middot; Magikarp &middot; Electrode</h3>
+                <h3 class="card__title mt-3">Three speeds</h3>
               </div>
-              <span class="badge badge--ember">+1 / +2 Spe</span>
+              <span class="badge badge--ember">Spe</span>
             </div>
-            <dl style="margin-top: var(--s-4);">
-              <div class="stat-row"><span class="stat-row__label">Zubat</span><span class="stat-row__value">caves</span><span class="stat-row__num">+1 Spe</span></div>
-              <div class="stat-row"><span class="stat-row__label">Magikarp</span><span class="stat-row__value">Old Rod fishing</span><span class="stat-row__num">+1 Spe</span></div>
-              <div class="stat-row"><span class="stat-row__label">Electrode</span><span class="stat-row__value">New Mauville</span><span class="stat-row__num">+2 Spe</span></div>
-            </dl>
-            <p class="card__body" style="margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--ink-soft);">Electrode in New Mauville is the fastest route &mdash; just respect Self-Destruct.</p>
+            <div class="poke-row" style="margin-top: var(--s-4);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/41.png" alt="Zubat" loading="lazy">
+              <div>
+                <strong>Zubat</strong> &middot; <span class="mono" style="font-size:var(--fs-xs);">+1 Spe</span><br>
+                <span style="font-size: var(--fs-sm); color:var(--ink-soft);">Granite Cave / Mt. Pyre / Meteor Falls</span>
+              </div>
+            </div>
+            <div class="poke-row" style="margin-top: var(--s-3);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/129.png" alt="Magikarp" loading="lazy">
+              <div>
+                <strong>Magikarp</strong> &middot; <span class="mono" style="font-size:var(--fs-xs);">+1 Spe</span><br>
+                <span style="font-size: var(--fs-sm); color:var(--ink-soft);">Old Rod, anywhere with water</span>
+              </div>
+            </div>
+            <div class="poke-row" style="margin-top: var(--s-3);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/101.png" alt="Electrode" loading="lazy">
+              <div>
+                <strong>Electrode</strong> &middot; <span class="mono" style="font-size:var(--fs-xs);">+2 Spe</span><br>
+                <span style="font-size: var(--fs-sm); color:var(--ink-soft);">New Mauville (post-Wattson generator)</span>
+              </div>
+            </div>
+            <p class="card__body" style="margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--ink-soft);">Electrode is the fastest route &mdash; respect Self-Destruct or one-shot first.</p>
           </article>
 
+        </div>
+
+        <!-- 252/252/4 spread principle -->
+        <div class="callout callout--emerald" style="margin-top: var(--s-7);">
+          <span class="callout__label">The 252 / 252 / 4 spread</span>
+          <p style="margin:0;">EVs convert at 4 EV : 1 stat point. <strong>252 / 4 = 63 stat points</strong>; 253&ndash;255 round down so they&rsquo;re wasted. Standard offensive spread is 252 in your offensive stat, 252 Speed, and 4 dumped in HP for one extra hit point. Bulky variants: 252 HP / 252 Def / 4 SpD &mdash; pick the defense based on the threat.</p>
+        </div>
+
+        <div class="callout callout--sun" style="margin-top: var(--s-4);">
+          <span class="callout__label">Pokerus, by the numbers</span>
+          <p style="margin:0;">Approximately <strong>1 in 21,845</strong> wild encounters carries Pokerus. Active 1&ndash;4 in-game days; <strong>store the carrier in the PC</strong> to freeze the timer indefinitely. Spreads to adjacent party members each step. Trade with friends &mdash; infection passes through trades.</p>
         </div>
 
         <div class="callout callout--sun" style="margin-top: var(--s-7);">
@@ -370,6 +597,90 @@
             Hatch from the Day Care &rarr; trade in for Pokerus &rarr; hold Macho Brace &rarr; Repel to the target species &rarr; KO 32 times.
             That&rsquo;s a maxed stat in roughly twenty real-world minutes. The Frontier rewards exactly this discipline.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 04. CHECKING IVs WITHOUT CALC ============================== -->
+    <section class="section section--alt" id="checking-ivs">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ember">Section IV</span>
+          <h2 class="h1 mt-3">Checking IVs<br><em style="color:var(--ember); font-style:italic; font-weight:400;">without a calc</em></h2>
+          <p class="lede mt-4" style="max-width: 60ch;">
+            Emerald has no IV-judge dialogue &mdash; that NPC arrived in HeartGold/SoulSilver. The Battle Frontier&rsquo;s closest substitute is one terse line: it tells you the single best IV. Everything else is back-calculated.
+          </p>
+        </div>
+
+        <div class="grid grid--2 stagger">
+
+          <article class="card offset-shadow--ember">
+            <div class="card__subtitle">Frontier limitation</div>
+            <h3 class="card__title mt-3">No IV judge in Gen 3</h3>
+            <p class="card__body">
+              There is no NPC in Emerald that reads out all six IVs the way later games do. The Battle Frontier&rsquo;s &ldquo;judge&rdquo; equivalents only call out the single highest IV stat &mdash; everything else stays hidden. To verify the rest, run the Lv 50 stat test below.
+            </p>
+            <ul class="bullet-list bullet-list--ember mt-4">
+              <li>HeartGold/SoulSilver introduced the IV judge in Pal Park</li>
+              <li>Emerald Frontier doesn&rsquo;t even have that &mdash; calculator only</li>
+              <li>Re-check after every level-up to narrow ranges</li>
+            </ul>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">The Lv 50 test</div>
+            <h3 class="card__title mt-3">Back-calc by stat delta</h3>
+            <p class="card__body">
+              Calculate the expected stat at Lv 50 with 0 EVs using the formula. Compare to your Pokemon&rsquo;s actual stat. The delta gives the IV.
+            </p>
+            <p class="card__body mono mt-3" style="font-size: var(--fs-sm);">
+              stat = floor((((2&times;Base + IV + EV/4) &times; Lv) / 100) + 5) &times; Nature
+            </p>
+            <div class="callout callout--ocean mt-4">
+              <span class="callout__label">Tools</span>
+              <p style="margin:0;">Smogon Stat Calculator or psypoke IV calc &mdash; input level, Nature, EVs, current stats. Tighten the range with each level-up.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 05. EFFORT RIBBON ============================== -->
+    <section class="section" id="effort-ribbon">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker">Section V</span>
+          <h2 class="h2 mt-3">The <em style="color:var(--emerald); font-style:italic; font-weight:400;">Effort Ribbon</em>.</h2>
+          <p class="lede mt-3" style="max-width: 56ch;">
+            Slateport City has the only NPC in the game that confirms a maxed-out EV total. She gives a ribbon if your Pokemon&rsquo;s EVs total exactly 510.
+          </p>
+        </div>
+
+        <div class="split">
+          <div>
+            <p style="font-size: 1.05rem; line-height: 1.6;">
+              The Effort Ribbon NPC sits in Slateport, near the trainer school in the north area. Hand her any Pokemon you&rsquo;ve trained &mdash; she inspects its EVs and, if the total is exactly 510, awards the Effort Ribbon. It&rsquo;s purely cosmetic. No battle effect, no stat boost, no follow-up reward. What it gives you is <em>certainty</em>: in a generation with no EV bar and no IV judge, this ribbon is the closest the cartridge ever comes to saying &ldquo;done.&rdquo;
+            </p>
+            <p class="mt-4">
+              Use it as a sanity check after grinding. Brace + Pokerus, Repel-locked encounters, the right route &mdash; and then a Slateport visit to confirm the math. Sweep the Frontier with whatever&rsquo;s in your party next.
+            </p>
+          </div>
+
+          <div class="stack-lg">
+            <div class="callout callout--emerald">
+              <span class="callout__label">Where</span>
+              <p style="margin:0;">Slateport City &mdash; trainer school area, ribbon-giver NPC. Inspects the lead Pokemon&rsquo;s EVs.</p>
+            </div>
+            <div class="callout">
+              <span class="callout__label">Condition</span>
+              <p style="margin:0;">EVs total exactly <strong>510</strong>. Common spreads: 252 / 252 / 4, 252 / 252 / 6 (but 4 already maxes the third).</p>
+            </div>
+            <div class="callout callout--sun">
+              <span class="callout__label">Reward</span>
+              <p style="margin:0;">Cosmetic ribbon. No stat or battle effect. Treat it as the only &ldquo;EV training complete&rdquo; receipt the game prints.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

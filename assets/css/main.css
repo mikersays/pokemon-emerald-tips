@@ -1292,16 +1292,22 @@ p { max-width: 68ch; }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-.reveal {
+/* Reveal animation: content is always visible. The .is-armed class (added
+   by JS only to elements that are below the initial viewport) is what hides
+   them so the IntersectionObserver can animate them in when scrolled to.
+   Above-the-fold content never gets armed and is therefore always visible.
+   Without JS, nothing is armed and everything is visible. */
+.reveal.is-armed {
   opacity: 0;
   transform: translateY(18px);
 }
-.reveal.is-in {
+.reveal.is-armed.is-in {
   animation: reveal-up 700ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
   animation-delay: calc(var(--delay, 0) * 80ms);
 }
 
-/* Page-load stagger for direct children of .stagger */
+/* Page-load stagger: direct children of .stagger fade up on page load. This
+   only runs for above-the-fold heroes so we keep the opacity:0 default. */
 .stagger > * {
   opacity: 0;
   transform: translateY(14px);
@@ -1336,8 +1342,70 @@ p { max-width: 68ch; }
   .card-trainer__row { grid-template-columns: 100px 1fr; }
   .stat-row { grid-template-columns: 110px 1fr; }
   .stat-row__num { grid-column: 2; }
+  /* Decorative riso shapes are hand-positioned for desktop; on small
+     viewports they overlap real content — scale and clip them safely. */
+  .riso-blob, .riso-dots {
+    transform: scale(0.55);
+    transform-origin: top right;
+    opacity: 0.35;
+  }
+  .page-header .riso-blob,
+  .page-header .riso-dots,
+  .hero .riso-blob,
+  .hero .riso-dots {
+    pointer-events: none;
+    z-index: 0;
+  }
+  .page-header,
+  .hero {
+    overflow: hidden;
+  }
 }
 
 @media (min-width: 1280px) {
   :root { --fs-base: 1.125rem; }
 }
+
+/* -------------------------------------------------------------
+   18. POKEMON SPRITES
+   GBA-era sprites from PokeAPI's generation-iii/emerald set.
+   Pixel-rendering preserves the chunky in-game aesthetic.
+   ------------------------------------------------------------- */
+.poke-sprite {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  vertical-align: middle;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  background: transparent;
+  flex-shrink: 0;
+}
+.poke-sprite--xs { width: 32px; height: 32px; }
+.poke-sprite--sm { width: 48px; height: 48px; }
+.poke-sprite--lg { width: 96px; height: 96px; }
+.poke-sprite--xl { width: 128px; height: 128px; }
+
+/* Sprite framed in a hard-bordered tile (matches design system) */
+.poke-sprite-frame {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--paper-deep);
+  border: var(--border-w) solid var(--ink);
+  padding: var(--s-2);
+  position: relative;
+}
+.poke-sprite-frame--emerald { background: var(--emerald); }
+.poke-sprite-frame--ember { background: var(--ember); }
+.poke-sprite-frame--sun { background: var(--sun); }
+.poke-sprite-frame--ocean { background: var(--ocean); }
+
+/* Inline sprite next to a label (e.g., in tier cards / poke-mini) */
+.poke-row {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+}
+.poke-row .poke-sprite { flex-shrink: 0; }

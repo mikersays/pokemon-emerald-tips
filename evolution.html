@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>document.documentElement.classList.add("js")</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Evolution mechanics in Pokemon Emerald — every method, when to delay, Eevee paths, trade evolutions, friendship evolutions, stones, and Feebas-to-Milotic." />
+  <title>Evolution &middot; Hoenn Field Guide</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <!-- ============================== NAV ============================== -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html" aria-label="Hoenn Field Guide home">
+        <span class="nav__mark" aria-hidden="true">HFG</span>
+        <span class="nav__wordmark">Hoenn <span>Field</span> Guide</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <ul style="display:contents;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="starters.html">Starters</a></li>
+          <li><a href="gyms.html">Gyms</a></li>
+          <li><a href="elite-four.html">Elite Four</a></li>
+          <li><a href="legendaries.html">Legendaries</a></li>
+          <li><a href="tier-list.html">Tier List</a></li>
+          <li><a href="secrets.html">Secrets</a></li>
+          <li><a href="breeding.html">Breeding</a></li>
+          <li><a href="early-game.html">Early Game</a></li>
+          <li><a href="bikes.html">Bikes</a></li>
+          <li><a href="evolution.html">Evolution</a></li>
+          <li><a href="mechanics.html">Mechanics</a></li>
+          <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+          <li><a href="post-game.html">Post Game</a></li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-drawer">MENU</button>
+    </div>
+    <div class="nav__drawer" id="nav-drawer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="starters.html">Starters</a></li>
+        <li><a href="gyms.html">Gyms</a></li>
+        <li><a href="elite-four.html">Elite Four</a></li>
+        <li><a href="legendaries.html">Legendaries</a></li>
+        <li><a href="tier-list.html">Tier List</a></li>
+        <li><a href="secrets.html">Secrets</a></li>
+        <li><a href="breeding.html">Breeding</a></li>
+        <li><a href="early-game.html">Early Game</a></li>
+        <li><a href="bikes.html">Bikes</a></li>
+        <li><a href="evolution.html">Evolution</a></li>
+        <li><a href="mechanics.html">Mechanics</a></li>
+        <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+        <li><a href="post-game.html">Post Game</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============================== HEADER ============================== -->
+    <section class="page-header">
+      <div class="riso-blob riso-blob--emerald" style="width:300px; height:300px; top:-90px; right:-50px;"></div>
+      <div class="riso-dots" style="width:220px; height:110px; bottom:30px; right:14%; transform: rotate(4deg);"></div>
+      <div class="riso-blob riso-blob--sun" style="width:140px; height:140px; bottom:-30px; left:-30px;"></div>
+
+      <div class="container">
+        <span class="kicker">When B is your best friend</span>
+        <h1 class="page-header__title">
+          The art of<br><em>evolving</em> deliberately.
+        </h1>
+        <p class="lede mt-4" style="max-width: 62ch;">
+          Six mechanics, one B button. Gen 3 Emerald supports level-up, stone, trade, friendship, beauty (contest stat), and
+          conditional evolutions &mdash; and lets you delay every one of them. Underneath: a Personality Value the cartridge
+          rolls on capture and never tells you about, branching outcomes baked in from the moment a Wurmple appears.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================== ANCHOR STRIP ============================== -->
+    <section class="section section--tight" style="border-bottom: var(--border-w) solid var(--ink);">
+      <div class="container">
+        <div class="grid grid--auto" style="gap: var(--s-3);">
+          <a href="#methods" class="tile" style="padding: var(--s-3) var(--s-4);"><span class="tile__num">01</span><span class="tile__title" style="font-size:var(--fs-base);">Methods</span></a>
+          <a href="#delaying" class="tile" style="padding: var(--s-3) var(--s-4);"><span class="tile__num">02</span><span class="tile__title" style="font-size:var(--fs-base);">Delaying</span></a>
+          <a href="#wurmple" class="tile" style="padding: var(--s-3) var(--s-4);"><span class="tile__num">03</span><span class="tile__title" style="font-size:var(--fs-base);">Wurmple branch</span></a>
+          <a href="#eevee" class="tile" style="padding: var(--s-3) var(--s-4);"><span class="tile__num">04</span><span class="tile__title" style="font-size:var(--fs-base);">Eevee paths</span></a>
+          <a href="#trade" class="tile" style="padding: var(--s-3) var(--s-4);"><span class="tile__num">05</span><span class="tile__title" style="font-size:var(--fs-base);">Trade evos</span></a>
+          <a href="#friendship" class="tile" style="padding: var(--s-3) var(--s-4);"><span class="tile__num">06</span><span class="tile__title" style="font-size:var(--fs-base);">Friendship</span></a>
+          <a href="#stones" class="tile" style="padding: var(--s-3) var(--s-4);"><span class="tile__num">07</span><span class="tile__title" style="font-size:var(--fs-base);">Stones</span></a>
+          <a href="#feebas" class="tile" style="padding: var(--s-3) var(--s-4);"><span class="tile__num">08</span><span class="tile__title" style="font-size:var(--fs-base);">Feebas&rarr;Milotic</span></a>
+          <a href="#rare-candy" class="tile" style="padding: var(--s-3) var(--s-4);"><span class="tile__num">09</span><span class="tile__title" style="font-size:var(--fs-base);">Rare Candy</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 01. EVOLUTION METHODS ============================== -->
+    <section class="section" id="methods">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker">Section I</span>
+          <h2 class="h1 mt-3">Six<br><em style="color:var(--emerald); font-style:italic; font-weight:400;">methods</em></h2>
+          <p class="dropcap lede mt-4" style="max-width: 60ch;">
+            Most Hoenn Pokemon evolve by hitting a level threshold and triggering at end of battle. The rest demand a
+            specific item, an action, a contest stat, or a trade with another cartridge. Knowing which method applies
+            saves you from holding a Leaf Stone for a Pokemon that wants a Sun Stone.
+          </p>
+        </div>
+
+        <!-- METHOD: LEVEL-UP -->
+        <article class="card-trainer reveal" style="margin-bottom: var(--s-6);">
+          <div class="card-trainer__portrait" style="background: #2c8c5d;">
+            <span class="card-trainer__num">Method 01 &middot; Most common</span>
+            <span class="card-trainer__initial">L</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="grass">level-up</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Level-up</h2>
+              <p class="card-trainer__city">End-of-battle trigger &middot; species-specific level</p>
+            </div>
+            <p class="card__body">Hits a target level and evolves automatically at end of battle. Cancellable by holding B during the animation.</p>
+            <div class="poke-row" style="margin-top: var(--s-4); flex-wrap: wrap; gap: var(--s-4);">
+              <div style="text-align:center;">
+                <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/252.png" alt="Treecko" loading="lazy">
+                <div class="mono" style="font-size:var(--fs-xs);">Treecko &rarr; Lv 16</div>
+              </div>
+              <div style="text-align:center;">
+                <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/41.png" alt="Zubat" loading="lazy">
+                <div class="mono" style="font-size:var(--fs-xs);">Zubat &rarr; Lv 22</div>
+              </div>
+              <div style="text-align:center;">
+                <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/129.png" alt="Magikarp" loading="lazy">
+                <div class="mono" style="font-size:var(--fs-xs);">Magikarp &rarr; Lv 20</div>
+              </div>
+            </div>
+            <div class="card-trainer__strategy">
+              <strong>How it fires.</strong> The end-of-battle exp jingle ends, then any Pokemon at or above its
+              evolution level checks. If you EXP-share into the threshold, the check still fires when the battle ends.
+              <p class="mt-3 mono" style="font-size:var(--fs-xs); color:var(--emerald-deep);">FIELD TIP &mdash; Rare Candy triggers level-up checks. Hold B to cancel if you&rsquo;re still grinding pre-evo moves.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- METHOD: STONE -->
+        <article class="card-trainer reveal" style="margin-bottom: var(--s-6);">
+          <div class="card-trainer__portrait" style="background: #d94c2b;">
+            <span class="card-trainer__num">Method 02 &middot; Item-driven</span>
+            <span class="card-trainer__initial">S</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="fire">stone</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Evolution Stone</h2>
+              <p class="card-trainer__city">Use from bag &middot; instant trigger, consumes the stone</p>
+            </div>
+            <p class="card__body">Use a stone from the bag &mdash; instant evolution, no level requirement above the species
+            minimum. Stones are consumed. Save the bag inventory before applying, especially with Eevee.</p>
+            <div class="poke-row" style="margin-top: var(--s-4); flex-wrap: wrap; gap: var(--s-4);">
+              <div style="text-align:center;">
+                <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/37.png" alt="Vulpix" loading="lazy">
+                <div class="mono" style="font-size:var(--fs-xs);">Vulpix + Fire</div>
+              </div>
+              <div style="text-align:center;">
+                <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/44.png" alt="Gloom" loading="lazy">
+                <div class="mono" style="font-size:var(--fs-xs);">Gloom + Leaf</div>
+              </div>
+              <div style="text-align:center;">
+                <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/133.png" alt="Eevee" loading="lazy">
+                <div class="mono" style="font-size:var(--fs-xs);">Eevee + Water</div>
+              </div>
+            </div>
+            <div class="card-trainer__strategy">
+              <strong>What stones do.</strong> Bypass any level requirement above the species&rsquo; floor. The stone is
+              consumed regardless of whether the resulting form is what you wanted &mdash; soft-reset before applying to a
+              one-of-a-kind Pokemon.
+            </div>
+          </div>
+        </article>
+
+        <!-- METHOD: TRADE -->
+        <article class="card-trainer reveal" style="margin-bottom: var(--s-6);">
+          <div class="card-trainer__portrait" style="background: #5d7aa4;">
+            <span class="card-trainer__num">Method 03 &middot; Cable-cabled</span>
+            <span class="card-trainer__initial">T</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="water">trade</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Trade</h2>
+              <p class="card-trainer__city">Link cable required &middot; evolves on receipt</p>
+            </div>
+            <p class="card__body">Trade the Pokemon over a link cable. It evolves on receipt by the new trainer.
+            <strong>NOT possible single-cart</strong> &mdash; you need a partner Game Boy / cable.</p>
+            <div class="poke-row" style="margin-top: var(--s-4); flex-wrap: wrap; gap: var(--s-4);">
+              <div style="text-align:center;">
+                <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/64.png" alt="Kadabra" loading="lazy">
+                <div class="mono" style="font-size:var(--fs-xs);">Kadabra &rarr; Alakazam</div>
+              </div>
+              <div style="text-align:center;">
+                <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/67.png" alt="Machoke" loading="lazy">
+                <div class="mono" style="font-size:var(--fs-xs);">Machoke &rarr; Machamp</div>
+              </div>
+              <div style="text-align:center;">
+                <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/75.png" alt="Graveler" loading="lazy">
+                <div class="mono" style="font-size:var(--fs-xs);">Graveler &rarr; Golem</div>
+              </div>
+              <div style="text-align:center;">
+                <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/93.png" alt="Haunter" loading="lazy">
+                <div class="mono" style="font-size:var(--fs-xs);">Haunter &rarr; Gengar</div>
+              </div>
+            </div>
+            <div class="card-trainer__strategy">
+              <strong>The single-cart problem.</strong> Without a second GBA + Emerald/Ruby/Sapphire/FireRed/LeafGreen
+              and a link cable, these Pokemon stay in their pre-evolved form forever. The easiest single-player path is
+              two GBAs and a link cable, even if both carts are yours.
+            </div>
+          </div>
+        </article>
+
+        <!-- METHOD: FRIENDSHIP -->
+        <article class="card-trainer reveal" style="margin-bottom: var(--s-6);">
+          <div class="card-trainer__portrait" style="background: #c4823f;">
+            <span class="card-trainer__num">Method 04 &middot; Hidden value</span>
+            <span class="card-trainer__initial">F</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="normal">friendship</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Friendship</h2>
+              <p class="card-trainer__city">Hidden 0&ndash;255 value &middot; level up at &ge; 220</p>
+            </div>
+            <p class="card__body">Level up while friendship value is &ge; 220 (out of 255). Soothe Bell speeds this up by
+            1.5&times;; Luxury Ball doubles all gains. Stack both for ~3&times; speed.</p>
+            <div class="poke-row" style="margin-top: var(--s-4); flex-wrap: wrap; gap: var(--s-4);">
+              <div style="text-align:center;">
+                <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/42.png" alt="Golbat" loading="lazy">
+                <div class="mono" style="font-size:var(--fs-xs);">Golbat &rarr; Crobat</div>
+              </div>
+              <div style="text-align:center;">
+                <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/172.png" alt="Pichu" loading="lazy">
+                <div class="mono" style="font-size:var(--fs-xs);">Pichu &rarr; Pikachu</div>
+              </div>
+              <div style="text-align:center;">
+                <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/298.png" alt="Azurill" loading="lazy">
+                <div class="mono" style="font-size:var(--fs-xs);">Azurill &rarr; Marill</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- METHOD: BEAUTY -->
+        <article class="card-trainer reveal" style="margin-bottom: var(--s-6);">
+          <div class="card-trainer__portrait" style="background: #2b5d8a;">
+            <span class="card-trainer__num">Method 05 &middot; Contest-only</span>
+            <span class="card-trainer__initial">B</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="water">beauty</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Beauty (contest stat)</h2>
+              <p class="card-trainer__city">Unique to Feebas in Emerald</p>
+            </div>
+            <p class="card__body">Level up while contest Beauty stat is sufficiently high. The only path to <strong>Milotic</strong>
+            in vanilla Emerald. Feed Dry-flavored Pokeblocks; max Beauty; level once; transform.</p>
+            <div class="poke-row" style="margin-top: var(--s-4); flex-wrap: wrap; gap: var(--s-4);">
+              <div style="text-align:center;">
+                <img class="poke-sprite poke-sprite--lg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/349.png" alt="Feebas" loading="lazy">
+                <div class="mono" style="font-size:var(--fs-xs);">Feebas</div>
+              </div>
+              <div style="font-size:2rem; align-self:center;">&rarr;</div>
+              <div style="text-align:center;">
+                <img class="poke-sprite poke-sprite--lg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/350.png" alt="Milotic" loading="lazy">
+                <div class="mono" style="font-size:var(--fs-xs);">Milotic</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- METHOD: BRANCHED PV -->
+        <article class="card-trainer reveal">
+          <div class="card-trainer__portrait" style="background: #6b4f8a;">
+            <span class="card-trainer__num">Method 06 &middot; Personality Value</span>
+            <span class="card-trainer__initial">P</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="psychic">branched</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Branched / PV-determined</h2>
+              <p class="card-trainer__city">32-bit hidden number set at encounter or hatch</p>
+            </div>
+            <p class="card__body">Outcome is determined by the Pokemon&rsquo;s hidden Personality Value &mdash; set at encounter
+            or hatch and never changed. The most famous instance is Wurmple&rsquo;s split (see Section III).</p>
+            <p class="card__body mt-3">Nincada deserves a special mention: Nincada &rarr; Ninjask at Lv 20, AND Shedinja
+            appears in your party box if you have an empty slot and a spare Pokeball. The PV is not the gate; the empty
+            slot is. Most other branched evolutions in later gens (e.g., Salandit, Wurmple's PV cousins) inherit the same logic.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================== 02. DELAYING (B BUTTON) ============================== -->
+    <section class="section section--alt" id="delaying">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ember">Section II</span>
+          <h2 class="h1 mt-3">Delaying<br><em style="color:var(--ember); font-style:italic; font-weight:400;">evolution</em></h2>
+          <p class="lede mt-4" style="max-width: 60ch;">
+            When the evolution animation starts, hold the <strong>B button</strong> until the &ldquo;Huh?&rdquo; message
+            displays. The Pokemon stays in its current form. The next time it levels up, the prompt fires again. Below:
+            seven specific Emerald lines where delaying earns you a real movepool advantage.
+          </p>
+        </div>
+
+        <div class="callout callout--sun" style="margin-bottom: var(--s-6);">
+          <span class="callout__label">The principle</span>
+          <p style="margin:0;">
+            Most evolved forms learn moves <strong>later</strong> &mdash; or never &mdash; compared to their pre-evolutions.
+            Hold off on stones and trade evolutions until you&rsquo;ve gotten the moves you want. B-cancel level evolutions
+            until the desired level is past.
+          </p>
+        </div>
+
+        <div class="grid grid--2 stagger">
+          <article class="card offset-shadow">
+            <div class="poke-row">
+              <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/44.png" alt="Gloom" loading="lazy">
+              <div>
+                <div class="card__subtitle">Line</div>
+                <h3 class="card__title">Gloom &rarr; Vileplume</h3>
+              </div>
+            </div>
+            <p class="card__body mt-4">
+              Gloom learns <strong>Petal Dance</strong> at Lv 39 and <strong>Moonlight</strong> at Lv 49. Vileplume&rsquo;s
+              level-up pool stops at Aromatherapy. Waiting on the Leaf Stone is correct.
+            </p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs); color:var(--emerald-deep);">DELAY UNTIL &mdash; Lv 49 (or Lv 39 if you can live without Moonlight).</p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="poke-row">
+              <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/329.png" alt="Vibrava" loading="lazy">
+              <div>
+                <div class="card__subtitle">Line</div>
+                <h3 class="card__title">Vibrava &rarr; Flygon</h3>
+              </div>
+            </div>
+            <p class="card__body mt-4">
+              Vibrava learns <strong>Dragonbreath</strong> at Lv 35; Flygon does NOT learn this naturally (only via tutor in
+              later games). Hit Lv 35 as Vibrava before evolving at Lv 45.
+            </p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs); color:var(--emerald-deep);">DELAY UNTIL &mdash; Lv 35.</p>
+          </article>
+
+          <article class="card offset-shadow--ember">
+            <div class="poke-row">
+              <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/133.png" alt="Eevee" loading="lazy">
+              <div>
+                <div class="card__subtitle">Line</div>
+                <h3 class="card__title">Eevee &rarr; Eeveelution</h3>
+              </div>
+            </div>
+            <p class="card__body mt-4">
+              Eevee learns <strong>Bite</strong> (Lv 16) and <strong>Take Down</strong> (Lv 30). Eeveelutions get
+              type-specific elemental attacks but lose the Normal moves. Decide your build before stoning.
+            </p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs); color:var(--emerald-deep);">DELAY UNTIL &mdash; You&rsquo;ve picked up the moves you want.</p>
+          </article>
+
+          <article class="card">
+            <div class="poke-row">
+              <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/281.png" alt="Kirlia" loading="lazy">
+              <div>
+                <div class="card__subtitle">Line</div>
+                <h3 class="card__title">Kirlia &rarr; Gardevoir</h3>
+              </div>
+            </div>
+            <p class="card__body mt-4">
+              Both forms learn the same level-up set (Calm Mind, Future Sight, Hypnosis line). <strong>Evolve at Lv 30
+              freely</strong> &mdash; no movepool penalty.
+            </p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs); color:var(--emerald-deep);">EVOLVE IMMEDIATELY &mdash; the exception.</p>
+          </article>
+
+          <article class="card card--alt offset-shadow--ocean">
+            <div class="poke-row">
+              <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/274.png" alt="Nuzleaf" loading="lazy">
+              <div>
+                <div class="card__subtitle">Line</div>
+                <h3 class="card__title">Nuzleaf &rarr; Shiftry</h3>
+              </div>
+            </div>
+            <p class="card__body mt-4">
+              Nuzleaf learns <strong>Extrasensory</strong> at Lv 39 by level-up; Shiftry doesn&rsquo;t level-up learn this.
+              Don&rsquo;t use the Leaf Stone before Lv 39.
+            </p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs); color:var(--emerald-deep);">DELAY UNTIL &mdash; Lv 39.</p>
+          </article>
+
+          <article class="card">
+            <div class="poke-row">
+              <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/25.png" alt="Pikachu" loading="lazy">
+              <div>
+                <div class="card__subtitle">Line</div>
+                <h3 class="card__title">Pikachu &rarr; Raichu</h3>
+              </div>
+            </div>
+            <p class="card__body mt-4">
+              Pikachu learns <strong>Thunder</strong> at Lv 50; Raichu does NOT learn Thunder by level-up. If you
+              don&rsquo;t have TM25, keep Pikachu until Lv 50.
+            </p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs); color:var(--emerald-deep);">DELAY UNTIL &mdash; Lv 50 (no TM25).</p>
+          </article>
+
+          <article class="card offset-shadow">
+            <div class="poke-row">
+              <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/129.png" alt="Magikarp" loading="lazy">
+              <div>
+                <div class="card__subtitle">Line</div>
+                <h3 class="card__title">Magikarp &rarr; Gyarados</h3>
+              </div>
+            </div>
+            <p class="card__body mt-4">
+              Magikarp&rsquo;s pool is famously useless (Splash, Tackle, Flail) &mdash; <strong>evolve immediately</strong> at
+              Lv 20. The exception that proves the rule.
+            </p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs); color:var(--emerald-deep);">EVOLVE IMMEDIATELY &mdash; nothing to wait for.</p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="poke-row">
+              <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/148.png" alt="Dragonair" loading="lazy">
+              <div>
+                <div class="card__subtitle">Line</div>
+                <h3 class="card__title">Dragonair &rarr; Dragonite</h3>
+              </div>
+            </div>
+            <p class="card__body mt-4">
+              Not native to Hoenn (FRLG/Colosseum import). Dragonair learns <strong>Outrage</strong> at Lv 51 vs Dragonite
+              at Lv 61 &mdash; delay 10 levels for Outrage.
+            </p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs); color:var(--emerald-deep);">DELAY UNTIL &mdash; Lv 51.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 03. WURMPLE BRANCHING ============================== -->
+    <section class="section" id="wurmple">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker">Section III</span>
+          <h2 class="h1 mt-3">The Wurmple<br><em style="color:var(--emerald); font-style:italic; font-weight:400;">branch</em></h2>
+          <p class="lede mt-4" style="max-width: 60ch;">
+            The myth: Wurmple&rsquo;s evolution is rolled when it evolves. The truth: it was decided the moment you encountered it.
+          </p>
+        </div>
+
+        <article class="card-trainer reveal">
+          <div class="card-trainer__portrait" style="background: #c8546a;">
+            <span class="card-trainer__num">Wurmple &middot; PV-locked</span>
+            <span class="card-trainer__initial">W</span>
+            <span class="card-trainer__type-tag"><span class="type-chip type-chip--lg" data-type="bug">bug</span></span>
+          </div>
+          <div class="card-trainer__body">
+            <div>
+              <h2 class="card-trainer__name">Wurmple</h2>
+              <p class="card-trainer__city">Personality Value branch &middot; ((PV &gt;&gt; 16) % 10)</p>
+            </div>
+
+            <div style="display:flex; align-items:center; justify-content:center; gap:var(--s-4); flex-wrap:wrap; margin: var(--s-4) 0;">
+              <div style="text-align:center;">
+                <img class="poke-sprite poke-sprite--lg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/265.png" alt="Wurmple" loading="lazy">
+                <div class="mono" style="font-size:var(--fs-xs);">Wurmple</div>
+              </div>
+              <div style="font-size:1.5rem;">&rarr;</div>
+              <div style="text-align:center;">
+                <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/266.png" alt="Silcoon" loading="lazy">
+                <div class="mono" style="font-size:var(--fs-xs);">Silcoon (PV%10 &lt; 5)</div>
+              </div>
+              <div style="font-size:1.5rem;">&rarr;</div>
+              <div style="text-align:center;">
+                <img class="poke-sprite poke-sprite--lg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/267.png" alt="Beautifly" loading="lazy">
+                <div class="mono" style="font-size:var(--fs-xs);">Beautifly</div>
+              </div>
+            </div>
+
+            <div style="display:flex; align-items:center; justify-content:center; gap:var(--s-4); flex-wrap:wrap; margin: var(--s-4) 0;">
+              <div style="text-align:center;">
+                <img class="poke-sprite poke-sprite--lg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/265.png" alt="Wurmple" loading="lazy">
+                <div class="mono" style="font-size:var(--fs-xs);">Wurmple</div>
+              </div>
+              <div style="font-size:1.5rem;">&rarr;</div>
+              <div style="text-align:center;">
+                <img class="poke-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/268.png" alt="Cascoon" loading="lazy">
+                <div class="mono" style="font-size:var(--fs-xs);">Cascoon (PV%10 &ge; 5)</div>
+              </div>
+              <div style="font-size:1.5rem;">&rarr;</div>
+              <div style="text-align:center;">
+                <img class="poke-sprite poke-sprite--lg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/269.png" alt="Dustox" loading="lazy">
+                <div class="mono" style="font-size:var(--fs-xs);">Dustox</div>
+              </div>
+            </div>
+
+            <div class="card-trainer__strategy">
+              <strong>The truth.</strong> Wurmple&rsquo;s evolution path is determined by its 32-bit Personality Value, set
+              when the Wurmple is generated. The relevant byte: <span class="mono">((PV &gt;&gt; 16) % 10)</span>. If 0&ndash;4,
+              Silcoon &rarr; Beautifly. If 5&ndash;9, Cascoon &rarr; Dustox.
+              <p class="mt-3"><strong>Implication.</strong> If you save before evolving and reset, you&rsquo;ll always get the
+              same outcome &mdash; the Wurmple was &ldquo;fated&rdquo; from capture. To get the other branch, catch a different Wurmple.</p>
+              <p class="mt-3 mono" style="font-size:var(--fs-xs); color:var(--emerald-deep);">FIELD TIP &mdash; Hatching eggs from a Wurmple parent and checking at Lv 7 cocoon stage is faster than catching repeatedly.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================== 04. EEVEE PATHS ============================== -->
+    <section class="section section--alt" id="eevee">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ocean">Section IV</span>
+          <h2 class="h1 mt-3">Eevee paths in<br><em style="color:var(--ocean); font-style:italic; font-weight:400;">Emerald</em></h2>
+          <p class="lede mt-4" style="max-width: 60ch;">
+            Three of five eeveelutions are accessible in vanilla Emerald: Vaporeon, Jolteon, Flareon &mdash; via the three
+            elemental stones. Espeon and Umbreon were locked behind Gen 2 friendship-time mechanics that Emerald cannot replicate.
+          </p>
+        </div>
+
+        <div style="display:flex; align-items:center; justify-content:center; margin-bottom: var(--s-6);">
+          <img class="poke-sprite poke-sprite--xl" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/133.png" alt="Eevee" loading="lazy">
+        </div>
+
+        <div class="grid grid--3 stagger">
+          <article class="card offset-shadow--ocean">
+            <div class="poke-row" style="margin-bottom: var(--s-3);">
+              <img class="poke-sprite poke-sprite--lg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/134.png" alt="Vaporeon" loading="lazy">
+              <div>
+                <div class="card__subtitle">No. 134</div>
+                <h3 class="card__title">Vaporeon</h3>
+                <span class="type-chip" data-type="water">water</span>
+              </div>
+            </div>
+            <p class="card__body">Use a <strong>Water Stone</strong>. Best bulk among the three, learns Surf and Ice Beam by TM,
+            and has Water Absorb for free heals on Wallace mirrors.</p>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Stone</span><span class="stat-row__value">Water Stone</span><span class="stat-row__num">WTR</span></div>
+              <div class="stat-row"><span class="stat-row__label">Where</span><span class="stat-row__value">Route 134 (Dive), Abandoned Ship</span><span class="stat-row__num">DIVE</span></div>
+              <div class="stat-row"><span class="stat-row__label">Buy</span><span class="stat-row__value">Lilycove Dept Store</span><span class="stat-row__num">3000</span></div>
+            </dl>
+          </article>
+
+          <article class="card card--alt">
+            <div class="poke-row" style="margin-bottom: var(--s-3);">
+              <img class="poke-sprite poke-sprite--lg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/135.png" alt="Jolteon" loading="lazy">
+              <div>
+                <div class="card__subtitle">No. 135</div>
+                <h3 class="card__title">Jolteon</h3>
+                <span class="type-chip" data-type="electric">electric</span>
+              </div>
+            </div>
+            <p class="card__body">Use a <strong>Thunder Stone</strong>. Highest Speed of the three, hits hard with
+            Thunderbolt + Volt Absorb. Frail; play it as a glass cannon.</p>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Stone</span><span class="stat-row__value">Thunder Stone</span><span class="stat-row__num">ELC</span></div>
+              <div class="stat-row"><span class="stat-row__label">Where</span><span class="stat-row__value">New Mauville (post-Wattson)</span><span class="stat-row__num">NWM</span></div>
+              <div class="stat-row"><span class="stat-row__label">Buy</span><span class="stat-row__value">Lilycove Dept Store</span><span class="stat-row__num">3000</span></div>
+            </dl>
+          </article>
+
+          <article class="card offset-shadow--ember">
+            <div class="poke-row" style="margin-bottom: var(--s-3);">
+              <img class="poke-sprite poke-sprite--lg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/136.png" alt="Flareon" loading="lazy">
+              <div>
+                <div class="card__subtitle">No. 136</div>
+                <h3 class="card__title">Flareon</h3>
+                <span class="type-chip" data-type="fire">fire</span>
+              </div>
+            </div>
+            <p class="card__body">Use a <strong>Fire Stone</strong>. Massive Atk stat &mdash; ironically, in Gen 3 most Fire moves
+            are Special, so Flareon&rsquo;s offensive power lags. Still solid for Glacia&rsquo;s gym.</p>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Stone</span><span class="stat-row__value">Fire Stone</span><span class="stat-row__num">FIR</span></div>
+              <div class="stat-row"><span class="stat-row__label">Where</span><span class="stat-row__value">Fiery Path (Rock Smash hidden)</span><span class="stat-row__num">FP</span></div>
+              <div class="stat-row"><span class="stat-row__label">Buy</span><span class="stat-row__value">Lilycove Dept Store</span><span class="stat-row__num">3000</span></div>
+            </dl>
+          </article>
+        </div>
+
+        <div class="callout callout--ocean" style="margin-top: var(--s-6);">
+          <span class="callout__label">Not in Emerald</span>
+          <p style="margin:0;">
+            <strong>Espeon</strong> (friendship + day) and <strong>Umbreon</strong> (friendship + night) require Gen 2
+            day/night mechanics absent from Gen 3 carts &mdash; obtainable only via HeartGold/SoulSilver or XD: Gale of
+            Darkness import. <strong>Glaceon, Leafeon</strong> (Gen 4+) and <strong>Sylveon</strong> (Gen 6+) are simply
+            too future. Save Soothe Bell on your Eevee for the future Espeon/Umbreon evolution if you plan to transfer it forward.
+          </p>
+        </div>
+
+        <div class="callout callout--sun" style="margin-top: var(--s-4);">
+          <span class="callout__label">Where do I get an Eevee?</span>
+          <p style="margin:0;">
+            Eevee is <strong>not obtainable in vanilla Emerald wild</strong>. Trade from Pokemon FireRed or LeafGreen
+            (Celadon Game Corner reward, 4900 coins) or from Pokemon XD/Colosseum.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 05. TRADE EVOS ============================== -->
+    <section class="section" id="trade">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ember">Section V</span>
+          <h2 class="h1 mt-3">Trade<br><em style="color:var(--ember); font-style:italic; font-weight:400;">evolutions</em></h2>
+          <p class="lede mt-4" style="max-width: 60ch;">
+            Twelve trade evos exist within the Hoenn dex&rsquo;s trade-evolution roster. Without a second cart and a link
+            cable, every one of them stays in its pre-evolved form forever &mdash; the most painful single-cart limitation Emerald has.
+          </p>
+        </div>
+
+        <div class="grid grid--auto stagger">
+          <article class="tile">
+            <div class="poke-row" style="margin-bottom: var(--s-2);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/64.png" alt="Kadabra" loading="lazy">
+            </div>
+            <div>
+              <div class="tile__num">01 &middot; Any trade</div>
+              <h3 class="tile__title">Kadabra &rarr; Alakazam</h3>
+            </div>
+            <p class="tile__desc">Plain trade evo. Both share movepool; trading early is fine. Synchronize lead works on either.</p>
+          </article>
+
+          <article class="tile">
+            <div class="poke-row" style="margin-bottom: var(--s-2);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/67.png" alt="Machoke" loading="lazy">
+            </div>
+            <div>
+              <div class="tile__num">02 &middot; Any trade</div>
+              <h3 class="tile__title">Machoke &rarr; Machamp</h3>
+            </div>
+            <p class="tile__desc">Plain trade evo. Massive Atk jump &mdash; one of the cleanest trade-locked sweepers.</p>
+          </article>
+
+          <article class="tile">
+            <div class="poke-row" style="margin-bottom: var(--s-2);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/75.png" alt="Graveler" loading="lazy">
+            </div>
+            <div>
+              <div class="tile__num">03 &middot; Any trade</div>
+              <h3 class="tile__title">Graveler &rarr; Golem</h3>
+            </div>
+            <p class="tile__desc">Plain trade evo. Sturdy line, tanky Rock/Ground &mdash; key counter to Wattson without Marshtomp.</p>
+          </article>
+
+          <article class="tile">
+            <div class="poke-row" style="margin-bottom: var(--s-2);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/93.png" alt="Haunter" loading="lazy">
+            </div>
+            <div>
+              <div class="tile__num">04 &middot; Any trade</div>
+              <h3 class="tile__title">Haunter &rarr; Gengar</h3>
+            </div>
+            <p class="tile__desc">Plain trade evo. Levitate, Hypnosis, Shadow Ball &mdash; one of the best Frontier specials.</p>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">05 &middot; Metal Coat</div>
+              <h3 class="tile__title">Onix &rarr; Steelix</h3>
+            </div>
+            <p class="tile__desc">Trade holding Metal Coat. Onix not Hoenn-native &mdash; FRLG/Colosseum import only.</p>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">06 &middot; Metal Coat</div>
+              <h3 class="tile__title">Scyther &rarr; Scizor</h3>
+            </div>
+            <p class="tile__desc">Trade holding Metal Coat. Scyther in Safari Zone (FRLG); Heracross is the Hoenn analogue.</p>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">07 &middot; Dragon Scale</div>
+              <h3 class="tile__title">Seadra &rarr; Kingdra</h3>
+            </div>
+            <p class="tile__desc">Trade holding Dragon Scale. Horsea found via Sapphire/FRLG trades; rare in Emerald natively.</p>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">08 &middot; King's Rock</div>
+              <h3 class="tile__title">Poliwhirl &rarr; Politoed</h3>
+            </div>
+            <p class="tile__desc">Trade holding King&rsquo;s Rock. Alternate Poliwhirl path is Water Stone for Poliwrath.</p>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">09 &middot; King's Rock</div>
+              <h3 class="tile__title">Slowpoke &rarr; Slowking</h3>
+            </div>
+            <p class="tile__desc">Trade holding King&rsquo;s Rock. Alternate Slowpoke path is Lv 37 for Slowbro.</p>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">10 &middot; Up-Grade</div>
+              <h3 class="tile__title">Porygon &rarr; Porygon2</h3>
+            </div>
+            <p class="tile__desc">Trade holding Up-Grade. Porygon FRLG-import only (Game Corner prize).</p>
+          </article>
+
+          <article class="tile">
+            <div class="poke-row" style="margin-bottom: var(--s-2);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/366.png" alt="Clamperl" loading="lazy">
+            </div>
+            <div>
+              <div class="tile__num">11 &middot; Deep Sea Tooth</div>
+              <h3 class="tile__title">Clamperl &rarr; Huntail</h3>
+            </div>
+            <p class="tile__desc">Trade holding Deep Sea Tooth. Hoenn-native trade evo (Clamperl found via Dive).</p>
+          </article>
+
+          <article class="tile">
+            <div class="poke-row" style="margin-bottom: var(--s-2);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/366.png" alt="Clamperl" loading="lazy">
+            </div>
+            <div>
+              <div class="tile__num">12 &middot; Deep Sea Scale</div>
+              <h3 class="tile__title">Clamperl &rarr; Gorebyss</h3>
+            </div>
+            <p class="tile__desc">Trade holding Deep Sea Scale. Same Clamperl, different held item, different path.</p>
+          </article>
+        </div>
+
+        <div class="callout callout--ember" style="margin-top: var(--s-6);">
+          <span class="callout__label">The single-cart problem</span>
+          <p style="margin:0;">
+            The easiest single-player trade evolution path is <strong>two GBAs and a link cable</strong>, even if both carts
+            are yours. Use a wireless or link adapter even with a flash cart on a real GBA &mdash; the receiving Pokemon
+            evolves on receipt.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 06. FRIENDSHIP EVOS ============================== -->
+    <section class="section section--alt" id="friendship">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker">Section VI</span>
+          <h2 class="h1 mt-3">Friendship<br><em style="color:var(--emerald); font-style:italic; font-weight:400;">evolutions</em></h2>
+          <p class="lede mt-4" style="max-width: 60ch;">
+            Five friendship evolutions exist for Hoenn-accessible Pokemon. The protocol is the same for all five: catch
+            in a Luxury Ball, equip Soothe Bell, walk and battle until friendship hits 220, then level up.
+          </p>
+        </div>
+
+        <div class="grid grid--2 stagger">
+          <article class="card offset-shadow">
+            <div class="poke-row">
+              <img class="poke-sprite poke-sprite--lg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/169.png" alt="Crobat" loading="lazy">
+              <div>
+                <div class="card__subtitle">Hoenn-native</div>
+                <h3 class="card__title">Golbat &rarr; Crobat</h3>
+                <span class="type-chip" data-type="poison">poison</span> <span class="type-chip" data-type="flying">flying</span>
+              </div>
+            </div>
+            <p class="card__body mt-4">
+              Catch Zubat in Granite Cave, Mt. Pyre, or Meteor Falls. Golbat at Lv 22. Soothe Bell + Luxury Ball cuts
+              friendship time roughly in half. The single best return on a friendship grind in Emerald &mdash; Crobat&rsquo;s
+              Speed and Sludge Bomb / Aerial Ace coverage justify every step.
+            </p>
+            <div class="callout callout--emerald mt-4">
+              <span class="callout__label">Protocol</span>
+              <p style="margin:0;">Luxury Ball capture (2&times; gain) + Soothe Bell (1.5&times;, stacks) + level up via grinding +
+              walk 256 steps repeatedly. Crobat in &lt;30 minutes of optimized play.</p>
+            </div>
+          </article>
+
+          <article class="card card--alt">
+            <div class="poke-row">
+              <img class="poke-sprite poke-sprite--lg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/25.png" alt="Pikachu" loading="lazy">
+              <div>
+                <div class="card__subtitle">Bred only</div>
+                <h3 class="card__title">Pichu &rarr; Pikachu</h3>
+                <span class="type-chip" data-type="electric">electric</span>
+              </div>
+            </div>
+            <p class="card__body mt-4">
+              Pichu only obtainable by breeding Pikachu (hold <strong>Light Ball</strong> for the egg-move boost). Pikachu
+              itself is rare in Safari Zone. Don&rsquo;t evolve to Raichu yet &mdash; remember Pikachu learns Thunder at Lv 50
+              and Raichu does NOT (see Section II).
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="poke-row">
+              <img class="poke-sprite poke-sprite--lg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/183.png" alt="Marill" loading="lazy">
+              <div>
+                <div class="card__subtitle">Bred only</div>
+                <h3 class="card__title">Azurill &rarr; Marill</h3>
+                <span class="type-chip" data-type="normal">normal</span>
+              </div>
+            </div>
+            <p class="card__body mt-4">
+              Misleadingly NOT a low-friendship evolution despite Azurill&rsquo;s nervous flavor text. Hatch from a Marill or
+              Azumarill egg. Friendship &ge; 220, then level up. Note Azurill is <strong>Normal</strong> &mdash; it gains the
+              Water type only after evolving into Marill.
+            </p>
+          </article>
+
+          <article class="card card--alt offset-shadow--ocean">
+            <div class="poke-row">
+              <img class="poke-sprite poke-sprite--lg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/39.png" alt="Jigglypuff" loading="lazy">
+              <div>
+                <div class="card__subtitle">Bred only</div>
+                <h3 class="card__title">Igglybuff &rarr; Jigglypuff</h3>
+                <span class="type-chip" data-type="normal">normal</span>
+              </div>
+            </div>
+            <p class="card__body mt-4">
+              Not native to Hoenn wild; hatch from a Jigglypuff/Wigglytuff egg if traded in. Cleffa &rarr; Clefairy follows
+              the same pattern; both are baby-form-only obtained by breeding their later forms.
+            </p>
+          </article>
+        </div>
+
+        <div class="callout callout--sun" style="margin-top: var(--s-6);">
+          <span class="callout__label">The fast-friendship protocol</span>
+          <p style="margin:0;">
+            <strong>Luxury Ball</strong> (2&times; gains) + <strong>Soothe Bell</strong> (1.5&times;, stacks) + walk constantly
+            (256 steps = +3 with both bonuses) + grind levels (+9 to +18 per level depending on threshold) + use stat-lowering
+            berries on the Pokemon (+10 each). Vitamins help too but expensive at 9,800 each.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 07. STONE LOCATIONS ============================== -->
+    <section class="section" id="stones">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ember">Section VII</span>
+          <h2 class="h1 mt-3">Stone<br><em style="color:var(--ember); font-style:italic; font-weight:400;">locations</em></h2>
+          <p class="lede mt-4" style="max-width: 60ch;">
+            Seven evolution stones in Emerald, each with at least one fixed location and (for Fire/Water/Thunder/Leaf) a
+            3,000 backup at Lilycove Dept Store. Sun and Moon Stones are limited &mdash; spend them carefully.
+          </p>
+        </div>
+
+        <div class="grid grid--auto stagger">
+          <article class="tile">
+            <div>
+              <div class="tile__num">Stone 01</div>
+              <h3 class="tile__title">Fire Stone</h3>
+            </div>
+            <p class="tile__desc">Fiery Path (Rock Smash hidden), Mt. Pyre summit area, Lilycove Dept Store (3000).</p>
+            <span class="tile__arrow">For Vulpix, Eevee&rarr;Flareon, Growlithe</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">Stone 02</div>
+              <h3 class="tile__title">Water Stone</h3>
+            </div>
+            <p class="tile__desc">Route 134 (Dive), Abandoned Ship (with Dive), Lilycove Dept Store (3000).</p>
+            <span class="tile__arrow">For Eevee&rarr;Vaporeon, Lombre, Staryu</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">Stone 03</div>
+              <h3 class="tile__title">Thunder Stone</h3>
+            </div>
+            <p class="tile__desc">New Mauville (post-Wattson generator quest), Lilycove Dept Store (3000).</p>
+            <span class="tile__arrow">For Eevee&rarr;Jolteon, Pikachu (delay!)</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">Stone 04</div>
+              <h3 class="tile__title">Leaf Stone</h3>
+            </div>
+            <p class="tile__desc">Route 119 (hidden, Itemfinder), Pacifidlog gift NPC after Mystery Event, Lilycove (3000).</p>
+            <span class="tile__arrow">For Gloom&rarr;Vileplume, Nuzleaf, Weepinbell</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">Stone 05</div>
+              <h3 class="tile__title">Sun Stone</h3>
+            </div>
+            <p class="tile__desc">Mossdeep Space Center NPC (gift after talking to scientists), Mt. Pyre exterior (hidden), Pickup Linoone occasionally.</p>
+            <span class="tile__arrow">For Sunkern, Gloom&rarr;Bellossom</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">Stone 06</div>
+              <h3 class="tile__title">Moon Stone</h3>
+            </div>
+            <p class="tile__desc">Meteor Falls (hidden item), Pickup Linoone (rare). <strong>NOT sold</strong> in Lilycove &mdash; more limited supply.</p>
+            <span class="tile__arrow">For Skitty&rarr;Delcatty, Clefairy, Jigglypuff</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">Stone 07</div>
+              <h3 class="tile__title">Everstone</h3>
+            </div>
+            <p class="tile__desc">Granite Cave (gift NPC), Route 114 (gift / verify), Pickup Linoone occasionally.</p>
+            <span class="tile__arrow">Prevents evolution &middot; passes Nature on female parent</span>
+          </article>
+        </div>
+
+        <div class="callout callout--emerald" style="margin-top: var(--s-6);">
+          <span class="callout__label">The Everstone trick</span>
+          <p style="margin:0;">
+            Held by a Pokemon, Everstone <strong>blocks evolution permanently</strong> until removed. More importantly: held
+            by the <strong>female</strong> parent at the Day Care, the offspring inherits her Nature 50% of the time. The
+            primary Gen 3 method for nature-locking your team.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 08. FEEBAS / MILOTIC ============================== -->
+    <section class="section section--alt" id="feebas">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ocean">Section VIII</span>
+          <h2 class="h1 mt-3">Feebas to<br><em style="color:var(--ocean); font-style:italic; font-weight:400;">Milotic</em></h2>
+          <p class="lede mt-4" style="max-width: 60ch;">
+            The most baroque evolution path in Hoenn. Feebas spawns on six random tiles out of ~600 on Route 119. Once
+            found, you feed it Dry-flavor Pokeblocks until its hidden contest Beauty stat caps. Then one level-up.
+          </p>
+        </div>
+
+        <div style="display:flex; align-items:center; justify-content:center; gap:var(--s-5); flex-wrap:wrap; margin-bottom: var(--s-6);">
+          <div style="text-align:center;">
+            <img class="poke-sprite poke-sprite--xl" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/349.png" alt="Feebas" loading="lazy">
+            <div class="mono mt-2" style="font-size:var(--fs-sm);">No. 349 &middot; Feebas</div>
+          </div>
+          <div style="font-size:2.5rem; color: var(--emerald);">&rarr;</div>
+          <div style="text-align:center;">
+            <img class="poke-sprite poke-sprite--xl" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/350.png" alt="Milotic" loading="lazy">
+            <div class="mono mt-2" style="font-size:var(--fs-sm);">No. 350 &middot; Milotic</div>
+          </div>
+        </div>
+
+        <div class="grid grid--3 stagger">
+          <article class="card">
+            <div class="card__subtitle">Step 01</div>
+            <h3 class="card__title mt-3">Find Feebas</h3>
+            <p class="card__body">
+              Spawns on 6 random tiles out of ~600 on Route 119. Tile selection is tied to your <strong>Trainer ID</strong>
+              &mdash; static for one save file. Use the Super Rod and fish tile-by-tile until you hook one. Save the
+              location like a treasure map.
+            </p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs); color:var(--emerald-deep);">RATE &mdash; 50% on Super Rod once you&rsquo;re on a Feebas tile.</p>
+          </article>
+
+          <article class="card card--alt offset-shadow">
+            <div class="card__subtitle">Step 02</div>
+            <h3 class="card__title mt-3">Max Beauty</h3>
+            <p class="card__body">
+              Feed Dry-flavored Pokeblocks until Beauty stat caps. Best berries: <strong>Pamtre</strong> (highest single-flavor
+              Dry yield), Spelon, Nomel, Rabuta. Use a Berry Blender with 3 NPCs (PokeNav match call) for Lv 23+ blocks.
+            </p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs); color:var(--emerald-deep);">QUALITY &mdash; Aim for Lv 23+ blocks. NPC parents in Slateport/Lilycove offer free quick blends.</p>
+          </article>
+
+          <article class="card offset-shadow--ocean">
+            <div class="card__subtitle">Step 03</div>
+            <h3 class="card__title mt-3">Level once</h3>
+            <p class="card__body">
+              Once Beauty is maxed, Feebas evolves into Milotic on its <strong>next level-up</strong>. Even one Rare Candy
+              triggers it. Milotic with Recover + Marvel Scale + Ice Beam is a Frontier-grade wall.
+            </p>
+            <p class="mono mt-3" style="font-size:var(--fs-xs); color:var(--emerald-deep);">RESULT &mdash; Marvel Scale: +50% Def while statused. Self-Toxic for permanent boost.</p>
+          </article>
+        </div>
+
+        <div class="callout callout--ocean" style="margin-top: var(--s-6);">
+          <span class="callout__label">Why this is the only path</span>
+          <p style="margin:0;">
+            Milotic in vanilla Emerald is reachable <strong>only through Feebas + max Beauty</strong>. There is no wild
+            Milotic, no trade Milotic, no event Milotic in this cartridge. Wallace&rsquo;s ace at the 8th gym uses one,
+            but he won&rsquo;t hand his over. This is the path.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 09. RARE CANDY VS NATURAL ============================== -->
+    <section class="section" id="rare-candy">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker">Section IX</span>
+          <h2 class="h1 mt-3">Rare Candy vs<br><em style="color:var(--emerald); font-style:italic; font-weight:400;">natural training</em></h2>
+          <p class="lede mt-4" style="max-width: 60ch;">
+            Rare Candy hands you a level for free but yields <strong>zero EVs</strong>. The Pokemon&rsquo;s stats trail
+            equivalent natural-leveled team members until EVs catch up. Knowing when to candy is the difference between
+            a competitive Pokemon and a deficit Pokemon.
+          </p>
+        </div>
+
+        <div class="split">
+          <div>
+            <p class="dropcap" style="font-size: 1.1rem; line-height: 1.6;">
+              The cartridge offers two parallel ways to gain levels: Rare Candy (instant, no battle) and the EV-bearing
+              kind (battle-derived). They look identical on the level-up screen, but a Rare-Candied Lv 50 Salamence loses
+              by ~12% damage on every hit to an EV-trained Lv 50 Salamence with the same Nature and IVs. EVs aren&rsquo;t
+              optional &mdash; they&rsquo;re half the stat curve.
+            </p>
+            <p class="mt-4">
+              The rule that almost always works: <strong>battle and EV-train first, THEN Rare Candy to hit your target
+              level.</strong> Vitamins fast-forward the first 100 EVs per stat. Reset berries fix mistakes.
+            </p>
+          </div>
+
+          <div class="stack-lg">
+            <div class="callout callout--emerald">
+              <span class="callout__label">What candy DOES</span>
+              <p style="margin:0;">Adds exactly enough EXP to ding the next level. Ignores EXP-table tier. Cannot be used at
+              Lv 100. Triggers normal evolution checks (level + friendship/Beauty conditions).</p>
+            </div>
+            <div class="callout callout--ember">
+              <span class="callout__label">What candy DOESN'T</span>
+              <p style="margin:0;">Does NOT grant EVs. Does NOT increase friendship. Does NOT trigger Pokerus or Macho Brace effects (no battle = no EVs).</p>
+            </div>
+            <div class="callout callout--ocean">
+              <span class="callout__label">The 252 / 510 cap</span>
+              <p style="margin:0;">Each Pokemon gets 510 total EVs and 252 max per stat (any 253-255 are wasted). 252 EVs in
+              a stat = +63 to that stat at Lv 100 (halved at Lv 50).</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid--2 stagger" style="margin-top: var(--s-7);">
+          <article class="card offset-shadow--ember">
+            <div class="card__subtitle">When TO use Rare Candy</div>
+            <h3 class="card__title mt-3">Five legitimate cases</h3>
+            <ul class="bullet-list bullet-list--emerald" style="margin-top: var(--s-4);">
+              <li>After EV-training; pushing Lv 49 &rarr; 50 for the Battle Frontier auto-cap</li>
+              <li>On a Pokemon you&rsquo;ve already maxed 510 EVs &mdash; pure level gain</li>
+              <li>To break a &ldquo;won&rsquo;t obey&rdquo; wall after a new badge (1&ndash;2 candies)</li>
+              <li>On rentals/gift Pokemon you don&rsquo;t care about EV-optimizing</li>
+              <li>Last few levels (Lv 95&ndash;100) when EV gain plateaus at 510 anyway</li>
+            </ul>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">When NOT to use Rare Candy</div>
+            <h3 class="card__title mt-3">Four traps</h3>
+            <ul class="bullet-list bullet-list--ocean" style="margin-top: var(--s-4);">
+              <li>While EV training &mdash; every candied level is a level you&rsquo;re not gaining EVs</li>
+              <li>On a Pokemon you plan to Frontier-rent at Lv 100 (Frontier auto-levels to 50)</li>
+              <li>Before knowing your Nature &mdash; low-level stats reveal Nature; candy past it and you&rsquo;ve burned info</li>
+              <li>On Pokemon you intend to breed (parents pass IVs regardless of level)</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="callout callout--sun" style="margin-top: var(--s-6);">
+          <span class="callout__label">Natural vs candied: the math</span>
+          <p style="margin:0;">
+            Two identical Adamant Salamence at Lv 50, one fully EV-trained (252 Atk / 252 Spe / 4 HP) and the other
+            Rare-Candied with no EVs. <strong>EV-trained Atk: +15 stat at Lv 50.</strong> <strong>Candied: +0.</strong>
+            Real fight result: ~12% higher damage on every hit, plus 7 more Speed points &mdash; outspeeding the candied
+            mirror by exactly enough to flip the priority order.
+          </p>
+        </div>
+
+        <!-- RARE CANDY LOCATIONS -->
+        <div style="margin-top: var(--s-7); margin-bottom: var(--s-5);">
+          <span class="kicker kicker--ember">Inventory</span>
+          <h3 class="h2 mt-3">Where Hoenn hides its <em style="color:var(--ember); font-style:italic; font-weight:400;">candy</em></h3>
+        </div>
+
+        <div class="grid grid--2 stagger">
+          <article class="card card--ink">
+            <div class="card__subtitle" style="color: var(--mist);">Fixed locations</div>
+            <h3 class="card__title mt-3" style="color: var(--paper);">Seven static drops</h3>
+            <ul class="bullet-list bullet-list--emerald" style="margin-top: var(--s-4); color: var(--mist);">
+              <li><strong style="color:var(--paper);">Route 111</strong> &mdash; Itemfinder hidden in the desert</li>
+              <li><strong style="color:var(--paper);">Granite Cave 2F</strong> &mdash; visible item, back wall area</li>
+              <li><strong style="color:var(--paper);">Meteor Falls 1F</strong> &mdash; visible near the entrance pool</li>
+              <li><strong style="color:var(--paper);">Mt. Pyre exterior 5F</strong> &mdash; visible on the upper outdoor floor</li>
+              <li><strong style="color:var(--paper);">Mirage Tower 2F</strong> &mdash; drop through cracked floor (Mach Bike)</li>
+              <li><strong style="color:var(--paper);">Magma/Aqua Hideout</strong> &mdash; one each, post-underwater base storyline</li>
+              <li><strong style="color:var(--paper);">Victory Road</strong> &mdash; hidden, Itemfinder</li>
+            </ul>
+          </article>
+
+          <article class="card card--ink">
+            <div class="card__subtitle" style="color: var(--mist);">Reproducible</div>
+            <h3 class="card__title mt-3" style="color: var(--paper);">Three farms</h3>
+            <ul class="bullet-list bullet-list--emerald" style="margin-top: var(--s-4); color: var(--mist);">
+              <li><strong style="color:var(--paper);">Lilycove Lottery</strong> &mdash; 2nd-tier prize (2-3 digit match). 1st prize is Master Ball</li>
+              <li><strong style="color:var(--paper);">Pickup ability</strong> &mdash; Linoone Lv 91&ndash;100 has ~1% Rare Candy chance per battle</li>
+              <li><strong style="color:var(--paper);">Battle Frontier BP shop</strong> &mdash; bought for ~48 BP (verify_in_game)</li>
+            </ul>
+            <div class="callout callout--sun mt-4">
+              <span class="callout__label">Linoone strategy</span>
+              <p style="margin:0;">Train one Linoone with Pickup to Lv 100. Sweep Trainer Hill or Frontier rentals. Free
+              Rare Candies, Nuggets, and PP-Ups stack up.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- VITAMINS / RESET BERRIES -->
+        <div class="grid grid--2 stagger" style="margin-top: var(--s-7);">
+          <article class="card">
+            <div class="card__subtitle">Vitamins</div>
+            <h3 class="card__title mt-3">+10 each, cap 100</h3>
+            <p class="card__body">HP Up, Protein, Iron, Calcium, Zinc, Carbos. +10 EVs per dose. Capped at 100 EVs per stat
+            from vitamins &mdash; the rest must come from battle. 9,800 each at Mauville/Slateport.</p>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">HP Up</span><span class="stat-row__value">+10 HP EV</span><span class="stat-row__num">9800</span></div>
+              <div class="stat-row"><span class="stat-row__label">Protein</span><span class="stat-row__value">+10 Atk EV</span><span class="stat-row__num">9800</span></div>
+              <div class="stat-row"><span class="stat-row__label">Iron</span><span class="stat-row__value">+10 Def EV</span><span class="stat-row__num">9800</span></div>
+              <div class="stat-row"><span class="stat-row__label">Calcium</span><span class="stat-row__value">+10 SpA EV</span><span class="stat-row__num">9800</span></div>
+              <div class="stat-row"><span class="stat-row__label">Zinc</span><span class="stat-row__value">+10 SpD EV</span><span class="stat-row__num">9800</span></div>
+              <div class="stat-row"><span class="stat-row__label">Carbos</span><span class="stat-row__value">+10 Spe EV</span><span class="stat-row__num">9800</span></div>
+            </dl>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">Reset berries</div>
+            <h3 class="card__title mt-3">&minus;10 each, also boost contest stat</h3>
+            <p class="card__body">Fix mistrains and double as contest-stat boosters &mdash; useful with the Feebas/Milotic project.</p>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Pomeg</span><span class="stat-row__value">&minus;10 HP &middot; +Cute</span><span class="stat-row__num">HP</span></div>
+              <div class="stat-row"><span class="stat-row__label">Kelpsy</span><span class="stat-row__value">&minus;10 Atk &middot; +Tough</span><span class="stat-row__num">ATK</span></div>
+              <div class="stat-row"><span class="stat-row__label">Qualot</span><span class="stat-row__value">&minus;10 Def &middot; +Cool</span><span class="stat-row__num">DEF</span></div>
+              <div class="stat-row"><span class="stat-row__label">Hondew</span><span class="stat-row__value">&minus;10 SpA &middot; +Smart</span><span class="stat-row__num">SPA</span></div>
+              <div class="stat-row"><span class="stat-row__label">Grepa</span><span class="stat-row__value">&minus;10 SpD &middot; +Beauty</span><span class="stat-row__num">SPD</span></div>
+              <div class="stat-row"><span class="stat-row__label">Tamato</span><span class="stat-row__value">&minus;10 Spe &middot; +Tough</span><span class="stat-row__num">SPE</span></div>
+            </dl>
+          </article>
+        </div>
+
+        <div class="callout" style="margin-top: var(--s-6);">
+          <span class="callout__label">TL;DR</span>
+          <p style="margin:0;">
+            Battle and EV-train first. THEN Rare Candy to hit your target level. Vitamins are the fast-forward button for
+            the first 100 EVs per stat. Reset berries fix mistakes. Save your Lilycove Lottery candies for a Pokemon you&rsquo;ve
+            already trained.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== CLOSER ============================== -->
+    <section class="section section--ink">
+      <div class="container container--narrow text-center">
+        <span class="kicker">Closing transmission</span>
+        <h2 class="h2 mt-4" style="color:var(--paper);">Hold <em style="color:var(--sun); font-style:italic; font-weight:400;">B</em>. Read the level-up.<br>Decide deliberately.</h2>
+        <p class="lede mt-5" style="color:var(--mist); margin-inline:auto;">
+          Every evolution is a one-way door. Most have movepool consequences you&rsquo;ll feel five badges later. The
+          B button is the only way back &mdash; use it.
+        </p>
+        <p class="mt-6">
+          <a href="breeding.html" class="badge badge--ember" style="text-decoration:none;">Breeding &amp; IVs &rarr;</a>
+          &nbsp;
+          <a href="mechanics.html" class="badge badge--emerald" style="text-decoration:none;">Mechanics &rarr;</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">Hoenn <span>Field</span> Guide</div>
+          <p class="mt-3">An editorial companion to Pokemon Emerald, published in print-as-pixels.
+          Pokemon names, characters, and locations are property of Nintendo, Game Freak, and The Pokemon Company.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Chapters</div>
+          <ul class="footer__links">
+            <li><a href="gyms.html">Gym Leaders</a></li>
+            <li><a href="elite-four.html">Elite Four</a></li>
+            <li><a href="legendaries.html">Legendaries</a></li>
+            <li><a href="tier-list.html">Tier List</a></li>
+            <li><a href="secrets.html">Secrets</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Reference</div>
+          <ul class="footer__links">
+            <li><a href="breeding.html">Breeding &amp; IVs</a></li>
+            <li><a href="early-game.html">Early Game</a></li>
+            <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+            <li><a href="post-game.html">Post Game</a></li>
+            <li><a href="https://github.com/" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span data-year>2025</span> &middot; Hoenn Field Guide &middot; Issue 001</span>
+        <span>Set in Fraunces, Instrument Sans &amp; JetBrains Mono</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&uarr; Top</button>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

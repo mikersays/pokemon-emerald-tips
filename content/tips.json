@@ -10,7 +10,9 @@
     {
       "name": "Treecko",
       "dex_number": 252,
-      "type": ["Grass"],
+      "type": [
+        "Grass"
+      ],
       "signature_evolution": "Treecko -> Grovyle (Lv 16) -> Sceptile (Lv 36)",
       "final_stat_focus": "Speed and Special Attack",
       "strengths": [
@@ -25,9 +27,24 @@
         "Frail defensive stats; gets one-shot by stray Ice or Flying moves"
       ],
       "recommended_movesets": {
-        "early_game": ["Pound", "Absorb", "Quick Attack", "Bullet Seed (TM09 from Cycling Road shop)"],
-        "mid_game": ["Leaf Blade", "Bullet Seed", "Quick Attack", "Rock Tomb (TM39)"],
-        "late_game": ["Leaf Blade", "Dragon Claw (TM02)", "Earthquake (TM26)", "Aerial Ace (TM40) or Crunch"]
+        "early_game": [
+          "Pound",
+          "Absorb",
+          "Quick Attack",
+          "Bullet Seed (TM09 from Cycling Road shop)"
+        ],
+        "mid_game": [
+          "Leaf Blade",
+          "Bullet Seed",
+          "Quick Attack",
+          "Rock Tomb (TM39)"
+        ],
+        "late_game": [
+          "Leaf Blade",
+          "Dragon Claw (TM02)",
+          "Earthquake (TM26)",
+          "Aerial Ace (TM40) or Crunch"
+        ]
       },
       "best_for_new_players_rating": "6/10 - rewarding but punishing. Sceptile demands smart switching.",
       "fun_trivia": "Sceptile was the first pure Grass-type starter final with a base 120 Speed stat, and its design was inspired by the Carolina anole lizard. In Gen 6 it gained a Mega Evolution that turned it Grass/Dragon."
@@ -35,7 +52,9 @@
     {
       "name": "Torchic",
       "dex_number": 255,
-      "type": ["Fire"],
+      "type": [
+        "Fire"
+      ],
       "signature_evolution": "Torchic -> Combusken (Lv 16, gains Fighting type) -> Blaziken (Lv 36)",
       "final_stat_focus": "Attack and Special Attack (mixed)",
       "strengths": [
@@ -50,9 +69,24 @@
         "4x weak to nothing but stacks Water/Ground/Flying/Psychic weaknesses"
       ],
       "recommended_movesets": {
-        "early_game": ["Scratch", "Ember", "Peck", "Focus Energy"],
-        "mid_game": ["Double Kick", "Ember/Flamethrower", "Quick Attack", "Bulk Up (TM08)"],
-        "late_game": ["Blaze Kick or Flamethrower", "Sky Uppercut", "Earthquake (TM26)", "Aerial Ace or Rock Slide"]
+        "early_game": [
+          "Scratch",
+          "Ember",
+          "Peck",
+          "Focus Energy"
+        ],
+        "mid_game": [
+          "Double Kick",
+          "Ember/Flamethrower",
+          "Quick Attack",
+          "Bulk Up (TM08)"
+        ],
+        "late_game": [
+          "Blaze Kick or Flamethrower",
+          "Sky Uppercut",
+          "Earthquake (TM26)",
+          "Aerial Ace or Rock Slide"
+        ]
       },
       "best_for_new_players_rating": "9/10 - the easiest run in Emerald thanks to dual STAB and great coverage.",
       "fun_trivia": "Blaziken was the first Fire/Fighting starter, kicking off a Gen-long tradition (Infernape, Emboar, Cinderace). It became the first Pokemon ever given a Mega Evolution in X/Y."
@@ -60,7 +94,9 @@
     {
       "name": "Mudkip",
       "dex_number": 258,
-      "type": ["Water"],
+      "type": [
+        "Water"
+      ],
       "signature_evolution": "Mudkip -> Marshtomp (Lv 16, gains Ground type) -> Swampert (Lv 36)",
       "final_stat_focus": "Attack, HP, and bulk",
       "strengths": [
@@ -75,9 +111,24 @@
         "Predictable; many trainers carry Razor Leaf or Giga Drain"
       ],
       "recommended_movesets": {
-        "early_game": ["Tackle", "Water Gun", "Mud Slap", "Rock Tomb (TM39)"],
-        "mid_game": ["Surf (HM03)", "Mud Shot/Mud Slap", "Rock Slide (TM37)", "Take Down"],
-        "late_game": ["Surf", "Earthquake (TM26)", "Ice Beam (TM13)", "Rock Slide or Brick Break"]
+        "early_game": [
+          "Tackle",
+          "Water Gun",
+          "Mud Slap",
+          "Rock Tomb (TM39)"
+        ],
+        "mid_game": [
+          "Surf (HM03)",
+          "Mud Shot/Mud Slap",
+          "Rock Slide (TM37)",
+          "Take Down"
+        ],
+        "late_game": [
+          "Surf",
+          "Earthquake (TM26)",
+          "Ice Beam (TM13)",
+          "Rock Slide or Brick Break"
+        ]
       },
       "best_for_new_players_rating": "10/10 - statistically the easiest Emerald playthrough.",
       "fun_trivia": "Swampert is one of only three Water/Ground Pokemon families in Gen 3 (with Whiscash and Quagsire). The 'So I herd u liek mudkipz' meme originated from a 4chan thread in 2007 and helped cement Mudkip in pop culture."
@@ -92,12 +143,27 @@
       "ace": "Nosepass",
       "ace_level": 15,
       "team": [
-        {"pokemon": "Geodude", "level": 12},
-        {"pokemon": "Geodude", "level": 12},
-        {"pokemon": "Nosepass", "level": 15, "key_move": "Rock Tomb + Harden"}
+        {
+          "pokemon": "Geodude",
+          "level": 12
+        },
+        {
+          "pokemon": "Geodude",
+          "level": 12
+        },
+        {
+          "pokemon": "Nosepass",
+          "level": 15,
+          "key_move": "Rock Tomb + Harden"
+        }
       ],
       "level_cap": 15,
-      "counters": ["Marshtomp (Water Gun)", "Lombre", "Breloom with Mach Punch", "Treecko (Absorb)"],
+      "counters": [
+        "Marshtomp (Water Gun)",
+        "Lombre",
+        "Breloom with Mach Punch",
+        "Treecko (Absorb)"
+      ],
       "strategy": "Nosepass has Harden and Rock Tomb. The Rock Tomb speed drop is what kills slow physical attackers, so prefer Special Attackers. A Magnemite caught at Cave of Origin route is too high level here, but a Lotad from Route 102 evolved to Lombre is excellent. Avoid using Torchic alone unless it has Double Kick (Lv 16, so train one extra level first).",
       "badge": "Stone Badge",
       "badge_perk": "Boosts Attack stat in battle and lets you use HM01 Cut outside of battle.",
@@ -112,12 +178,28 @@
       "ace": "Makuhita",
       "ace_level": 19,
       "team": [
-        {"pokemon": "Machop", "level": 16},
-        {"pokemon": "Meditite", "level": 16},
-        {"pokemon": "Makuhita", "level": 19, "key_move": "Bulk Up + Arm Thrust + Vital Throw"}
+        {
+          "pokemon": "Machop",
+          "level": 16
+        },
+        {
+          "pokemon": "Meditite",
+          "level": 16
+        },
+        {
+          "pokemon": "Makuhita",
+          "level": 19,
+          "key_move": "Bulk Up + Arm Thrust + Vital Throw"
+        }
       ],
       "level_cap": 19,
-      "counters": ["Taillow (Wing Attack)", "Beautifly (Gust)", "Kadabra (Confusion)", "Dustox", "Spoink"],
+      "counters": [
+        "Taillow (Wing Attack)",
+        "Beautifly (Gust)",
+        "Kadabra (Confusion)",
+        "Dustox",
+        "Spoink"
+      ],
       "strategy": "Makuhita uses Bulk Up to snowball. Don't let it set up - hit it on turn 1 with a strong Flying or Psychic attack. Taillow's Wing Attack and Quick Attack make this gym trivial. Beware Vital Throw, which never misses.",
       "badge": "Knuckle Badge",
       "badge_perk": "Pokemon up to Lv 30 obey, and you can use HM05 Flash outside battle.",
@@ -132,13 +214,32 @@
       "ace": "Manectric",
       "ace_level": 24,
       "team": [
-        {"pokemon": "Voltorb", "level": 20, "warning": "Self-Destruct on low HP"},
-        {"pokemon": "Electrike", "level": 20},
-        {"pokemon": "Magneton", "level": 22},
-        {"pokemon": "Manectric", "level": 24, "key_move": "Quick Attack + Shock Wave + Howl"}
+        {
+          "pokemon": "Voltorb",
+          "level": 20,
+          "warning": "Self-Destruct on low HP"
+        },
+        {
+          "pokemon": "Electrike",
+          "level": 20
+        },
+        {
+          "pokemon": "Magneton",
+          "level": 22
+        },
+        {
+          "pokemon": "Manectric",
+          "level": 24,
+          "key_move": "Quick Attack + Shock Wave + Howl"
+        }
       ],
       "level_cap": 24,
-      "counters": ["Marshtomp (Mud Shot/Mud Slap)", "Geodude/Graveler (Magnitude)", "Sandshrew", "Numel from Fiery Path"],
+      "counters": [
+        "Marshtomp (Mud Shot/Mud Slap)",
+        "Geodude/Graveler (Magnitude)",
+        "Sandshrew",
+        "Numel from Fiery Path"
+      ],
       "strategy": "A Ground-type fully neutralizes Wattson. Marshtomp is the cleanest sweep in the game. Watch out for Voltorb's Self-Destruct - swap to a Rock or Steel type for the Boom turn. Magneton is Steel/Electric, so its only weakness here is Ground/Fire/Fighting.",
       "badge": "Dynamo Badge",
       "badge_perk": "Boosts Defense in battle and enables HM06 Rock Smash outside battle.",
@@ -153,13 +254,32 @@
       "ace": "Torkoal",
       "ace_level": 29,
       "team": [
-        {"pokemon": "Numel", "level": 26},
-        {"pokemon": "Slugma", "level": 26},
-        {"pokemon": "Camerupt", "level": 28},
-        {"pokemon": "Torkoal", "level": 29, "key_move": "Overheat + Attract + Sunny Day"}
+        {
+          "pokemon": "Numel",
+          "level": 26
+        },
+        {
+          "pokemon": "Slugma",
+          "level": 26
+        },
+        {
+          "pokemon": "Camerupt",
+          "level": 28
+        },
+        {
+          "pokemon": "Torkoal",
+          "level": 29,
+          "key_move": "Overheat + Attract + Sunny Day"
+        }
       ],
       "level_cap": 29,
-      "counters": ["Marshtomp/Swampert", "Golduck", "Vibrava", "Aron/Lairon", "Wailmer with Surf"],
+      "counters": [
+        "Marshtomp/Swampert",
+        "Golduck",
+        "Vibrava",
+        "Aron/Lairon",
+        "Wailmer with Surf"
+      ],
       "strategy": "Torkoal opens with Overheat which lowers its own Special Attack two stages, so you can stall through it. Watch for Attract, which neuters male attackers - bring a female Pokemon or Yellow Flute to break it. Numel and Camerupt are Fire/Ground, so Water moves do quadruple damage. Slugma is pure Fire.",
       "badge": "Heat Badge",
       "badge_perk": "Lets you use HM04 Strength outside battle and boosts Speed in battle.",
@@ -174,13 +294,31 @@
       "ace": "Slaking",
       "ace_level": 31,
       "team": [
-        {"pokemon": "Spinda", "level": 27},
-        {"pokemon": "Vigoroth", "level": 27},
-        {"pokemon": "Linoone", "level": 29},
-        {"pokemon": "Slaking", "level": 31, "key_move": "Facade + Slack Off + Yawn (every other turn due to Truant)"}
+        {
+          "pokemon": "Spinda",
+          "level": 27
+        },
+        {
+          "pokemon": "Vigoroth",
+          "level": 27
+        },
+        {
+          "pokemon": "Linoone",
+          "level": 29
+        },
+        {
+          "pokemon": "Slaking",
+          "level": 31,
+          "key_move": "Facade + Slack Off + Yawn (every other turn due to Truant)"
+        }
       ],
       "level_cap": 31,
-      "counters": ["Hariyama (Vital Throw)", "Breloom (Sky Uppercut)", "Combusken/Blaziken", "Machoke from Granite Cave"],
+      "counters": [
+        "Hariyama (Vital Throw)",
+        "Breloom (Sky Uppercut)",
+        "Combusken/Blaziken",
+        "Machoke from Granite Cave"
+      ],
       "strategy": "Slaking has Truant - it loafs every other turn. Use the loafing turn to set up Bulk Up, heal, or switch in a wall. Hariyama with Vital Throw and Belly Drum is the textbook counter. Don't put a Ghost type in - he carries Faint Attack. Slaking's Yawn forces switches; bring an Awakening or use a Pokemon with Insomnia/Vital Spirit.",
       "badge": "Balance Badge",
       "badge_perk": "Lets all Pokemon up to Lv 70 obey and enables HM03 Surf outside battle.",
@@ -195,14 +333,35 @@
       "ace": "Altaria",
       "ace_level": 33,
       "team": [
-        {"pokemon": "Swablu", "level": 29},
-        {"pokemon": "Tropius", "level": 29},
-        {"pokemon": "Pelipper", "level": 30},
-        {"pokemon": "Skarmory", "level": 31},
-        {"pokemon": "Altaria", "level": 33, "key_move": "Dragon Dance + Aerial Ace + Earthquake"}
+        {
+          "pokemon": "Swablu",
+          "level": 29
+        },
+        {
+          "pokemon": "Tropius",
+          "level": 29
+        },
+        {
+          "pokemon": "Pelipper",
+          "level": 30
+        },
+        {
+          "pokemon": "Skarmory",
+          "level": 31
+        },
+        {
+          "pokemon": "Altaria",
+          "level": 33,
+          "key_move": "Dragon Dance + Aerial Ace + Earthquake"
+        }
       ],
       "level_cap": 33,
-      "counters": ["Magneton (Thunderbolt)", "Manectric (Thunderbolt)", "Aron/Lairon (Rock Tomb)", "Ice Beam users"],
+      "counters": [
+        "Magneton (Thunderbolt)",
+        "Manectric (Thunderbolt)",
+        "Aron/Lairon (Rock Tomb)",
+        "Ice Beam users"
+      ],
       "strategy": "Altaria is Dragon/Flying, so Ice Beam is a one-shot. Skarmory is Steel/Flying - hit it with Fire or Electric, NOT Rock (it resists). Pelipper is doubly weak to Electric. The whole gym is Electric food - Manectric or Magneton solo it. Watch for Altaria's Dragon Dance.",
       "badge": "Feather Badge",
       "badge_perk": "Pokemon up to Lv 80 obey, and you can use HM02 Fly outside battle.",
@@ -217,14 +376,34 @@
       "ace": "Solrock & Lunatone (double battle)",
       "ace_level": 42,
       "team": [
-        {"pokemon": "Claydol", "level": 41},
-        {"pokemon": "Xatu", "level": 41},
-        {"pokemon": "Lunatone", "level": 42, "key_move": "Calm Mind + Psychic + Hypnosis"},
-        {"pokemon": "Solrock", "level": 42, "key_move": "Sunny Day + SolarBeam + Flamethrower"}
+        {
+          "pokemon": "Claydol",
+          "level": 41
+        },
+        {
+          "pokemon": "Xatu",
+          "level": 41
+        },
+        {
+          "pokemon": "Lunatone",
+          "level": 42,
+          "key_move": "Calm Mind + Psychic + Hypnosis"
+        },
+        {
+          "pokemon": "Solrock",
+          "level": 42,
+          "key_move": "Sunny Day + SolarBeam + Flamethrower"
+        }
       ],
       "level_cap": 42,
       "battle_format": "DOUBLE BATTLE - this is the only mandatory double-battle gym in the series",
-      "counters": ["Sharpedo (Crunch)", "Mightyena (Bite/Crunch)", "Absol", "Banette (Shadow Ball)", "Sableye (immune to Psychic)"],
+      "counters": [
+        "Sharpedo (Crunch)",
+        "Mightyena (Bite/Crunch)",
+        "Absol",
+        "Banette (Shadow Ball)",
+        "Sableye (immune to Psychic)"
+      ],
       "strategy": "Lead with two Dark or Ghost types. Sharpedo's Crunch is a one-shot on either ace. Earthquake hits both opponents - perfect partners are Flygon, Camerupt, or Swampert paired with a Flying ally to dodge it. Beware: Solrock has Sunny Day + SolarBeam combo, and Lunatone has Hypnosis. Bring Awakenings.",
       "badge": "Mind Badge",
       "badge_perk": "Pokemon up to Lv 90 obey, and you can use HM08 Dive outside battle.",
@@ -239,14 +418,36 @@
       "ace": "Milotic",
       "ace_level": 43,
       "team": [
-        {"pokemon": "Luvdisc", "level": 40},
-        {"pokemon": "Whiscash", "level": 41, "warning": "Whiscash is Water/Ground - Grass moves do 4x"},
-        {"pokemon": "Sealeo", "level": 41},
-        {"pokemon": "Seaking", "level": 42},
-        {"pokemon": "Milotic", "level": 43, "key_move": "Recover + Ice Beam + Surf + Toxic"}
+        {
+          "pokemon": "Luvdisc",
+          "level": 40
+        },
+        {
+          "pokemon": "Whiscash",
+          "level": 41,
+          "warning": "Whiscash is Water/Ground - Grass moves do 4x"
+        },
+        {
+          "pokemon": "Sealeo",
+          "level": 41
+        },
+        {
+          "pokemon": "Seaking",
+          "level": 42
+        },
+        {
+          "pokemon": "Milotic",
+          "level": 43,
+          "key_move": "Recover + Ice Beam + Surf + Toxic"
+        }
       ],
       "level_cap": 43,
-      "counters": ["Manectric/Magneton (Thunderbolt)", "Sceptile (Leaf Blade)", "Breloom (Giga Drain)", "Roselia"],
+      "counters": [
+        "Manectric/Magneton (Thunderbolt)",
+        "Sceptile (Leaf Blade)",
+        "Breloom (Giga Drain)",
+        "Roselia"
+      ],
       "strategy": "Note: in vanilla Emerald, Wallace is the gym leader and Juan is replaced. (In Ruby/Sapphire it was Wallace.) Milotic has Recover + Marvel Scale, so it's spongy. Status it with Toxic or burn, then chunk with Electric or Grass. Whiscash is doubly weak to Grass. Don't bring Mudkip line solo - Milotic outclasses it.",
       "badge": "Rain Badge",
       "badge_perk": "Pokemon of all levels obey, and you can use HM07 Waterfall outside battle.",
@@ -260,11 +461,56 @@
       "name": "Sidney",
       "type": "Dark",
       "team": [
-        {"pokemon": "Mightyena", "level": 46, "moves": ["Crunch", "Roar", "Swagger", "Take Down"]},
-        {"pokemon": "Shiftry", "level": 48, "moves": ["Fake Out", "Torment", "Swagger", "Extrasensory"]},
-        {"pokemon": "Cacturne", "level": 46, "moves": ["Needle Arm", "Cotton Spore", "Faint Attack", "Leech Seed"]},
-        {"pokemon": "Sharpedo", "level": 48, "moves": ["Crunch", "Surf", "Slash", "Swagger"]},
-        {"pokemon": "Absol", "level": 49, "moves": ["Razor Wind", "Slash", "Swords Dance", "Rock Slide"]}
+        {
+          "pokemon": "Mightyena",
+          "level": 46,
+          "moves": [
+            "Crunch",
+            "Roar",
+            "Swagger",
+            "Take Down"
+          ]
+        },
+        {
+          "pokemon": "Shiftry",
+          "level": 48,
+          "moves": [
+            "Fake Out",
+            "Torment",
+            "Swagger",
+            "Extrasensory"
+          ]
+        },
+        {
+          "pokemon": "Cacturne",
+          "level": 46,
+          "moves": [
+            "Needle Arm",
+            "Cotton Spore",
+            "Faint Attack",
+            "Leech Seed"
+          ]
+        },
+        {
+          "pokemon": "Sharpedo",
+          "level": 48,
+          "moves": [
+            "Crunch",
+            "Surf",
+            "Slash",
+            "Swagger"
+          ]
+        },
+        {
+          "pokemon": "Absol",
+          "level": 49,
+          "moves": [
+            "Razor Wind",
+            "Slash",
+            "Swords Dance",
+            "Rock Slide"
+          ]
+        }
       ],
       "weakness": "Fighting, Bug",
       "key_strategy": "Hariyama with Brick Break or Cross Chop, Blaziken with Sky Uppercut, or Heracross with Megahorn rolls this whole team. Watch for Swagger - it raises your Attack but confuses you. Bring a Persim Berry or use a Special Attacker. Shiftry's Fake Out forces a flinch turn 1, so don't lead with your sweeper at full HP commit."
@@ -274,11 +520,56 @@
       "name": "Phoebe",
       "type": "Ghost",
       "team": [
-        {"pokemon": "Dusclops", "level": 48, "moves": ["Shadow Punch", "Confuse Ray", "Curse", "Pressure ability"]},
-        {"pokemon": "Banette", "level": 49, "moves": ["Shadow Ball", "Will-O-Wisp", "Faint Attack", "Insomnia"]},
-        {"pokemon": "Sableye", "level": 50, "moves": ["Shadow Ball", "Faint Attack", "Confuse Ray", "Attract"]},
-        {"pokemon": "Banette", "level": 49, "moves": ["Shadow Ball", "Skill Swap", "Curse", "Thunderbolt"]},
-        {"pokemon": "Dusclops", "level": 51, "moves": ["Shadow Punch", "Earthquake", "Ice Beam", "Confuse Ray"]}
+        {
+          "pokemon": "Dusclops",
+          "level": 48,
+          "moves": [
+            "Shadow Punch",
+            "Confuse Ray",
+            "Curse",
+            "Pressure ability"
+          ]
+        },
+        {
+          "pokemon": "Banette",
+          "level": 49,
+          "moves": [
+            "Shadow Ball",
+            "Will-O-Wisp",
+            "Faint Attack",
+            "Insomnia"
+          ]
+        },
+        {
+          "pokemon": "Sableye",
+          "level": 50,
+          "moves": [
+            "Shadow Ball",
+            "Faint Attack",
+            "Confuse Ray",
+            "Attract"
+          ]
+        },
+        {
+          "pokemon": "Banette",
+          "level": 49,
+          "moves": [
+            "Shadow Ball",
+            "Skill Swap",
+            "Curse",
+            "Thunderbolt"
+          ]
+        },
+        {
+          "pokemon": "Dusclops",
+          "level": 51,
+          "moves": [
+            "Shadow Punch",
+            "Earthquake",
+            "Ice Beam",
+            "Confuse Ray"
+          ]
+        }
       ],
       "weakness": "Dark, Ghost",
       "key_strategy": "Dark moves are super effective AND Ghost types take neutral damage from Normal (they're immune to Normal but Crunch/Bite are Dark, which deals super effective). Sharpedo's Crunch, Houndoom's Crunch, or Absol's Bite/Crunch all dismantle her. Sableye is the trickiest - it has no weakness on its dual typing (Dark/Ghost). Use Earthquake or wear it down with Toxic. Avoid Psychic-types entirely - Phoebe's Ghosts have Crunch/Faint Attack."
@@ -288,11 +579,56 @@
       "name": "Glacia",
       "type": "Ice",
       "team": [
-        {"pokemon": "Sealeo", "level": 50, "moves": ["Body Slam", "Hail", "Ice Ball", "Encore"]},
-        {"pokemon": "Glalie", "level": 50, "moves": ["Ice Beam", "Crunch", "Light Screen", "Hail"]},
-        {"pokemon": "Sealeo", "level": 52, "moves": ["Body Slam", "Hail", "Ice Ball", "Attract"]},
-        {"pokemon": "Glalie", "level": 52, "moves": ["Ice Beam", "Crunch", "Shadow Ball", "Hail"]},
-        {"pokemon": "Walrein", "level": 53, "moves": ["Surf", "Ice Beam", "Body Slam", "Sheer Cold"]}
+        {
+          "pokemon": "Sealeo",
+          "level": 50,
+          "moves": [
+            "Body Slam",
+            "Hail",
+            "Ice Ball",
+            "Encore"
+          ]
+        },
+        {
+          "pokemon": "Glalie",
+          "level": 50,
+          "moves": [
+            "Ice Beam",
+            "Crunch",
+            "Light Screen",
+            "Hail"
+          ]
+        },
+        {
+          "pokemon": "Sealeo",
+          "level": 52,
+          "moves": [
+            "Body Slam",
+            "Hail",
+            "Ice Ball",
+            "Attract"
+          ]
+        },
+        {
+          "pokemon": "Glalie",
+          "level": 52,
+          "moves": [
+            "Ice Beam",
+            "Crunch",
+            "Shadow Ball",
+            "Hail"
+          ]
+        },
+        {
+          "pokemon": "Walrein",
+          "level": 53,
+          "moves": [
+            "Surf",
+            "Ice Beam",
+            "Body Slam",
+            "Sheer Cold"
+          ]
+        }
       ],
       "weakness": "Fire, Fighting, Rock, Steel",
       "key_strategy": "All her Pokemon are pure Ice except Walrein (Ice/Water). Blaziken with Blaze Kick or Flamethrower obliterates the gym. Hariyama with Brick Break is also fantastic. Watch out for Walrein's Sheer Cold - it's a one-hit KO move. Walrein is doubly weak to Electric due to Water typing. Manectric or Magneton can revenge."
@@ -302,11 +638,56 @@
       "name": "Drake",
       "type": "Dragon",
       "team": [
-        {"pokemon": "Shelgon", "level": 52, "moves": ["Dragon Claw", "Rock Tomb", "Protect", "Double-Edge"]},
-        {"pokemon": "Altaria", "level": 54, "moves": ["Dragon Dance", "Aerial Ace", "Dragon Breath", "Earthquake"]},
-        {"pokemon": "Flygon", "level": 53, "moves": ["Dragon Claw", "Earthquake", "Crunch", "Fly"]},
-        {"pokemon": "Flygon", "level": 53, "moves": ["Dragon Breath", "Sandstorm", "Fly", "Crunch"]},
-        {"pokemon": "Salamence", "level": 55, "moves": ["Dragon Claw", "Crunch", "Fly", "Flamethrower"]}
+        {
+          "pokemon": "Shelgon",
+          "level": 52,
+          "moves": [
+            "Dragon Claw",
+            "Rock Tomb",
+            "Protect",
+            "Double-Edge"
+          ]
+        },
+        {
+          "pokemon": "Altaria",
+          "level": 54,
+          "moves": [
+            "Dragon Dance",
+            "Aerial Ace",
+            "Dragon Breath",
+            "Earthquake"
+          ]
+        },
+        {
+          "pokemon": "Flygon",
+          "level": 53,
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Crunch",
+            "Fly"
+          ]
+        },
+        {
+          "pokemon": "Flygon",
+          "level": 53,
+          "moves": [
+            "Dragon Breath",
+            "Sandstorm",
+            "Fly",
+            "Crunch"
+          ]
+        },
+        {
+          "pokemon": "Salamence",
+          "level": 55,
+          "moves": [
+            "Dragon Claw",
+            "Crunch",
+            "Fly",
+            "Flamethrower"
+          ]
+        }
       ],
       "weakness": "Ice, Dragon",
       "key_strategy": "Ice Beam is your best friend. Walrein, Glalie, or Lapras (traded) work great. Salamence and Altaria are doubly weak to Ice (Dragon/Flying). Beware Earthquake on Flygon and Salamence - don't lead with Magneton. Kingdra is Dragon/Water and only weak to Dragon, so save it for last with a Dragon Claw user. Glacia's stolen Walrein from your prior fight should still have full Ice Beam PP if you slept through her with Soft-Boiled."
@@ -317,12 +698,66 @@
       "title": "Champion",
       "type": "Water (mixed)",
       "team": [
-        {"pokemon": "Wailord", "level": 57, "moves": ["Water Spout", "Rest", "Amnesia", "Double-Edge"]},
-        {"pokemon": "Tentacruel", "level": 55, "moves": ["Sludge Bomb", "Hydro Pump", "Toxic", "Barrier"]},
-        {"pokemon": "Ludicolo", "level": 56, "moves": ["Surf", "Giga Drain", "Leech Seed", "Toxic"]},
-        {"pokemon": "Whiscash", "level": 56, "moves": ["Earthquake", "Surf", "Amnesia", "Hyper Beam"]},
-        {"pokemon": "Gyarados", "level": 56, "moves": ["Hyper Beam", "Surf", "Earthquake", "Dragon Dance"]},
-        {"pokemon": "Milotic", "level": 58, "moves": ["Surf", "Ice Beam", "Recover", "Toxic"]}
+        {
+          "pokemon": "Wailord",
+          "level": 57,
+          "moves": [
+            "Water Spout",
+            "Rest",
+            "Amnesia",
+            "Double-Edge"
+          ]
+        },
+        {
+          "pokemon": "Tentacruel",
+          "level": 55,
+          "moves": [
+            "Sludge Bomb",
+            "Hydro Pump",
+            "Toxic",
+            "Barrier"
+          ]
+        },
+        {
+          "pokemon": "Ludicolo",
+          "level": 56,
+          "moves": [
+            "Surf",
+            "Giga Drain",
+            "Leech Seed",
+            "Toxic"
+          ]
+        },
+        {
+          "pokemon": "Whiscash",
+          "level": 56,
+          "moves": [
+            "Earthquake",
+            "Surf",
+            "Amnesia",
+            "Hyper Beam"
+          ]
+        },
+        {
+          "pokemon": "Gyarados",
+          "level": 56,
+          "moves": [
+            "Hyper Beam",
+            "Surf",
+            "Earthquake",
+            "Dragon Dance"
+          ]
+        },
+        {
+          "pokemon": "Milotic",
+          "level": 58,
+          "moves": [
+            "Surf",
+            "Ice Beam",
+            "Recover",
+            "Toxic"
+          ]
+        }
       ],
       "weakness": "Mostly Electric/Grass, but Ludicolo (Water/Grass) is only weak to Bug/Flying/Poison",
       "key_strategy": "Manectric or Raikou-tier Electric attackers shred most of his team. The catch is Ludicolo - bring Sceptile, Beautifly, or a Crobat to handle it. Whiscash is Water/Ground - 4x weak to Grass. Gyarados is 4x weak to Electric. Milotic with Recover + Marvel Scale is the wall - status it (paralyze with Thunder Wave) before chunking with Electric. Wallace is the only Champion in the franchise to specialize in Water."
@@ -332,7 +767,9 @@
     {
       "name": "Groudon",
       "dex_number": 383,
-      "type": ["Ground"],
+      "type": [
+        "Ground"
+      ],
       "level": 70,
       "location": "Terra Cave (roaming/anchor cave that appears in a random route after the Sootopolis storyline)",
       "access_requirements": [
@@ -346,7 +783,9 @@
     {
       "name": "Kyogre",
       "dex_number": 382,
-      "type": ["Water"],
+      "type": [
+        "Water"
+      ],
       "level": 70,
       "location": "Marine Cave (roaming/anchor cave on a random water route after Sootopolis)",
       "access_requirements": [
@@ -360,7 +799,10 @@
     {
       "name": "Rayquaza",
       "dex_number": 384,
-      "type": ["Dragon", "Flying"],
+      "type": [
+        "Dragon",
+        "Flying"
+      ],
       "level": 70,
       "location": "Sky Pillar (Route 131, accessible after the Sootopolis crisis)",
       "access_requirements": [
@@ -374,7 +816,10 @@
     {
       "name": "Latios",
       "dex_number": 381,
-      "type": ["Dragon", "Psychic"],
+      "type": [
+        "Dragon",
+        "Psychic"
+      ],
       "level": 40,
       "location": "Roams Hoenn after the Hoenn TV news event with Mom (post-7th badge)",
       "access_requirements": [
@@ -388,7 +833,10 @@
     {
       "name": "Latias",
       "dex_number": 380,
-      "type": ["Dragon", "Psychic"],
+      "type": [
+        "Dragon",
+        "Psychic"
+      ],
       "level": 40,
       "location": "Same as Latios - which one roams depends on your news choice and Eon Ticket events",
       "access_requirements": "Same as Latios",
@@ -398,7 +846,9 @@
     {
       "name": "Regirock",
       "dex_number": 377,
-      "type": ["Rock"],
+      "type": [
+        "Rock"
+      ],
       "level": 40,
       "location": "Desert Ruins (Route 111, behind Mirage Tower area)",
       "access_requirements": [
@@ -412,7 +862,9 @@
     {
       "name": "Regice",
       "dex_number": 378,
-      "type": ["Ice"],
+      "type": [
+        "Ice"
+      ],
       "level": 40,
       "location": "Island Cave (Route 105)",
       "access_requirements": [
@@ -426,7 +878,9 @@
     {
       "name": "Registeel",
       "dex_number": 379,
-      "type": ["Steel"],
+      "type": [
+        "Steel"
+      ],
       "level": 40,
       "location": "Ancient Tomb (Route 120)",
       "access_requirements": [
@@ -440,7 +894,9 @@
     {
       "name": "Mew (event only)",
       "dex_number": 151,
-      "type": ["Psychic"],
+      "type": [
+        "Psychic"
+      ],
       "level": 30,
       "location": "Faraway Island (event-only, requires the Old Sea Map item from a Nintendo distribution event in 2006)",
       "access_requirements": "Old Sea Map distribution item; not legitimately obtainable today without trade or hacking",
@@ -450,7 +906,9 @@
     {
       "name": "Deoxys (event only)",
       "dex_number": 386,
-      "type": ["Psychic"],
+      "type": [
+        "Psychic"
+      ],
       "level": 30,
       "location": "Birth Island (event-only, requires Aurora Ticket)",
       "access_requirements": "Aurora Ticket distribution event; involves a triangle puzzle on the island",
@@ -632,62 +1090,250 @@
   ],
   "pokemon_tier_list": {
     "S_tier": [
-      {"pokemon": "Swampert", "type": "Water/Ground", "justification": "Best starter, only one weakness (4x Grass), incredible bulk and movepool, solos most gyms."},
-      {"pokemon": "Salamence", "type": "Dragon/Flying", "justification": "Pseudo-legendary with 600 BST. Bagon caught in Meteor Falls (post-7th badge). Late but world-ending."},
-      {"pokemon": "Metagross", "type": "Steel/Psychic", "justification": "Pseudo-legendary; Beldum is a gift from Steven post-game. Insane bulk, Meteor Mash sweeps Frontier."},
-      {"pokemon": "Blaziken", "type": "Fire/Fighting", "justification": "Best dual-STAB starter. Sky Uppercut + Blaze Kick covers most of Hoenn."},
-      {"pokemon": "Manectric", "type": "Electric", "justification": "Lightning Rod ability, fast, learns Thunder/Thunderbolt. Solos Winona and Wallace."}
+      {
+        "pokemon": "Swampert",
+        "type": "Water/Ground",
+        "justification": "Best starter, only one weakness (4x Grass), incredible bulk and movepool, solos most gyms."
+      },
+      {
+        "pokemon": "Salamence",
+        "type": "Dragon/Flying",
+        "justification": "Pseudo-legendary with 600 BST. Bagon caught in Meteor Falls (post-7th badge). Late but world-ending."
+      },
+      {
+        "pokemon": "Metagross",
+        "type": "Steel/Psychic",
+        "justification": "Pseudo-legendary; Beldum is a gift from Steven post-game. Insane bulk, Meteor Mash sweeps Frontier."
+      },
+      {
+        "pokemon": "Blaziken",
+        "type": "Fire/Fighting",
+        "justification": "Best dual-STAB starter. Sky Uppercut + Blaze Kick covers most of Hoenn."
+      },
+      {
+        "pokemon": "Manectric",
+        "type": "Electric",
+        "justification": "Lightning Rod ability, fast, learns Thunder/Thunderbolt. Solos Winona and Wallace."
+      }
     ],
     "A_tier": [
-      {"pokemon": "Breloom", "type": "Grass/Fighting", "justification": "Mach Punch priority, Effect Spore (status on contact), Sky Uppercut. Beats Roxanne, Norman, Sidney solo."},
-      {"pokemon": "Sceptile", "type": "Grass", "justification": "120 base Speed, Leaf Blade is the best physical Grass move in the game."},
-      {"pokemon": "Flygon", "type": "Ground/Dragon", "justification": "Trapinch in the desert, evolves to Vibrava (Lv 35) and Flygon (Lv 45). Levitate immunity to Ground, great offensive typing."},
-      {"pokemon": "Aggron", "type": "Steel/Rock", "justification": "Sturdy/Rock Head ability, can spam Double-Edge with no recoil. Massive Defense."},
-      {"pokemon": "Gardevoir", "type": "Psychic", "justification": "Ralts on Route 102 is rare but evolves at Lv 20 (Kirlia) and Lv 30 (Gardevoir). Calm Mind + Psychic + Thunderbolt + Ice Punch is end-game tier."},
-      {"pokemon": "Hariyama", "type": "Fighting", "justification": "Massive HP, Thick Fat ability, Vital Throw + Brick Break. Hard counter to Sidney and Glacia."},
-      {"pokemon": "Swellow", "type": "Normal/Flying", "justification": "Taillow caught Route 104 day 1. Guts ability + Toxic Orb + Facade is a Frontier staple. Speedy revenge killer."},
-      {"pokemon": "Crobat", "type": "Poison/Flying", "justification": "Zubat -> Golbat -> Crobat (high friendship). Mean Look catches roaming Latios/Latias."},
-      {"pokemon": "Milotic", "type": "Water", "justification": "Marvel Scale ability + Recover + Ice Beam. Tedious to evolve (Feebas -> Beauty contest stat) but elite once obtained."}
+      {
+        "pokemon": "Breloom",
+        "type": "Grass/Fighting",
+        "justification": "Mach Punch priority, Effect Spore (status on contact), Sky Uppercut. Beats Roxanne, Norman, Sidney solo."
+      },
+      {
+        "pokemon": "Sceptile",
+        "type": "Grass",
+        "justification": "120 base Speed, Leaf Blade is the best physical Grass move in the game."
+      },
+      {
+        "pokemon": "Flygon",
+        "type": "Ground/Dragon",
+        "justification": "Trapinch in the desert, evolves to Vibrava (Lv 35) and Flygon (Lv 45). Levitate immunity to Ground, great offensive typing."
+      },
+      {
+        "pokemon": "Aggron",
+        "type": "Steel/Rock",
+        "justification": "Sturdy/Rock Head ability, can spam Double-Edge with no recoil. Massive Defense."
+      },
+      {
+        "pokemon": "Gardevoir",
+        "type": "Psychic",
+        "justification": "Ralts on Route 102 is rare but evolves at Lv 20 (Kirlia) and Lv 30 (Gardevoir). Calm Mind + Psychic + Thunderbolt + Ice Punch is end-game tier."
+      },
+      {
+        "pokemon": "Hariyama",
+        "type": "Fighting",
+        "justification": "Massive HP, Thick Fat ability, Vital Throw + Brick Break. Hard counter to Sidney and Glacia."
+      },
+      {
+        "pokemon": "Swellow",
+        "type": "Normal/Flying",
+        "justification": "Taillow caught Route 104 day 1. Guts ability + Toxic Orb + Facade is a Frontier staple. Speedy revenge killer."
+      },
+      {
+        "pokemon": "Crobat",
+        "type": "Poison/Flying",
+        "justification": "Zubat -> Golbat -> Crobat (high friendship). Mean Look catches roaming Latios/Latias."
+      },
+      {
+        "pokemon": "Milotic",
+        "type": "Water",
+        "justification": "Marvel Scale ability + Recover + Ice Beam. Tedious to evolve (Feebas -> Beauty contest stat) but elite once obtained."
+      }
     ],
     "B_tier": [
-      {"pokemon": "Walrein", "type": "Ice/Water", "justification": "Spheal in Shoal Cave evolves to Sealeo (Lv 32) and Walrein (Lv 44). Thick Fat Ice attacker that survives Fire moves."},
-      {"pokemon": "Camerupt", "type": "Fire/Ground", "justification": "Numel from Route 112. Magnitude + Flamethrower covers a lot, but 4x Water weak."},
-      {"pokemon": "Linoone", "type": "Normal", "justification": "Belly Drum + Extreme Speed + Pickup ability for free items. Best HM slave with Cut/Surf/Strength/Dig support."},
-      {"pokemon": "Absol", "type": "Dark", "justification": "Route 120 (rare). Super Luck + Slash for crit fishing, Swords Dance + Aerial Ace devastates Phoebe."},
-      {"pokemon": "Tentacruel", "type": "Water/Poison", "justification": "Liquid Ooze prevents drain heals against you. Sludge Bomb + Surf + Ice Beam coverage."},
-      {"pokemon": "Magneton", "type": "Electric/Steel", "justification": "Sturdy/Magnet Pull, traps Steels. Trades have it evolve to Magnezone in later gens but in Emerald it's Magneton-locked."}
+      {
+        "pokemon": "Walrein",
+        "type": "Ice/Water",
+        "justification": "Spheal in Shoal Cave evolves to Sealeo (Lv 32) and Walrein (Lv 44). Thick Fat Ice attacker that survives Fire moves."
+      },
+      {
+        "pokemon": "Camerupt",
+        "type": "Fire/Ground",
+        "justification": "Numel from Route 112. Magnitude + Flamethrower covers a lot, but 4x Water weak."
+      },
+      {
+        "pokemon": "Linoone",
+        "type": "Normal",
+        "justification": "Belly Drum + Extreme Speed + Pickup ability for free items. Best HM slave with Cut/Surf/Strength/Dig support."
+      },
+      {
+        "pokemon": "Absol",
+        "type": "Dark",
+        "justification": "Route 120 (rare). Super Luck + Slash for crit fishing, Swords Dance + Aerial Ace devastates Phoebe."
+      },
+      {
+        "pokemon": "Tentacruel",
+        "type": "Water/Poison",
+        "justification": "Liquid Ooze prevents drain heals against you. Sludge Bomb + Surf + Ice Beam coverage."
+      },
+      {
+        "pokemon": "Magneton",
+        "type": "Electric/Steel",
+        "justification": "Sturdy/Magnet Pull, traps Steels. Trades have it evolve to Magnezone in later gens but in Emerald it's Magneton-locked."
+      }
     ],
     "honorable_mentions": [
-      {"pokemon": "Ludicolo", "type": "Water/Grass", "justification": "Lotad on Route 102 (rare). Rain Dish + Swift Swim. Unique typing only weak to Bug/Flying/Poison."},
-      {"pokemon": "Slaking", "type": "Normal", "justification": "Insane stats but Truant ability halves uptime. Only viable in Frontier with Skill Swap support."},
-      {"pokemon": "Altaria", "type": "Dragon/Flying", "justification": "Swablu evolves at Lv 35. Bulky Dragon with Dragon Dance + Earthquake."}
+      {
+        "pokemon": "Ludicolo",
+        "type": "Water/Grass",
+        "justification": "Lotad on Route 102 (rare). Rain Dish + Swift Swim. Unique typing only weak to Bug/Flying/Poison."
+      },
+      {
+        "pokemon": "Slaking",
+        "type": "Normal",
+        "justification": "Insane stats but Truant ability halves uptime. Only viable in Frontier with Skill Swap support."
+      },
+      {
+        "pokemon": "Altaria",
+        "type": "Dragon/Flying",
+        "justification": "Swablu evolves at Lv 35. Bulky Dragon with Dragon Dance + Earthquake."
+      }
     ]
   },
   "tm_hm_locations": [
-    {"id": "TM03 Water Pulse", "location": "Wallace gives it after the 8th gym", "notes": "30% confusion chance. Great for Manectric or Surf-less Water types."},
-    {"id": "TM06 Toxic", "location": "Fiery Path (use Strength)", "notes": "Stall staple. Badly Poisons over time."},
-    {"id": "TM08 Bulk Up", "location": "Brawly gives it after the 2nd gym", "notes": "+1 Atk and +1 Def. Blaziken/Hariyama/Breloom love this."},
-    {"id": "TM13 Ice Beam", "location": "Mauville Game Corner (4000 Coins) or Abandoned Ship", "notes": "10% Freeze chance. The premier coverage move for Water types vs Dragons."},
-    {"id": "TM24 Thunderbolt", "location": "Mauville Game Corner (4000 Coins) or post-game New Mauville completion", "notes": "Best Electric STAB. 95 base, 100 acc, 10% Para chance."},
-    {"id": "TM26 Earthquake", "location": "Seafloor Cavern (mid-late game)", "notes": "100 BP STAB for Ground types. Universal coverage move - put it on everything."},
-    {"id": "TM27 Return", "location": "Pacifidlog Town", "notes": "Power scales with friendship; max friendship = 102 BP STAB-able Normal move."},
-    {"id": "TM29 Psychic", "location": "Victory Road or Lilycove Dept Store (3500)", "notes": "Best Psychic STAB; Gardevoir/Alakazam mainstay."},
-    {"id": "TM30 Shadow Ball", "location": "Mauville Game Corner (1500 Coins)", "notes": "Coverage for Psychic and Ghost matchups."},
-    {"id": "TM35 Flamethrower", "location": "Mauville Game Corner (4000 Coins) or Fiery Path", "notes": "Best Fire STAB. Burns 10% of the time."},
-    {"id": "TM38 Fire Blast", "location": "Lavaridge Town (gift) or Lilycove Dept Store", "notes": "120 BP, 85 acc. High-roll alternative to Flamethrower."},
-    {"id": "TM39 Rock Tomb", "location": "Roxanne gives it after the 1st gym", "notes": "Lowers target Speed. Great early-game move for slow attackers."},
-    {"id": "TM40 Aerial Ace", "location": "Winona gives it after the 6th gym", "notes": "Never misses. 60 BP. Standard Flying coverage for non-Flying types."},
-    {"id": "TM43 Secret Power", "location": "Slateport Market (gift from NPC after Norman fight)", "notes": "Required to make Secret Bases. 70 BP Normal move with terrain-based status."},
-    {"id": "TM45 Attract", "location": "Lilycove Dept Store and Slateport gift", "notes": "Stalls opposite-gender opponents. Frontier MVP."},
-    {"id": "TM50 Overheat", "location": "Flannery gives it after the 4th gym", "notes": "140 BP Fire move; lowers user SpA two stages. Hit-and-run."},
-    {"id": "HM01 Cut", "location": "Cutter's House in Rustboro (post-Devon Goods quest)", "notes": "Cuts trees in field. Mediocre move."},
-    {"id": "HM02 Fly", "location": "Route 119 (after defeating May/Brendan rival fight near the weather institute)", "notes": "Flying STAB and fast travel."},
-    {"id": "HM03 Surf", "location": "Wally's uncle in Petalburg City after beating Norman", "notes": "95 BP Water STAB; mandatory for over-water travel."},
-    {"id": "HM04 Strength", "location": "Rusturf Tunnel from the man you rescued earlier", "notes": "80 BP Normal move; pushes boulders."},
-    {"id": "HM05 Flash", "location": "Granite Cave - boy on the first floor", "notes": "Lights dark caves. Drops opponent accuracy."},
-    {"id": "HM06 Rock Smash", "location": "Mauville (NPC house near the gym)", "notes": "Smashes boulders; 40 BP Fighting move with 50% Defense drop."},
-    {"id": "HM07 Waterfall", "location": "Ever Grande City, Champion's island entrance", "notes": "Climb waterfalls. 80 BP Water STAB."},
-    {"id": "HM08 Dive", "location": "Steven gives it after Mossdeep Space Center sidequest", "notes": "Required to descend into Sealed Chamber and Sootopolis. 80 BP Water move."}
+    {
+      "id": "TM03 Water Pulse",
+      "location": "Wallace gives it after the 8th gym",
+      "notes": "30% confusion chance. Great for Manectric or Surf-less Water types."
+    },
+    {
+      "id": "TM06 Toxic",
+      "location": "Fiery Path (use Strength)",
+      "notes": "Stall staple. Badly Poisons over time."
+    },
+    {
+      "id": "TM08 Bulk Up",
+      "location": "Brawly gives it after the 2nd gym",
+      "notes": "+1 Atk and +1 Def. Blaziken/Hariyama/Breloom love this."
+    },
+    {
+      "id": "TM13 Ice Beam",
+      "location": "Mauville Game Corner (4000 Coins) or Abandoned Ship",
+      "notes": "10% Freeze chance. The premier coverage move for Water types vs Dragons."
+    },
+    {
+      "id": "TM24 Thunderbolt",
+      "location": "Mauville Game Corner (4000 Coins) or post-game New Mauville completion",
+      "notes": "Best Electric STAB. 95 base, 100 acc, 10% Para chance."
+    },
+    {
+      "id": "TM26 Earthquake",
+      "location": "Seafloor Cavern (mid-late game)",
+      "notes": "100 BP STAB for Ground types. Universal coverage move - put it on everything."
+    },
+    {
+      "id": "TM27 Return",
+      "location": "Pacifidlog Town",
+      "notes": "Power scales with friendship; max friendship = 102 BP STAB-able Normal move."
+    },
+    {
+      "id": "TM29 Psychic",
+      "location": "Victory Road or Lilycove Dept Store (3500)",
+      "notes": "Best Psychic STAB; Gardevoir/Alakazam mainstay."
+    },
+    {
+      "id": "TM30 Shadow Ball",
+      "location": "Mauville Game Corner (1500 Coins)",
+      "notes": "Coverage for Psychic and Ghost matchups."
+    },
+    {
+      "id": "TM35 Flamethrower",
+      "location": "Mauville Game Corner (4000 Coins) or Fiery Path",
+      "notes": "Best Fire STAB. Burns 10% of the time."
+    },
+    {
+      "id": "TM38 Fire Blast",
+      "location": "Lavaridge Town (gift) or Lilycove Dept Store",
+      "notes": "120 BP, 85 acc. High-roll alternative to Flamethrower."
+    },
+    {
+      "id": "TM39 Rock Tomb",
+      "location": "Roxanne gives it after the 1st gym",
+      "notes": "Lowers target Speed. Great early-game move for slow attackers."
+    },
+    {
+      "id": "TM40 Aerial Ace",
+      "location": "Winona gives it after the 6th gym",
+      "notes": "Never misses. 60 BP. Standard Flying coverage for non-Flying types."
+    },
+    {
+      "id": "TM43 Secret Power",
+      "location": "Slateport Market (gift from NPC after Norman fight)",
+      "notes": "Required to make Secret Bases. 70 BP Normal move with terrain-based status."
+    },
+    {
+      "id": "TM45 Attract",
+      "location": "Lilycove Dept Store and Slateport gift",
+      "notes": "Stalls opposite-gender opponents. Frontier MVP."
+    },
+    {
+      "id": "TM50 Overheat",
+      "location": "Flannery gives it after the 4th gym",
+      "notes": "140 BP Fire move; lowers user SpA two stages. Hit-and-run."
+    },
+    {
+      "id": "HM01 Cut",
+      "location": "Cutter's House in Rustboro (post-Devon Goods quest)",
+      "notes": "Cuts trees in field. Mediocre move."
+    },
+    {
+      "id": "HM02 Fly",
+      "location": "Route 119 (after defeating May/Brendan rival fight near the weather institute)",
+      "notes": "Flying STAB and fast travel."
+    },
+    {
+      "id": "HM03 Surf",
+      "location": "Wally's uncle in Petalburg City after beating Norman",
+      "notes": "95 BP Water STAB; mandatory for over-water travel."
+    },
+    {
+      "id": "HM04 Strength",
+      "location": "Rusturf Tunnel from the man you rescued earlier",
+      "notes": "80 BP Normal move; pushes boulders."
+    },
+    {
+      "id": "HM05 Flash",
+      "location": "Granite Cave - boy on the first floor",
+      "notes": "Lights dark caves. Drops opponent accuracy."
+    },
+    {
+      "id": "HM06 Rock Smash",
+      "location": "Mauville (NPC house near the gym)",
+      "notes": "Smashes boulders; 40 BP Fighting move with 50% Defense drop."
+    },
+    {
+      "id": "HM07 Waterfall",
+      "location": "Ever Grande City, Champion's island entrance",
+      "notes": "Climb waterfalls. 80 BP Water STAB."
+    },
+    {
+      "id": "HM08 Dive",
+      "location": "Steven gives it after Mossdeep Space Center sidequest",
+      "notes": "Required to descend into Sealed Chamber and Sootopolis. 80 BP Water move."
+    }
   ],
   "post_game": {
     "battle_frontier": {
@@ -768,6 +1414,2843 @@
       "Master all 5 Contest categories",
       "Beat Trainer Hill in record time",
       "Find Mirage Island"
+    ]
+  },
+  "bikes": {
+    "overview": "Two bikes exist in Emerald: the Mach Bike (raw speed, slope climbing) and the Acro Bike (tricks, white rails, hopping tiles). You can only carry one at a time, but Rydel will swap them at no cost as often as you want.",
+    "acquisition": {
+      "where": "Rydel's Cycles, central Mauville City",
+      "when": "Free as soon as you reach Mauville (after the 2nd badge from Brawly). Pick either bike on first visit.",
+      "swap_rules": "Talk to Rydel any time to exchange bikes. No item, no cost, no cooldown."
+    },
+    "mach_bike": {
+      "summary": "Pure speed. Doubles your movement and lets you climb dirt slopes that walking cannot.",
+      "abilities": [
+        "Climbs muddy/dirt slopes at full speed",
+        "Breaks cracked floors when ridden over them at full speed (fall through to the floor below)",
+        "Outruns the Pacifidlog tide currents on Route 132/133/134"
+      ],
+      "controls": "Hold a directional button to accelerate. Speed builds over a few tiles - you must commit to a straight line before slope climbs and crack-floor jumps.",
+      "best_for": "Story progression, dungeon climbs, escape from currents"
+    },
+    "acro_bike": {
+      "summary": "Trick bike. Slower than Mach but unlocks bunny hops, wheelies, and white-rail traversal.",
+      "abilities": [
+        "Bunny Hop: tap and hold B with no direction - hops in place. Used to cross Hopping Tiles (yellow circle pads) in Trick House and on the path to the Berry Master.",
+        "Wheelie Hop: hold B then tap a direction - hops one tile in that direction without sliding. Used to cross gap tiles.",
+        "Wheelie: hold B and move - rides on the back wheel. Required to cross white-bar rails (thin white horizontal lines on the field) and to cross cracked floors WITHOUT breaking them in Sky Pillar.",
+        "Side Hop: tap B + perpendicular direction while on a rail - jump on/off rails"
+      ],
+      "controls": "B button is your trick modifier. Single tap = hop, hold = wheelie, B + direction = directional hop.",
+      "best_for": "Trick House late puzzles, Sky Pillar (Rayquaza), Safari Zone NE/NW expansions, several Secret Base entrances, Berry Master path"
+    },
+    "where_each_bike_is_required": [
+      {
+        "location": "Mt. Chimney ash slope (Route 112 / Jagged Pass approach)",
+        "bike": "Mach Bike",
+        "action": "Climb the soft-ash slope from Fiery Path side up to Lavaridge approach. Walking is rejected."
+      },
+      {
+        "location": "Magma Hideout (Jagged Pass entrance)",
+        "bike": "Mach Bike",
+        "action": "Series of dirt slopes inside the lava-filled cave; cannot be navigated without Mach acceleration."
+      },
+      {
+        "location": "Mirage Tower (Route 111 desert)",
+        "bike": "Mach Bike",
+        "action": "Cracked floors inside the tower break under speed - intentional in this case, as you need to drop to lower floors to grab the Root/Claw Fossil."
+      },
+      {
+        "location": "Sky Pillar (Route 131 - Rayquaza)",
+        "bike": "Acro Bike",
+        "action": "The cracked floors here will break and drop you if you ride fast. Use Acro Wheelie to traverse them slowly without breaking. Mach Bike will trap you on lower floors."
+      },
+      {
+        "location": "Trick House Puzzle 6 (Hopping Tiles)",
+        "bike": "Acro Bike",
+        "action": "Bunny hop on yellow circular pads to advance through the puzzle."
+      },
+      {
+        "location": "Berry Master's House (Route 123 white-rail bridge)",
+        "bike": "Acro Bike",
+        "action": "Wheelie across the white rails to reach the Berry Master and his rare-berry-giving wife."
+      },
+      {
+        "location": "Safari Zone NE/NW expansions (post-8th badge)",
+        "bike": "Acro Bike",
+        "action": "Hopping Tiles gate entry to the new areas added after Hall of Fame entry."
+      },
+      {
+        "location": "Pacifidlog Town",
+        "bike": "Acro Bike (recommended)",
+        "action": "Several connecting log bridges between houses use white rails; Acro Bike makes traversal faster."
+      },
+      {
+        "location": "Secret Base spots requiring rails",
+        "bike": "Acro Bike",
+        "action": "Many tree-and-rail Secret Base entry tiles require wheelie traversal."
+      },
+      {
+        "location": "Currents on Routes 132-134 (toward Sky Pillar)",
+        "bike": "Mach Bike",
+        "action": "Can't outrun water currents on the bike, but on the bridge sections leading in/out you'll want Mach Bike speed."
+      }
+    ],
+    "field_tricks": {
+      "wheelie_howto": "Acro Bike only. Hold B (no direction) until your character pops to one wheel, then push a direction to roll. Stay on the rear wheel to traverse white rails and Sky Pillar's cracked floors safely.",
+      "bunny_hop_howto": "Acro Bike only. Tap-and-hold B with no direction; you'll bounce in place. Required for yellow Hopping Tiles.",
+      "directional_hop_howto": "Acro Bike only. Press B then immediately tap a direction - the hop covers one tile in that direction without inertia.",
+      "slope_slide": "Mach Bike on dirt slopes will climb. Walking down a slope works either way; walking UP a slope is impossible without the Mach Bike."
+    },
+    "quick_swap_tip": "Always swap to whichever bike you need before entering a long dungeon. Rydel's is centrally located in Mauville and free - no reason to suffer through Sky Pillar with a Mach Bike or Magma Hideout with an Acro.",
+    "exclusive_emerald_note": "Emerald is the only Gen 3 game where you can own both bikes (one at a time, free swaps) without needing to find Rydel's missing bike like in Ruby/Sapphire."
+  },
+  "evolution_mechanics": {
+    "overview": "Gen 3 Emerald supports level-up, stone, trade, friendship, beauty (contest stat), and conditional evolutions. Many evolutions can be intentionally delayed or cancelled, with real movepool consequences.",
+    "evolution_types": [
+      {
+        "type": "Level-up",
+        "description": "Hits a target level and evolves automatically at end of battle. Most common.",
+        "examples": [
+          "Treecko -> Grovyle Lv 16",
+          "Zubat -> Golbat Lv 22",
+          "Magikarp -> Gyarados Lv 20"
+        ]
+      },
+      {
+        "type": "Evolution Stone",
+        "description": "Use a stone item from the bag. Instant, no level requirement (above species minimum).",
+        "examples": [
+          "Vulpix + Fire Stone -> Ninetales",
+          "Gloom + Leaf Stone -> Vileplume",
+          "Eevee + Water Stone -> Vaporeon"
+        ]
+      },
+      {
+        "type": "Trade",
+        "description": "Trade the Pokemon over a link cable. Evolves on receipt by the new trainer. NOT possible single-cart - you need a partner Game Boy/cable.",
+        "examples": [
+          "Kadabra -> Alakazam",
+          "Machoke -> Machamp",
+          "Graveler -> Golem",
+          "Haunter -> Gengar"
+        ]
+      },
+      {
+        "type": "Friendship",
+        "description": "Level up while friendship value is >= 220 (out of 255). Soothe Bell speeds this up.",
+        "examples": [
+          "Golbat -> Crobat",
+          "Pichu -> Pikachu",
+          "Azurill -> Marill (low friendship route, despite name)",
+          "Igglybuff -> Jigglypuff"
+        ]
+      },
+      {
+        "type": "Beauty (Contest stat)",
+        "description": "Level up while contest Beauty stat is sufficiently high. Unique to Feebas in Emerald.",
+        "examples": [
+          "Feebas -> Milotic at max Beauty"
+        ]
+      },
+      {
+        "type": "Branched / personality value",
+        "description": "Evolution outcome is determined by the Pokemon's hidden Personality Value (PV), set at encounter/hatch and never changed.",
+        "examples": [
+          "Wurmple -> Silcoon (PV % 10 < 5) -> Beautifly",
+          "Wurmple -> Cascoon (PV % 10 >= 5) -> Dustox"
+        ]
+      },
+      {
+        "type": "Specific level + condition",
+        "description": "Levels up but only if certain extra conditions are met.",
+        "examples": [
+          "Nincada -> Ninjask at Lv 20 (and Shedinja appears in your party box if you have an empty slot and a spare Pokeball)"
+        ]
+      }
+    ],
+    "cancelling_evolution": {
+      "how": "When the evolution animation starts, press and hold the B button until the 'Huh?' message displays. The Pokemon stays in its current form.",
+      "permanent": "No - it just delays. The next time it levels up, the prompt fires again.",
+      "why_cancel_examples": [
+        "Hitmonchan and Hitmonlee can keep learning Tyrogue's pre-evo moves longer (not relevant in Emerald natively)",
+        "Slowpoke learning Slack Off at Lv 36 - Slowbro learns it later",
+        "Vibrava learns Dragonbreath at Lv 35 - Flygon evolves at Lv 45 and DOESN'T relearn it via level-up, so let Vibrava hit 35 first",
+        "Gloom learns Petal Dance and Sludge Bomb that Vileplume cannot learn naturally - delay the Leaf Stone if you want both",
+        "Eevee can never learn Bite or Take Down once evolved - keep it as Eevee until you have what you want",
+        "Kadabra learns Recover, Future Sight, Trick - Alakazam learns the same set, so trading early is fine"
+      ]
+    },
+    "evolution_delays_movepool": {
+      "principle": "Most evolved forms learn moves later - or never - compared to their pre-evolutions. Hold off on stones and trade evolutions until you've gotten the moves you want.",
+      "specific_emerald_examples": [
+        {
+          "line": "Gloom -> Vileplume",
+          "delay_reason": "Gloom learns Petal Dance (Lv 39) and Moonlight (Lv 49). Vileplume's level-up pool stops at Aromatherapy. Waiting on the Leaf Stone is correct."
+        },
+        {
+          "line": "Vibrava -> Flygon",
+          "delay_reason": "Vibrava learns Dragon Breath at Lv 35; Flygon does NOT learn this naturally (only via tutor in later games). Hit Lv 35 as Vibrava before evolving at Lv 45."
+        },
+        {
+          "line": "Eevee -> Vaporeon/Jolteon/Flareon",
+          "delay_reason": "Eevee learns Bite (Lv 16), Take Down (Lv 30), and Last Resort isn't in Gen 3. Eeveelutions get type-specific elemental attacks but lose the Normal moves. Decide your build before stoning."
+        },
+        {
+          "line": "Kirlia -> Gardevoir",
+          "delay_reason": "Both learn the same level-up set (Calm Mind, Future Sight, Hypnosis line). Evolve at Lv 30 freely."
+        },
+        {
+          "line": "Nuzleaf -> Shiftry",
+          "delay_reason": "Nuzleaf learns Extrasensory at Lv 39 by level-up; Shiftry doesn't level-up learn this. Don't use the Leaf Stone before Lv 39."
+        },
+        {
+          "line": "Pikachu -> Raichu",
+          "delay_reason": "Pikachu learns Thunder at Lv 50; Raichu does NOT learn Thunder by level-up. If you don't have TM25, keep Pikachu until Lv 50."
+        },
+        {
+          "line": "Magikarp -> Gyarados",
+          "delay_reason": "Magikarp's pool is famously useless (Splash, Tackle, Flail) - evolve immediately at Lv 20. The exception that proves the rule."
+        },
+        {
+          "line": "Dragonair -> Dragonite (not native, Hoenn import)",
+          "delay_reason": "Dragonair learns Outrage at Lv 51 vs Dragonite at Lv 61 - delay evolution for Outrage."
+        }
+      ]
+    },
+    "wurmple_branching": {
+      "myth": "Many players believe Wurmple's evolution is rolled when it evolves. False.",
+      "truth": "Wurmple's evolution path is determined by its Personality Value (PV), a 32-bit number set when the Wurmple is generated (encountered or hatched). Specifically: ((PV >> 16) % 10) - if 0-4, it becomes Silcoon -> Beautifly. If 5-9, Cascoon -> Dustox.",
+      "implication": "If you save before evolving and reset, you'll always get the same outcome - the Wurmple was 'fated' from capture. To get the other branch, catch a different Wurmple.",
+      "tip": "Hatch eggs from a Wurmple parent and check at Lv 7 evolution: deterministic but indistinguishable until the cocoon stage."
+    },
+    "eevee_in_emerald": {
+      "available_evolutions": [
+        "Vaporeon (Water Stone)",
+        "Jolteon (Thunder Stone)",
+        "Flareon (Fire Stone)"
+      ],
+      "not_in_emerald": [
+        "Espeon - friendship + day, only obtainable in Gen 2 (HeartGold/SoulSilver) or via XD: Gale of Darkness import",
+        "Umbreon - friendship + night, same restriction as Espeon",
+        "Glaceon - Gen 4+ only (Ice Rock)",
+        "Leafeon - Gen 4+ only (Moss Rock)",
+        "Sylveon - Gen 6+ only (Fairy-type move + Affection)"
+      ],
+      "where_to_get_eevee": "Eevee is NOT obtainable in vanilla Emerald wild. Trade from Pokemon FireRed/LeafGreen (Celadon Game Corner reward, 4900 coins) or Pokemon XD/Colosseum.",
+      "tip": "If you have an Eevee from FRLG, use a Luxury Ball + Soothe Bell to speed friendship for the future Espeon/Umbreon evolutions when transferred forward."
+    },
+    "trade_evolutions": {
+      "single_cart_problem": "Without a second GBA + Emerald/Ruby/Sapphire/FireRed/LeafGreen and a link cable, you cannot evolve trade Pokemon. They will sit in their pre-evolved form forever.",
+      "trade_evos_in_hoenn_dex": [
+        "Kadabra -> Alakazam (any trade)",
+        "Machoke -> Machamp (any trade)",
+        "Graveler -> Golem (any trade)",
+        "Haunter -> Gengar (any trade)",
+        "Onix -> Steelix (trade holding Metal Coat, only possible after FRLG/Colosseum import; not native to Emerald wild)",
+        "Scyther -> Scizor (trade holding Metal Coat, also not native)",
+        "Seadra -> Kingdra (trade holding Dragon Scale)",
+        "Poliwhirl -> Politoed (trade holding King's Rock)",
+        "Slowpoke -> Slowking (trade holding King's Rock)",
+        "Porygon -> Porygon2 (trade holding Up-Grade)",
+        "Clamperl -> Huntail (trade holding Deep Sea Tooth)",
+        "Clamperl -> Gorebyss (trade holding Deep Sea Scale)"
+      ],
+      "tip": "Use a wireless or link adapter even with a flash cart on a real GBA - the easiest single-player trade evolution path is two GBAs and a link cable, even if both carts are yours."
+    },
+    "friendship_evolutions_in_hoenn": [
+      {
+        "line": "Golbat -> Crobat",
+        "trigger": "Level up with friendship >= 220",
+        "tip": "Catch Zubat in Granite Cave / Mt. Pyre / Meteor Falls. Golbat at Lv 22. Soothe Bell + Luxury Ball cuts time roughly in half."
+      },
+      {
+        "line": "Pichu -> Pikachu",
+        "trigger": "Level up with friendship >= 220",
+        "tip": "Pichu only obtainable by breeding Pikachu (hold Light Ball for the egg-move boost). Pikachu itself is rare in Safari Zone."
+      },
+      {
+        "line": "Azurill -> Marill",
+        "trigger": "Level up with friendship >= 220",
+        "tip": "Misleadingly NOT a low-friendship evolution despite Azurill's nervous flavor text. Hatch from Marill or Azumarill egg."
+      },
+      {
+        "line": "Igglybuff -> Jigglypuff",
+        "trigger": "Level up with friendship >= 220",
+        "tip": "Not native to Hoenn wild; hatch from a Jigglypuff/Wigglytuff egg if traded in."
+      },
+      {
+        "line": "Cleffa -> Clefairy",
+        "trigger": "Level up with friendship >= 220",
+        "tip": "Same - not Hoenn-native; baby form bred from Clefairy/Clefable."
+      }
+    ],
+    "stone_locations_in_emerald": [
+      {
+        "stone": "Fire Stone",
+        "locations": [
+          "Fiery Path (use Rock Smash on hidden rock)",
+          "Mt. Pyre summit area",
+          "Lilycove Dept Store (3000)"
+        ]
+      },
+      {
+        "stone": "Water Stone",
+        "locations": [
+          "Route 134 (Dive)",
+          "Abandoned Ship (with Dive)",
+          "Lilycove Dept Store (3000)"
+        ]
+      },
+      {
+        "stone": "Thunder Stone",
+        "locations": [
+          "New Mauville (post-Wattson generator quest)",
+          "Lilycove Dept Store (3000)"
+        ]
+      },
+      {
+        "stone": "Leaf Stone",
+        "locations": [
+          "Route 119 (hidden, Itemfinder)",
+          "Pacifidlog Town gift NPC after Mystery Event",
+          "Lilycove Dept Store (3000)"
+        ]
+      },
+      {
+        "stone": "Sun Stone",
+        "locations": [
+          "Mossdeep Space Center NPC (gift after talking to scientists)",
+          "Mt. Pyre exterior (hidden)",
+          "Pickup Linoone occasionally"
+        ]
+      },
+      {
+        "stone": "Moon Stone",
+        "locations": [
+          "Meteor Falls (hidden item)",
+          "Pickup Linoone (rare)",
+          "NOT sold in Lilycove - more limited supply"
+        ]
+      },
+      {
+        "stone": "Everstone",
+        "locations": [
+          "Granite Cave (gift NPC)",
+          "Route 114 (gift from Lanette's house brother / verify_in_game)",
+          "Pickup Linoone occasionally"
+        ]
+      }
+    ],
+    "feebas_milotic_walkthrough": {
+      "step_1_find_feebas": "Feebas spawns on 6 random tiles out of 600 on Route 119. Tile selection is tied to your Trainer ID - it's static for one save file. Use the Super Rod and fish tile-by-tile until you hook one.",
+      "step_2_max_beauty": "Feed Dry-flavored Pokeblocks until Beauty stat caps. Best berries: Pamtre Berry (the highest single-flavor Dry yield). Use a Berry Blender with 3 NPCs (Pokenav match call) for higher tier blocks.",
+      "step_3_level_up": "Once Beauty is maxed, Feebas evolves into Milotic on its next level-up. Even one EXP candy/Rare Candy will trigger.",
+      "alternative_dry_berries": [
+        "Pamtre (best)",
+        "Spelon",
+        "Nomel",
+        "Rabuta"
+      ],
+      "tip": "Pokeblock quality (level) matters - aim for Lv 23+ blocks. The NPC parents in Slateport/Lilycove offer free quick blends if you talk to them."
+    },
+    "should_i_evolve_decision_framework": [
+      {
+        "factor": "Movepool",
+        "guidance": "If the pre-evolution learns a critical move at a higher level, delay. (See evolution_delays_movepool.)"
+      },
+      {
+        "factor": "Stat threshold",
+        "guidance": "Most evolutions front-load 30-50 BST gain. If you're stuck losing matchups, evolving usually fixes things faster than grinding."
+      },
+      {
+        "factor": "Type change",
+        "guidance": "Combusken -> Blaziken keeps Fire/Fighting. Marshtomp -> Swampert keeps Water/Ground. But Azurill -> Marill swaps to Water type. Nincada becomes Ninjask Bug/Flying. Wurmple branches by PV. Plan typing intentionally."
+      },
+      {
+        "factor": "Exp curve",
+        "guidance": "Some evolved forms have a slower EXP table. Sceptile and Blaziken use 'Slow' curve - evolving doesn't help here, but the BST jump usually outweighs it."
+      },
+      {
+        "factor": "Stone-locked outcome",
+        "guidance": "Stones consume the item. Save before applying - especially for Eevee (only one Eevee in Emerald in most runs)."
+      }
+    ]
+  },
+  "rare_candy_vs_natural": {
+    "overview": "Rare Candy hands you a level for free but yields ZERO EVs. The Pokemon's stats trail equivalent natural-leveled team members until EVs catch up. Knowing when to use Rare Candy is the difference between a competitive Pokemon and a deficit Pokemon.",
+    "what_rare_candy_does": "Adds exactly enough EXP to ding the next level. Ignores EXP-table tier. Cannot be used at Lv 100. Triggers normal evolution checks (level + friendship/Beauty conditions).",
+    "what_rare_candy_doesnt_do": "Does NOT grant EVs. Does NOT increase friendship. Does NOT trigger Pokerus or Macho Brace effects (no battle = no EVs).",
+    "the_252_510_cap": "Each Pokemon gets 510 total EVs and 252 max per stat (any 253-255 are wasted with no benefit). 252 EVs in a stat = +63 to that stat at Lv 100 (not Lv 50 - it's halved).",
+    "natural_vs_candied_example": {
+      "scenario": "Two identical Adamant Salamence at Lv 50, one fully EV-trained (252 Atk / 252 Spe / 4 HP) and the other Rare-Candied with no EVs.",
+      "stat_difference_atk": "EV-trained: 31 Atk EVs at Lv 50 = +15 stat. Candied: 0 EV = +0. Real fight result: ~12% higher damage on every hit.",
+      "stat_difference_spe": "Same logic: candied Salamence is 7 points slower at Lv 50, getting outsped by Jolly Ttar mirrors.",
+      "lesson": "Always EV train BEFORE Rare-Candying for level."
+    },
+    "when_to_use_rare_candy": [
+      "After fully EV-training and you need to push from Lv 49 to Lv 50 for the Battle Frontier auto-level cap (Frontier scales DOWN to 50 but does NOT scale UP, so Lv 50 is the sweet spot)",
+      "On a Pokemon you've capped 510 EVs already - the candy is pure level gain",
+      "To break a 'Pokemon won't obey' wall after a new badge - one or two candies to clear the obedience threshold and avoid retrained-from-trade headaches",
+      "On rentals/gift Pokemon you don't care about EV-optimizing (story-mode plays, casual runs)",
+      "Last few levels (Lv 95-100) when EV gain plateaus at 510 anyway - candies skip endgame grind"
+    ],
+    "when_NOT_to_use_rare_candy": [
+      "While EV training - every level gained from candy is a level you're not gaining EVs at",
+      "On a Pokemon you plan to Frontier-rent at Lv 100 (Frontier auto-levels to 50; level beyond that is wasted)",
+      "Before knowing your Nature - evolutions and stat curves at low levels reveal Nature; candy past it and you've burned info",
+      "On Pokemon you intend to breed - parents pass IVs and held-item quirks regardless of level; over-leveling parents is wasted candy"
+    ],
+    "rare_candy_locations_emerald": [
+      {
+        "location": "Route 111 (Itemfinder hidden)",
+        "notes": "Use the Item Finder in the desert; one candy is buried."
+      },
+      {
+        "location": "Granite Cave 2F",
+        "notes": "Visible item in the back wall area."
+      },
+      {
+        "location": "Meteor Falls 1F",
+        "notes": "Visible item near the entrance pool."
+      },
+      {
+        "location": "Mt. Pyre exterior 5F",
+        "notes": "Visible on the upper outdoor floor before the summit."
+      },
+      {
+        "location": "Mirage Tower 2F",
+        "notes": "Drop through cracked floor to reach it before fossil chamber."
+      },
+      {
+        "location": "Magma/Aqua Hideout (one each, version dependent on plot path)",
+        "notes": "After clearing the underwater base storyline."
+      },
+      {
+        "location": "Victory Road",
+        "notes": "Hidden item; use Itemfinder."
+      },
+      {
+        "location": "Lilycove Lottery (1st prize: Master Ball, 2nd: PP-Up, 3rd: Exp Share, 4th: PP-Up, 5th: Rare Candy)",
+        "notes": "Match 5 trainer-ID digits for top prize; 2 digits for the candy."
+      },
+      {
+        "location": "Pickup ability (Linoone/Zigzagoon)",
+        "notes": "Rare drop at high levels (Lv 91-100 has ~1% Rare Candy chance per battle ended)."
+      },
+      {
+        "location": "Battle Frontier BP shop",
+        "notes": "Candy can be bought for BP at the Frontier shop (price: 48 BP, verify_in_game)."
+      }
+    ],
+    "day_care_xp_glitch": {
+      "what": "Pokemon left at the Day Care gain 1 EXP per step you take. They do NOT gain EVs from steps. Effectively, Day Care steps are slow Rare Candy.",
+      "abc_corner_select_glitch": "An old technique with the Daycare's box-name/screen interactions claims to skip step counts. This is mostly a Gen 1/2 bug; in Gen 3 Emerald, the verified Day Care behavior is straight 1 EXP / step. Don't expect a duplication exploit.",
+      "tip": "Drop a low-level Pokemon at the Day Care, ride your Mach Bike in the Pacifidlog current loop or the Verdanturf-Mauville cable car loop overnight - tens of thousands of steps stack up. EVs are still zero, so plan accordingly.",
+      "verify_in_game": "Specific corner-and-select tricks vary by ROM revision; treat as anecdotal."
+    },
+    "lucky_egg_in_emerald": {
+      "drop_source": "Held by wild Chansey, 5% chance. Chansey appears in Route 113 ash grass, possibly Safari Zone (verify_in_game) - in Hoenn it is generally rare without trading.",
+      "how_to_use": "Held item; the holder gains 1.5x EXP per battle. Stack with EXP-Share (Gen 3 EXP Share splits the pool but the holder keeps Lucky Egg multiplier).",
+      "thief_strategy": "Bring a Pokemon with the move Thief (TM46) and a Pokemon NOT holding an item. Thief into Chansey - 5% gives a Lucky Egg. Repeat as needed; one is usually enough."
+    },
+    "vitamins": {
+      "all_six": [
+        "HP Up (+10 HP EV)",
+        "Protein (+10 Atk EV)",
+        "Iron (+10 Def EV)",
+        "Calcium (+10 SpA EV)",
+        "Zinc (+10 SpD EV)",
+        "Carbos (+10 Spe EV)"
+      ],
+      "cap": "Each vitamin caps that stat's EVs at 100. Past 100, vitamins fail with 'It won't have any effect!' message. Beyond 100 must come from battle EV yield.",
+      "cost": "9,800 each at Mauville City and Slateport City Pokemarts. Department Store rooftop sometimes runs sales.",
+      "math": "Going from 0 to 100 EVs in a stat: 10 vitamins x 9,800 = 98,000. Then 152 EVs more from battle to hit 252. Saves dozens of battles per stat.",
+      "stack_with_macho_brace_pokerus": "Vitamins ARE NOT multiplied by Macho Brace or Pokerus. Those only multiply battle EV yield."
+    },
+    "ev_reset_berries": {
+      "all_six": [
+        {
+          "berry": "Pomeg Berry",
+          "removes": "10 HP EVs",
+          "boosts": "Cute contest stat (+10)"
+        },
+        {
+          "berry": "Kelpsy Berry",
+          "removes": "10 Atk EVs",
+          "boosts": "Tough contest stat (+10)"
+        },
+        {
+          "berry": "Qualot Berry",
+          "removes": "10 Def EVs",
+          "boosts": "Cool contest stat (+10)"
+        },
+        {
+          "berry": "Hondew Berry",
+          "removes": "10 SpA EVs",
+          "boosts": "Smart contest stat (+10)"
+        },
+        {
+          "berry": "Grepa Berry",
+          "removes": "10 SpD EVs",
+          "boosts": "Beauty contest stat (+10)"
+        },
+        {
+          "berry": "Tamato Berry",
+          "removes": "10 Spe EVs",
+          "boosts": "Tough contest stat (+10)",
+          "verify_in_game": "Tamato boost stat varies by source"
+        }
+      ],
+      "tip": "Save reset berries for mistrained Pokemon. They also raise contest stats - dual purpose with Feebas/Milotic projects."
+    },
+    "tldr": "Battle and EV-train first. THEN Rare Candy to hit your target level. Vitamins are the fast-forward button for the first 100 EVs per stat. Reset berries fix mistakes."
+  },
+  "iv_ev_deep": {
+    "overview": "Deeper than breeding_iv_ev. Covers the math, the heritage rules, the Pokerus virus, the mechanical limits, and how to verify IVs in Gen 3 (where there's no IV-judge dialogue like later gens).",
+    "ivs_explained": {
+      "range": "0 to 31 per stat. Six stats: HP, Atk, Def, SpA, SpD, Spe.",
+      "set_when": "Generated at the moment of encounter (wild) or hatching (egg) or gift (NPC). NEVER changes after.",
+      "stat_impact_lv50": "Per IV point: +0.5 stat at Lv 50 (so 31 IV = +15 stat over 0 IV). HP differs - it's roughly +0.5 HP per IV at Lv 50.",
+      "stat_impact_lv100": "Per IV point: +1 stat at Lv 100. So 31 IV = +31 stat over 0 IV.",
+      "max_combination": "Perfect 31/31/31/31/31/31 is the goal. With Adamant nature on a physical attacker: -10% SpA hidden. With Modest on a special attacker: -10% Atk."
+    },
+    "hidden_power_calculation": {
+      "what_determines_type": "All six IVs' parities (even vs odd). Specifically: ((HP_odd + 2*Atk_odd + 4*Def_odd + 8*Spe_odd + 16*SpA_odd + 32*SpD_odd) * 15 / 63), floored. The result 0-15 maps to a type (Fighting=0, Flying=1, ... Dark=15).",
+      "what_determines_power": "Floor((sum of IV components) / 8 * 40 + 30). Where each stat contributes IF its IV mod 4 is >= 2. Power range: 30 to 70.",
+      "common_hp_examples": [
+        {
+          "ivs": "31/31/31/31/31/31 (all max)",
+          "hp_type": "Dark",
+          "hp_power": "70"
+        },
+        {
+          "ivs": "31/30/31/31/30/31 (-2 Atk, -2 SpD - common 'HP Ice' for Special attackers)",
+          "hp_type": "Ice",
+          "hp_power": "70"
+        },
+        {
+          "ivs": "31/31/30/31/31/31 (-2 Def)",
+          "hp_type": "Dragon",
+          "hp_power": "70"
+        },
+        {
+          "ivs": "30/31/30/31/31/30 (-2 HP, -2 Def, -2 Spe)",
+          "hp_type": "Fighting",
+          "hp_power": "70"
+        }
+      ],
+      "tip": "If you're breeding for HP Ice on a special sweeper (Manectric, Gardevoir): target 31/x/31/31/31/31 with Atk dropped 1 (HP Ice 70). Atk drop also helps because Foul Play's coming gens use it - irrelevant in Gen 3 but harmless."
+    },
+    "iv_breeding_heritage_gen3": {
+      "rule": "When an egg hatches, exactly 3 random IVs out of 6 are inherited from the parents. The other 3 are rolled randomly 0-31.",
+      "heritage_method": "Step 1: Roll which 3 stats inherit (random selection). Step 2: For each inherited stat, randomly pick which parent (mom or dad) supplied it. Step 3: That parent's IV in that stat is copied exactly to the egg.",
+      "destiny_knot_note": "Destiny Knot (boosts to 5 inherited IVs) is a Gen 6+ feature. NOT in Emerald. Gen 3 is stuck at 3 inherited.",
+      "implication": "Breeding for 6x31 IVs in Gen 3 takes drastically more eggs than in Gen 6+. Realistic Gen 3 goal: 4-5 perfect IVs after several hundred eggs.",
+      "everstone_nature": "Female parent with Everstone passes Nature 50% of the time. Independent of IV inheritance."
+    },
+    "power_items_dont_exist_gen3": {
+      "what_are_power_items": "Macho Brace exists in Gen 3 but doesn't pass IVs. Gen 4 introduced Power Bracer/Power Belt/Power Anklet/Power Lens/Power Band/Power Weight, which guarantee one IV inheritance from the holder.",
+      "implication_for_emerald": "Gen 3 IV breeding is RNG-only (3 random IVs). No way to lock specific IVs from a parent. Just breed many, many eggs and check stats post-hatch."
+    },
+    "ev_training_optimal_routes": {
+      "hp": [
+        {
+          "pokemon": "Marill",
+          "ev": "+2 HP",
+          "location": "Route 117 (Day Care path), Route 102",
+          "tip": "Wild Marill at Lv 13-15. Stack Macho Brace + Pokerus = 8 HP per kill. 32 kills to max."
+        },
+        {
+          "pokemon": "Wailmer",
+          "ev": "+1 HP",
+          "location": "Route 103 fishing, Route 132",
+          "tip": "Slow grind unless you want HP/Spe split."
+        }
+      ],
+      "atk": [
+        {
+          "pokemon": "Mightyena/Poochyena",
+          "ev": "+2 Atk",
+          "location": "Route 120 grass",
+          "tip": "Adjacent to weather institute. Highest density Atk EV in mid-game."
+        },
+        {
+          "pokemon": "Vigoroth",
+          "ev": "+2 Atk",
+          "location": "Petalburg Woods (rare)",
+          "tip": "Slaking line; Vigoroth at Lv 14-18."
+        },
+        {
+          "pokemon": "Pelipper",
+          "ev": "+2 Atk",
+          "location": "Route 120 surfing",
+          "tip": "Use Pelipper if you also want some Spe."
+        }
+      ],
+      "def": [
+        {
+          "pokemon": "Geodude",
+          "ev": "+1 Def",
+          "location": "Granite Cave / Victory Road / Rusturf Tunnel",
+          "tip": "Common; ride Repels to skip Zubat."
+        },
+        {
+          "pokemon": "Trapinch",
+          "ev": "+1 Def",
+          "location": "Route 111 desert (Mach Bike + Go-Goggles required)",
+          "tip": "Higher level = more EXP per Def kill."
+        },
+        {
+          "pokemon": "Aron",
+          "ev": "+1 Def",
+          "location": "Granite Cave 1F",
+          "tip": "Lower spawn rate; mostly ride Geodude."
+        }
+      ],
+      "spa": [
+        {
+          "pokemon": "Tentacool",
+          "ev": "+1 SpA",
+          "location": "Routes 124-126 surfing",
+          "tip": "Fastest SpA grind in the game with Pokerus + Brace = 4 per kill."
+        },
+        {
+          "pokemon": "Gulpin",
+          "ev": "+1 SpA",
+          "location": "Route 110 grass",
+          "tip": "Mid-game SpA option."
+        },
+        {
+          "pokemon": "Kirlia",
+          "ev": "+2 SpA",
+          "location": "Route 117 grass (rare)",
+          "tip": "Rare encounter; if you find one, it's the best SpA yield in the area."
+        }
+      ],
+      "spd": [
+        {
+          "pokemon": "Tentacruel",
+          "ev": "+1 SpD (and +1 SpA)",
+          "location": "Routes 124-126 deeper waters",
+          "tip": "Mixed yield; not pure SpD."
+        },
+        {
+          "pokemon": "Spheal",
+          "ev": "+1 SpD",
+          "location": "Shoal Cave low-tide entrance",
+          "tip": "Pure SpD; cleanest grind."
+        },
+        {
+          "pokemon": "Roselia",
+          "ev": "+2 SpA actually (NOT SpD)",
+          "location": "Route 117/119/123",
+          "tip": "Common misconception - Roselia gives SpA. Spheal is the SpD answer."
+        }
+      ],
+      "spe": [
+        {
+          "pokemon": "Zubat",
+          "ev": "+1 Spe",
+          "location": "Granite Cave / Mt. Pyre / Meteor Falls",
+          "tip": "Universally available in caves."
+        },
+        {
+          "pokemon": "Magikarp",
+          "ev": "+1 Spe",
+          "location": "Any water, fishing",
+          "tip": "Slow grind unless you want easy XP too."
+        },
+        {
+          "pokemon": "Electrode",
+          "ev": "+2 Spe",
+          "location": "New Mauville (post-Wattson generator quest)",
+          "tip": "Highest Spe yield. Watch for Self-Destruct - bring a Damp partner or one-shot it."
+        }
+      ]
+    },
+    "macho_brace": {
+      "effect": "Doubles EV gain from battles (does NOT affect vitamins). Halves the holder's Speed in battle (only during the battle, not the EV calc).",
+      "stack_with_pokerus": "Macho Brace + Pokerus = 4x EV gain. Tentacool gives 4 SpA per kill instead of 1.",
+      "where_to_get": "Free gift from an NPC in Slateport City - inside the contest hall area NPC near the market. Just one - infect your team-leader Pokemon and rotate the brace.",
+      "tip": "Always brace your training Pokemon. Speed cut doesn't matter when you're killing Lv 5 Marills."
+    },
+    "pokerus": {
+      "what_is_it": "A 'virus' status that doubles EVs gained while infected. Visible in summary screen with a smiley-face indicator and 'Pokerus' note.",
+      "infection_rate": "Approximately 1 in 21,845 wild encounters (slightly higher with chained encounters or RNG quirks - varies by ROM).",
+      "spread": "Pokerus spreads to adjacent party members each time the infected Pokemon's holder takes a step. Position the infected Pokemon next to teammates who need it.",
+      "duration": "Active for 1-4 days (in-game time, real RTC). After it expires, the Pokemon shows a face indicator (yellow dot) but EV bonus is gone.",
+      "preserve": "Store an infected Pokemon in the PC. Time does not pass for boxed Pokemon. You can always pull it out, infect a fresh team, and re-store.",
+      "tip": "Pokerus is the single biggest EV-training accelerator in the game. Hunt for it on Routes 118-119 if your save doesn't have it. Trade with friends - if any has it, infection passes through trades."
+    },
+    "ev_spread_principles": {
+      "common_spread": "252 / 252 / 4 - max two stats, 4 leftover. Standard offensive spread (252 Atk / 252 Spe / 4 HP for physical sweepers, etc.).",
+      "why_252": "EVs convert at 4 EV : 1 stat point. 252 / 4 = 63 stat points (the maximum benefit since 253-255 round down).",
+      "why_4_leftover": "Putting 4 in a third stat = +1 stat. Better than 0; better than wasting 4 in an already-maxed stat.",
+      "bulky_spread": "252 HP / 252 Def / 4 SpD or 252 HP / 4 Def / 252 SpD - choose the defense to invest in based on threats.",
+      "mixed_attacker": "Less common: 128 Atk / 128 SpA / 252 Spe. Half-baked - usually pick one offense and dump the other in HP."
+    },
+    "effort_ribbon": {
+      "what": "A visible ribbon awarded by an NPC in Slateport (next to the trainer school, north area NPC, verify_in_game). She inspects your Pokemon and gives the Effort Ribbon if EVs total exactly 510.",
+      "purpose": "Visual confirmation. There is no in-game stat reader, so this ribbon is the closest you get to 'EV training complete' acknowledgment. Cosmetic only - no battle effect."
+    },
+    "checking_ivs_without_calculator": {
+      "battle_frontier_iv_judge": "There is NO Battle-Frontier IV-judge NPC in Gen 3 Emerald. This was added in HeartGold/SoulSilver and later. To 'judge' an IV, you must use stat calculations.",
+      "the_lv50_test": "Calculate the expected stat at Lv 50 with 0 EVs. Compare to your Pokemon's actual stat. The delta gives the IV.",
+      "stat_formula_lv50": "(((2 * Base + IV + EV/4) * Lv) / 100) + 5, then multiply by Nature.",
+      "online_calc_recommendation": "Smogon Stat Calculator or psypoke IV calc. Input level, nature, EVs, stat values, get IV ranges."
+    },
+    "natures_25": {
+      "summary": "25 natures. 5 are 'neutral' (no stat effect): Hardy, Docile, Serious, Bashful, Quirky. The other 20 boost one stat 10% and reduce another 10%.",
+      "synchronize_breeding": "Female holding Everstone has 50% nature pass-down to offspring (best Gen 3 method). Synchronize ability on a lead Pokemon (Ralts/Kirlia/Gardevoir, also Abra) sets the wild encounter to YOUR Synchronize-Pokemon's nature 50% of the time. Useful for legendary capture.",
+      "tip": "Pair Everstone breeding with a Synchronize Ralts in your party for catching Latios/Latias/Regis with desired natures."
+    }
+  },
+  "type_chart_quirks": {
+    "overview": "Gen 3 type chart. Fairy type does not exist (added Gen 6). Steel resists Ghost and Dark. Ghost is immune to Normal and Fighting. Dark is immune to Psychic.",
+    "type_count": "17 types in Gen 3: Normal, Fire, Water, Grass, Electric, Ice, Fighting, Poison, Ground, Flying, Psychic, Bug, Rock, Ghost, Dragon, Dark, Steel.",
+    "stab_explained": {
+      "what": "Same Type Attack Bonus. When a Pokemon uses a move matching its own type, damage is multiplied by 1.5x.",
+      "dual_type_stab": "Dual-type Pokemon (e.g., Salamence Dragon/Flying) get STAB on both Dragon and Flying moves.",
+      "tip": "STAB matters more in Emerald than later gens because move BPs are lower across the board. A 95-BP STAB Surf hits like 142.5 BP."
+    },
+    "dual_type_calculation": {
+      "rule": "Type effectiveness multiplies. A 2x weakness on one type and a 2x weakness on the other = 4x. A 2x weakness and a 0.5x resist = 1x neutral.",
+      "key_examples": [
+        "Salamence (Dragon/Flying) hit by Ice: Ice is 2x on Dragon, 2x on Flying = 4x damage",
+        "Swampert (Water/Ground) hit by Grass: 2x on Water, 2x on Ground = 4x damage. ONLY weakness.",
+        "Bronzong (Steel/Psychic) hit by Fire: 2x on Steel, 0.5x on Psychic = 1x neutral",
+        "Skarmory (Steel/Flying) hit by Rock: 0.5x Steel, 2x Flying = 1x neutral. NOT 2x like pure Flying.",
+        "Gyarados (Water/Flying) hit by Electric: 2x Water, 2x Flying = 4x damage"
+      ]
+    },
+    "gen3_specific_quirks": [
+      {
+        "quirk": "Steel resists Ghost and Dark",
+        "note": "Changed in Gen 6 - Steel no longer resists those. In Gen 3, Steel is the most resistant defensive type (11 resistances, 1 immunity to Poison)."
+      },
+      {
+        "quirk": "Ghost is immune to Normal AND Fighting",
+        "note": "Dual immunity. Hariyama with Brick Break does ZERO damage to a Gengar. Use Crunch (Dark) or Shadow Ball (Ghost) instead."
+      },
+      {
+        "quirk": "Dark is immune to Psychic",
+        "note": "Sableye and Sharpedo eat Psychic moves. Tate & Liza's gym is hard-countered by Sharpedo."
+      },
+      {
+        "quirk": "Bug is super effective vs Dark, Psychic, Grass",
+        "note": "Heracross's Megahorn is a top-tier nuke vs Slowking, Gardevoir, etc. Sidney's whole team."
+      },
+      {
+        "quirk": "Fire does NOT affect Water",
+        "note": "Standard but worth noting - 0.5x. Also Fire 0.5x against Fire/Rock/Dragon/Water."
+      },
+      {
+        "quirk": "Electric is immune to Ground",
+        "note": "But Levitate ability (Flygon, Gengar, Claydol) makes them immune to Ground. Magneton is Steel/Electric so it's still hit by Ground."
+      },
+      {
+        "quirk": "Poison is super effective only vs Grass in Gen 3",
+        "note": "Used to also be SE vs Bug in Gen 1; that ended in Gen 2. Fairy doesn't exist yet, so Poison's offensive coverage is weak."
+      },
+      {
+        "quirk": "Ghost is super effective vs Psychic and Ghost",
+        "note": "Phoebe's Banettes hit hard mutually."
+      },
+      {
+        "quirk": "Dragon is super effective ONLY vs Dragon",
+        "note": "No Fairy resistance yet. Outrage from Salamence walls everything that doesn't resist or immune."
+      }
+    ],
+    "type_matchup_card_npc": {
+      "where": "Battle Frontier Lounge - one of the Frontier-area NPCs gives gameplay-tip dialogue. Also an in-game dialogue board in Trainer Hill that summarizes type chart.",
+      "verify_in_game": "Specific NPC location varies by emulator/translation; the Frontier reception area has the most type-chart dialogue."
+    },
+    "top_5_types_for_emerald_playthrough": [
+      {
+        "type": "Water",
+        "why": "Surf is mandatory anyway (HM03). Hits Fire/Rock/Ground for 2x. Mudkip/Marshtomp/Swampert dominates 5 of 8 gyms."
+      },
+      {
+        "type": "Ground",
+        "why": "Earthquake (TM26) is universal coverage. Hits Fire/Electric/Poison/Rock/Steel. Swampert and Flygon thrive."
+      },
+      {
+        "type": "Electric",
+        "why": "Thunderbolt (TM24) and Thunder hit Water and Flying (every late gym leader has Water/Flying). Manectric/Magneton sweep."
+      },
+      {
+        "type": "Ice",
+        "why": "Ice Beam (TM13) hits Dragon/Flying/Grass/Ground for 2x. Drake's gym is solo'd by Ice. Walrein/Glalie/Lapras."
+      },
+      {
+        "type": "Fighting",
+        "why": "Brick Break (TM31) breaks Light Screen/Reflect AND hits Steel/Rock/Dark/Normal/Ice. Hariyama and Blaziken cover gym/Frontier."
+      }
+    ],
+    "common_type_mistakes": [
+      "Using Fighting on Sableye (Sableye is Dark/Ghost, immune to Fighting from Ghost half)",
+      "Using Psychic on Sharpedo or Mightyena (Dark immunity)",
+      "Using Ground on Skarmory (Skarmory is Steel/Flying, Flying half is immune to Ground)",
+      "Using Rock on Skarmory (Skarmory is Steel, resists Rock)",
+      "Forgetting Levitate on Flygon/Gengar/Claydol when planning Earthquake spam"
+    ]
+  },
+  "status_conditions": {
+    "overview": "Status conditions are debuffs that persist past a single move. Sleep, Paralysis, Burn, Poison, Freeze, Confusion, and Attraction. Each has different mechanics, durations, and counter-items.",
+    "sleep": {
+      "effect": "Pokemon cannot select moves; turns spent asleep wake up on their own.",
+      "duration": "1-7 turns (random, decreasing each turn)",
+      "proc_rate": "Direct sleep moves vary: Hypnosis 60% acc, Spore 100% acc, Sing 55% acc, Sleep Powder 75% acc, Yawn (Slaking) 100% but 1-turn delay.",
+      "ability_immunity": [
+        "Insomnia (Hypno, Noctowl)",
+        "Vital Spirit (Electabuzz, Magmar)",
+        "Early Bird (halves sleep duration: Doduo, Houndoom)"
+      ],
+      "wake_up_conditions": [
+        "Pokemon's sleep counter hits 0",
+        "Take damage from a Fire move (sometimes) - actually false in Gen 3; only specific moves wake.",
+        "Use the move Snore or Sleep Talk while asleep - they work without waking",
+        "Switch out and switch back in - resets sleep counter? No, sleep counter persists."
+      ],
+      "healing_items": [
+        {
+          "item": "Awakening",
+          "effect": "Cures sleep",
+          "cost": 250,
+          "where": "Most Pokemarts"
+        },
+        {
+          "item": "Lava Cookie",
+          "effect": "Cures all status conditions",
+          "where": "Lavaridge old woman gift, one-time"
+        },
+        {
+          "item": "Full Heal",
+          "effect": "Cures all status",
+          "cost": 600,
+          "where": "Mauville Pokemart and beyond"
+        },
+        {
+          "item": "Chesto Berry",
+          "effect": "Held; cures sleep automatically",
+          "where": "Trees in Route 102, Berry farms"
+        }
+      ]
+    },
+    "paralysis": {
+      "effect": "25% chance per turn to skip move (full paralysis), AND Speed reduced to 25% of normal in Gen 3.",
+      "speed_multiplier_gen3": "Paralyzed Pokemon's Speed stat is multiplied by 0.25 in battle. Note: this was changed to 0.5 in Gen 7; in Emerald it's a hard 1/4.",
+      "proc_rate": "Thunder Wave 100% acc but immune-gated (Ground immune in later gens, NOT in Gen 3 - in Gen 3 Thunder Wave can paralyze Ground types). Body Slam 30% on contact. Lick 30%.",
+      "duration": "Permanent until cured. Outlasts battle.",
+      "ability_immunity": [
+        "Limber (Glameow, Buneary line - none native to Hoenn except via trade)"
+      ],
+      "type_immunity_gen3": "Electric types are NOT immune to paralysis in Gen 3 (changed in Gen 6). Only abilities like Limber prevent it.",
+      "healing_items": [
+        {
+          "item": "Paralyze Heal",
+          "effect": "Cures paralysis",
+          "cost": 200
+        },
+        {
+          "item": "Cheri Berry",
+          "effect": "Held; cures paralysis automatically"
+        },
+        {
+          "item": "Lum Berry",
+          "effect": "Held; cures any status"
+        },
+        {
+          "item": "Full Heal",
+          "effect": "All-purpose"
+        }
+      ]
+    },
+    "burn": {
+      "effect": "1/8 max HP damage at end of turn AND Atk stat halved (multiplied by 0.5) for the duration of the burn.",
+      "duration": "Permanent until cured. Outlasts battle.",
+      "proc_sources": "Will-O-Wisp 75% acc, Flamethrower 10%, Fire Blast 10%, Sacred Fire 50%, Lava Plume 30% (Gen 4+ - not Emerald)",
+      "ability_immunity": [
+        "Water Veil (Goldeen, Wailmer)",
+        "Flame Body (Magmar, Magcargo - 30% to burn opponent on contact)"
+      ],
+      "type_immunity": "Fire types are immune to burn from any source in Gen 3.",
+      "halved_atk_implication": "Physical attackers (Salamence, Hariyama) lose half their offensive power. Special attackers are unaffected. Burn is the best status against physical sweepers.",
+      "healing_items": [
+        {
+          "item": "Burn Heal",
+          "effect": "Cures burn",
+          "cost": 250
+        },
+        {
+          "item": "Rawst Berry",
+          "effect": "Held; cures burn automatically"
+        },
+        {
+          "item": "Lum Berry",
+          "effect": "Held; cures any status"
+        }
+      ]
+    },
+    "poison": {
+      "regular_poison": {
+        "effect": "1/8 max HP damage at end of turn",
+        "duration": "Permanent until cured. Outlasts battle (took damage during overworld walking in Gen 3 - 1 HP per 4 steps).",
+        "proc_sources": "Poison Sting 30%, Sludge 30%, Sludge Bomb 30%, Poison Powder 75% acc"
+      },
+      "toxic_badly_poisoned": {
+        "effect": "Damage increases each turn: 1/16 turn 1, 2/16 turn 2, 3/16 turn 3, etc. Caps at 15/16 max HP per turn.",
+        "duration": "Reverts to regular poison if Pokemon switches out (in Gen 3+ Toxic counter resets on switch).",
+        "proc_sources": "Toxic move (TM06) - 85% acc, dedicated stall move."
+      },
+      "ability_immunity": [
+        "Immunity (Snorlax, Zangoose, Seviper... actually only Snorlax in Gen 3)",
+        "Poison-type Pokemon are immune to Poison and Toxic",
+        "Steel-type Pokemon are immune to Poison and Toxic"
+      ],
+      "healing_items": [
+        {
+          "item": "Antidote",
+          "effect": "Cures poison",
+          "cost": 100
+        },
+        {
+          "item": "Pecha Berry",
+          "effect": "Held; cures poison automatically"
+        },
+        {
+          "item": "Lum Berry",
+          "effect": "Held; cures any status"
+        }
+      ]
+    },
+    "freeze": {
+      "effect": "Pokemon cannot move at all - turns are skipped.",
+      "duration": "Until thawed. Each turn ~20% chance to thaw, OR thaws when hit by a Fire-type move.",
+      "proc_sources": "Ice Beam 10%, Blizzard 10%, Ice Punch 10%. Fire-type Pokemon are IMMUNE to freeze.",
+      "ability_immunity": [
+        "Magma Armor (Slugma, Magcargo, Camerupt)",
+        "Fire-type Pokemon are immune"
+      ],
+      "healing_items": [
+        {
+          "item": "Ice Heal",
+          "effect": "Cures freeze",
+          "cost": 250
+        },
+        {
+          "item": "Aspear Berry",
+          "effect": "Held; cures freeze automatically"
+        },
+        {
+          "item": "Lum Berry",
+          "effect": "Held; cures any status"
+        },
+        {
+          "item": "Lava Cookie",
+          "effect": "Cures all status; Lavaridge gift"
+        }
+      ],
+      "note": "Freeze is rare on the player but devastating. Always carry Aspear Berries against Glacia."
+    },
+    "confusion": {
+      "effect": "Pokemon may attack itself instead of the chosen move.",
+      "self_hit_chance_gen3": "33% per turn (1/3 in Gen 3; changed to 50% in Gen 7).",
+      "self_damage_calc": "Pokemon attacks itself with a typeless 40-power physical move using its own Atk vs its own Def. No STAB, no critical hits.",
+      "duration": "1-4 turns (random).",
+      "proc_sources": "Confuse Ray 100% acc, Supersonic 55% acc, Confusion 10%, Outrage at end of effect, Petal Dance at end of effect, Thrash at end of effect.",
+      "ability_immunity": [
+        "Own Tempo (Spinda, Lickitung)",
+        "Switch out resets confusion"
+      ],
+      "healing_items": [
+        {
+          "item": "Persim Berry",
+          "effect": "Held; cures confusion automatically",
+          "tip": "Best held item for Sidney's gym (Swagger spam)"
+        },
+        {
+          "item": "Lum Berry",
+          "effect": "Held; cures any status including confusion"
+        },
+        {
+          "item": "Full Heal",
+          "effect": "Cures all status"
+        }
+      ]
+    },
+    "attraction": {
+      "name_aliases": [
+        "Infatuation",
+        "Attract"
+      ],
+      "effect": "Pokemon may be immobilized by love instead of attacking.",
+      "proc_chance": "50% per turn while infatuated.",
+      "gender_requirement": "Only works against the OPPOSITE gender. Same-gender = no effect. Genderless Pokemon = no effect.",
+      "duration": "Until either Pokemon switches out or faints.",
+      "proc_sources": "Attract move (TM45) - 100% acc, Cute Charm ability (30% on contact).",
+      "ability_immunity": [
+        "Oblivious (Mr. Mime, Lickitung, Whiscash)"
+      ],
+      "healing_items": [
+        {
+          "item": "Yellow Flute",
+          "effect": "Cures attraction (and confusion). Only one in the game (rare)"
+        },
+        {
+          "item": "Mental Herb",
+          "effect": "Held; one-time cure"
+        }
+      ],
+      "tip": "Carry a same-gender or Oblivious Pokemon vs Norman's Slaking and Flannery's Torkoal."
+    },
+    "lum_berry_universal": {
+      "effect": "Held item; cures any status condition the Pokemon currently has, including confusion and infatuation. One-time use.",
+      "where_to_get": "Berry trees in Route 123, Route 119, Berry Master gift",
+      "tip": "Replant Lum Berries on Soft Soil patches; harvest 2-4 per tree. Pre-load every Frontier team with Lum Berries."
+    },
+    "single_status_berries": [
+      {
+        "berry": "Cheri",
+        "cures": "Paralysis"
+      },
+      {
+        "berry": "Chesto",
+        "cures": "Sleep"
+      },
+      {
+        "berry": "Pecha",
+        "cures": "Poison"
+      },
+      {
+        "berry": "Rawst",
+        "cures": "Burn"
+      },
+      {
+        "berry": "Aspear",
+        "cures": "Freeze"
+      },
+      {
+        "berry": "Persim",
+        "cures": "Confusion"
+      }
+    ],
+    "best_status_setup_moves": [
+      {
+        "move": "Hypnosis",
+        "users": "Gengar (60% acc), Drowzee (60%), Spinda",
+        "tip": "Powerful but inaccurate. Pair with No Guard if available (no Gen 3 Pokemon has it natively in Hoenn)."
+      },
+      {
+        "move": "Spore",
+        "users": "Breloom, Parasect",
+        "tip": "100% acc Sleep. Top-tier. Breloom is the staple Frontier sleep-setter."
+      },
+      {
+        "move": "Thunder Wave",
+        "users": "Most Electric types, plus Manectric/Raikou/Mareep (TM)",
+        "tip": "100% acc paralysis - cuts opponent Speed to 25%."
+      },
+      {
+        "move": "Toxic (TM06)",
+        "users": "Many - put it on a wall",
+        "tip": "Stall pokemon's bread and butter. Milotic with Recover + Toxic = unkillable."
+      },
+      {
+        "move": "Will-O-Wisp",
+        "users": "Dusclops, Banette (no, Banette only via Egg Move), Gengar, Spiritomb (not Gen 3)",
+        "tip": "75% acc Burn. Halve enemy Atk. Best counter to physical sweepers."
+      },
+      {
+        "move": "Confuse Ray",
+        "users": "Gengar, Misdreavus (not Gen 3), Mawile, several Ghost types",
+        "tip": "100% acc confusion. Stack with Attract for maximum chaos."
+      }
+    ]
+  },
+  "abilities_in_gen3": {
+    "overview": "Gen 3 (Ruby/Sapphire/Emerald) introduced abilities to the franchise. Each Pokemon has one ability slot (no Hidden Abilities yet - those come in Gen 5). Some abilities are battle-changing.",
+    "key_abilities": [
+      {
+        "ability": "Levitate",
+        "effect": "Immune to Ground-type moves and damage from Spikes/sandstorm-tier hazards (sandstorm doesn't damage immune types).",
+        "users_in_emerald": [
+          "Gengar (Haunter line)",
+          "Flygon (Vibrava line)",
+          "Claydol (Baltoy line)",
+          "Lunatone",
+          "Solrock",
+          "Rotom (not Gen 3)",
+          "Mismagius (not Gen 3)"
+        ],
+        "tip": "Flygon is the premier Earthquake user that ALSO doesn't fear EQ from teammates in doubles. Levitate Pokemon do not lose Levitate to Mold Breaker (Mold Breaker is Gen 4)."
+      },
+      {
+        "ability": "Intimidate",
+        "effect": "On switch-in, lowers opposing Pokemon's Atk by 1 stage.",
+        "users_in_emerald": [
+          "Mightyena (Poochyena line)",
+          "Salamence (Bagon line)",
+          "Makuhita line - WRONG, Makuhita has Thick Fat / Guts",
+          "Snubbull line (not native; trade only)"
+        ],
+        "correction": "Common error: Makuhita has Thick Fat / Guts, not Intimidate. Verify list: Mightyena, Salamence, and that's it for native Hoenn.",
+        "tip": "Lead with Mightyena or Salamence to weaken physical attackers immediately. Stacks with switching - swap out and back to re-trigger."
+      },
+      {
+        "ability": "Pressure",
+        "effect": "Opponents using attacks against this Pokemon use 2 PP per move instead of 1. Slowly drains opposing PP.",
+        "users_in_emerald": [
+          "The Regis (Regirock, Regice, Registeel)",
+          "Aerodactyl (Old Amber - not Gen 3 native)",
+          "Absol (gets Pressure or Super Luck)"
+        ],
+        "tip": "Useful in long Frontier battles where opponents may run out of damage moves and resort to Struggle."
+      },
+      {
+        "ability": "Synchronize",
+        "effect": "If this Pokemon is statused, the opponent gets the same status (poison, burn, paralysis - NOT sleep or freeze).",
+        "secondary_effect": "If your Synchronize Pokemon is the lead in your party, the wild encounters have a 50% chance to share its Nature.",
+        "users_in_emerald": [
+          "Ralts/Kirlia/Gardevoir",
+          "Abra/Kadabra/Alakazam (trade-in)"
+        ],
+        "tip": "Set a Synchronize Ralts (with desired nature, e.g. Adamant for catching offensive legendaries) as lead before encountering Latios/Regis."
+      },
+      {
+        "ability": "Trace",
+        "effect": "On switch-in, copies the opponent's ability for the duration of the battle.",
+        "users_in_emerald": [
+          "Gardevoir (Ralts line - Trace OR Synchronize)"
+        ],
+        "tip": "Trace a Drizzle Kyogre or Drought Groudon to gain weather. Trace a Wonder Guard Shedinja to become impossible to hurt."
+      },
+      {
+        "ability": "Sturdy",
+        "effect": "Immune to OHKO moves (Sheer Cold, Fissure, Horn Drill, Guillotine). Does NOT prevent normal damage in Gen 3 (Sturdy as 'survive at 1HP' is Gen 5+).",
+        "users_in_emerald": [
+          "Aron line (Aron/Lairon/Aggron also has Rock Head)",
+          "Geodude line",
+          "Onix line",
+          "Sudowoodo (not Gen 3 native really)",
+          "Magnemite line"
+        ],
+        "tip": "Useful vs Articuno-style Sheer Cold spam. In Gen 3, Sturdy does not save you from a one-shot Earthquake."
+      },
+      {
+        "ability": "Wonder Guard",
+        "effect": "Only super-effective moves can damage this Pokemon. Everything else does 0 damage. Status moves and indirect damage (poison, burn, weather) DO bypass Wonder Guard.",
+        "users_in_emerald": [
+          "Shedinja (only)"
+        ],
+        "how_to_get_shedinja": "Evolve Nincada at Lv 20 with an empty party slot AND a spare Pokeball. Shedinja appears in the empty slot, with Wonder Guard. Ninjask occupies its old slot.",
+        "tip": "Shedinja has 1 HP and is fragile. Counters: Toxic, Will-O-Wisp, Sandstorm/Hail damage, any super-effective move. Best in Frontier as a Sturdy-but-perfect wall against opponents that can't hit it super effectively."
+      },
+      {
+        "ability": "Speed Boost",
+        "effect": "+1 Speed stage at the end of each turn while in battle. Compounds quickly.",
+        "users_in_emerald": [
+          "Yanma (not native to Hoenn; trade in from FRLG via Sevii)",
+          "Ninjask (Nincada evolution at Lv 20)",
+          "verify_in_game: Yanma speed boost availability"
+        ],
+        "tip": "Ninjask + Substitute + Baton Pass is a Frontier strategy. Stack 6 Speed boosts then pass to Salamence/Metagross."
+      },
+      {
+        "ability": "Drizzle (weather)",
+        "effect": "On switch-in, summons rain for the rest of the battle (no 5/8-turn timer in Gen 3 - it's permanent until another weather replaces it).",
+        "users_in_emerald": [
+          "Kyogre (only)"
+        ],
+        "tip": "Permanent rain doubles Water move damage and halves Fire. Hits Thunder accuracy to 100%. Frontier rain teams revolve around Kyogre."
+      },
+      {
+        "ability": "Drought (weather)",
+        "effect": "On switch-in, summons sun for the rest of the battle (permanent in Gen 3).",
+        "users_in_emerald": [
+          "Groudon (only)"
+        ],
+        "tip": "Sun doubles Fire damage and halves Water. Boosts SolarBeam (no charge turn). Counter: Rain Dance from a partner."
+      },
+      {
+        "ability": "Sand Stream (weather)",
+        "effect": "On switch-in, summons sandstorm for the rest of the battle (permanent in Gen 3).",
+        "users_in_emerald": [
+          "Tyranitar (Larvitar line - not native to Hoenn; trade in from Colosseum/XD)"
+        ],
+        "tip": "Sand boosts Rock-type Special Defense by 50%. Damages non-Rock/Ground/Steel types each turn."
+      },
+      {
+        "ability": "Rain Dish",
+        "effect": "While it's raining, recover 1/16 max HP per turn.",
+        "users_in_emerald": [
+          "Ludicolo (Lotad line - Rain Dish OR Swift Swim)"
+        ],
+        "tip": "Pair Ludicolo with Kyogre for permanent Rain Dish heal. Niche but cute."
+      },
+      {
+        "ability": "Flash Fire",
+        "effect": "Immune to Fire-type moves. When hit by one, gains a +50% damage boost on its own Fire moves for the rest of the battle.",
+        "users_in_emerald": [
+          "Vulpix/Ninetales line (FRLG import)",
+          "Houndoom (FRLG import)",
+          "verify_in_game: native Hoenn Flash Fire user"
+        ],
+        "tip": "Switch into a predicted Fire move to boost your own Fire offense. Niche but powerful in Fire-heavy meta."
+      },
+      {
+        "ability": "Volt Absorb",
+        "effect": "Immune to Electric moves. When hit by one, recover 1/4 max HP.",
+        "users_in_emerald": [
+          "Lanturn (Chinchou line - Surskit/Mareep are NOT Volt Absorb; verify_in_game)",
+          "Jolteon (FRLG import via Eevee)"
+        ],
+        "tip": "Free heal vs Wattson's gym mid-fight."
+      },
+      {
+        "ability": "Water Absorb",
+        "effect": "Immune to Water moves. When hit by one, recover 1/4 max HP.",
+        "users_in_emerald": [
+          "Lanturn",
+          "Vaporeon (from Eevee)",
+          "Wooper (not Hoenn native; trade)"
+        ],
+        "tip": "Counter Wallace's gym."
+      },
+      {
+        "ability": "Blaze / Torrent / Overgrow (starter abilities)",
+        "effect": "When the Pokemon's HP drops below 1/3 max, its same-type STAB moves get a 50% damage boost.",
+        "users_in_emerald": [
+          "Blaze: Torchic line (Blaziken)",
+          "Torrent: Mudkip line (Swampert)",
+          "Overgrow: Treecko line (Sceptile)"
+        ],
+        "tip": "Stay in the red zone for the boost - controlled risk. Sash + low HP would be strong (Sash is Gen 4+ only)."
+      },
+      {
+        "ability": "Run Away",
+        "effect": "Always able to escape from wild Pokemon, regardless of trapping moves or speed.",
+        "users_in_emerald": [
+          "Zigzagoon",
+          "Linoone",
+          "Doduo (not native)",
+          "Ponyta (FRLG import)"
+        ],
+        "tip": "Useful for Safari Zone navigation - though Safari Zone has its own escape mechanic."
+      },
+      {
+        "ability": "Pickup",
+        "effect": "10% chance after a battle to find an item, scaled to the Pokemon's level.",
+        "users_in_emerald": [
+          "Zigzagoon",
+          "Linoone (recommended; one Linoone with Pickup carries entire campaign)"
+        ],
+        "items_by_level_table": {
+          "Lv_1_10": [
+            "Potion",
+            "Antidote",
+            "Super Potion",
+            "Great Ball",
+            "Repel"
+          ],
+          "Lv_11_20": [
+            "Potion",
+            "Antidote",
+            "Super Potion",
+            "Great Ball",
+            "Repel",
+            "Escape Rope"
+          ],
+          "Lv_21_30": [
+            "Super Potion",
+            "Great Ball",
+            "Repel",
+            "Escape Rope",
+            "X Attack",
+            "Full Heal"
+          ],
+          "Lv_31_40": [
+            "Super Potion",
+            "Great Ball",
+            "Repel",
+            "Escape Rope",
+            "X Attack",
+            "Full Heal",
+            "Hyper Potion"
+          ],
+          "Lv_41_50": [
+            "Great Ball",
+            "Escape Rope",
+            "X Attack",
+            "Full Heal",
+            "Hyper Potion",
+            "Ultra Ball"
+          ],
+          "Lv_51_60": [
+            "Escape Rope",
+            "Full Heal",
+            "Hyper Potion",
+            "Ultra Ball",
+            "Revive"
+          ],
+          "Lv_61_70": [
+            "Full Heal",
+            "Hyper Potion",
+            "Ultra Ball",
+            "Revive",
+            "Rare Candy"
+          ],
+          "Lv_71_80": [
+            "Hyper Potion",
+            "Ultra Ball",
+            "Revive",
+            "Rare Candy",
+            "Sun Stone",
+            "Moon Stone"
+          ],
+          "Lv_81_90": [
+            "Ultra Ball",
+            "Revive",
+            "Rare Candy",
+            "Sun Stone",
+            "Moon Stone",
+            "Nugget",
+            "Protein"
+          ],
+          "Lv_91_100": [
+            "Revive",
+            "Rare Candy",
+            "Sun Stone",
+            "Moon Stone",
+            "Nugget",
+            "Protein",
+            "King's Rock",
+            "Full Restore",
+            "PP Up"
+          ]
+        },
+        "tip": "Train a Linoone to Lv 100 and sweep Trainer Hill or Frontier rentals. Free Rare Candies, Nuggets, and PP-Ups stack up."
+      }
+    ],
+    "ability_quirks": [
+      "Truant (Slaking): every other turn loafs (skip move). Trade-off for Slaking's incredible base stats.",
+      "Hustle (Togekiss not Gen 3, Pinsir? Verify): boosts Atk 1.5x, drops accuracy 0.8x.",
+      "Vital Spirit (Electabuzz, Magmar): immunity to sleep.",
+      "Insomnia (Hypno, Noctowl): immunity to sleep.",
+      "Marvel Scale (Milotic): boosts Defense 1.5x while statused. Self-Toxic for permanent boost.",
+      "Cute Charm (Skitty, Delcatty): 30% chance to attract opposite-gender attacker on contact."
+    ]
+  },
+  "friendship_happiness": {
+    "overview": "Friendship (a.k.a. Happiness) is a hidden 0-255 value per Pokemon. It controls Return move power, Frustration move power, and friendship-based evolutions. Some species start with high friendship; others with low.",
+    "scale": "0 to 255. 0 = absolute hatred, 255 = perfect bond. Most Pokemon start at 70.",
+    "starting_values_by_source": {
+      "wild_caught": "70 (most species). Some legendaries start at 0 due to hostility.",
+      "egg_hatched": "120 (high - bonus for hatching) but some sources say 70 + walking bonus; verify_in_game",
+      "gift_pokemon": "Varies. Wynaut egg from Lavaridge starts at hatched value (120-ish).",
+      "traded_pokemon": "70 baseline; trades reset friendship in some games but not Gen 3.",
+      "specific_low_starters": [
+        "Igglybuff (50)",
+        "Pichu (verify_in_game)",
+        "verify_in_game: any Hoenn-native Pokemon starts particularly low/high"
+      ]
+    },
+    "how_to_raise_friendship": [
+      {
+        "action": "Walk 256 steps with Pokemon in party",
+        "gain": "+1 friendship"
+      },
+      {
+        "action": "Level up Pokemon (any way - candy or battle)",
+        "gain": "+5 if friendship < 100, +3 if 100-199, +2 if 200+"
+      },
+      {
+        "action": "Use a vitamin (HP Up, Protein, Iron, Calcium, Zinc, Carbos)",
+        "gain": "+5 if friendship < 100, +3 if 100-199, +2 if 200+"
+      },
+      {
+        "action": "Use a stat-lowering 'reset' berry (Pomeg/Kelpsy/Qualot/Hondew/Grepa/Tamato)",
+        "gain": "+10 if < 100, +5 if 100-199, +2 if 200+"
+      },
+      {
+        "action": "Win a battle in Lilycove Contest (any rank)",
+        "gain": "+? - verify_in_game (anecdotally +1-3 per win)"
+      },
+      {
+        "action": "Get a haircut at... no haircuts in Hoenn",
+        "gain": "Haircuts are HeartGold/SoulSilver only. Skip."
+      },
+      {
+        "action": "Hold a Soothe Bell",
+        "gain": "All friendship gains are multiplied by 1.5x (rounded down)"
+      },
+      {
+        "action": "Use a Luxury Ball at capture",
+        "gain": "Doubles ALL friendship gains. Stacks with Soothe Bell."
+      },
+      {
+        "action": "Faint a Pokemon - WAIT, fainting LOWERS friendship",
+        "gain": "(see 'how_friendship_drops')"
+      }
+    ],
+    "how_friendship_drops": [
+      {
+        "action": "Pokemon faints in battle",
+        "loss": "-1 friendship (small)"
+      },
+      {
+        "action": "Use Energy Powder (bitter herbal heal item)",
+        "loss": "-5 friendship"
+      },
+      {
+        "action": "Use Heal Powder",
+        "loss": "-5 friendship"
+      },
+      {
+        "action": "Use Energy Root",
+        "loss": "-10 friendship"
+      },
+      {
+        "action": "Use Revival Herb",
+        "loss": "-15 friendship"
+      },
+      {
+        "action": "Trade Pokemon - some Gens reset, but Gen 3 keeps friendship intact",
+        "loss": "0 (intact)"
+      }
+    ],
+    "soothe_bell": {
+      "effect": "Held item; multiplies friendship gains by 1.5x. Does not stack with itself.",
+      "where_to_get": "Mr. Briney's house in Pacifidlog Town (after he retires from sailing duties), or Lilycove Dept Store after gym 8 (verify_in_game).",
+      "tip": "Always hold a Soothe Bell on a Pokemon you're evolving by friendship (Crobat, Pikachu, Marill)."
+    },
+    "luxury_ball": {
+      "effect": "Capture ball that doubles friendship gain for the captured Pokemon.",
+      "where_to_get": "Lilycove Dept Store (1000), or Pickup ability rare drop.",
+      "tip": "Use Luxury Ball on Zubat (for Crobat). Stack with Soothe Bell - 1.5x * 2x = 3x friendship gain per event. Crobat in 50 walks instead of 150."
+    },
+    "why_friendship_matters": {
+      "evolutions": [
+        "Golbat -> Crobat: needs friendship >= 220",
+        "Pichu -> Pikachu: needs friendship >= 220",
+        "Azurill -> Marill: needs friendship >= 220 (despite shy flavor)",
+        "Igglybuff -> Jigglypuff: needs friendship >= 220",
+        "Cleffa -> Clefairy: needs friendship >= 220"
+      ],
+      "moves": [
+        {
+          "move": "Return (TM27)",
+          "power_formula": "friendship / 2.5",
+          "max_power": 102,
+          "tip": "At max friendship 255, Return is 102 BP STAB-able. Best move for high-friendship physical attackers like Vigoroth/Linoone/Crobat."
+        },
+        {
+          "move": "Frustration (TM21)",
+          "power_formula": "(255 - friendship) / 2.5",
+          "max_power": 102,
+          "tip": "Inverse of Return. Use with low-friendship Pokemon. Some traded Pokemon start with reduced friendship - good Frustration target."
+        }
+      ],
+      "rivals_or_npcs_check": "There is NO friendship-checker NPC in Emerald (these were added in Gen 4 - the Pokemon Massage Lady). Player must intuit friendship from move power scaling."
+    },
+    "tm27_return_location": {
+      "where": "Pacifidlog Town - the leftmost house, NPC gives TM27 Return as a gift.",
+      "tip": "Stop by while looking for Mirage Island. The same house often has Mirage Island NPC."
+    },
+    "tm21_frustration_location": {
+      "where": "Pacifidlog Town (also given by NPC; verify_in_game which NPC) OR Fallarbor Town gift NPC.",
+      "tip": "Useful only on a low-friendship Pokemon. Most playthroughs ignore Frustration; Return is the practical choice."
+    },
+    "fastest_friendship_max_protocol": [
+      "Step 1: Catch in Luxury Ball (2x gains)",
+      "Step 2: Equip Soothe Bell (1.5x gains, stacks with Luxury Ball)",
+      "Step 3: Walk constantly with Pokemon in party (256 steps = +3 with both bonuses)",
+      "Step 4: Level up via grinding (5 EXP per battle = +9 to +18 per level depending on threshold)",
+      "Step 5: Use stat-lowering berries on the Pokemon (+10 -> +30 per berry)",
+      "Step 6: Vitamins also count (+5 to +15 each), but expensive at 9,800 each",
+      "Result: Crobat in <30 minutes of play with optimal Soothe Bell + Luxury Ball + level grinding"
+    ]
+  },
+  "pokeballs_strategy": {
+    "overview": "Each Pokeball type has a multiplier on the catch rate formula. Knowing which ball to use saves Master Balls and frustration. Catch rate formula: ((3 * MaxHP - 2 * CurrentHP) * SpeciesCatchRate * BallBonus * StatusMod) / (3 * MaxHP), then a probability shake check.",
+    "ball_types": [
+      {
+        "name": "Poke Ball",
+        "multiplier": "1x",
+        "cost": 200,
+        "where": "Every Pokemart from the start",
+        "best_for": "Anything early-game; cheap volume",
+        "tip": "Buy 10 to get a free Premier Ball each time."
+      },
+      {
+        "name": "Great Ball",
+        "multiplier": "1.5x",
+        "cost": 600,
+        "where": "Most Pokemarts after Rustboro",
+        "best_for": "Mid-game wild Pokemon; balanced cost-to-power",
+        "tip": "Default workhorse for anything not legendary."
+      },
+      {
+        "name": "Ultra Ball",
+        "multiplier": "2x",
+        "cost": 1200,
+        "where": "Mauville Pokemart and beyond",
+        "best_for": "Legendary backup; high-rarity wild Pokemon",
+        "tip": "Stock 30+ before facing Groudon/Kyogre/Rayquaza."
+      },
+      {
+        "name": "Net Ball",
+        "multiplier": "3x on Bug or Water types, 1x otherwise",
+        "cost": 1000,
+        "where": "Mossdeep City Pokemart",
+        "best_for": "Bug catches (Wurmple, Surskit, Volbeat, Illumise, Trapinch... wait Trapinch is Ground). Water catches (Marill, Wailmer, Tentacool, Carvanha, Magikarp, Goldeen, Corsola, Feebas, Clamperl, Relicanth, Luvdisc).",
+        "tip": "Best ball for Kyogre - 3x is huge. Also good for legendary Latios/Latias since they're not Water but you can use Master Ball there."
+      },
+      {
+        "name": "Nest Ball",
+        "multiplier": "Formula: ((40 - level) / 10), minimum 1x. So Lv 5 mon = 3.5x, Lv 25 = 1.5x, Lv 40+ = 1x",
+        "cost": 1000,
+        "where": "Rustboro Pokemart and beyond",
+        "best_for": "Lower-level wild encounters in dungeons; useful early game",
+        "tip": "Pointless for legendaries (all Lv 40+). Great for capturing kid-tier Pokemon under Lv 30."
+      },
+      {
+        "name": "Repeat Ball",
+        "multiplier": "3x if you've already caught the species (registered to Dex)",
+        "cost": 1000,
+        "where": "Lilycove Dept Store (post-game)",
+        "best_for": "Catching duplicates for breeding stock or shiny hunting",
+        "tip": "Once you've caught one Latios, Repeat Ball makes a second much easier (if you ever encounter another - typically you don't, but in random Master Ball saves)."
+      },
+      {
+        "name": "Timer Ball",
+        "multiplier": "1 + (turns elapsed * 0.1), capped at 4x at turn 30+",
+        "cost": 1000,
+        "where": "Mossdeep / Lilycove (post-game)",
+        "best_for": "Long battles, especially legendaries that you've turned 'False Swiped + Statused' but who refuse to catch",
+        "tip": "After 10 turns, Timer Ball = 2x. After 20 turns, 3x. After 30 turns, 4x. Best legendary ball if you don't want to use Master Ball."
+      },
+      {
+        "name": "Dive Ball",
+        "multiplier": "3.5x underwater or while Surfing",
+        "cost": 1000,
+        "where": "Mossdeep Pokemart (post-Dive HM)",
+        "best_for": "Catches during Surf or Dive sessions - Wailmer, Tentacool, Sharpedo, Clamperl, Relicanth, etc.",
+        "tip": "Best ball for Kyogre. 3.5x on Water sessions is the highest underwater bonus."
+      },
+      {
+        "name": "Premier Ball",
+        "multiplier": "1x (cosmetic only)",
+        "cost": 0,
+        "where": "Free with every 10 Poke Balls purchased",
+        "best_for": "Trophy catches; visual flex",
+        "tip": "Use one for your starter's evolution to mark it as special. Otherwise hoard for nostalgia."
+      },
+      {
+        "name": "Luxury Ball",
+        "multiplier": "1x catch rate, but doubles friendship gain for the captured Pokemon",
+        "cost": 1000,
+        "where": "Lilycove Dept Store",
+        "best_for": "Catching Pokemon that need friendship to evolve - Zubat, Pichu, Azurill, Igglybuff, Cleffa",
+        "tip": "Crobat in a Luxury Ball with Soothe Bell hits friendship 220 in less than half the steps."
+      },
+      {
+        "name": "Master Ball",
+        "multiplier": "100% catch (no math, no shakes, just caught)",
+        "cost": "n/a (free, given by Magma/Aqua leader after climax)",
+        "where": "Inside Team Magma/Aqua hideout post-7th badge plot beat. Also 1st prize in Lilycove Lottery (5 trainer-ID matches).",
+        "best_for": "Roaming Latios/Latias - the ONLY guaranteed catch given they flee instantly",
+        "tip": "Save the freebie Master Ball for whichever roamer (Latios or Latias) you didn't get via Eon Ticket. Stationary legendaries (Groudon, Kyogre, Rayquaza, Regis, Mew, Deoxys) can be soft-reset endlessly with Timer/Ultra Balls."
+      },
+      {
+        "name": "Safari Ball",
+        "multiplier": "1.5x (always)",
+        "cost": "n/a (only inside Safari Zone, 30 per visit)",
+        "where": "Safari Zone Route 121 entrance",
+        "best_for": "Safari Zone exclusives only - cannot be used outside Safari Zone",
+        "tip": "Your only ball in Safari Zone. Use bait/rocks to manipulate catch rate, then throw."
+      }
+    ],
+    "ball_priority_chart": [
+      {
+        "target": "Wild Lv 5-15 fodder",
+        "best_ball": "Nest Ball (3.5x at Lv 5)"
+      },
+      {
+        "target": "Wild Lv 30+ Pokemon",
+        "best_ball": "Great Ball or Ultra Ball"
+      },
+      {
+        "target": "Wild Bug or Water type",
+        "best_ball": "Net Ball (3x)"
+      },
+      {
+        "target": "Wild Water Pokemon while Surfing",
+        "best_ball": "Dive Ball (3.5x)"
+      },
+      {
+        "target": "Roaming Latios/Latias",
+        "best_ball": "Master Ball - they flee turn 1"
+      },
+      {
+        "target": "Stationary legendary (Groudon/Kyogre/Rayquaza/Regis)",
+        "best_ball": "Status + False Swipe + Timer Ball after 30 turns"
+      },
+      {
+        "target": "Friendship evo target (Zubat -> Crobat etc.)",
+        "best_ball": "Luxury Ball"
+      },
+      {
+        "target": "Trophy/marker catch",
+        "best_ball": "Premier Ball"
+      }
+    ],
+    "catch_rate_formula": "Modified Gen 3 catch formula: a = ((3 * MaxHP - 2 * CurrentHP) * RarityScore * BallBonus) / (3 * MaxHP), then multiply by status modifier (Sleep/Freeze = 2.0, Paralysis/Burn/Poison = 1.5). Then 4 'shake' rolls to confirm catch.",
+    "status_catch_bonuses": {
+      "sleep_or_freeze": "2.0x catch rate",
+      "paralysis_burn_poison": "1.5x catch rate",
+      "stack_with_ball": "Multiplicative. Net Ball (3x) + Sleep (2x) on a Wailmer (Water) = 6x catch boost."
+    },
+    "false_swipe_combo": "Move at 100% acc that always leaves the target with at least 1 HP. Found at TM54 (Slateport gift NPC) or natural learn (Sneasel, Scyther, Gallade). Pair with status setter (Hypnosis Gengar, Spore Breloom) and Timer Ball - this is the optimal legendary capture stack."
+  },
+  "money_management": {
+    "overview": "Money in Emerald is mostly capped by trainer payouts. The richest trainers, Pickup Linoones, the lottery, and the Pokemon Lottery + Game Corner are the main income streams.",
+    "income_sources": [
+      {
+        "source": "Match Call rematches (PokeNav)",
+        "rate": "$1,500 - $7,500 per rematch",
+        "tip": "Talk to trainers across Hoenn to register their PokeNav numbers. Periodically they'll call asking for a rematch with stronger teams. Higher-tier trainers (Cooltrainer, Rich Boy, Lady) pay best.",
+        "note": "Emerald uses Match Call (Pokénav-based) for rematches. The Vs. Seeker is a FireRed/LeafGreen item and does NOT exist in Emerald."
+      },
+      {
+        "source": "Lilycove Lottery",
+        "rate": "Daily ID-match draw",
+        "prizes": [
+          {
+            "matches": "5 trainer-ID digits",
+            "prize": "Master Ball"
+          },
+          {
+            "matches": "4 digits",
+            "prize": "Exp Share (according to some) / PP Up"
+          },
+          {
+            "matches": "3 digits",
+            "prize": "PP Up"
+          },
+          {
+            "matches": "2 digits",
+            "prize": "PP Max (verify_in_game; varies by source)"
+          },
+          {
+            "matches": "1 digit",
+            "prize": "nothing or low item"
+          }
+        ],
+        "tip": "Trade with friends to put many different Trainer-ID Pokemon in your PC. The Lottery draws against ALL Pokemon in PC + party, so each unique TID is a separate ticket.",
+        "verify_in_game": "Specific prize tiers vary by source; canonical chart needs in-game test."
+      },
+      {
+        "source": "Game Corner (Mauville City)",
+        "rate": "Slots: 5-100 coins per spin; jackpots in the thousands",
+        "tip": "Coins exchange to TMs (TM13 Ice Beam 4000, TM24 Thunderbolt 4000, TM35 Flamethrower 4000, TM30 Shadow Ball 1500). Worth grinding only if you don't have the cash for direct purchase elsewhere.",
+        "note": "Cherry-replay strategy: hold and rapid-tap A on the spin button. Pseudo-RNG lets some patterns slot reliably. Modern emulator users often save-state."
+      },
+      {
+        "source": "Pickup ability (Linoone)",
+        "rate": "10% chance per battle to find an item, scaled by Linoone level",
+        "tip": "Lv 91+ Linoones occasionally pick up Nuggets ($5,000 sell), Rare Candies, PP-Ups, Moon/Sun Stones (rare), and King's Rocks (rare). Run with 6 Linoones in party to multiply pickup chances per battle.",
+        "income_estimate": "A single Lv 100 Linoone in 100 battles yields ~10 pickup items, with avg sell value $1,500. Multiply by 6 in party = $90,000 per session."
+      },
+      {
+        "source": "Top-paying trainer types",
+        "list": [
+          {
+            "trainer": "Pokémaniac",
+            "payout": "Highest in the game per Pokemon level (1280 / level)",
+            "where": "Various routes; reliable in Route 111/113/115"
+          },
+          {
+            "trainer": "Gentleman",
+            "payout": "$1,200+ per Pokemon",
+            "where": "S.S. Tidal, Battle Frontier"
+          },
+          {
+            "trainer": "Rich Boy / Lady",
+            "payout": "$1,000+ per Pokemon",
+            "where": "Route 110, 119, contests"
+          },
+          {
+            "trainer": "Cooltrainer",
+            "payout": "$800+ per Pokemon",
+            "where": "Mid-game routes"
+          },
+          {
+            "trainer": "Lass with Nugget",
+            "payout": "$5,000 from 1 Nugget held + battle prize",
+            "where": "Route 102/104 - Lass NPCs sometimes hold Nuggets"
+          }
+        ],
+        "tip": "Gentlemen and Pokémaniacs are the richest. Battle them on every rematch."
+      },
+      {
+        "source": "Selling items",
+        "list": [
+          {
+            "item": "Nugget",
+            "buy_price": "n/a (gift)",
+            "sell_price": "$5,000",
+            "where": "Gentlemen, Pickup, Lottery",
+            "tip": "Always keep 1-2 for emergencies; sell extras"
+          },
+          {
+            "item": "Pearl",
+            "sell_price": "$700"
+          },
+          {
+            "item": "Big Pearl",
+            "sell_price": "$3,750"
+          },
+          {
+            "item": "Stardust",
+            "sell_price": "$1,000"
+          },
+          {
+            "item": "Star Piece",
+            "sell_price": "$4,900"
+          },
+          {
+            "item": "Tiny Mushroom",
+            "sell_price": "$250"
+          },
+          {
+            "item": "Big Mushroom",
+            "sell_price": "$2,500"
+          },
+          {
+            "item": "Heart Scale",
+            "sell_price": "$0 (cannot sell - keep for Move Reminder)"
+          },
+          {
+            "item": "Rare Candy",
+            "sell_price": "DO NOT SELL - keep for level pushes"
+          }
+        ],
+        "tip": "Pearls and mushrooms come from Pickup and underwater. Sell freely once you have what you need."
+      },
+      {
+        "source": "Amulet Coin",
+        "effect": "Held item; doubles money won from a battle if the holder participated",
+        "where": "Route 104 (gift from Mom on the way to Petalburg / verify_in_game) OR Slateport City (gift from a young trainer; verify_in_game)",
+        "tip": "Equip on a fast lead Pokemon and keep them in for at least one turn each battle. Double money from EVERY trainer fight."
+      },
+      {
+        "source": "Pay Day move",
+        "effect": "Scatters coins on the field equal to 2x level. Picks up money equal to that amount at end of battle.",
+        "users": "Meowth (not native to Hoenn; trade in from FireRed). Persian. Smeargle via sketch.",
+        "tip": "Meowth + Pay Day + Amulet Coin = quadruple money. But Meowth can't be obtained natively, so it's a low-priority strategy."
+      }
+    ],
+    "money_drains": [
+      "Vitamins ($9,800 each at Mauville/Slateport) - 6 stat caps = $588,000 per Pokemon",
+      "TMs from Lilycove ($1,000 - $5,500 each) - many key TMs sold here",
+      "PP Up consumables - $0 but only from Lottery/rare sources",
+      "Pokeballs - 200 each, scales up to Ultra Ball at $1,200",
+      "Repels - 350-700 each; stack on grinds"
+    ],
+    "amulet_coin_synergy": "Amulet Coin + Match Call rematch + Gentleman = effortless income. Late-game Amulet Coin Linoone with Pickup is the steady-income MVP.",
+    "lottery_strategy": "Trade Pokemon with multiple friends. The Lottery checks Trainer ID against ALL Pokemon in PC+party; unique TIDs = unique chances. 5 friends contributing 30 different-TID Pokemon = 150 ticket entries."
+  },
+  "berries_and_pokeblocks": {
+    "overview": "Berries are plantable on Soft Soil patches across Hoenn. They grow into trees that yield more berries. Used for healing, status cure, contest stat boost via Pokeblocks, and as held items (Cheri/Lum/Sitrus etc).",
+    "berry_categories": {
+      "status_cure": [
+        {
+          "berry": "Cheri",
+          "cures": "Paralysis",
+          "growth_hours": 12
+        },
+        {
+          "berry": "Chesto",
+          "cures": "Sleep",
+          "growth_hours": 12
+        },
+        {
+          "berry": "Pecha",
+          "cures": "Poison",
+          "growth_hours": 12
+        },
+        {
+          "berry": "Rawst",
+          "cures": "Burn",
+          "growth_hours": 12
+        },
+        {
+          "berry": "Aspear",
+          "cures": "Freeze",
+          "growth_hours": 12
+        },
+        {
+          "berry": "Persim",
+          "cures": "Confusion",
+          "growth_hours": 16
+        },
+        {
+          "berry": "Lum",
+          "cures": "Any status",
+          "growth_hours": 48
+        }
+      ],
+      "hp_pp_recovery": [
+        {
+          "berry": "Oran",
+          "effect": "+10 HP when below 50%",
+          "growth_hours": 16
+        },
+        {
+          "berry": "Sitrus",
+          "effect": "+30 HP when below 50%",
+          "growth_hours": 32
+        },
+        {
+          "berry": "Leppa",
+          "effect": "+10 PP to lowest-PP move",
+          "growth_hours": 24
+        },
+        {
+          "berry": "Berry Juice",
+          "effect": "Held; +20 HP",
+          "note": "Crafted, not grown"
+        }
+      ],
+      "rare_pokeblock_berries": [
+        {
+          "berry": "Pamtre",
+          "flavor": "Dry (max)",
+          "use": "Best Beauty Pokeblocks",
+          "tip": "Required for Feebas -> Milotic Beauty stat. Wife of Berry Master gives via 'CHALLENGE CONTEST' code."
+        },
+        {
+          "berry": "Watmel",
+          "flavor": "Sweet (max)",
+          "use": "Best Cute Pokeblocks",
+          "tip": "Wife code: 'OVERWHELMING LATIAS'"
+        },
+        {
+          "berry": "Spelon",
+          "flavor": "Spicy (max)",
+          "use": "Best Cool Pokeblocks",
+          "tip": "Wife code: 'GREAT BATTLE'"
+        },
+        {
+          "berry": "Belue",
+          "flavor": "Sour (max)",
+          "use": "Best Tough Pokeblocks",
+          "tip": "Wife code: 'SUPER HUSTLE'"
+        },
+        {
+          "berry": "Durin",
+          "flavor": "Bitter (max)",
+          "use": "Best Smart Pokeblocks",
+          "tip": "Wife code: 'COOL LATIOS'"
+        }
+      ],
+      "ev_reset_berries": [
+        {
+          "berry": "Pomeg",
+          "removes": "10 HP EVs"
+        },
+        {
+          "berry": "Kelpsy",
+          "removes": "10 Atk EVs"
+        },
+        {
+          "berry": "Qualot",
+          "removes": "10 Def EVs"
+        },
+        {
+          "berry": "Hondew",
+          "removes": "10 SpA EVs"
+        },
+        {
+          "berry": "Grepa",
+          "removes": "10 SpD EVs"
+        },
+        {
+          "berry": "Tamato",
+          "removes": "10 Spe EVs"
+        }
+      ],
+      "type_resist_held_berries": [
+        {
+          "berry": "Occa Berry (Gen 4+)",
+          "note": "NOT in Gen 3 - skip"
+        },
+        {
+          "berry": "Liechi",
+          "effect": "+1 Atk when HP < 25% (Gen 3 has Liechi)",
+          "where": "Mirage Island only"
+        },
+        {
+          "berry": "Ganlon",
+          "effect": "+1 Def when HP < 25%",
+          "where": "Berry Master gift on certain dates"
+        },
+        {
+          "berry": "Salac",
+          "effect": "+1 Spe when HP < 25%",
+          "where": "Berry Master gift"
+        },
+        {
+          "berry": "Petaya",
+          "effect": "+1 SpA when HP < 25%",
+          "where": "Berry Master gift"
+        },
+        {
+          "berry": "Apicot",
+          "effect": "+1 SpD when HP < 25%",
+          "where": "Berry Master gift"
+        }
+      ]
+    },
+    "berry_growth_mechanics": {
+      "stages": "5 stages: Planted, Sprout, Tall, Bloom, Berry. Each stage takes ~1-12 hours of real-time depending on berry. Visit your trees to water (Wailmer Pail) and accelerate by ~1 hour.",
+      "yield": "1-5 berries per harvest, scaled by water count. Watering twice typically gives 3-4. Watering 5+ times gives 4-5.",
+      "wailmer_pail": "Free key item; obtained from a girl in Route 104 berry-tree garden after picking a few berries. Required to water.",
+      "soil_loam_extension": "Some Soft Soil patches let you plant adjacent crops; managing 4-6 trees per save is normal.",
+      "internal_clock_rtc_warning": "Berry growth uses the cartridge's internal real-time clock. Original Gen 3 cartridges' batteries can die after 15+ years - berries stop growing. Modern remakes/emulators don't have this issue."
+    },
+    "pokeblock_basics": {
+      "what": "A snack made from berries that raises a Pokemon's contest stats (Cool, Beauty, Cute, Smart, Tough). Used for Contest competitions and Feebas evolution.",
+      "where": "Berry Blender at the Slateport contest hall (and other contest halls). Multiplayer with 1-3 NPCs (or via PokéNav match call) blends faster and gives higher-tier blocks.",
+      "flavor_to_contest_mapping": {
+        "Spicy": "Cool",
+        "Sour": "Tough",
+        "Bitter": "Smart",
+        "Dry": "Beauty",
+        "Sweet": "Cute"
+      },
+      "block_quality": "Pokeblock 'level' depends on the worst-tasting flavor in the mix and the speed of the blend. Aim for high-purity flavor combos and fast blends. Levels 23+ are the top tier.",
+      "feeding": "Pokemon eat blocks for stat gain only if they 'like' the flavor (based on Nature). Adamant Pokemon dislike Dry-flavor blocks, so Adamant Feebas can't easily Beauty up - use a different nature."
+    },
+    "contest_recommended_combos": [
+      {
+        "contest": "Cool",
+        "berries": [
+          "Spelon",
+          "Tamato",
+          "Cheri"
+        ],
+        "tip": "Spicy-heavy mix"
+      },
+      {
+        "contest": "Beauty",
+        "berries": [
+          "Pamtre",
+          "Pomeg",
+          "Grepa"
+        ],
+        "tip": "Dry-heavy. Required for Feebas evolution."
+      },
+      {
+        "contest": "Cute",
+        "berries": [
+          "Watmel",
+          "Mago",
+          "Pecha"
+        ],
+        "tip": "Sweet-heavy"
+      },
+      {
+        "contest": "Smart",
+        "berries": [
+          "Durin",
+          "Aguav",
+          "Rawst"
+        ],
+        "tip": "Bitter-heavy"
+      },
+      {
+        "contest": "Tough",
+        "berries": [
+          "Belue",
+          "Iapapa",
+          "Aspear",
+          "Tamato (cross-purpose)"
+        ],
+        "tip": "Sour-heavy"
+      }
+    ],
+    "soft_soil_locations": [
+      "Route 102 (small berry patch)",
+      "Route 104 (large garden with girl who gives Wailmer Pail)",
+      "Route 111 (desert oasis patches)",
+      "Route 112 (south of Mt. Chimney path)",
+      "Route 114 (Fallarbor approach)",
+      "Route 115 (between Rustboro and Meteor Falls)",
+      "Route 119 (post-Weather Institute long grass area)",
+      "Route 120 (north of Trick House)",
+      "Route 121 (Safari Zone approach)",
+      "Route 123 (Berry Master's house garden)"
+    ],
+    "mulch_clarification": "Mulch is a Generation 4 (Diamond/Pearl) berry-pot mechanic. NOT in Emerald. Emerald uses Soft Soil patches in fixed world locations and the Wailmer Pail watering can.",
+    "soft_soil_revival": "If a tree 'dies' (unwatered through full life cycle), the soil reverts to plantable. Fertilizer-style mulch is not needed.",
+    "tip": "Stockpile Lum berries (multi-status cure) for Frontier runs. Plant Pamtre + Watmel + Spelon early - they're the rarest mass-flavor berries and unlock contest mastery."
+  },
+  "pokemon_natures": {
+    "overview": "25 natures total. 5 are 'neutral' (no stat change). The other 20 boost one stat by 10% and reduce another by 10%. Natures are randomly assigned at generation/encounter and never change.",
+    "neutral_natures": [
+      {
+        "nature": "Hardy",
+        "neutral": "Atk-Atk (no effect)"
+      },
+      {
+        "nature": "Docile",
+        "neutral": "Def-Def (no effect)"
+      },
+      {
+        "nature": "Serious",
+        "neutral": "Spe-Spe (no effect)"
+      },
+      {
+        "nature": "Bashful",
+        "neutral": "SpA-SpA (no effect)"
+      },
+      {
+        "nature": "Quirky",
+        "neutral": "SpD-SpD (no effect)"
+      }
+    ],
+    "all_25_natures_table": [
+      {
+        "nature": "Hardy",
+        "boost": "Atk",
+        "cut": "Atk (neutral)"
+      },
+      {
+        "nature": "Lonely",
+        "boost": "Atk",
+        "cut": "Def"
+      },
+      {
+        "nature": "Brave",
+        "boost": "Atk",
+        "cut": "Spe"
+      },
+      {
+        "nature": "Adamant",
+        "boost": "Atk",
+        "cut": "SpA"
+      },
+      {
+        "nature": "Naughty",
+        "boost": "Atk",
+        "cut": "SpD"
+      },
+      {
+        "nature": "Bold",
+        "boost": "Def",
+        "cut": "Atk"
+      },
+      {
+        "nature": "Docile",
+        "boost": "Def",
+        "cut": "Def (neutral)"
+      },
+      {
+        "nature": "Relaxed",
+        "boost": "Def",
+        "cut": "Spe"
+      },
+      {
+        "nature": "Impish",
+        "boost": "Def",
+        "cut": "SpA"
+      },
+      {
+        "nature": "Lax",
+        "boost": "Def",
+        "cut": "SpD"
+      },
+      {
+        "nature": "Timid",
+        "boost": "Spe",
+        "cut": "Atk"
+      },
+      {
+        "nature": "Hasty",
+        "boost": "Spe",
+        "cut": "Def"
+      },
+      {
+        "nature": "Serious",
+        "boost": "Spe",
+        "cut": "Spe (neutral)"
+      },
+      {
+        "nature": "Jolly",
+        "boost": "Spe",
+        "cut": "SpA"
+      },
+      {
+        "nature": "Naive",
+        "boost": "Spe",
+        "cut": "SpD"
+      },
+      {
+        "nature": "Modest",
+        "boost": "SpA",
+        "cut": "Atk"
+      },
+      {
+        "nature": "Mild",
+        "boost": "SpA",
+        "cut": "Def"
+      },
+      {
+        "nature": "Quiet",
+        "boost": "SpA",
+        "cut": "Spe"
+      },
+      {
+        "nature": "Bashful",
+        "boost": "SpA",
+        "cut": "SpA (neutral)"
+      },
+      {
+        "nature": "Rash",
+        "boost": "SpA",
+        "cut": "SpD"
+      },
+      {
+        "nature": "Calm",
+        "boost": "SpD",
+        "cut": "Atk"
+      },
+      {
+        "nature": "Gentle",
+        "boost": "SpD",
+        "cut": "Def"
+      },
+      {
+        "nature": "Sassy",
+        "boost": "SpD",
+        "cut": "Spe"
+      },
+      {
+        "nature": "Careful",
+        "boost": "SpD",
+        "cut": "SpA"
+      },
+      {
+        "nature": "Quirky",
+        "boost": "SpD",
+        "cut": "SpD (neutral)"
+      }
+    ],
+    "synchronize_breeding": {
+      "everstone_method": "Female parent holding an Everstone passes its Nature to offspring 50% of the time. The most reliable Gen 3 nature-locking method.",
+      "synchronize_lead_method": "If your party LEAD has the Synchronize ability (Ralts/Kirlia/Gardevoir, Abra/Kadabra/Alakazam-import), 50% of WILD encounters will share its Nature. Useful for catching legendaries with desired natures.",
+      "stack_strategy": "For a roaming Latios with Modest nature: lead party with a Modest Synchronize Gardevoir. Save before encounter; reset until Latios shares nature."
+    },
+    "best_natures_for_top_hoenn_pokemon": [
+      {
+        "pokemon": "Salamence",
+        "best_nature": "Adamant (+Atk -SpA)",
+        "reason": "Physical sweeper; Earthquake/Outrage/Brick Break all physical."
+      },
+      {
+        "pokemon": "Salamence (mixed alt)",
+        "alt_nature": "Naive (+Spe -SpD)",
+        "reason": "Mixed Salamence with Fire Blast + Outrage; preserves SpA."
+      },
+      {
+        "pokemon": "Sceptile",
+        "best_nature": "Jolly (+Spe -SpA)",
+        "reason": "120 base Speed maxed; Leaf Blade is physical so SpA cut is fine."
+      },
+      {
+        "pokemon": "Blaziken",
+        "best_nature": "Adamant (+Atk -SpA)",
+        "reason": "Sky Uppercut and Blaze Kick are physical; ignore SpA."
+      },
+      {
+        "pokemon": "Swampert",
+        "best_nature": "Adamant (+Atk -SpA)",
+        "reason": "Earthquake + Waterfall + Ice Punch all physical."
+      },
+      {
+        "pokemon": "Swampert (alt)",
+        "alt_nature": "Relaxed (+Def -Spe)",
+        "reason": "Defensive build; trade Speed for bulk in stall variants."
+      },
+      {
+        "pokemon": "Gardevoir",
+        "best_nature": "Modest (+SpA -Atk)",
+        "reason": "Special sweeper; Psychic/Thunderbolt/Ice Punch (in Gen 3 Ice Punch was physical, Thunderbolt special)."
+      },
+      {
+        "pokemon": "Manectric",
+        "best_nature": "Timid (+Spe -Atk) or Modest (+SpA -Atk)",
+        "reason": "Thunderbolt sweeper; Speed or Power tradeoff."
+      },
+      {
+        "pokemon": "Milotic",
+        "best_nature": "Bold (+Def -Atk)",
+        "reason": "Wall; Marvel Scale + Recover + Ice Beam. Defensive Bold for max bulk."
+      },
+      {
+        "pokemon": "Aggron",
+        "best_nature": "Adamant (+Atk -SpA)",
+        "reason": "Physical sweeper; Iron Tail + Earthquake + Stone Edge (TM47 Steel Wing native)."
+      },
+      {
+        "pokemon": "Hariyama",
+        "best_nature": "Adamant (+Atk -SpA)",
+        "reason": "Belly Drum + Cross Chop. Pure physical."
+      },
+      {
+        "pokemon": "Metagross",
+        "best_nature": "Adamant (+Atk -SpA)",
+        "reason": "Meteor Mash + Earthquake + Explosion. Slow tank with raw Atk."
+      },
+      {
+        "pokemon": "Crobat",
+        "best_nature": "Jolly (+Spe -SpA)",
+        "reason": "Speed-sweeper; Aerial Ace + Sludge Bomb. Speed > SpA priority."
+      },
+      {
+        "pokemon": "Flygon",
+        "best_nature": "Adamant (+Atk -SpA)",
+        "reason": "Earthquake + Dragon Claw + Rock Slide; physical."
+      },
+      {
+        "pokemon": "Walrein",
+        "best_nature": "Modest (+SpA -Atk)",
+        "reason": "Ice Beam + Surf + Toxic. Special wall."
+      },
+      {
+        "pokemon": "Breloom",
+        "best_nature": "Adamant (+Atk -SpA)",
+        "reason": "Mach Punch + Sky Uppercut + Spore. Pure physical."
+      }
+    ],
+    "nature_in_summary_screen": {
+      "gen3_emerald": "Nature is NOT explicitly displayed in the Pokemon summary screen in Gen 3 Emerald. To check, look at level-1 base stats - the boosted stat will show numerically higher than baseline.",
+      "later_gens": "Diamond/Pearl onwards added Nature to the summary screen with color-coded stat indicators (red boost / blue cut).",
+      "workaround": "Check the Pokemon at Lv 1 (egg-hatched). Compare its 6 stats to the species' base values. The +10% / -10% becomes obvious."
+    },
+    "tip": "Don't waste Master Balls catching wrong-nature legendaries. Soft-reset until you get the nature you want, with a Synchronize lead in your party for 50% odds."
+  },
+  "safari_zone_full": {
+    "overview": "Safari Zone is a paid mini-zone where you have a fixed number of Safari Balls and steps. Wild Pokemon may flee or refuse to engage; you cannot use your own Pokemon's moves.",
+    "location": "Route 121 (north of Mt. Pyre, west of Lilycove). Entrance is the building with a green roof on the road north.",
+    "entry_cost": {
+      "money": 500,
+      "balls": "30 Safari Balls (cannot bring/take regular balls in or out)",
+      "steps": "500 steps before auto-exit",
+      "exit_options": "Either run out of steps, run out of balls, or talk to the receptionist to leave early"
+    },
+    "mechanics": {
+      "throw_ball": "Standard catch attempt. No status moves can be applied (your Pokemon is not in the fight).",
+      "throw_bait": "Reduces wild Pokemon's ATK speed (less likely to flee), BUT lowers catch rate (becomes more skittish about being caught).",
+      "throw_rock": "Increases wild Pokemon's anger - it's more likely to flee, BUT catch rate goes UP.",
+      "watch_status": "Each turn, the wild Pokemon's behavior message tells you the current state: 'eating', 'angry', 'watching carefully', 'getting bored'. This determines flee chance.",
+      "flee_calculation": "Each turn the wild Pokemon may flee. Throwing rocks accelerates this. Throwing bait delays it. With 0 actions, flee chance is roughly 25% per turn.",
+      "best_strategy": "Throw 1-2 rocks first (to boost catch rate), then throw the ball before it flees. Bait is for stubborn long catches if you have ball stock."
+    },
+    "exclusive_pokemon_main_zone": [
+      {
+        "pokemon": "Doduo",
+        "rarity": "common",
+        "area": "South grass"
+      },
+      {
+        "pokemon": "Pikachu",
+        "rarity": "rare",
+        "area": "Mid-zone grass",
+        "tip": "Carry a Light Ball if you find one (Pickup) - bonus +50% Atk/SpA for breeding Pichu later."
+      },
+      {
+        "pokemon": "Pinsir",
+        "rarity": "uncommon",
+        "area": "South grass"
+      },
+      {
+        "pokemon": "Heracross",
+        "rarity": "rare",
+        "area": "Mid grass and south",
+        "tip": "Megahorn is one of the best Bug moves. Worth chasing."
+      },
+      {
+        "pokemon": "Phanpy",
+        "rarity": "common",
+        "area": "Northwest grass"
+      },
+      {
+        "pokemon": "Rhyhorn",
+        "rarity": "uncommon",
+        "area": "Mid-zone water/path"
+      },
+      {
+        "pokemon": "Xatu",
+        "rarity": "rare",
+        "area": "Mid grass"
+      },
+      {
+        "pokemon": "Girafarig",
+        "rarity": "uncommon",
+        "area": "Northwest grass"
+      },
+      {
+        "pokemon": "Natu",
+        "rarity": "common",
+        "area": "Mid grass (pre-Xatu)"
+      },
+      {
+        "pokemon": "Psyduck",
+        "rarity": "common",
+        "area": "Water (Surf)"
+      },
+      {
+        "pokemon": "Goldeen",
+        "rarity": "common",
+        "area": "Water (Old Rod)"
+      }
+    ],
+    "post_8th_badge_extension": {
+      "unlock": "After defeating the Elite Four and entering the Hall of Fame, the Safari Zone unlocks Northeast and Northwest extension areas.",
+      "exclusive_pokemon": [
+        {
+          "pokemon": "Wobbuffet",
+          "rarity": "uncommon",
+          "tip": "From Wynaut egg or Safari ext catch."
+        },
+        {
+          "pokemon": "Stantler",
+          "rarity": "rare"
+        },
+        {
+          "pokemon": "Marill / Azumarill",
+          "rarity": "common",
+          "area": "Water in extension"
+        },
+        {
+          "pokemon": "Sunkern / Sunflora",
+          "rarity": "uncommon",
+          "tip": "Sunflora needs Sun Stone evolution."
+        },
+        {
+          "pokemon": "Mareep / Flaaffy / Ampharos",
+          "rarity": "rare"
+        },
+        {
+          "pokemon": "Aipom",
+          "rarity": "uncommon"
+        },
+        {
+          "pokemon": "Snubbull / Granbull",
+          "rarity": "uncommon"
+        },
+        {
+          "pokemon": "Miltank",
+          "rarity": "rare",
+          "area": "Northeast extension"
+        }
+      ],
+      "access_requirements": "Must have Acro Bike + 8 badges. Some sub-areas require specific bike actions to enter."
+    },
+    "tips": [
+      "Save before each Safari run - if a rare spawn flees, reset and re-enter",
+      "Corner the Pokemon: walk into a tile where the Pokemon's flee direction is blocked by terrain. Reduces escape variance.",
+      "Use Repels to filter out common encounters. Drop a Lv 35 Repel to skip Doduo / Phanpy / Goldeen and only see rarer Heracross/Pinsir.",
+      "Each visit costs 500P. Budget for 5-10 visits to fully clear the rare list.",
+      "Bring a Pokemon with Sweet Scent (TM not in Gen 3 native; can be learned by Oddish/Bellossom) to force encounter and skip walking. Wait, Sweet Scent isn't usable in Safari Zone - skip this tip.",
+      "Pokemon caught in Safari Balls keep the Safari Ball ID forever; cosmetic flex"
+    ],
+    "pokeblock_feeder": "Inside the Safari Zone is a Pokeblock kiosk - place a Pokeblock at a tree to attract specific Pokemon. Different flavors attract different species. Used for pulling rare encounters more reliably."
+  },
+  "glitches_and_quirks": {
+    "overview": "Documented behaviors, not exploits. Things to know that aren't bugs but aren't intuitive either.",
+    "rtc_battery_dryout": {
+      "what": "Original Game Boy Advance Pokemon Emerald cartridges have an internal real-time clock (RTC) battery. After ~10-20 years, the battery dies.",
+      "consequences": [
+        "Berry trees stop growing (RTC-dependent)",
+        "Tide schedules in Shoal Cave freeze",
+        "Daily lottery doesn't reset",
+        "Mirage Island re-roll stops",
+        "Mirage RNG-based events stop firing",
+        "Lavender old-woman events tied to time of day no longer trigger",
+        "Some legendary roam events tied to clock"
+      ],
+      "fix": "Open the cartridge with a Tri-wing screwdriver and replace the CR1616 battery. Voids any official Nintendo support but is well-documented in the speedrun community.",
+      "modern_alternative": "Emulators (mGBA, VBA-M) and remakes don't have this issue - they use system time."
+    },
+    "ash_greninja_clarification": "Ash-Greninja is a Generation 7 (Sun/Moon) form change. It does NOT exist in Emerald.",
+    "birch_bag_glitch": {
+      "what": "Sometimes mentioned online: a glitch where Birch's bag gets stuck in your inventory. Generally a misremembered story event - the bag is given as a one-time gift and is not glitchy. There's no permanent inventory bug here.",
+      "verdict": "Not a real glitch. Common misremembered or confused with FRLG bag tutorial."
+    },
+    "box_clearing_pc_trick": {
+      "what": "Use the PC's 'Move Items' feature with rapid Select+button presses to mass-rearrange. Not a bug, just an undocumented quality-of-life pattern.",
+      "tip": "In Pokemon Box mode, hold Select while moving the cursor to multi-select Pokemon for batch movements. Faster than one-at-a-time."
+    },
+    "running_shoes": {
+      "what": "From Mom on Route 101 after the rival's first cutscene - she gives you Running Shoes. Hold B button to run; doubles overworld walking speed.",
+      "tip": "Always-on. There's no reason to walk except in tight cave passages where running may overshoot tile.",
+      "field_quirk": "Running shoes work everywhere except inside buildings, on certain walkways (Cycling Road), and over Snow/Ice patches."
+    },
+    "bicycle_on_water": {
+      "answer": "No. The bike unequips when you Surf and re-equips when you exit water.",
+      "exception": "Pacifidlog Town's wooden bridges over water - bike rides on these (treated as land tiles)."
+    },
+    "trick_master_payouts": [
+      {
+        "puzzle": "Puzzle 1 (scroll-burning maze)",
+        "reward": "Hard Stone (held item, +10% Rock damage)"
+      },
+      {
+        "puzzle": "Puzzle 2 (Cut + Strength)",
+        "reward": "Smoke Ball (held item, escape any wild battle)"
+      },
+      {
+        "puzzle": "Puzzle 3 (Trick House Slide)",
+        "reward": "Choice Band (held item, +50% Atk, locked into one move)"
+      },
+      {
+        "puzzle": "Puzzle 4 (Multi-floor maze)",
+        "reward": "Scope Lens (held item, +25% crit rate)"
+      },
+      {
+        "puzzle": "Puzzle 5 (Hopping Tiles)",
+        "reward": "TM12 Taunt"
+      },
+      {
+        "puzzle": "Puzzle 6 (Trick Pads)",
+        "reward": "TM31 Brick Break"
+      },
+      {
+        "puzzle": "Puzzle 7 (Hidden tiles)",
+        "reward": "TM32 Double Team"
+      },
+      {
+        "puzzle": "Puzzle 8 (Ice puzzle, post-game)",
+        "reward": "Magnet (held item, +10% Electric damage)"
+      },
+      {
+        "verify_in_game": "Specific reward order and content varies by source. Trick House contents have been catalogued in many guides."
+      }
+    ],
+    "lottery_id_match_caveat": {
+      "what": "The Lilycove Lottery checks YOUR trainer ID against the daily-randomized 5-digit lottery number. ALL Pokemon in your PC and party are 'tickets' - one per Pokemon.",
+      "trade_caveat": "Pokemon traded in have a different Trainer ID (the original trainer's). Each unique TID = a separate ticket. Trading with friends multiplies your effective ticket count.",
+      "tip": "Trade-receive 30 Pokemon with 30 different TIDs for 30 daily lottery entries instead of just 1."
+    },
+    "move_tutors_summary": {
+      "slateport_dojo_area": [
+        {
+          "move": "Counter",
+          "cost": "Free (one-time per move tutor)"
+        },
+        {
+          "move": "Mimic",
+          "cost": "Free"
+        }
+      ],
+      "fallarbor_or_lavaridge_area": [
+        {
+          "move": "Mega Punch",
+          "cost": "Free"
+        },
+        {
+          "move": "Mega Kick",
+          "cost": "Free"
+        }
+      ],
+      "sootopolis_explosion_tutor": [
+        {
+          "move": "Self-Destruct / Explosion",
+          "cost": "Free",
+          "tip": "Bring an Electrode or Voltorb. Self-Destruct is also taught in some versions."
+        }
+      ],
+      "battle_frontier_bp_tutors": [
+        {
+          "move": "Body Slam",
+          "cost": "48 BP (verify_in_game)"
+        },
+        {
+          "move": "Double-Edge",
+          "cost": "48 BP"
+        },
+        {
+          "move": "Seismic Toss",
+          "cost": "48 BP"
+        },
+        {
+          "move": "Dream Eater",
+          "cost": "48 BP"
+        },
+        {
+          "move": "Mega Punch (alt)",
+          "cost": "48 BP"
+        },
+        {
+          "move": "Mega Kick (alt)",
+          "cost": "48 BP"
+        },
+        {
+          "move": "Substitute",
+          "cost": "48 BP"
+        },
+        {
+          "move": "Defense Curl",
+          "cost": "free or low BP"
+        },
+        {
+          "move": "Dynamicpunch",
+          "cost": "48 BP"
+        },
+        {
+          "move": "Metronome",
+          "cost": "48 BP"
+        },
+        {
+          "move": "Snore",
+          "cost": "48 BP"
+        },
+        {
+          "move": "Sleep Talk",
+          "cost": "48 BP"
+        },
+        {
+          "move": "Swagger",
+          "cost": "48 BP"
+        },
+        {
+          "move": "Mimic (alt)",
+          "cost": "48 BP"
+        },
+        {
+          "move": "Endure",
+          "cost": "48 BP"
+        },
+        {
+          "move": "Rollout",
+          "cost": "48 BP"
+        },
+        {
+          "move": "Defense Curl (alt)",
+          "cost": "48 BP"
+        }
+      ],
+      "lilycove_move_reminder": {
+        "what": "Move Reminder NPC in Lilycove (look for the older woman near the dock). She re-teaches any move the Pokemon could have learned by level-up.",
+        "cost": "1 Heart Scale per move",
+        "where_to_get_heart_scales": "Pickup ability (Linoone), Rock Smash on rocks (rare drop), occasional gifts from NPCs"
+      },
+      "verify_in_game": "Many specific move tutor costs and locations vary by Emerald revision; the BP-cost tutors are the most documented."
+    },
+    "decimal_clock_quirk": "If you set the GBA clock manually, several mechanics (lottery, berries, tide) will run on whatever time you set. Some speedrunners exploit this; emulators just use system time."
+  },
+  "route_grinding_optimal": {
+    "overview": "Best leveling spots for each phase of the game. Emerald's EXP curve is steeper than later games - efficient grind locations matter.",
+    "phases": [
+      {
+        "phase": "Pre-1st gym (Lv 1-15)",
+        "best_spots": [
+          {
+            "location": "Route 102 (Petalburg approach)",
+            "encounters": "Zigzagoon, Wurmple, Poochyena, Lotad, Seedot, Ralts (rare)",
+            "grind_value": "Fast for Lv 6-12. Ralts is the rare prize."
+          },
+          {
+            "location": "Route 104 (north and south)",
+            "encounters": "Wingull, Marill, Wurmple, Pelipper",
+            "grind_value": "Better for Lv 12-15."
+          },
+          {
+            "location": "Petalburg Woods",
+            "encounters": "Wurmple, Shroomish, Slakoth",
+            "grind_value": "Catch Shroomish (-> Breloom). Battle every trainer."
+          },
+          {
+            "location": "Restart at Brendan/May rival fight",
+            "encounters": "Rival's team",
+            "grind_value": "Resetting and re-fighting the rival is one of the best EXP per minute pre-1st gym."
+          }
+        ],
+        "tips": [
+          "Catch a Wurmple ASAP for free Bug coverage and EV-train fodder",
+          "Fight every trainer - Emerald's curve is unforgiving early",
+          "Consider catching a Lotad on Route 102 for Wallace prep down the line"
+        ]
+      },
+      {
+        "phase": "Mid-game (Lv 15-30)",
+        "best_spots": [
+          {
+            "location": "Route 119 long grass",
+            "encounters": "Linoone, Vigoroth, Tropius (rare), Kecleon (special)",
+            "grind_value": "Best route for diverse mid-tier wilds."
+          },
+          {
+            "location": "Route 120 long grass",
+            "encounters": "Mightyena, Linoone, Absol (rare), Kecleon",
+            "grind_value": "Adjacent to Trick House; Atk EVs galore."
+          },
+          {
+            "location": "Granite Cave (deeper levels)",
+            "encounters": "Aron, Geodude, Zubat, Sableye, Mawile",
+            "grind_value": "Aron line is a great catch and EV target."
+          },
+          {
+            "location": "Mt. Pyre exterior",
+            "encounters": "Shuppet, Duskull, Vulpix (sometimes via swarm)",
+            "grind_value": "Ghost types for Phoebe prep."
+          }
+        ],
+        "tips": [
+          "Use Macho Brace + Pokerus while grinding - this is your peak EV window",
+          "Repel Lv 18-22 to skip lower trash encounters in Granite Cave"
+        ]
+      },
+      {
+        "phase": "Late-game (Lv 30-50)",
+        "best_spots": [
+          {
+            "location": "Victory Road floors",
+            "encounters": "Zubat/Golbat, Sableye, Hariyama, Whismur/Loudred, Lairon",
+            "grind_value": "Best EXP per kill in late game; trainers also pay well."
+          },
+          {
+            "location": "Sealed Chamber after-dive area (Route 134)",
+            "encounters": "Tentacool, Wailmer, Wailord",
+            "grind_value": "Slow but easy."
+          },
+          {
+            "location": "Sky Pillar floors",
+            "encounters": "Sableye, Banette, Claydol, Golbat, Shuppet",
+            "grind_value": "Late post-7th badge spot. Sturdy/Bug coverage targets."
+          },
+          {
+            "location": "Meteor Falls upper levels (post-Champion)",
+            "encounters": "Solrock, Lunatone, Bagon (rare), Dragonair (rare)",
+            "grind_value": "Catches your future Salamence."
+          }
+        ],
+        "tips": [
+          "By Lv 40+, fights with Pokerus + Macho Brace become diminishing - swap out brace for Lucky Egg (if you have one)",
+          "Repels stop being useful past Lv 50 - just grind the trainers"
+        ]
+      },
+      {
+        "phase": "Post-Champion (Lv 50-100)",
+        "best_spots": [
+          {
+            "location": "PokéNav rematches (Match Call)",
+            "encounters": "Various trainer types, scaling with badge count",
+            "grind_value": "Highest EXP-per-fight in late game. Pokémaniacs and Cooltrainers pay well."
+          },
+          {
+            "location": "Battle Frontier (no levels gained at Lv 50 cap, but BP earned)",
+            "grind_value": "Not for level gain - for BP and Frontier item rewards."
+          },
+          {
+            "location": "Meteor Falls back-room (after Surf+Waterfall)",
+            "encounters": "Lv 33-43 Solrock/Lunatone/Bagon/Dragonair",
+            "grind_value": "Best for Lv 40-60 Pokemon."
+          },
+          {
+            "location": "Sealed Chamber Regi areas",
+            "encounters": "Lv 40 Regis if not yet caught",
+            "grind_value": "Single big-EXP fight per Regi cave."
+          },
+          {
+            "location": "Trainer Hill",
+            "encounters": "Trainer rush, all types",
+            "grind_value": "Speedrun-able for repeat EXP."
+          }
+        ],
+        "tips": [
+          "Hatch Eggs walking the Pacifidlog tide loop - free EVs/EXP for newborns",
+          "Use a Linoone with Pickup as your 6th party slot - free items every battle"
+        ]
+      }
+    ],
+    "champion_wallace_prep": {
+      "level_target": "Pokemon Lv 55-58 (one badge above Wallace's ace at 58)",
+      "key_grind_pokemon": [
+        "Bagon (Meteor Falls B1F, Lv 25-30 wild) - evolves Lv 30 to Shelgon, Lv 50 to Salamence",
+        "Beldum (post-Champion gift from Steven) - too late for Wallace, but for E4 challenge stack",
+        "Trapinch (Route 111 desert) - Vibrava Lv 35, Flygon Lv 45 - Levitate immune to EQ",
+        "Linoone (Routes 118-119) - Belly Drum + Extreme Speed + Pickup support"
+      ]
+    },
+    "money_grind_correction": {
+      "smelting_machine_irrelevance": "There is no Smelting Machine in Emerald (that's Pokemon Mystery Dungeon or other spinoffs). Money grind path: PokéNav rematches + Amulet Coin Linoone + Pickup farming",
+      "battle_frontier_bp_grind": "BP at the Frontier converts indirectly to money via held items and TMs that you'd otherwise buy. BP rate: ~3-7 BP per win streak.",
+      "rotation_sequence": "Cycle: 30 minutes rematches (Amulet Coin) -> 60 minutes Battle Tower runs -> 30 minutes Linoone Pickup farming. Yields: ~$25,000 + 30 BP + 6 Pickup items per hour."
+    }
+  },
+  "battle_frontier_deep": {
+    "overview": "The Battle Frontier on the artificial island past Lilycove (post-Hall of Fame) is Emerald's true endgame. 7 facilities, each with a Frontier Brain awarding Silver and Gold Symbols. 14 Symbols total = 100% Frontier completion.",
+    "level_scaling": {
+      "default_lv50": "All Frontier facilities offer a 'Lv 50' mode. Pokemon above Lv 50 are temporarily scaled DOWN to 50. Pokemon below Lv 50 are NOT scaled UP - bring Lv 50 Pokemon or weaker.",
+      "open_lv100": "Battle Tower (only) offers Open Level mode after Silver Symbol. Pokemon use their actual levels. Brings out Lv 100 metagame.",
+      "tip": "Build your team to cap exactly at Lv 50. EV training matters MORE here because the level cap removes raw power gaps."
+    },
+    "battle_points": {
+      "what": "BP is the Frontier currency. Earned at the end of each win-streak (typically every 7 wins).",
+      "rate": "1-7 BP per Brain fight, 1-3 BP per regular streak segment. Total BP per facility per Symbol: 50-150 over multiple streaks.",
+      "shop_items": [
+        {
+          "item": "Protein/Iron/Calcium/etc. (vitamins)",
+          "cost_bp": 1,
+          "tip": "Cheaper than the $9,800 Mart price - if you have BP to spare"
+        },
+        {
+          "item": "Reset berries (Pomeg etc.)",
+          "cost_bp": 1
+        },
+        {
+          "item": "Held items: Choice Band, Focus Band, Leftovers, Scope Lens, Shell Bell, Silver/Gold Powder, etc.",
+          "cost_bp": "8-64 each"
+        },
+        {
+          "item": "TMs: Counter, Drain Punch, Pain Split, Stockpile, etc.",
+          "cost_bp": "32-64"
+        },
+        {
+          "item": "Move Tutor lessons",
+          "cost_bp": 48
+        },
+        {
+          "item": "Rare Candy / PP Up",
+          "cost_bp": "48 / 16"
+        }
+      ]
+    },
+    "facilities": [
+      {
+        "name": "Battle Tower",
+        "brain": "Anabel",
+        "format": "3v3 singles, 7-battle streak per Symbol attempt",
+        "level": "Lv 50 mode (scale-down) or Open Lv 100 (after Silver)",
+        "silver_symbol_at": "Battle 21 (3rd Brain encounter)",
+        "gold_symbol_at": "Battle 49 (7th Brain encounter)",
+        "anabel_team": "Alakazam (Calm Mind/Psychic), Snorlax (Curse/Body Slam/Earthquake/Yawn), Entei (Flamethrower/Calm Mind/Iron Head)",
+        "rental_meta": "n/a - Battle Tower uses your own Pokemon",
+        "tips": [
+          "Use 252 / 252 / 4 spreads, not jack-of-all-trades",
+          "Three Pokemon = one physical wall, one special wall, one sweeper",
+          "Carry Lum Berry on each member"
+        ]
+      },
+      {
+        "name": "Battle Dome",
+        "brain": "Tucker",
+        "format": "16-trainer single-elimination tournament, 2v2 doubles per match",
+        "level": "Lv 50",
+        "silver_symbol_at": "After 4 tournaments cleared",
+        "gold_symbol_at": "After 9 tournaments",
+        "tucker_team": "Salamence (Dragon Claw/Hydro Pump/Aerial Ace), Charizard (Flamethrower/Aerial Ace), Swampert (Earthquake/Surf)",
+        "format_quirk": "You can scout enemy stats and moves BEFORE each match - exploit this",
+        "tips": [
+          "Use Choice Band attackers for OHKOs - 2v2 favors burst",
+          "Bring rapid finishers; the Dome's match clock penalizes long battles"
+        ]
+      },
+      {
+        "name": "Battle Palace",
+        "brain": "Spenser",
+        "format": "3v3 singles, but YOU don't pick moves - the AI picks based on Pokemon's Nature",
+        "level": "Lv 50",
+        "silver_symbol_at": "After 21 wins streak (3rd Brain encounter)",
+        "gold_symbol_at": "After 49 wins (7th Brain)",
+        "spenser_team": "Crobat, Lapras, Slaking",
+        "format_quirk": "Adamant/Naughty/Brave/Lonely natures attack. Bold/Modest/Calm/Timid often heal/buff. Quirky/Quiet may flee. Pick natures aligned with attacking only.",
+        "tips": [
+          "Use Adamant Pokemon with single-purpose physical movesets",
+          "Avoid status moves entirely - the AI may not pick them",
+          "Slaking with Truant doesn't penalize here (no judging score)"
+        ]
+      },
+      {
+        "name": "Battle Arena",
+        "brain": "Greta",
+        "format": "1v1 with judging - if both alive after 3 turns, judges score 'Mind/Skill/Body' to determine winner",
+        "level": "Lv 50",
+        "silver_symbol_at": "21 wins",
+        "gold_symbol_at": "49 wins",
+        "greta_team": "Heracross (Megahorn/Brick Break), Umbreon (Confuse Ray/Faint Attack), Shedinja (Wonder Guard meme run)",
+        "format_quirk": "Switching is BANNED. Status-only turns are penalized. Aim for OHKO or 2-turn kills.",
+        "tips": [
+          "Use offensive natures + STAB damage moves",
+          "Slaking shines here - Truant doesn't dock score",
+          "Carry items: Lum, Choice Band, Leftovers"
+        ]
+      },
+      {
+        "name": "Battle Factory",
+        "brain": "Noland",
+        "format": "Rental Pokemon - you draw 6 random Pokemon, choose 3, swap with defeated opponents",
+        "level": "Lv 50",
+        "silver_symbol_at": "21 wins",
+        "gold_symbol_at": "49 wins",
+        "noland_team": "Articuno, Zapdos, Moltres (rotated rentals at higher streaks)",
+        "format_quirk": "You don't use your own Pokemon. The pool is random. Held items are part of the rental.",
+        "tips": [
+          "Round 1: pick balanced typing - one physical, one special, one defensive",
+          "Always swap into Pokemon that resist what just KO'd you",
+          "Hold items matter: Choice Band > Leftovers > Lum > Scope Lens"
+        ]
+      },
+      {
+        "name": "Battle Pike",
+        "brain": "Lucy",
+        "format": "Choose path through 14 rooms (3 doors blind each step)",
+        "level": "Lv 50",
+        "silver_symbol_at": "Reach 28th Brain encounter",
+        "gold_symbol_at": "Reach 56th Brain encounter",
+        "lucy_team": "Seviper, Milotic, Shuckle (status nightmare)",
+        "format_quirk": "Each room is a trainer, wild Pokemon, status-floor trap (poison/burn/sleep), or NPC bonus. Lottery-style.",
+        "tips": [
+          "Bring Lum Berry on every Pokemon to survive status traps",
+          "Use Recover/Rest tank as anchor - Milotic, Snorlax, Wobbuffet",
+          "When in doubt, pick the door that's been chosen LEAST often (often safest)"
+        ]
+      },
+      {
+        "name": "Battle Pyramid",
+        "brain": "Brandon",
+        "format": "7-floor dark mazes - find boss on each floor while exploring with limited Flash range",
+        "level": "Lv 50",
+        "silver_symbol_at": "After 21 floors cleared (3rd Brain run)",
+        "gold_symbol_at": "After 49 floors (7th Brain run)",
+        "brandon_team": "Articuno, Regice (round 1), Registeel + Regirock (round 2), all 3 Regis at the gold encounter",
+        "format_quirk": "Held items DO NOT carry between floors - you find new items in the maze. HP/PP also do not auto-restore between floors.",
+        "tips": [
+          "High-HP self-recovery Pokemon: Snorlax (Rest+Sleep Talk), Dusclops, Milotic",
+          "Memorize floor maps - random floor layouts repeat in patterns",
+          "Pickup items as you go - Leftovers and Berry items are common"
+        ]
+      }
+    ],
+    "always_switch_pyramid_rule": "On Pyramid floors, treat each room as a one-shot. Don't expect to retain items - so commit big with Selfdestruct/Explosion or one-and-done strategies on tough opponents.",
+    "smeargle_clarification": {
+      "what": "Smeargle has the move Sketch, which can copy any move (including Spore for permanent sleep).",
+      "availability_emerald": "Smeargle is a Generation 2 Pokemon. NOT native to Hoenn wild. Can be obtained via trade from FRLG (Ruin Valley) or Crystal-trade-ins. In Emerald, Smeargle is breedable from a traded-in Smeargle but it must come from an outside game first.",
+      "tip": "If you can get a Smeargle, Sketch a Spore (from Breloom) for a 100%-acc sleep move. Frontier-tier strategy."
+    },
+    "frontier_meta_tips": [
+      "Build 3 Frontier teams: a balanced singles trio (Tower/Palace/Arena), a doubles core (Dome), and a stall pair (Pike)",
+      "Carry Lum Berry on each Pokemon to survive status spam",
+      "Pokerus + Macho Brace your team in the EV-prep phase BEFORE entering Frontier",
+      "Save BEFORE each Brain fight - one shot, no retry on the same streak",
+      "Save your BP for the rare items (Leftovers, Choice Band, Soothe Bell) - cheap consumables can come from $$$",
+      "Track win streaks per facility - the Frontier remembers your highest"
     ]
   }
 }
