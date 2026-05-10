@@ -66,9 +66,18 @@ Sizes: `.poke-sprite--xs` 32, `--sm` 48, default 64, `--lg` 96, `--xl` 128. `.po
 ### Cross-page contracts
 
 - **Nav block** is byte-identical across all 15 pages. JS auto-marks the current page via `.is-current` — never manually add it. Adding a new page means inserting a `<li>` in both `nav__links` and `nav__drawer` on **every** page (use a Python sweep, not the Edit tool).
+- The nav `<ul>` uses `style="display:contents;"` to flatten itself for layout. Because of that, `list-style: none` is set explicitly on `.nav__links ul/li` and `.nav__drawer ul/li` — without those rules, default `<li>` markers leak through. Don't remove them.
 - **Footer block** is byte-identical across all pages.
 - **One drop-cap per page** (the `.dropcap` class). Place it on the first body paragraph of the first content section.
 - Page titles: `<Page Name> &middot; Hoenn Field Guide`.
+
+### Mobile / responsive contracts
+
+- The site is verified clean at 375px (iPhone-class viewport): no page has `scrollWidth > clientWidth`.
+- CSS Grid items default to `min-width: auto` (= min-content). Long unbreakable tokens — Pokemon names, formulas, stat values — will force `1fr` tracks wider than their container and break mobile. The fix is already in section 04 of `main.css`: `.grid > *`, `.split > *`, `.stagger > *`, and `.bullet-list > li` all have `min-width: 0`. **If you add a new grid-based component, set `min-width: 0` on its direct children.**
+- `.card`, `.tile`, `.callout`, `.card-trainer`, `.tier-card`, and `.stat-row__value/__num` have `overflow-wrap: anywhere; word-break: break-word` so long strings degrade gracefully instead of forcing sideways scroll. Preserve this on new card-type components.
+- `.grid--2/3/4` and `.grid--auto` all collapse to a single column under 640px.
+- The `.riso-blob` and `.riso-dots` decorative shapes are hand-positioned for desktop and get scaled down (0.55×, 0.35 opacity) under 640px. `.hero` and `.page-header` have `overflow: hidden` at that breakpoint so the scaled blobs don't push out the page.
 
 ### Deployment
 
