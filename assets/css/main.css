@@ -330,6 +330,22 @@ p { max-width: 68ch; }
   column-gap: var(--s-2);
   row-gap: var(--s-3);
 }
+/* Kill default <ul>/<li> bullets inside the nav and drawer (the inline
+   ul has display:contents, but li markers still render). */
+.nav__links ul,
+.nav__drawer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav__links li,
+.nav__drawer li {
+  list-style: none;
+}
+.nav__links li::marker,
+.nav__drawer li::marker {
+  content: '';
+}
 .nav__links a {
   font-family: var(--font-mono);
   font-size: var(--fs-xs);
