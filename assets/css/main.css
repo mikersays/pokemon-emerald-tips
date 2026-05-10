@@ -327,7 +327,8 @@ p { max-width: 68ch; }
   display: none;
   list-style: none;
   align-items: center;
-  gap: var(--s-2);
+  column-gap: var(--s-2);
+  row-gap: var(--s-3);
 }
 .nav__links a {
   font-family: var(--font-mono);
@@ -411,11 +412,14 @@ p { max-width: 68ch; }
 .hero__title {
   font-family: var(--font-display);
   font-weight: 900;
-  font-size: clamp(3rem, 11vw, var(--fs-5xl));
-  line-height: 0.86;
+  font-size: clamp(2.6rem, 9.5vw, var(--fs-5xl));
+  line-height: 0.95;
   letter-spacing: -0.035em;
   font-variation-settings: 'opsz' 144, 'SOFT' 0;
   color: var(--ink);
+  /* Prevent the italic "g" descender from crashing into content below */
+  padding-bottom: 0.18em;
+  margin-bottom: var(--s-2);
 }
 .hero__title em {
   font-style: italic;

@@ -4252,5 +4252,910 @@
       "Save your BP for the rare items (Leftovers, Choice Band, Soothe Bell) - cheap consumables can come from $$$",
       "Track win streaks per facility - the Frontier remembers your highest"
     ]
+  },
+  "key_items": {
+    "overview": "Permanent key items in Pokemon Emerald. Most are non-missable story items, but a few are easy to overlook (Soot Sack, Scanner, Coin Case). Key items have their own bag pocket and cannot be tossed.",
+    "items": [
+      {
+        "name": "Mach Bike / Acro Bike",
+        "where_to_get": "Rydel's Cycles, central Mauville City. Free swap any time.",
+        "when_in_story": "After Brawly (2nd badge), upon entering Mauville.",
+        "what_it_does": "See the dedicated `bikes` section. Mach = speed + slope climbs + crack-floor falls. Acro = bunny hop + wheelie + white-rail tricks.",
+        "missable": false,
+        "required_for_completion": true
+      },
+      {
+        "name": "Soot Sack",
+        "where_to_get": "Route 113, given by the old man inside the Glass Workshop.",
+        "when_in_story": "After Lavaridge gym; you pass through Route 113 heading to Fallarbor.",
+        "what_it_does": "Automatically collects volcanic ash one step at a time as you walk through ash grass on Route 113. Trade soot at the Workshop for flutes and glass furniture.",
+        "missable": false,
+        "required_for_completion": false,
+        "tip": "1000 steps in ash grass = a Blue Flute. Pretty Chair = 8000 soot."
+      },
+      {
+        "name": "Devon Goods",
+        "where_to_get": "Recovered from the Aqua Grunt who steals it in Rusturf Tunnel after Mr. Briney's intro.",
+        "when_in_story": "Between Rustboro (1st badge) and Dewford. You bring it to Captain Stern in Slateport.",
+        "what_it_does": "Story key item. Delivering it triggers the Slateport-to-Mauville path opening and the Devon Scope chain later.",
+        "missable": false,
+        "required_for_completion": true
+      },
+      {
+        "name": "Letter (Steven's Letter)",
+        "where_to_get": "Mr. Stone in Devon Corp 3F, Rustboro.",
+        "when_in_story": "Right after the 1st badge.",
+        "what_it_does": "Hand to Steven inside Granite Cave (Dewford). He gives you HM05 Flash in return.",
+        "missable": false,
+        "required_for_completion": true
+      },
+      {
+        "name": "Devon Scope",
+        "where_to_get": "Steven hands it to you on Route 120, just past the invisible Kecleon blocking the bridge.",
+        "when_in_story": "After Fortree gym (4th badge), on the way to Lilycove.",
+        "what_it_does": "Reveals invisible Kecleons in the field. Required to pass Route 120 and to battle/catch the wild Kecleons scattered across Hoenn.",
+        "missable": false,
+        "required_for_completion": true,
+        "tip": "There is no Sudowoodo in Hoenn — the Devon Scope is purely a Kecleon tool."
+      },
+      {
+        "name": "Magma Emblem",
+        "where_to_get": "Found on the ground at the top of Jagged Pass after the Mt. Chimney plot.",
+        "when_in_story": "Emerald-only — between Petalburg gym (5th badge) and Fortree.",
+        "what_it_does": "Opens the hidden door at the Magma Hideout entrance on Jagged Pass. Required to progress the Groudon plot in Emerald.",
+        "missable": false,
+        "required_for_completion": true
+      },
+      {
+        "name": "Wailmer Pail",
+        "where_to_get": "Sootopolis flower-shop NPC across from the Pokemon Center.",
+        "when_in_story": "After becoming Champion (Sootopolis must be open and the Wailmer block on Route 128 still present in some scenarios — generally a post-Sootopolis errand).",
+        "what_it_does": "Waters Berry plots, halving growth time per stage. Also wakes the sleeping Wailmer blocking Route 128 (post-Kyogre).",
+        "missable": false,
+        "required_for_completion": false,
+        "verify_in_game": true
+      },
+      {
+        "name": "Coin Case",
+        "where_to_get": "Mauville Pokemon Center — talk to the woman inside who hands it over for free.",
+        "when_in_story": "Available as soon as you reach Mauville.",
+        "what_it_does": "Holds up to 9,999 Game Corner coins. Required to play slots and to buy the Game Corner's TMs and prize Pokemon (Porygon is FRLG; in Emerald the prizes are Treecko/Torchic/Mudkip statues and Pokemon like Abra at lower coin tiers).",
+        "missable": false,
+        "required_for_completion": false
+      },
+      {
+        "name": "Mystic Ticket",
+        "where_to_get": "Nintendo distribution event (long discontinued); requires a save edit / event injector to get legitimately today.",
+        "when_in_story": "Post-game.",
+        "what_it_does": "Unlocks the ferry to Navel Rock from the S.S. Tidal — Lugia (Lv 70) and Ho-Oh (Lv 70) wait there.",
+        "missable": true,
+        "required_for_completion": false,
+        "tip": "Both legendaries hold a Sacred Ash."
+      },
+      {
+        "name": "Old Sea Map",
+        "where_to_get": "Japan-only Nintendo distribution event; requires save tools to obtain in 2026.",
+        "when_in_story": "Post-game.",
+        "what_it_does": "Unlocks Faraway Island via S.S. Tidal — encounter the only legitimate wild Mew in Gen 3 (Lv 30).",
+        "missable": true,
+        "required_for_completion": false
+      },
+      {
+        "name": "Aurora Ticket",
+        "where_to_get": "Nintendo distribution event (FRLG-shared). Discontinued.",
+        "when_in_story": "Post-game.",
+        "what_it_does": "Unlocks Birth Island for Deoxys (Lv 30). Note: Emerald's Deoxys is Speed Forme.",
+        "missable": true,
+        "required_for_completion": false
+      },
+      {
+        "name": "Eon Ticket",
+        "where_to_get": "Originally a Pokemon Center freebie / mixed-record trade from Ruby/Sapphire. Effectively unobtainable today without tools.",
+        "when_in_story": "Post-game.",
+        "what_it_does": "Unlocks Southern Island. Encounter the opposite Eon twin (Latios in Emerald if you chose Latias from Littleroot, or vice versa) at Lv 50.",
+        "missable": true,
+        "required_for_completion": false
+      },
+      {
+        "name": "Pokeblock Case",
+        "where_to_get": "Lilycove Contest Hall — the contest-lady NPC near the entrance gives it to you on first visit.",
+        "when_in_story": "Right after Fortree (4th badge), once you reach Lilycove.",
+        "what_it_does": "Holds Pokeblocks made in the Berry Blender. Required for contests and for raising Pokemon's contest stats (Cool/Beauty/Cute/Smart/Tough).",
+        "missable": false,
+        "required_for_completion": false,
+        "verify_in_game": true,
+        "verify_note": "The case is given by Slateport contest hall lady, NOT Lilycove. Verify exact NPC."
+      },
+      {
+        "name": "HM01 Cut",
+        "where_to_get": "Cutter's House in Rustboro City after defeating Roxanne and rescuing the Devon Researcher in Rusturf Tunnel.",
+        "when_in_story": "1st badge complete + Rusturf cleared.",
+        "what_it_does": "Slices small bushes blocking paths (Petalburg Woods, Route 119, Route 123, Pacifidlog area).",
+        "missable": false,
+        "required_for_completion": true
+      },
+      {
+        "name": "HM02 Fly",
+        "where_to_get": "Route 119 — given by a girl just past the Weather Institute, north of the long-grass bridge.",
+        "when_in_story": "After Winona is reachable but before her gym (4th badge era).",
+        "what_it_does": "Warps you to any visited city. Requires Feather Badge (Winona, 4th) to use in field.",
+        "missable": false,
+        "required_for_completion": false
+      },
+      {
+        "name": "HM03 Surf",
+        "where_to_get": "Wally's father in Petalburg City after defeating Norman.",
+        "when_in_story": "After Norman (5th badge).",
+        "what_it_does": "Cross water. Required for nearly every route from Slateport east. Field use needs Balance Badge (Norman).",
+        "missable": false,
+        "required_for_completion": true
+      },
+      {
+        "name": "HM04 Strength",
+        "where_to_get": "Rusturf Tunnel — given by an NPC after you've cleared the Aqua Grunt and the tunnel can be punched through.",
+        "when_in_story": "Mid-game; you can backtrack with Rock Smash.",
+        "what_it_does": "Pushes grey boulders. Field use needs Heat Badge (Flannery, 4th).",
+        "missable": false,
+        "required_for_completion": true
+      },
+      {
+        "name": "HM05 Flash",
+        "where_to_get": "Steven inside Granite Cave after handing him Steven's Letter.",
+        "when_in_story": "After Roxanne (1st badge).",
+        "what_it_does": "Lights up dark caves (Granite Cave B2, Meteor Falls back rooms). Field use needs Knuckle Badge (Brawly).",
+        "missable": false,
+        "required_for_completion": false,
+        "tip": "Optional — you can navigate Granite Cave dark floors blind, but Flash makes it trivial."
+      },
+      {
+        "name": "HM06 Rock Smash",
+        "where_to_get": "Mauville City — given by an NPC inside a house in Mauville (the boy whose Dad lives in the gym).",
+        "when_in_story": "Right after reaching Mauville (pre-3rd badge).",
+        "what_it_does": "Breaks cracked rocks in caves and routes. Field use needs Dynamo Badge (Wattson, 3rd).",
+        "missable": false,
+        "required_for_completion": true
+      },
+      {
+        "name": "HM07 Waterfall",
+        "where_to_get": "Wallace gives it after the Sootopolis cutscene (post-Kyogre/Groudon plot).",
+        "when_in_story": "Pre-Champion.",
+        "what_it_does": "Climb up flowing waterfalls while surfing. Required for Meteor Falls upper floor and the Cave of Origin entrance. Field use needs Rain Badge (Juan, 8th).",
+        "missable": false,
+        "required_for_completion": true
+      },
+      {
+        "name": "HM08 Dive",
+        "where_to_get": "Steven gives it inside the Mossdeep house, after defeating the Mossdeep gym.",
+        "when_in_story": "After Tate & Liza (7th badge).",
+        "what_it_does": "Submerge on dark water tiles (Routes 124, 126, 127). Required to reach Sootopolis. Field use needs Mind Badge (Tate & Liza, 7th).",
+        "missable": false,
+        "required_for_completion": true
+      },
+      {
+        "name": "Old Rod",
+        "where_to_get": "Dewford Town fisherman in the house south of the gym.",
+        "when_in_story": "From the 2nd badge onward.",
+        "what_it_does": "Catches Magikarp / Tentacool / Goldeen tier; lowest fishing pool.",
+        "missable": false,
+        "required_for_completion": false
+      },
+      {
+        "name": "Good Rod",
+        "where_to_get": "Route 118 — fisherman on the east side of the river, just before Mauville's east exit.",
+        "when_in_story": "Around the 3rd-4th badge.",
+        "what_it_does": "Mid-tier rod. Catches Magikarp, Goldeen, Carvanha, Wailmer, Barboach.",
+        "missable": false,
+        "required_for_completion": false
+      },
+      {
+        "name": "Super Rod",
+        "where_to_get": "Mossdeep City fisherman, in the house between the gym and the Pokemon Center.",
+        "when_in_story": "Once Mossdeep is reachable (Lilycove + Surf + Dive).",
+        "what_it_does": "Best rod. Catches Feebas (Route 119 specific tiles), Corsola, Sharpedo, Whiscash, Luvdisc.",
+        "missable": false,
+        "required_for_completion": false,
+        "tip": "Required to find Feebas — only 6 random tiles on Route 119 spawn it, regenerated when you fish each tile."
+      },
+      {
+        "name": "Itemfinder (Dowsing Machine)",
+        "where_to_get": "Trick House — Trick Master gives it after solving the first puzzle (or as a route reward; verify).",
+        "when_in_story": "After 1st badge.",
+        "what_it_does": "Finds buried/hidden items. Beeps and an arrow indicates direction. Many shards, Stardust, and rare items are hidden.",
+        "missable": false,
+        "required_for_completion": false,
+        "verify_in_game": true,
+        "verify_note": "Confirm exact giver — Trick House Master vs. Route 110 NPC."
+      },
+      {
+        "name": "PokeNav",
+        "where_to_get": "Mr. Stone in Devon Corp Rustboro after returning from Dewford (delivering the Letter).",
+        "when_in_story": "Between 1st and 2nd badge.",
+        "what_it_does": "Map view, Match Call (trainer rematches), Condition viewer (contest stats), Ribbon viewer. Trainer Eyes feature populates as you battle.",
+        "missable": false,
+        "required_for_completion": true
+      },
+      {
+        "name": "Go-Goggles",
+        "where_to_get": "Lavaridge Town's Pokemon Center healer's mother (verify — given after returning Mr. Stone's package and progressing Mt. Chimney plot).",
+        "when_in_story": "After Flannery (4th badge) and the Mt. Chimney Magma encounter.",
+        "what_it_does": "Lets you walk through the sandstorm on Route 111 desert. Inside: Mirage Tower (fossil), Trapinch, Cacnea, Sandshrew.",
+        "missable": false,
+        "required_for_completion": false,
+        "verify_in_game": true,
+        "verify_note": "Exact giver NPC — confirm location."
+      },
+      {
+        "name": "S.S. Ticket",
+        "where_to_get": "Norman gives it (or Mr. Briney brings it) post-Champion in Littleroot/Petalburg.",
+        "when_in_story": "Post-Hall of Fame.",
+        "what_it_does": "Boards the S.S. Tidal at Slateport or Lilycove. Provides ferry rides between the two cities and unlocks Battle Frontier-tier event island travel (with appropriate event tickets).",
+        "missable": false,
+        "required_for_completion": false
+      },
+      {
+        "name": "Contest Pass",
+        "where_to_get": "Verdanturf or Lilycove Contest Hall — first visit triggers the giveaway.",
+        "when_in_story": "Mid-game.",
+        "what_it_does": "Required to enter Pokemon Contests (Normal/Super/Hyper/Master rank).",
+        "missable": false,
+        "required_for_completion": false,
+        "verify_in_game": true
+      },
+      {
+        "name": "Basement Key",
+        "where_to_get": "Wattson in Mauville gym, after his post-3rd-badge sidequest where he asks you to investigate New Mauville.",
+        "when_in_story": "After 3rd badge.",
+        "what_it_does": "Unlocks the New Mauville generator door so you can shut down the broken Magnetons and Voltorbs. Reward: TM24 Thunderbolt (Wattson hands it over after).",
+        "missable": false,
+        "required_for_completion": false
+      },
+      {
+        "name": "Storage Key",
+        "where_to_get": "Inside the Aqua Hideout (Lilycove) on the floor — picked up during the Storage Cave plot.",
+        "when_in_story": "Pre-Sootopolis.",
+        "what_it_does": "Opens the Slateport Shipyard's Storage Cave for the Aqua/Magma plot trigger.",
+        "missable": false,
+        "required_for_completion": true,
+        "verify_in_game": true
+      },
+      {
+        "name": "Devon Parts (Devon Goods package)",
+        "where_to_get": "Mr. Stone, Devon Corp 3F, after defeating Roxanne.",
+        "when_in_story": "Post-1st badge.",
+        "what_it_does": "Delivered to Captain Stern in Slateport. Triggers progression to Mauville via Briney's boat.",
+        "missable": false,
+        "required_for_completion": true
+      },
+      {
+        "name": "Scanner",
+        "where_to_get": "Found in the Abandoned Ship's Storage Room (use Dive to explore underwater section, then proceed up).",
+        "when_in_story": "Post-Surf, mid-to-late game.",
+        "what_it_does": "Trade to Captain Stern in Slateport. He gives you DeepSeaTooth (boosts Clamperl's Sp.Atk and is the trade evolution item for Huntail) OR DeepSeaScale (Sp.Def boost; trade evolution to Gorebyss). One-time pick.",
+        "missable": true,
+        "required_for_completion": false,
+        "tip": "Save before talking to Stern. The choice is permanent on this save."
+      },
+      {
+        "name": "Meteorite",
+        "where_to_get": "Mossdeep Space Center plot — Magma Admin Tabitha drops it after the boss fight.",
+        "when_in_story": "Post-7th badge.",
+        "what_it_does": "Story key item. Hand to the Meteor Falls scientist for TM27 Return reward (verify) OR the Sky Pillar plot. Eventually placed at Meteor Falls' upper room for a side reward.",
+        "missable": false,
+        "required_for_completion": true,
+        "verify_in_game": true,
+        "verify_note": "Exact reward chain — confirm whether the Meteorite returns to Meteor Falls in Emerald specifically."
+      },
+      {
+        "name": "Bag pockets (no separate TM Case / Berry Pouch / HM Box)",
+        "where_to_get": "N/A — built into the bag from the start.",
+        "when_in_story": "From the start of the game.",
+        "what_it_does": "Unlike FireRed/LeafGreen, Emerald does NOT have a TM Case or Berry Pouch as separate key items. Items are sorted into 5 pockets automatically: Items, Key Items, Pokeballs, TMs/HMs, Berries.",
+        "missable": false,
+        "required_for_completion": false
+      }
+    ]
+  },
+  "field_interactions": {
+    "overview": "Field-tile interactions the game expects you to discover. Most are gated by HMs or one of the bikes. Knowing the visual cue saves a lot of wandering.",
+    "interactions": [
+      {
+        "name": "Cracked rocks (breakable)",
+        "what_it_is": "Single grey rock with hairline crack texture, sitting in the path of a cave or route.",
+        "how_to_interact": "Face it and use HM06 Rock Smash. Destroys the rock, sometimes triggers a wild encounter.",
+        "where_first": "Granite Cave B1 corridor, then Route 114 leading to Meteor Falls.",
+        "tip": "Smashed rocks have a small chance to drop a wild Geodude/Graveler battle. Useful for grinding."
+      },
+      {
+        "name": "Cracked floor tiles (cave drop-throughs)",
+        "what_it_is": "Tiles with a visible spider-web crack pattern. Found in Magma Hideout, Sky Pillar, and Mirage Tower.",
+        "how_to_interact": "Mach Bike: ride at full speed straight across to fall through to the floor below. Acro Bike: do NOT use — wheelie hopping over them is the Sky Pillar trick (see below).",
+        "where_first": "Mirage Tower (Route 111 desert).",
+        "tip": "Falling through is often intentional — Magma Hideout requires drops to reach Groudon's chamber."
+      },
+      {
+        "name": "Sky Pillar floor tiles (special)",
+        "what_it_is": "Sky Pillar's floors have crack tiles AND ordinary-looking tiles that hide cracks.",
+        "how_to_interact": "Use the Acro Bike. Ride normally = floor breaks. Wheelie (hold B + tap direction) = floor stays solid. You navigate the pillar by wheelie-hopping across the network of weak tiles to reach Rayquaza on the roof.",
+        "where_first": "Sky Pillar (Route 131, Pacifidlog).",
+        "tip": "Mach Bike will get you stuck. Swap to Acro at Rydel before climbing."
+      },
+      {
+        "name": "Strength boulders",
+        "what_it_is": "Large grey rounded boulders, often blocking holes in floor or pressure plates.",
+        "how_to_interact": "Push with HM04 Strength (auto-uses; you just walk into them). Pushed boulders snap to the next non-passable tile.",
+        "where_first": "Granite Cave B2F (boulder-on-switch puzzles for the Steven cutscene).",
+        "tip": "If you push wrong you must exit the dungeon and re-enter to reset boulder positions."
+      },
+      {
+        "name": "Cut bushes",
+        "what_it_is": "Small dark-green tufted bush sprite blocking paths. Distinct from regular grass.",
+        "how_to_interact": "Face it, HM01 Cut, slices it for the rest of the session (respawns when you re-enter the map).",
+        "where_first": "Petalburg Woods exit to Rustboro.",
+        "tip": "Some hidden items sit behind cut trees on Routes 119, 120, 123."
+      },
+      {
+        "name": "Surfable water edges",
+        "what_it_is": "Light-blue water sprite where the player tile borders the shore.",
+        "how_to_interact": "Face the water and use HM03 Surf from the menu. Pokemon emerges, you ride.",
+        "where_first": "Petalburg City pond (post-Norman) or Routes 102/104 once you have Surf.",
+        "tip": "Water encounter rate is 4-5x higher than grass; bring repels for travel."
+      },
+      {
+        "name": "Dive spots",
+        "what_it_is": "Dark navy patches in otherwise light-blue ocean. Visually shimmer subtly.",
+        "how_to_interact": "Surf onto the dark patch, open menu, use HM08 Dive. Underworld map opens with seaweed and underwater trainers.",
+        "where_first": "Route 124 (between Mossdeep and Lilycove).",
+        "tip": "Dive again from underwater to surface. The Sealed Chamber Braille and the Sootopolis underwater entrance both require Dive."
+      },
+      {
+        "name": "Waterfalls",
+        "what_it_is": "Vertical streaks of foaming white water on a vertical wall of rock.",
+        "how_to_interact": "Surf to the base, face up, HM07 Waterfall. Climbs both directions (you can go DOWN a waterfall too).",
+        "where_first": "Meteor Falls upper level — Tate & Liza event leads here.",
+        "tip": "The Cave of Origin has a Waterfall room hidden in the Sootopolis area for postgame loops."
+      },
+      {
+        "name": "Sandstorm desert (Route 111 north)",
+        "what_it_is": "Tan tile area with constant blowing-sand particle overlay. Damages walking Pokemon? No — Hoenn desert sandstorm damages party Pokemon if not Rock/Ground/Steel/Sand-Veil/Sand-Stream.",
+        "how_to_interact": "Equip Go-Goggles (passive, no menu use needed). Without them, the route guard refuses entry.",
+        "where_first": "Route 111 north — entrance is north of the rest stop, south of Fallarbor.",
+        "tip": "Inside: Mirage Tower (8 floors, 2-pick fossil — Root for Lileep, Claw for Anorith) plus Trapinch, Cacnea, Sandshrew."
+      },
+      {
+        "name": "Ash grass",
+        "what_it_is": "Long grass on a tan/grey terrain with small grey ash piles overlaid.",
+        "how_to_interact": "Walk through with the Soot Sack equipped — collects 1 soot per step. No menu prompt needed.",
+        "where_first": "Route 113 (between Fallarbor and the Glass Workshop).",
+        "tip": "Walking in circles on a 5x5 patch farms soot fast. Tedious but the Pretty Chair/Desk are the only way to get those decorations."
+      },
+      {
+        "name": "Soft Soil (Berry Plots)",
+        "what_it_is": "Brown circular patches of loose dirt, scattered along most routes.",
+        "how_to_interact": "Stand on plot, open Berry pocket, plant. Real-time grows over hours-to-days. Wailmer Pail waters once per stage and halves growth time.",
+        "where_first": "Route 102 — first plot just south of Oldale.",
+        "tip": "Plant Liechi/Ganlon/Salac/Petaya/Apicot in postgame plots — they reproduce slightly when harvested optimally."
+      },
+      {
+        "name": "Ledges",
+        "what_it_is": "Slanted dirt-edge tile between higher and lower terrain.",
+        "how_to_interact": "Press direction down the ledge — your character hops automatically. One-way: cannot hop up.",
+        "where_first": "Route 102.",
+        "tip": "Trainers cannot pursue across ledges. Use them to skip line-of-sight battles."
+      },
+      {
+        "name": "Trick House puzzle floors",
+        "what_it_is": "Each Trick House scroll-room is a logic puzzle (mazes, cup-and-ball, button hunts).",
+        "how_to_interact": "Read entry scroll, complete puzzle, talk to Trick Master.",
+        "where_first": "Route 110 — visible after the 1st badge.",
+        "tip": "Reopens after every gym badge. Eight puzzles total. Rewards: Hard Stone, Smoke Ball, Magnet, TMs, Itemfinder."
+      },
+      {
+        "name": "Sootopolis Gym ice puzzle",
+        "what_it_is": "Glassy ice-floor sections that you slide across in straight lines until you hit a rock or wall.",
+        "how_to_interact": "Press a direction; you slide until colliding. Each tile cracks; sliding over a cracked tile a second time breaks it (you fall to the previous floor and restart).",
+        "where_first": "Sootopolis gym (Juan, 8th badge).",
+        "tip": "Plan paths to step on each tile only once. There's a known optimal route diagram for each floor."
+      },
+      {
+        "name": "Pacifidlog water currents",
+        "what_it_is": "Surfable water tiles with a visible animated arrow texture pushing in one cardinal direction.",
+        "how_to_interact": "Press perpendicular to the current to break out; pressing with the current accelerates. Mach Bike doesn't help on water — you must Surf.",
+        "where_first": "Routes 132, 133, 134 (between Slateport and Pacifidlog).",
+        "tip": "The path to the Sky Pillar weaves through current chains. Save before threading them — getting flushed wastes 2-3 minutes."
+      },
+      {
+        "name": "Mt. Pyre stairs and graveyard",
+        "what_it_is": "Multi-floor mountain split into outdoor graveyard tiers and indoor floors.",
+        "how_to_interact": "Walk normally. Notable: the summit hosts the Red Orb / Blue Orb plot where Magma/Aqua attack.",
+        "where_first": "Route 122 east of Mossdeep.",
+        "tip": "Ghost-type wild encounters concentrate on indoor floors. Cleanse Tag is sold here — useful gift item."
+      },
+      {
+        "name": "Berry tree growth stages",
+        "what_it_is": "Planted berries cycle visually: planted (mound) -> sprout (small green shoot) -> taller plant -> bloom (flower) -> fruit.",
+        "how_to_interact": "Wait real-time hours per stage (varies per berry — 3 hours for Cheri, up to 24+ for Liechi). Wailmer Pail waters once per stage.",
+        "where_first": "Route 102.",
+        "tip": "Soil 'goes dry' between stages — water at each stage for max yield."
+      },
+      {
+        "name": "Underwater grass (seaweed) trainers",
+        "what_it_is": "Underwater map shows dark-green seaweed clumps; some hide trainers facing 4 directions.",
+        "how_to_interact": "Approach line-of-sight just like land trainers. They Surf-then-Dive at you on contact. Cannot escape an underwater trainer with Dive — must finish or flee.",
+        "where_first": "Route 124 underwater section.",
+        "tip": "Wild encounters underwater are limited to Clamperl, Chinchou, Relicanth, Wailmer."
+      },
+      {
+        "name": "Fishing animation",
+        "what_it_is": "Cast rod -> '...' wait -> '!' bite indicator -> press A in time.",
+        "how_to_interact": "Use rod from Key Items. Press A only when '!' shows; mistime and the fish escapes. Rod tier increases bite frequency and species pool.",
+        "where_first": "Any water tile from Dewford onward (with Old Rod).",
+        "tip": "The 'Oh! A bite!' window is short — about 1 second. Patience > spamming A."
+      },
+      {
+        "name": "Honey trees / Soaring / Rotom forms / Swarms",
+        "what_it_is": "Field mechanics from later generations.",
+        "how_to_interact": "Not present in Emerald. Honey trees and swarms = Gen 4. Soaring = ORAS. Rotom = Gen 4.",
+        "where_first": "N/A.",
+        "tip": "Don't waste time looking for them in Emerald."
+      }
+    ]
+  },
+  "secret_bases_full": {
+    "overview": "Secret Bases are personal hideouts you carve into the world with TM43 Secret Power. The hidden_secrets section barely scratches the system; here's the full picture.",
+    "starting_out": {
+      "tm43_location": "Route 111 NPC (man near the desert entrance, south end). He gives TM43 Secret Power free after a short dialogue.",
+      "first_base": "Use Secret Power on a tree with a hole, indented cliff face, or thick bush. Animation triggers, and you enter your new empty base.",
+      "moving_base": "Use Secret Power on a different valid spot to relocate. All decorations transfer automatically.",
+      "valid_terrain": "Trees with knothole, dirt cliffs (small indents), red flowers in tall grass, and yellow shrubs."
+    },
+    "decorations": {
+      "categories": [
+        "Desks (small, big, pretty, ragged, comfort, pretty desk)",
+        "Chairs (matching desks)",
+        "Plants (tropical, large pretty, gorgeous)",
+        "Posters (zigzagoon, magikarp, ball, swablu, etc.)",
+        "Dolls (Pikachu Doll, Wailmer Doll, Treecko/Torchic/Mudkip dolls, etc.)",
+        "Mats (glitter, surf, thunder, fire, water, grass mats — some give visual battle effects)",
+        "Ornaments (large, gold/silver shield)",
+        "Cushions (zigzag, tire — some are decorative, some are interactive)",
+        "Slides and sliding mats — interactive",
+        "Balloons (red, blue, yellow — pop them by stepping; some chain with decorations)"
+      ],
+      "shops": [
+        "Lilycove Department Store 5F: most decorations sold for cash",
+        "Lilycove Mart 'Decoration counter'",
+        "Slateport Energy Drink shop has some",
+        "Trick House Trick Master rewards (Hard Stone, Magnet, etc. are decorations)",
+        "Battle Frontier exchange (BP for premium decorations)"
+      ],
+      "trophy_decorations": "Contest Master Rank wins each give a Trophy decoration (Cool/Beauty/Cute/Smart/Tough trophy)."
+    },
+    "visiting_other_bases": {
+      "method_1_link": "Mix Records via wireless adapter (e.g-card or link cable) at any Pokemon Center. Other player's base appears in your overworld at their chosen spot.",
+      "battling_visitors": "Visit a mixed-record base, talk to the trainer NPC inside, optional 1-time-per-day battle.",
+      "decorations_glimpse": "Looking at others' bases inspired aesthetic competition — many fan communities organized 'base trades'.",
+      "no_internet_today": "In 2026 with no native online, this is mostly emulator multi-cart save mixing."
+    },
+    "battle_tents_in_bases": {
+      "explainer": "Friends visiting your base will battle you with their actual party from their cartridge — a decoration like the Surf Mat changes terrain effects? No — decorations are cosmetic in vanilla Emerald. Battle is just standard 3v3.",
+      "verify_in_game": true,
+      "verify_note": "Some sources mention mat-based weather effects; confirm whether vanilla Emerald supports terrain mat battle effects."
+    },
+    "battle_frontier_sync": {
+      "feature": "Battle Frontier 'Battle Tower Multi-Battle' partner uses a copy of your party. Your secret base persists separately.",
+      "frontier_battle_tower_secret_base": "Some Frontier symbols and trainer cards display secret base presence — purely cosmetic stat tracking."
+    },
+    "glitches": [
+      "Cloning glitch (Box-rename trick) is unrelated to secret bases — happens at PC.",
+      "Secret-base trainer-NPC reset: deleting and rebuilding bases occasionally desyncs the trainer flag, allowing repeat battles. Verify per save state."
+    ],
+    "tips": [
+      "Use Secret Power on the tree directly outside Mauville — central, fast travel.",
+      "Set base near the Day Care for easier hatching trips.",
+      "Routes 111 (desert entry), 113, 114, 115, 116, 119, 120, 121, 127, 128, and a few in caves all support bases.",
+      "Combine slide mats with hop tiles for a tiny arcade.",
+      "Save before placing rare decorations — there's no 'undo' if you misplace a one-of-a-kind item like a Trophy."
+    ]
+  },
+  "pokemon_centers_marts_services": {
+    "overview": "Pokemon Centers, marts, and supporting services. Most are free; the Lilycove Department Store and Battle Frontier shops are the main sinks for late-game money.",
+    "pokemon_center": {
+      "healing": "Free, infinite. Talk to Nurse Joy. Restores HP/PP and cures status of all 6 party members.",
+      "lanettes_pc": "Hoenn's PC system is run by Lanette, not Bill. PC functions: Pokemon Storage (14 boxes, ~30 each), Item Storage (PC Item box), Hall of Fame viewer (after E4 victory), Decoration storage, and Player profile.",
+      "trade_center": "Right side of any Pokemon Center has the Trade Center room — link cable trades only. No GTS in Gen 3.",
+      "mystery_gift": "Counter at certain centers (Lilycove Mart, etc.) for Mystery Gift. Effectively unusable in 2026 without injection — events are long over.",
+      "battle_tower_partner": "Some centers (Slateport) have 2-player battle terminals — Multi Battle, Wireless, etc."
+    },
+    "lanettes_pc_quirk": {
+      "feature": "Lanette in Fallarbor — visit her house with her cousin Brigette's letter (or just visit Fallarbor) to receive a Surf Mat decoration.",
+      "tip": "Easy free decoration — pick it up early."
+    },
+    "marts_by_city": [
+      {
+        "city": "Oldale",
+        "notable": "Basic Pokeballs and Potions. First mart you'll see; teaches the buying UI."
+      },
+      {
+        "city": "Petalburg",
+        "notable": "Adds Antidote, Parlyz Heal, Awakening as you progress. Inventory expands as you earn badges."
+      },
+      {
+        "city": "Rustboro",
+        "notable": "Great Balls become available after the 1st badge. First place to stock up before Brawly."
+      },
+      {
+        "city": "Slateport",
+        "notable": "Open-air Market section sells unique items: Harbor Mail, Soda Pop (lower-tier heal), TM10 Hidden Power (3000), Berry vendor woman (rotating berries: Razz, Bluk etc)."
+      },
+      {
+        "city": "Mauville",
+        "notable": "X-Items (X-Defend, X-Attack, X-Speed, X-Special, X-Accuracy, Dire Hit, Guard Spec) — first place these are sold. Crucial for Frontier."
+      },
+      {
+        "city": "Lavaridge",
+        "notable": "Mart sells Burn Heals in bulk. Across the mart is Lavaridge Hot Springs (heals walking Pokemon while you walk + steps Egg hatching)."
+      },
+      {
+        "city": "Mossdeep",
+        "notable": "Ultra Balls become available. First place to buy them outside Lilycove department store. Also sells Net Ball, Dive Ball."
+      },
+      {
+        "city": "Lilycove (Department Store)",
+        "notable": "5-floor superstore — see breakdown below. The single biggest spend hub in the game."
+      },
+      {
+        "city": "Sootopolis",
+        "notable": "Limited mart (max-tier potions, full restores). Sootopolis is gym-focused."
+      }
+    ],
+    "lilycove_department_store": {
+      "1F": "Service desk — talk to attendant for full city map. NPC shows current floor inventory.",
+      "2F": "Trainer items: X-Attack 500, X-Defend 550, X-Speed 350, X-Special 350, X-Accuracy 950, Dire Hit 650, Guard Spec 700. Stock up before Frontier runs.",
+      "3F": "TM counter (limited): TM05 Roar (3000), TM10 Hidden Power (3000), TM11 Sunny Day (2000), TM17 Protect (3000), TM18 Rain Dance (2000), TM20 Safeguard (3000), TM33 Reflect (3000), TM16 Light Screen (3000), TM34 Shock Wave (3000), TM39 Rock Tomb (3000). All purchasable repeatedly.",
+      "4F": "Vitamins & evolution: HP Up 9800, Protein 9800, Iron 9800, Calcium 9800, Zinc 9800, Carbos 9800. PP Up is NOT sold here — PP Up is rare (Stadium tutorial / Frontier 16BP). Verify this — some sources say Lilycove 4F sells PP Up; vanilla Emerald usually does not.",
+      "5F": "Decoration superstore — over 100 items: dolls, mats, posters, plants. Money sink for collectors.",
+      "rooftop": "Vending machines (Fresh Water 200, Soda Pop 300, Lemonade 400). Lemonade is the most cost-efficient HP heal in the game per yen (350 HP for 400). Free items: a child gives a TM if you talk to them on certain days; verify."
+    },
+    "move_tutors_at_dept_store": {
+      "exists": false,
+      "note": "Department Store has no tutors. Tutors live at named NPC houses (see move_tutors_full)."
+    },
+    "repels": {
+      "kinds": "Repel (100 steps, 350), Super Repel (200 steps, 500), Max Repel (250 steps, 700).",
+      "use_pattern": "Activates when your highest-level party Pokemon's level > wild encounter level. Lead with a high-level Pokemon, repel, run grinding routes.",
+      "auto_use_prompt": "When a Repel runs out, Emerald does NOT auto-prompt 'use another Repel?' — that prompt was added in HGSS/BW. You manually re-use each time."
+    },
+    "escape_rope": {
+      "use": "Instant escape from caves (warps you to last visited Pokemon Center / cave entrance, depending on location).",
+      "buy": "Slateport, Mauville, Lavaridge marts (550). Carry 2-3 for dungeon dives.",
+      "free_alternatives": "Dig (TM28) does the same and is reusable. Run Strength + Dig set for cave runs."
+    }
+  },
+  "phone_pokenav_match_call": {
+    "overview": "PokeNav consolidates the trainer phone, map, condition viewer, and ribbon viewer. Match Call is the trainer rematch system that quietly powers a lot of postgame grinding.",
+    "pokenav_screens": {
+      "map": "Hoenn map view with current location indicator. Cannot fast-travel from here — use Fly. Map zooms but does not show route encounters.",
+      "match_call": "List of registered trainers. Each shows: name, location, party Pokemon (revealed as you re-encounter), and a 'wants to battle' star when ready.",
+      "ribbon_holder": "Lists Pokemon in party + box that hold contest/champion/effort ribbons. Cosmetic.",
+      "condition": "Shows current Cool/Beauty/Cute/Smart/Tough/Sheen contest stats for your active Pokemon. Use before contests to confirm Pokeblock plan."
+    },
+    "match_call_registration": {
+      "rule": "A trainer must initiate registration. Most do this automatically right after you defeat them by handing you their PokeNav number on the spot. A few require post-battle dialogue continue.",
+      "missable": "If you don't talk through the post-battle dialogue, the registration may not stick. Always 'A' through after a route trainer battle.",
+      "notable_registers": [
+        "Youngster Calvin (Route 102)",
+        "Lass Haley (Route 117)",
+        "Bug Maniac (Route 119, gives the rotating Hyper Potion)",
+        "Hex Maniac, Kindler, Black Belt — all common rematch sources",
+        "Ace Trainer pairs late-game (high payouts)"
+      ]
+    },
+    "rematch_mechanics": {
+      "trigger": "Trainers level up randomly each time they call. The PokeNav star indicates 'they want to rematch.' Talking to them on-route initiates the rematch.",
+      "level_scaling": "Their party scales up across 4 power-up tiers. Final tier matches Battle Frontier opening levels (~50-60).",
+      "progression": "Each trainer ranks up their party as you earn badges and again post-Champion. By postgame, top-tier rematch trainers field full evolution lines around Lv 45-55."
+    },
+    "best_rematch_targets_money_ev": [
+      {
+        "trainer": "Aroma Lady Rose / Aroma Lady Daisy (Route 119/120)",
+        "value": "Roselia / Roselia line — Sp.Atk EVs and decent payout."
+      },
+      {
+        "trainer": "Bird Keeper / Pkmn Breeder pairs",
+        "value": "Multi-Pokemon parties = more EVs per battle. Emerald pairs grant per-trainer payout for both."
+      },
+      {
+        "trainer": "Black Belt Nob / Karate King chain (Route 115)",
+        "value": "Hariyama-line Atk EVs."
+      },
+      {
+        "trainer": "Cooltrainer pairs on Routes 120, 121, 123",
+        "value": "Highest base payout outside of E4. ~3000+ yen per battle by tier 4."
+      }
+    ],
+    "gym_leader_rematch": "Gym leaders cannot be rematched in vanilla Emerald (no Trainer Hill / Sevii equivalents). E4 can be re-challenged endlessly.",
+    "tips": [
+      "Plug Amulet Coin onto a Pokemon you swap in turn 1, then KO with main attacker. Doubles payout.",
+      "Schedule rematch loops by Fly route: Route 119 → Route 120 → Route 121 fly-loops are dense with strong rematches.",
+      "Star icons in PokeNav indicate ready trainers. Filter via 'has star' button (verify exact UI)."
+    ]
+  },
+  "daily_weekly_events": {
+    "overview": "Real-time-clock events. Emerald has a battery-backed RTC; on dead-battery cartridges these all break. Emulators / replacement batteries restore everything.",
+    "events": [
+      {
+        "name": "Lottery (Lilycove Pokemon Center)",
+        "frequency": "Once per real-life day.",
+        "how_it_works": "Talk to the lottery NPC (counter inside Lilycove PC). She rolls a 5-digit number. If your party/box Pokemon's ID matches digits (consecutive from rightmost), you win prizes scaling from PP Up (1 digit) to Master Ball (all 5 digits).",
+        "tip": "Trade-acquired Pokemon have varied IDs — keep one Pokemon per OT to maximize lottery odds."
+      },
+      {
+        "name": "Berry growth",
+        "frequency": "Continuous — each berry has a fixed real-time growth duration.",
+        "how_it_works": "5 stages: planted -> sprout -> taller -> bloom -> fruit. Total time ranges from ~3 hours (Cheri, Chesto, Pecha, Rawst) to 96 hours (Liechi, Ganlon, etc.).",
+        "tip": "Wailmer Pail halves time per stage if you water at each stage. Set a rotation by route."
+      },
+      {
+        "name": "Mirage Island appearance",
+        "frequency": "1/65,536 chance per RL day, dependent on a hidden 16-bit value rotated daily.",
+        "how_it_works": "If any party Pokemon's Personality Value matches the day's rolled value, the island appears off Pacifidlog. Verify via the old man on Pacifidlog's leftmost house.",
+        "tip": "Maximize unique PVs in party (6 different Pokemon). Check daily."
+      },
+      {
+        "name": "Mauville TV broadcasts",
+        "frequency": "Updates every few in-game minutes / on-fight.",
+        "how_it_works": "TVs around Hoenn broadcast a rotating set: Trainer Tips, Now Trending, Trainer Talk, Lottery winner announcements. Walk-by trainers' commentary references your last battle's lead Pokemon.",
+        "tip": "Useless mechanically but a fun way to verify random gameplay tells (e.g., the 'good rod' rumor TV show)."
+      },
+      {
+        "name": "Berry Master's Wife daily phrase",
+        "frequency": "Once per RL day.",
+        "how_it_works": "Tell her one of 5 phrases (see hidden_secrets) for a rare berry. Phrase pool resets at midnight.",
+        "tip": "She's the only consistent source of Spelon, Pamtre, Watmel, Durin, Belue berries (the e-Reader berries)."
+      },
+      {
+        "name": "Trick House refresh",
+        "frequency": "Per-badge unlock, not RTC. Listed here for completeness.",
+        "how_it_works": "Each new gym badge unlocks the next Trick House puzzle.",
+        "tip": "Check after every badge. Easy to forget."
+      },
+      {
+        "name": "Lilycove Berry Master tip",
+        "frequency": "Once per RL day.",
+        "how_it_works": "Berry Master himself (Route 123) gives a random rare berry once daily. Different from his wife.",
+        "tip": "Two berries a day from this couple if you visit both."
+      },
+      {
+        "name": "Day-night encounters",
+        "frequency": "N/A in Gen 3.",
+        "how_it_works": "Emerald has no day/night encounter shifts (RTC tracks time but not cycle for grass spawns). Some Berry tree growth and lottery use RTC; encounters do not.",
+        "tip": "Don't wait for night to see different Pokemon — there are none."
+      },
+      {
+        "name": "Swarm Pokemon",
+        "frequency": "N/A.",
+        "how_it_works": "No Swarm system in Emerald. Was added in Gen 4.",
+        "tip": "Skip the search."
+      },
+      {
+        "name": "Tide change / weather events",
+        "frequency": "N/A.",
+        "how_it_works": "Permanent weather is set per route (sandstorm on 111 north, fog on 120, rain on 119/120, blizzard around Shoal Cave entrance). No daily weather rotation.",
+        "tip": "Shoal Cave's tide DOES change with RTC — see below."
+      },
+      {
+        "name": "Shoal Cave tide",
+        "frequency": "Real-time tide cycle (4 cycles per RL day, ~6h each).",
+        "how_it_works": "Low tide reveals new floor sections containing Shoal Salt and Shoal Shell deposits. Collect 4 of each, then trade with the Shoal Cave NPC for Shell Bell.",
+        "tip": "Plan visits during low-tide windows. The NPC near the entrance announces current tide state."
+      },
+      {
+        "name": "RTC battery dependence",
+        "frequency": "N/A.",
+        "how_it_works": "On original carts, the CR1616 battery powers the RTC. When dead, all daily events freeze and you get a 'time cannot be checked' message on boot.",
+        "tip": "Replace battery with soldering iron / iFixit kit. Mike's Pokemon shop tutorials abound. Emulators sidestep this entirely."
+      }
+    ]
+  },
+  "glass_workshop_and_collectibles": {
+    "overview": "Route 113's Glass Workshop is the only sink for the soot you collect on Route 113's ash grass. Trade soot for flutes (battle items) and pretty furniture (decorations).",
+    "soot_collection": {
+      "method": "Equip Soot Sack (auto-equipped — just walk through ash grass on Route 113). Each step in ash grass = +1 soot.",
+      "tracking": "Open Soot Sack from Key Items pocket to view current count.",
+      "speed": "Walking ~150 steps/min through ash; bike on dirt skips collection (you must walk in ash grass tiles, bike speed not benefiting collection rate). Verify whether bike on ash grass collects.",
+      "verify_in_game": true
+    },
+    "exchange_table": [
+      {
+        "item": "Blue Flute",
+        "soot_cost": 250,
+        "effect": "Wakes one ally Pokemon from Sleep. Single-use battle item.",
+        "notes": "Cheap but free Awakening alternatives exist."
+      },
+      {
+        "item": "Yellow Flute",
+        "soot_cost": 500,
+        "effect": "Snaps one ally out of Confusion in battle.",
+        "notes": "Confusion self-resolves; rarely worth using."
+      },
+      {
+        "item": "Red Flute",
+        "soot_cost": 500,
+        "effect": "Cures Attract on one ally.",
+        "notes": "Niche — Mental Herb does the same and is free in some routes."
+      },
+      {
+        "item": "White Flute",
+        "soot_cost": 1000,
+        "effect": "Increases wild encounter rate temporarily after use (out of battle).",
+        "notes": "Useful for grinding rare spawns. Stacks with sweet scent timing."
+      },
+      {
+        "item": "Black Flute",
+        "soot_cost": 1000,
+        "effect": "Decreases wild encounter rate temporarily.",
+        "notes": "Cheaper than Repels long-term. Doesn't burn turns."
+      },
+      {
+        "item": "Pretty Chair",
+        "soot_cost": 2000,
+        "effect": "Decoration for Secret Base. No combat use.",
+        "notes": "Cosmetic flex; unique appearance."
+      },
+      {
+        "item": "Pretty Desk",
+        "soot_cost": 8000,
+        "effect": "Decoration for Secret Base. Big footprint.",
+        "notes": "Only obtainable here. Major time investment."
+      }
+    ],
+    "tips": [
+      "Pretty Desk requires ~8000 ash grass steps minimum — plan a couple of long sessions or auto-walker.",
+      "Collect on every Route 113 pass-through; soot accumulates whether you redeem or not.",
+      "White Flute + Sweet Scent stack = max-rate wild encounters for hunting Feebas, Smeargle (NA in Emerald), or shiny grinds.",
+      "Once you buy any flute, the slot remains in shop — buy multiples by farming again."
+    ],
+    "trivia": "Glass Workshop NPCs reset their dialogue if you check soot count, but exchange list is permanent."
+  },
+  "move_tutors_full": {
+    "overview": "Move Tutors in Emerald come in three flavors: free reminders (Move Maniac), Heart Scale tutors (Slateport), and Battle Frontier BP tutors. The Slateport / Mossdeep / Frontier tutors are easy to miss.",
+    "slateport_move_reminder": {
+      "location": "House south of the Pokemon Center in Slateport City — the 'Move Maniac' / Move Reminder NPC.",
+      "cost": "1 Heart Scale per move (held by wild Luvdisc on Route 124/126/128, found via Itemfinder on Route 134, sold at Slateport beach NPC during festivals).",
+      "what_it_does": "Re-teaches any move in the target Pokemon's level-up movepool, including moves it hasn't reached the level for yet — this is the Gen 3 way to access a Pokemon's full level-up list early.",
+      "tip": "Stockpile Heart Scales early. Use for legendaries that need their signature move re-learned (e.g., Latios/Latias's Mist Ball / Luster Purge)."
+    },
+    "fallarbor_move_deleter": {
+      "location": "House in Fallarbor Town (left side of town).",
+      "cost": "Free.",
+      "what_it_does": "Deletes any move from a Pokemon — including HM moves (the only legitimate way to remove HMs).",
+      "tip": "Critical for clearing HM mules' movesets when you're done with overworld traversal."
+    },
+    "mossdeep_tutor_dive_house": {
+      "location": "Mossdeep — the dive-tutor NPC's house (the same plot where Steven hands you HM08).",
+      "cost": "Free, one-time.",
+      "what_it_does": "Verify in game — some NPCs in Mossdeep teach a single move once.",
+      "verify_in_game": true
+    },
+    "battle_frontier_tutors": {
+      "overview": "On Battle Frontier's main island, several tutors trade BP for moves. BP is earned by clearing Frontier facility streaks.",
+      "tutors": [
+        {
+          "move": "Defense Curl",
+          "bp_cost": 16,
+          "notes": "Generic Normal-type setup."
+        },
+        {
+          "move": "Mega Punch",
+          "bp_cost": 48,
+          "notes": "80 BP Normal physical."
+        },
+        {
+          "move": "Mega Kick",
+          "bp_cost": 48,
+          "notes": "120 BP Normal physical, lower acc."
+        },
+        {
+          "move": "Body Slam",
+          "bp_cost": 48,
+          "notes": "85 BP Normal + 30% paralysis."
+        },
+        {
+          "move": "Double-Edge",
+          "bp_cost": 48,
+          "notes": "120 BP Normal physical with recoil."
+        },
+        {
+          "move": "Counter",
+          "bp_cost": 48,
+          "notes": "Reflects physical damage 2x."
+        },
+        {
+          "move": "Mimic",
+          "bp_cost": 48,
+          "notes": "Copies opponent's last move for the battle."
+        },
+        {
+          "move": "Endure",
+          "bp_cost": 48,
+          "notes": "Survive at 1 HP this turn."
+        },
+        {
+          "move": "Substitute",
+          "bp_cost": 48,
+          "notes": "25% HP decoy."
+        },
+        {
+          "move": "Swagger",
+          "bp_cost": 48,
+          "notes": "+2 Atk on enemy + confusion."
+        },
+        {
+          "move": "Sleep Talk",
+          "bp_cost": 48,
+          "notes": "Use random move while asleep."
+        },
+        {
+          "move": "Snore",
+          "bp_cost": 48,
+          "notes": "40 BP only when asleep + 30% flinch."
+        },
+        {
+          "move": "Metronome",
+          "bp_cost": 48,
+          "notes": "Random move."
+        },
+        {
+          "move": "DynamicPunch",
+          "bp_cost": 48,
+          "notes": "100 BP, 50 acc, 100% confusion. Pair with No Guard? No Guard not in Gen 3 — niche."
+        },
+        {
+          "move": "Rollout",
+          "bp_cost": 48,
+          "notes": "30 BP doubles each consecutive hit, 5 turns."
+        },
+        {
+          "move": "Self-Destruct",
+          "bp_cost": 64,
+          "notes": "200 BP, user faints."
+        },
+        {
+          "move": "Explosion",
+          "bp_cost": 64,
+          "notes": "250 BP, user faints. Snorlax/Electrode staples."
+        },
+        {
+          "move": "Dream Eater",
+          "bp_cost": 48,
+          "notes": "100 BP Psychic, only on sleeping target, recovers half damage as HP."
+        },
+        {
+          "move": "Fury Cutter",
+          "bp_cost": 48,
+          "notes": "10 BP doubling per hit. Niche."
+        },
+        {
+          "move": "Icy Wind",
+          "bp_cost": 48,
+          "notes": "55 BP Ice, 100% Speed-1."
+        },
+        {
+          "move": "Swift",
+          "bp_cost": 48,
+          "notes": "60 BP Normal, never misses."
+        }
+      ],
+      "verify_note": "Exact BP costs vary by source — some lists give 16/24 BP for utility moves. Verify on a fresh playthrough.",
+      "verify_in_game": true
+    },
+    "elemental_punches_note": {
+      "fact": "Fire Punch / Ice Punch / ThunderPunch tutors are NOT in Emerald — they're Gen 4 (HGSS / DPPt move tutors). Emerald only offers them via the Pokemon's natural learn list (e.g., Hitmonchan's level-up).",
+      "tip": "Don't go hunting them in Emerald. Use TM elemental coverage moves instead."
+    },
+    "one_time_only_tutors": {
+      "warning": "All Battle Frontier tutors are infinitely repeatable (you only pay BP). The Slateport Move Reminder is repeatable per Heart Scale. The Move Deleter is free unlimited. There are NO one-shot 'lose the move forever' tutors in Emerald.",
+      "tip": "Don't fear teaching a move via tutor — every tutor in Emerald is repeatable."
+    }
   }
 }

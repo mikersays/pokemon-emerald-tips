@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>document.documentElement.classList.add("js")</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Trainer's Toolkit — every key item, field interaction, secret base, mart, PokeNav screen, RTC event, glass workshop trade, and move tutor in Pokemon Emerald." />
+  <title>Key Items &middot; Hoenn Field Guide</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <!-- ============================== NAV ============================== -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html" aria-label="Hoenn Field Guide home">
+        <span class="nav__mark" aria-hidden="true">HFG</span>
+        <span class="nav__wordmark">Hoenn <span>Field</span> Guide</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <ul style="display:contents;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="starters.html">Starters</a></li>
+          <li><a href="gyms.html">Gyms</a></li>
+          <li><a href="elite-four.html">Elite Four</a></li>
+          <li><a href="legendaries.html">Legendaries</a></li>
+          <li><a href="tier-list.html">Tier List</a></li>
+          <li><a href="secrets.html">Secrets</a></li>
+          <li><a href="breeding.html">Breeding</a></li>
+          <li><a href="early-game.html">Early Game</a></li>
+          <li><a href="bikes.html">Bikes</a></li>
+          <li><a href="evolution.html">Evolution</a></li>
+          <li><a href="mechanics.html">Mechanics</a></li>
+          <li><a href="keyitems.html">Key Items</a></li>
+          <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+          <li><a href="post-game.html">Post Game</a></li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-drawer">MENU</button>
+    </div>
+    <div class="nav__drawer" id="nav-drawer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="starters.html">Starters</a></li>
+        <li><a href="gyms.html">Gyms</a></li>
+        <li><a href="elite-four.html">Elite Four</a></li>
+        <li><a href="legendaries.html">Legendaries</a></li>
+        <li><a href="tier-list.html">Tier List</a></li>
+        <li><a href="secrets.html">Secrets</a></li>
+        <li><a href="breeding.html">Breeding</a></li>
+        <li><a href="early-game.html">Early Game</a></li>
+        <li><a href="bikes.html">Bikes</a></li>
+        <li><a href="evolution.html">Evolution</a></li>
+        <li><a href="mechanics.html">Mechanics</a></li>
+        <li><a href="keyitems.html">Key Items</a></li>
+        <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+        <li><a href="post-game.html">Post Game</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============================== PAGE HEADER ============================== -->
+    <section class="page-header">
+      <div class="riso-blob riso-blob--sun" style="width:320px; height:320px; top:-90px; right:-70px;"></div>
+      <div class="riso-dots" style="width:240px; height:120px; bottom:30px; right:10%; transform: rotate(-7deg);"></div>
+      <div class="riso-blob riso-blob--ember" style="width:160px; height:160px; bottom:-40px; left:-30px;"></div>
+
+      <div class="container">
+        <span class="kicker">Chapter 13 &middot; The Trainer&rsquo;s Toolkit</span>
+        <h1 class="page-header__title">
+          Things that stay<br>in your <em>bag</em>
+        </h1>
+        <p class="lede mt-4" style="max-width: 60ch;">
+          Bikes, rods, scopes, tickets, eight HMs, and the field cues you&rsquo;re meant to read &mdash; cracked
+          rocks, ash grass, dive shimmer, ice tiles, ledge slants. Below: every key item, every field
+          interaction, the Secret Base economy, the Lilycove department store floor by floor, the PokeNav&rsquo;s
+          four screens, the RTC&rsquo;s daily clock, the Glass Workshop&rsquo;s soot-for-flutes table, and every move
+          tutor worth visiting.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================== ANCHOR STRIP ============================== -->
+    <section class="section section--tight" style="border-bottom: var(--border-w) solid var(--ink);">
+      <div class="container">
+        <div class="gym-route">
+          <a href="#items" class="gym-tile">
+            <span class="gym-tile__num">01</span>
+            <span class="gym-tile__name">Key Items</span>
+            <span class="gym-tile__city">Bag pocket</span>
+            <span class="gym-tile__type">35 entries</span>
+          </a>
+          <a href="#interactions" class="gym-tile">
+            <span class="gym-tile__num">02</span>
+            <span class="gym-tile__name">Field Cues</span>
+            <span class="gym-tile__city">Tile reads</span>
+            <span class="gym-tile__type">20 entries</span>
+          </a>
+          <a href="#bases" class="gym-tile">
+            <span class="gym-tile__num">03</span>
+            <span class="gym-tile__name">Secret Bases</span>
+            <span class="gym-tile__city">TM43</span>
+            <span class="gym-tile__type">Decor</span>
+          </a>
+          <a href="#marts" class="gym-tile">
+            <span class="gym-tile__num">04</span>
+            <span class="gym-tile__name">Marts &amp; PCs</span>
+            <span class="gym-tile__city">Lilycove 5F</span>
+            <span class="gym-tile__type">Services</span>
+          </a>
+          <a href="#pokenav" class="gym-tile">
+            <span class="gym-tile__num">05</span>
+            <span class="gym-tile__name">PokeNav</span>
+            <span class="gym-tile__city">Match Call</span>
+            <span class="gym-tile__type">Rematch</span>
+          </a>
+          <a href="#events" class="gym-tile">
+            <span class="gym-tile__num">06</span>
+            <span class="gym-tile__name">Daily / Weekly</span>
+            <span class="gym-tile__city">RTC</span>
+            <span class="gym-tile__type">12 events</span>
+          </a>
+          <a href="#glass" class="gym-tile">
+            <span class="gym-tile__num">07</span>
+            <span class="gym-tile__name">Glass Workshop</span>
+            <span class="gym-tile__city">Route 113</span>
+            <span class="gym-tile__type">Soot</span>
+          </a>
+          <a href="#tutors" class="gym-tile">
+            <span class="gym-tile__num">08</span>
+            <span class="gym-tile__name">Move Tutors</span>
+            <span class="gym-tile__city">4 hubs</span>
+            <span class="gym-tile__type">BP / Heart</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 1. KEY ITEMS ============================== -->
+    <section class="section" id="items">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ember">Section One</span>
+          <h2 class="h1">The permanent<br><em style="color:var(--emerald); font-style:italic; font-weight:400;">bag pocket</em></h2>
+          <p class="lede mt-4" style="max-width: 62ch;">
+            Key items can&rsquo;t be tossed, can&rsquo;t be sold, and don&rsquo;t take inventory slots from your
+            potions or berries. Most arrive on a story beat &mdash; a few (Soot Sack, Scanner, Coin Case) are
+            easy to walk past and never pick up.
+          </p>
+        </div>
+
+        <div class="container container--narrow" style="padding: 0;">
+          <p class="dropcap" style="font-size: 1.1rem; line-height: 1.6;">
+            Pokemon Emerald gives you a five-pocket bag from the start: Items, Key Items, Pokeballs, TMs/HMs,
+            and Berries. Unlike FireRed/LeafGreen, there is no separate TM Case or Berry Pouch as a key item
+            &mdash; sorting is automatic. What follows is every key item the cartridge contains, in roughly the
+            order you&rsquo;ll meet them. Bold entries are story-mandatory; the rest are sidequest pickups, two of
+            which (Scanner, Magma Emblem) gate Emerald-exclusive plot beats you won&rsquo;t see in Ruby or Sapphire.
+          </p>
+        </div>
+
+        <!-- ===== HEADLINE CARDS: BIKES, POKENAV, KEY GADGETS ===== -->
+        <div class="grid grid--2 stagger" style="margin-top: var(--s-7);">
+
+          <article class="card offset-shadow">
+            <div class="card__subtitle">No. 01 &middot; Rydel&rsquo;s Cycles, Mauville</div>
+            <h3 class="card__title mt-3">Mach Bike <span style="color:var(--ink-soft);">/</span> Acro Bike</h3>
+            <p class="card__body">After Brawly, Rydel hands you one bike and lets you swap any time, free. Mach climbs slopes, falls through cracked floors, and outruns Pacifidlog currents. Acro hop-jumps white rails and wheelies safely across Sky Pillar tiles.</p>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Mach gates</span><span class="stat-row__value">Jagged Pass slope, Mirage Tower</span><span class="stat-row__num">SLOPE</span></div>
+              <div class="stat-row"><span class="stat-row__label">Acro gates</span><span class="stat-row__value">Sky Pillar wheelie, Safari rails</span><span class="stat-row__num">HOP</span></div>
+              <div class="stat-row"><span class="stat-row__label">Cost</span><span class="stat-row__value">Free, infinite swaps</span><span class="stat-row__num">FREE</span></div>
+            </dl>
+            <div class="callout callout--emerald mt-4">
+              <span class="callout__label">Read more</span>
+              <p style="margin:0;">Full mechanics &mdash; jump heights, slope physics, white-rail tricks &mdash; live in the dedicated <a href="bikes.html">bikes chapter</a>.</p>
+            </div>
+          </article>
+
+          <article class="card card--alt offset-shadow--ocean">
+            <div class="card__subtitle">No. 02 &middot; Devon Corp 3F, Rustboro</div>
+            <h3 class="card__title mt-3">PokeNav</h3>
+            <p class="card__body">Mr. Stone hands it over after you return from Dewford with the Letter delivered. Four screens: Map, Match Call (rematch list), Ribbon viewer (cosmetic), Condition viewer (contest stats &amp; Sheen).</p>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Map</span><span class="stat-row__value">Hoenn overview, no fast-travel</span><span class="stat-row__num">VIEW</span></div>
+              <div class="stat-row"><span class="stat-row__label">Match Call</span><span class="stat-row__value">Trainer rematch tracker</span><span class="stat-row__num">CALL</span></div>
+              <div class="stat-row"><span class="stat-row__label">Condition</span><span class="stat-row__value">Cool/Beauty/Cute/Smart/Tough</span><span class="stat-row__num">PRE-CONTEST</span></div>
+              <div class="stat-row"><span class="stat-row__label">Ribbons</span><span class="stat-row__value">Lifetime trophy list</span><span class="stat-row__num">VANITY</span></div>
+            </dl>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">No. 03 &middot; Glass Workshop, Route 113</div>
+            <h3 class="card__title mt-3">Soot Sack</h3>
+            <div class="poke-row" style="justify-content:flex-end; margin-top:var(--s-3);">
+              <img class="poke-sprite poke-sprite--lg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/324.png" alt="Torkoal — Route 113 ash association" loading="lazy">
+            </div>
+            <p class="card__body">Old man inside the Workshop hands it over after Lavaridge. From that moment forward, every step in ash grass adds 1 soot to your sack &mdash; tradeable at the Workshop counter for flutes and the unique Pretty Chair / Pretty Desk decorations.</p>
+            <p class="card__body" style="margin-top: var(--s-3);">1000 ash steps = a Blue Flute. 8000 = the Pretty Desk. Tedious but the only legitimate path to those decorations.</p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">No. 04 &middot; Sootopolis flower shop</div>
+            <h3 class="card__title mt-3">Wailmer Pail</h3>
+            <div class="poke-row" style="justify-content:flex-end; margin-top:var(--s-3);">
+              <img class="poke-sprite poke-sprite--lg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/320.png" alt="Wailmer" loading="lazy">
+            </div>
+            <p class="card__body">A watering can given by the NPC across from the Sootopolis Pokemon Center. Two functions: water Berry plots (halves growth time per stage if applied at every stage), and wake the sleeping Wailmer blocking Route 128 post-Kyogre.</p>
+          </article>
+
+          <article class="card offset-shadow--ember">
+            <div class="card__subtitle">No. 05 &middot; Route 120, Steven cutscene</div>
+            <h3 class="card__title mt-3">Devon Scope</h3>
+            <p class="card__body">Steven hands you the Devon Scope on the long bridge of Route 120 to reveal the invisible Kecleon blocking your path. From then on it reveals every wild Kecleon scattered across Hoenn &mdash; required progression, no Sudowoodo equivalent in this game.</p>
+            <p class="card__body" style="margin-top: var(--s-3);">There is no Sudowoodo in Hoenn. The Devon Scope is purely a Kecleon-and-bridge tool.</p>
+          </article>
+
+          <article class="card card--ink">
+            <div class="card__subtitle" style="color: var(--sun);">No. 06 &middot; Jagged Pass summit (Emerald-only)</div>
+            <h3 class="card__title mt-3" style="color: var(--paper);">Magma Emblem</h3>
+            <p class="card__body" style="color: var(--mist);">Lying on the ground at the top of Jagged Pass after the Mt. Chimney plot. Opens the hidden door at the Magma Hideout entrance &mdash; the Groudon arc in Emerald is gated behind picking this up.</p>
+            <p class="card__body" style="color: var(--mist); margin-top: var(--s-3);">In Ruby this item doesn&rsquo;t exist; in Sapphire there&rsquo;s no Magma plot at all. It&rsquo;s the most distinctive Emerald-only key item.</p>
+          </article>
+        </div>
+
+        <div class="divider-rule"></div>
+
+        <!-- ===== HM TILES ===== -->
+        <header style="margin-bottom: var(--s-5);">
+          <span class="kicker kicker--ocean">Hidden Machines</span>
+          <h2 class="h2 mt-3">All eight <em style="color:var(--ocean); font-style:italic; font-weight:400;">HMs</em></h2>
+          <p class="lede mt-3" style="max-width: 62ch;">Field-traversal moves, gated by badges. Each one is the kind of single-purpose tool you teach to a designated HM mule and forget &mdash; except in caves, where Strength + Rock Smash + Flash + Surf is half the puzzle.</p>
+        </header>
+
+        <div class="grid grid--auto stagger">
+          <article class="tile">
+            <div>
+              <div class="tile__num">HM01 &middot; Cutter&rsquo;s House</div>
+              <h3 class="tile__title">Cut <span class="type-chip" data-type="normal" style="margin-left: var(--s-2);">normal</span></h3>
+            </div>
+            <div class="poke-row" style="margin-top: var(--s-2);">
+              <img class="poke-sprite poke-sprite--xs" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/263.png" alt="Zigzagoon" loading="lazy">
+              <img class="poke-sprite poke-sprite--xs" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/264.png" alt="Linoone" loading="lazy">
+            </div>
+            <p class="tile__desc">Rustboro after Roxanne + Rusturf rescue. Slices small bushes blocking paths in Petalburg Woods, Routes 119, 120, 123. No badge gate to use; field use is unlocked the moment you have it.</p>
+            <span class="tile__arrow">Stone Badge unlock</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">HM02 &middot; Route 119 NPC</div>
+              <h3 class="tile__title">Fly <span class="type-chip" data-type="flying" style="margin-left: var(--s-2);">flying</span></h3>
+            </div>
+            <div class="poke-row" style="margin-top: var(--s-2);">
+              <img class="poke-sprite poke-sprite--xs" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/277.png" alt="Swellow" loading="lazy">
+              <img class="poke-sprite poke-sprite--xs" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/334.png" alt="Altaria" loading="lazy">
+            </div>
+            <p class="tile__desc">A girl just past the Weather Institute hands it over. Warps to any visited city. Field use requires the Feather Badge (Winona, 4th gym).</p>
+            <span class="tile__arrow">Feather Badge unlock</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">HM03 &middot; Wally&rsquo;s father, Petalburg</div>
+              <h3 class="tile__title">Surf <span class="type-chip" data-type="water" style="margin-left: var(--s-2);">water</span></h3>
+            </div>
+            <div class="poke-row" style="margin-top: var(--s-2);">
+              <img class="poke-sprite poke-sprite--xs" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/320.png" alt="Wailmer" loading="lazy">
+              <img class="poke-sprite poke-sprite--xs" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/260.png" alt="Swampert" loading="lazy">
+            </div>
+            <p class="tile__desc">Given by Wally&rsquo;s dad after you defeat Norman. Cross water tiles. Required for almost every route from Slateport east. Field use needs Balance Badge.</p>
+            <span class="tile__arrow">Balance Badge unlock</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">HM04 &middot; Rusturf Tunnel</div>
+              <h3 class="tile__title">Strength <span class="type-chip" data-type="normal" style="margin-left: var(--s-2);">normal</span></h3>
+            </div>
+            <div class="poke-row" style="margin-top: var(--s-2);">
+              <img class="poke-sprite poke-sprite--xs" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/76.png" alt="Golem" loading="lazy">
+              <img class="poke-sprite poke-sprite--xs" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/297.png" alt="Hariyama" loading="lazy">
+            </div>
+            <p class="tile__desc">Given by an NPC after Rusturf is punched through. Pushes grey boulders one tile at a time. Needs Heat Badge (Flannery) for field use.</p>
+            <span class="tile__arrow">Heat Badge unlock</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">HM05 &middot; Granite Cave, Steven</div>
+              <h3 class="tile__title">Flash <span class="type-chip" data-type="normal" style="margin-left: var(--s-2);">normal</span></h3>
+            </div>
+            <p class="tile__desc">Hand Steven the Letter inside Granite Cave; he hands you Flash. Lights up dark caves (Granite B2, Meteor Falls back rooms). Knuckle Badge unlocks field use. Optional &mdash; navigable blind.</p>
+            <span class="tile__arrow">Knuckle Badge unlock</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">HM06 &middot; Mauville house</div>
+              <h3 class="tile__title">Rock Smash <span class="type-chip" data-type="fighting" style="margin-left: var(--s-2);">fighting</span></h3>
+            </div>
+            <div class="poke-row" style="margin-top: var(--s-2);">
+              <img class="poke-sprite poke-sprite--xs" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/74.png" alt="Geodude" loading="lazy">
+            </div>
+            <p class="tile__desc">A boy in Mauville (the gym leader&rsquo;s grandson) gives it. Breaks cracked rocks in caves &amp; routes; ~5% chance of a wild Geodude/Graveler battle on each smash. Dynamo Badge unlocks the field move.</p>
+            <span class="tile__arrow">Dynamo Badge unlock</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">HM07 &middot; Wallace, post-Sootopolis</div>
+              <h3 class="tile__title">Waterfall <span class="type-chip" data-type="water" style="margin-left: var(--s-2);">water</span></h3>
+            </div>
+            <p class="tile__desc">Wallace hands it over after the Sootopolis cutscene. Climbs (and descends) flowing waterfalls while surfing. Required for Meteor Falls upper floor and the Cave of Origin entrance. Rain Badge gates field use.</p>
+            <span class="tile__arrow">Rain Badge unlock</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">HM08 &middot; Mossdeep dive house</div>
+              <h3 class="tile__title">Dive <span class="type-chip" data-type="water" style="margin-left: var(--s-2);">water</span></h3>
+            </div>
+            <div class="poke-row" style="margin-top: var(--s-2);">
+              <img class="poke-sprite poke-sprite--xs" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/366.png" alt="Clamperl" loading="lazy">
+              <img class="poke-sprite poke-sprite--xs" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/369.png" alt="Relicanth" loading="lazy">
+            </div>
+            <p class="tile__desc">Steven gives it inside the Mossdeep house after you defeat Tate &amp; Liza. Submerge on dark-water tiles (Routes 124, 126, 127). Required to reach Sootopolis. Mind Badge gates field use.</p>
+            <span class="tile__arrow">Mind Badge unlock</span>
+          </article>
+        </div>
+
+        <div class="divider-rule"></div>
+
+        <!-- ===== RODS, ITEMFINDER, CASES ===== -->
+        <header style="margin-bottom: var(--s-5);">
+          <span class="kicker">Rods, finders, cases</span>
+          <h2 class="h2 mt-3">Three <em style="color:var(--ocean); font-style:italic; font-weight:400;">rods</em>, one Itemfinder</h2>
+        </header>
+
+        <div class="grid grid--3 stagger">
+          <article class="card card--alt">
+            <div class="card__subtitle">Old Rod</div>
+            <h3 class="card__title mt-3">Dewford fisherman</h3>
+            <div class="poke-row" style="margin-top: var(--s-3);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/129.png" alt="Magikarp" loading="lazy">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/72.png" alt="Tentacool" loading="lazy">
+            </div>
+            <p class="card__body">House south of Dewford gym. Lowest pool: Magikarp, Tentacool, Goldeen tier.</p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">Good Rod</div>
+            <h3 class="card__title mt-3">Route 118 east bank</h3>
+            <div class="poke-row" style="margin-top: var(--s-3);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/318.png" alt="Carvanha" loading="lazy">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/339.png" alt="Barboach" loading="lazy">
+            </div>
+            <p class="card__body">Mid-tier. Magikarp, Goldeen, Carvanha, Wailmer, Barboach.</p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">Super Rod</div>
+            <h3 class="card__title mt-3">Mossdeep fisherman</h3>
+            <div class="poke-row" style="margin-top: var(--s-3);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/349.png" alt="Feebas" loading="lazy">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/319.png" alt="Sharpedo" loading="lazy">
+            </div>
+            <p class="card__body">Best rod. Required for <strong>Feebas</strong> &mdash; only 6 random Route 119 tiles spawn it. Also Corsola, Sharpedo, Whiscash, Luvdisc.</p>
+          </article>
+        </div>
+
+        <div class="grid grid--2 stagger" style="margin-top: var(--s-6);">
+          <article class="card">
+            <div class="card__subtitle">Itemfinder (Dowsing Machine)</div>
+            <h3 class="card__title mt-3">Hidden-item scanner</h3>
+            <p class="card__body">Beeps and points an arrow toward buried items. Rewards Stardust, Heart Scales, shards, Big Pearls. Pickup-ability Pokemon (Linoone) double-up by ferrying random held items into your bag &mdash; pair them.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Coin Case &middot; Pokeblock Case &middot; Contest Pass</div>
+            <h3 class="card__title mt-3">The case trio</h3>
+            <ul class="bullet-list bullet-list--emerald" style="margin-top: var(--s-3);">
+              <li><strong>Coin Case</strong> &middot; Mauville PC, free. Caps at 9,999 coins. Unlocks Game Corner slots.</li>
+              <li><strong>Pokeblock Case</strong> &middot; Slateport / Lilycove contest hall NPC on first visit. Holds Pokeblocks for contest stat raising.</li>
+              <li><strong>Contest Pass</strong> &middot; Verdanturf or Lilycove on first visit. Required to enter Normal/Super/Hyper/Master contests.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="divider-rule"></div>
+
+        <!-- ===== STORY KEY ITEMS COMPACT TILES ===== -->
+        <header style="margin-bottom: var(--s-5);">
+          <span class="kicker kicker--ember">Story chain</span>
+          <h2 class="h2 mt-3">Plot-gating <em style="color:var(--ember); font-style:italic; font-weight:400;">errands</em></h2>
+        </header>
+
+        <div class="grid grid--auto stagger">
+          <article class="tile">
+            <div>
+              <div class="tile__num">Devon Goods</div>
+              <h3 class="tile__title">Aqua Grunt drop</h3>
+            </div>
+            <p class="tile__desc">Recovered from the Aqua Grunt in Rusturf Tunnel after the Briney intro. Deliver to Captain Stern in Slateport &mdash; opens the Briney boat path to Mauville.</p>
+            <span class="tile__arrow">Pre-2nd badge</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">Letter</div>
+              <h3 class="tile__title">Steven&rsquo;s envelope</h3>
+            </div>
+            <p class="tile__desc">Mr. Stone, Devon 3F, post-Roxanne. Hand to Steven inside Granite Cave; he gives HM05 Flash in return.</p>
+            <span class="tile__arrow">Post-1st badge</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">Devon Parts</div>
+              <h3 class="tile__title">Stern&rsquo;s package</h3>
+            </div>
+            <p class="tile__desc">Mr. Stone hands you the parts package post-1st badge. Delivered to Captain Stern alongside the Goods to trigger Briney&rsquo;s boat to Slateport.</p>
+            <span class="tile__arrow">Pre-Mauville</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">Basement Key</div>
+              <h3 class="tile__title">New Mauville</h3>
+            </div>
+            <p class="tile__desc">Wattson&rsquo;s sidequest after the 3rd badge. Unlocks the New Mauville generator to switch off broken Magnetons and Voltorbs. Reward: <strong>TM24 Thunderbolt</strong>.</p>
+            <span class="tile__arrow">Optional but free TM</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">Storage Key</div>
+              <h3 class="tile__title">Aqua Hideout floor</h3>
+            </div>
+            <p class="tile__desc">Picked up on the floor inside the Lilycove Aqua Hideout. Opens the Slateport Shipyard&rsquo;s Storage Cave and triggers Aqua/Magma plot escalation.</p>
+            <span class="tile__arrow">Pre-Sootopolis</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">Go-Goggles</div>
+              <h3 class="tile__title">Sandstorm pass</h3>
+            </div>
+            <p class="tile__desc">Lavaridge NPC, post-Flannery and post-Mt. Chimney plot. Without them, the Route 111 desert guard refuses entry. Inside: Mirage Tower, Trapinch, Cacnea, Sandshrew.</p>
+            <span class="tile__arrow">Desert unlock</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">Scanner</div>
+              <h3 class="tile__title">Abandoned Ship</h3>
+            </div>
+            <p class="tile__desc">Found in the Storage Room of the Abandoned Ship (post-Dive). Trade to Captain Stern for either DeepSeaTooth (Clamperl &rarr; Huntail, +Sp.Atk) or DeepSeaScale (Clamperl &rarr; Gorebyss, +Sp.Def). Permanent choice &mdash; save first.</p>
+            <span class="tile__arrow">Save before trading</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">Meteorite</div>
+              <h3 class="tile__title">Mossdeep aftermath</h3>
+            </div>
+            <p class="tile__desc">Magma Admin Tabitha drops it after the Space Center boss fight. Returned to the Meteor Falls scientist for a Sky Pillar plot beat, then placed in the upper room as side reward.</p>
+            <span class="tile__arrow">Post-7th badge</span>
+          </article>
+
+          <article class="tile">
+            <div>
+              <div class="tile__num">S.S. Ticket</div>
+              <h3 class="tile__title">The Tidal pass</h3>
+            </div>
+            <p class="tile__desc">Norman (or Mr. Briney) hands it over post-Hall of Fame in Littleroot. Boards the S.S. Tidal at Slateport or Lilycove. Combined with event tickets, unlocks Navel Rock / Birth Island / Faraway / Southern.</p>
+            <span class="tile__arrow">Post-Champion</span>
+          </article>
+        </div>
+
+        <div class="divider-rule"></div>
+
+        <!-- ===== EVENT-LOCKED TICKETS ===== -->
+        <header style="margin-bottom: var(--s-5);">
+          <span class="kicker kicker--ocean">Discontinued event tickets</span>
+          <h2 class="h2 mt-3">The four <em style="color:var(--ocean); font-style:italic; font-weight:400;">paper tickets</em></h2>
+          <p class="lede mt-3" style="max-width: 60ch;">Originally Nintendo distribution events. Long discontinued in 2026 &mdash; legitimate copies require save tools or event injection. Each unlocks a single island reachable via the S.S. Tidal.</p>
+        </header>
+
+        <div class="grid grid--auto stagger">
+          <article class="card card--alt">
+            <div class="card__subtitle">Mystic Ticket</div>
+            <h3 class="card__title mt-3">Navel Rock</h3>
+            <div class="poke-row" style="margin-top: var(--s-3);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/249.png" alt="Lugia" loading="lazy">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/250.png" alt="Ho-Oh" loading="lazy">
+            </div>
+            <p class="card__body">Lugia (Lv 70) and Ho-Oh (Lv 70). Both hold a Sacred Ash on capture.</p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">Old Sea Map (JP-only)</div>
+            <h3 class="card__title mt-3">Faraway Island</h3>
+            <div class="poke-row" style="margin-top: var(--s-3);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/151.png" alt="Mew" loading="lazy">
+            </div>
+            <p class="card__body">Mew (Lv 30) &mdash; the only legitimate wild Mew encounter in Gen 3.</p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">Aurora Ticket</div>
+            <h3 class="card__title mt-3">Birth Island</h3>
+            <div class="poke-row" style="margin-top: var(--s-3);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/386.png" alt="Deoxys" loading="lazy">
+            </div>
+            <p class="card__body">Deoxys (Lv 30). In Emerald, Speed Forme.</p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">Eon Ticket</div>
+            <h3 class="card__title mt-3">Southern Island</h3>
+            <div class="poke-row" style="margin-top: var(--s-3);">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/380.png" alt="Latias" loading="lazy">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/381.png" alt="Latios" loading="lazy">
+            </div>
+            <p class="card__body">The opposite Eon twin from your Littleroot pick (Lv 50).</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 2. FIELD INTERACTIONS ============================== -->
+    <section class="section section--alt" id="interactions">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ocean">Section Two</span>
+          <h2 class="h1">Reading the<br><em style="color:var(--ocean); font-style:italic; font-weight:400;">map tiles</em></h2>
+          <p class="lede mt-4" style="max-width: 62ch;">
+            Every walkable surface in Hoenn carries a quiet instruction. A grey rock with a hairline crack
+            wants Rock Smash. A spider-webbed cave floor wants the Mach Bike. A shimmering navy patch on
+            otherwise-blue ocean wants Dive. Below: 20 tile types, what they look like, and what to do.
+          </p>
+        </div>
+
+        <!-- The big one: cracked walls + dents -->
+        <div class="callout callout--ember" style="margin-bottom: var(--s-6);">
+          <span class="callout__label">The one most-asked question</span>
+          <p style="margin:0;"><strong>&ldquo;What do I do with the cracked rocks in caves?&rdquo;</strong> Face the rock and use HM06 Rock Smash from the menu (or assign it to a party slot). It crumbles, sometimes triggering a wild Geodude/Graveler battle. The dents and hairline cracks on cave walls are decorative; the freestanding boulders with the visible crack texture in the path are the breakable ones. First seen in Granite Cave B1 corridor.</p>
+        </div>
+
+        <!-- Mach vs Acro callout -->
+        <div class="callout callout--emerald" style="margin-bottom: var(--s-7);">
+          <span class="callout__label">Mach vs. Acro on cracked floors</span>
+          <p style="margin:0;"><strong>Mach Bike</strong> at full speed across cracked floor tiles = you fall through to the floor below. Used in Magma Hideout and Mirage Tower. <strong>Acro Bike</strong> wheelie (hold B + tap a direction) over the SAME tile pattern = floor stays solid. The Sky Pillar requires the Acro wheelie path. Bring an Acro before climbing &mdash; Mach gets you stuck and forces a reset.</p>
+        </div>
+
+        <div class="grid grid--auto stagger">
+          <article class="card">
+            <div class="card__subtitle">Cracked rocks</div>
+            <h3 class="card__title mt-3">Rock Smash targets</h3>
+            <p class="card__body">Single grey rock with hairline-crack texture sitting in the path. First in Granite Cave B1, then Route 114 to Meteor Falls. Smash sometimes triggers a wild Geodude.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Cracked floor tiles</div>
+            <h3 class="card__title mt-3">Mach drop-throughs</h3>
+            <p class="card__body">Spider-web crack pattern on cave floors. Mach across at full speed = fall to the floor below. Magma Hideout, Mirage Tower, Sky Pillar use these intentionally.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Sky Pillar weak floors</div>
+            <h3 class="card__title mt-3">Acro wheelie path</h3>
+            <p class="card__body">Some &ldquo;ordinary&rdquo; tiles hide cracks. Use Acro Bike, hold B + tap direction = wheelie hops without breaking the tile. Mach will trap you. Required for Rayquaza.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Strength boulders</div>
+            <h3 class="card__title mt-3">Push, don&rsquo;t pull</h3>
+            <p class="card__body">Large rounded grey boulders, usually on pressure plates. Walk into one with HM04 Strength taught and it pushes one tile. Misalign and exit / re-enter to reset boulder positions.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Cut bushes</div>
+            <h3 class="card__title mt-3">Single-tile dark tufts</h3>
+            <p class="card__body">Distinct dark-green tufted sprite, smaller than tall grass, blocks paths. HM01 Cut clears the tile until the map reloads. Hidden items hide behind cut trees on Routes 119, 120, 123.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Surfable water edges</div>
+            <h3 class="card__title mt-3">Light-blue shore tiles</h3>
+            <p class="card__body">Face the water from a shore tile, use HM03 Surf. Water encounter rate is 4-5x higher than grass &mdash; bring repels for travel.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Dive spots</div>
+            <h3 class="card__title mt-3">Navy shimmer patches</h3>
+            <p class="card__body">Dark navy in a sea of regular blue, with a subtle shimmer animation. Surf onto one, open menu, HM08 Dive. Underworld map opens; Dive again to surface.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Waterfalls</div>
+            <h3 class="card__title mt-3">Vertical foam streaks</h3>
+            <p class="card__body">Vertical white foam on a rock wall. Surf to the base, face up, HM07 Waterfall. Climbs both ways &mdash; you can ride down too. First needed at Meteor Falls upper.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Sandstorm desert</div>
+            <h3 class="card__title mt-3">Route 111 north</h3>
+            <p class="card__body">Tan tiles with a constant blowing-sand overlay. The route guard refuses entry without Go-Goggles. Inside: Mirage Tower (8 floors), fossil pick, Trapinch, Cacnea, Sandshrew.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Ash grass</div>
+            <h3 class="card__title mt-3">Route 113 only</h3>
+            <p class="card__body">Long grass on tan/grey terrain with grey ash piles overlaid. Walk through (Soot Sack auto-equipped) for +1 soot per step. Walking circles on a 5x5 patch farms fast.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Soft Soil</div>
+            <h3 class="card__title mt-3">Berry plots</h3>
+            <p class="card__body">Brown circular dirt patches scattered along most routes. Stand on one, open Berries pocket, plant. Wailmer Pail halves growth time per stage.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Ledges</div>
+            <h3 class="card__title mt-3">One-way slants</h3>
+            <p class="card__body">Slanted dirt-edge tile between two terrain heights. Press toward the ledge to auto-hop down. One-way only. Trainers can&rsquo;t pursue across; use them to skip line-of-sight.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Trick House puzzles</div>
+            <h3 class="card__title mt-3">Route 110 scrolls</h3>
+            <p class="card__body">Each scroll-room is a logic puzzle &mdash; mazes, button hunts, cup-and-ball. Reopens after every gym badge. Eight rooms total. Rewards: Hard Stone, Smoke Ball, Magnet, TMs, Itemfinder.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Sootopolis ice puzzle</div>
+            <h3 class="card__title mt-3">Slide and crack</h3>
+            <p class="card__body">Press a direction, slide until hitting a wall. Each tile cracks under foot &mdash; sliding over a cracked tile a second time drops you to the previous floor. Plan paths to step on each tile only once.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Pacifidlog currents</div>
+            <h3 class="card__title mt-3">Animated arrow water</h3>
+            <p class="card__body">Surfable tiles with an animated arrow texture. Press perpendicular to break out; with the current accelerates. Mach Bike doesn&rsquo;t help on water. Sky Pillar route weaves through chains &mdash; save before threading.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Mt. Pyre</div>
+            <h3 class="card__title mt-3">Stairs &amp; graveyard</h3>
+            <p class="card__body">Multi-floor mountain split into outdoor graveyard tiers and indoor floors. Summit hosts the Red Orb / Blue Orb plot. Ghost-type encounters concentrate on indoor floors. Cleanse Tag sold here.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Berry growth stages</div>
+            <h3 class="card__title mt-3">Five visual stages</h3>
+            <p class="card__body">Planted &rarr; sprout &rarr; taller &rarr; bloom &rarr; fruit. Real-time hours per stage (3h Cheri, 96h+ Liechi). Water at each stage with Wailmer Pail for max yield &mdash; soil dries between stages.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Underwater seaweed trainers</div>
+            <h3 class="card__title mt-3">Dive battles</h3>
+            <p class="card__body">Dark-green seaweed clumps hide line-of-sight trainers underwater. They Surf-then-Dive at you on contact. You cannot flee mid-fight underwater &mdash; finish or KO.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Fishing animation</div>
+            <h3 class="card__title mt-3">Press A on &ldquo;!&rdquo;</h3>
+            <p class="card__body">Cast &rarr; wait &rarr; &ldquo;!&rdquo; bite &rarr; press A. The Oh-A-bite window is short, about one second. Higher-tier rod = faster bites and broader pool. Mistime and the fish escapes.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Things NOT in Emerald</div>
+            <h3 class="card__title mt-3">Skip the search</h3>
+            <p class="card__body">Honey trees, swarms, Soaring, Rotom forms, day/night encounter shifts &mdash; none of these exist in Gen 3. Honey/swarms = Gen 4. Soaring = ORAS. Don&rsquo;t waste time looking.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 3. SECRET BASES ============================== -->
+    <section class="section" id="bases">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ember">Section Three</span>
+          <h2 class="h1">Carving a<br><em style="color:var(--emerald); font-style:italic; font-weight:400;">secret base</em></h2>
+          <p class="lede mt-4" style="max-width: 62ch;">
+            Hoenn lets you punch a hideout into nearly any cliff face, knothole, or thick yellow shrub on the
+            map. The Hidden Secrets chapter mentions the system in passing &mdash; here is the full picture.
+          </p>
+        </div>
+
+        <div class="grid grid--2 stagger">
+          <article class="card offset-shadow">
+            <div class="card__subtitle">Step 01 &middot; TM43</div>
+            <h3 class="card__title mt-3">Get Secret Power</h3>
+            <p class="card__body">A man near the Route 111 desert entrance (south end) hands you TM43 Secret Power free after a short dialogue. This is the only way to claim or move a base.</p>
+            <ul class="bullet-list bullet-list--emerald" style="margin-top: var(--s-3);">
+              <li>Use Secret Power on any valid terrain tile to carve a base.</li>
+              <li>Use again on a different valid spot to <strong>relocate</strong> &mdash; all decorations transfer.</li>
+              <li>Valid terrain: tree knotholes, dirt-cliff indents, red flowers in tall grass, yellow shrubs.</li>
+            </ul>
+          </article>
+
+          <article class="card card--alt offset-shadow--ocean">
+            <div class="card__subtitle">Step 02 &middot; Decorate</div>
+            <h3 class="card__title mt-3">Decoration sources</h3>
+            <ul class="bullet-list bullet-list--ocean">
+              <li><strong>Lilycove Department Store 5F</strong> &middot; the bulk of the catalogue, paid in cash.</li>
+              <li><strong>Lilycove Mart Decoration counter</strong> &middot; smaller secondary inventory.</li>
+              <li><strong>Slateport Energy Drink shop</strong> &middot; a handful of niche items.</li>
+              <li><strong>Trick House rewards</strong> &middot; Hard Stone, Magnet, etc. count as decorations.</li>
+              <li><strong>Battle Frontier exchange</strong> &middot; BP for premium decorations.</li>
+              <li><strong>Contest Master Rank trophies</strong> &middot; one Trophy per contest type cleared.</li>
+            </ul>
+          </article>
+        </div>
+
+        <header style="margin-top: var(--s-7); margin-bottom: var(--s-5);">
+          <span class="kicker">Catalogue groups</span>
+          <h2 class="h2 mt-3">Ten <em style="color:var(--ocean); font-style:italic; font-weight:400;">decoration</em> categories</h2>
+        </header>
+
+        <div class="grid grid--auto stagger">
+          <article class="tile">
+            <div><div class="tile__num">01</div><h3 class="tile__title">Desks</h3></div>
+            <p class="tile__desc">Small, big, pretty, ragged, comfort, pretty desk &mdash; the centerpiece of any layout.</p>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">02</div><h3 class="tile__title">Chairs</h3></div>
+            <p class="tile__desc">Pair to matching desks. Some chairs are interactive (sit-on animations).</p>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">03</div><h3 class="tile__title">Plants</h3></div>
+            <p class="tile__desc">Tropical, large pretty, gorgeous &mdash; the corner-filler.</p>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">04</div><h3 class="tile__title">Posters</h3></div>
+            <p class="tile__desc">Zigzagoon, Magikarp, Ball, Swablu, etc. Wall hangings only.</p>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">05</div><h3 class="tile__title">Dolls</h3></div>
+            <p class="tile__desc">Pikachu, Wailmer, the three starter dolls and more. Pure cosmetic.</p>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">06</div><h3 class="tile__title">Mats</h3></div>
+            <p class="tile__desc">Glitter, Surf, Thunder, Fire, Water, Grass mats &mdash; some show visual battle effects.</p>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">07</div><h3 class="tile__title">Ornaments</h3></div>
+            <p class="tile__desc">Large ornaments, gold/silver shields. Trophy-tier flexes.</p>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">08</div><h3 class="tile__title">Cushions</h3></div>
+            <p class="tile__desc">Zigzag, tire &mdash; some decorative, some interactive (jump pad effect).</p>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">09</div><h3 class="tile__title">Slides</h3></div>
+            <p class="tile__desc">Sliding mats and slide decorations &mdash; combine for tiny arcade layouts.</p>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">10</div><h3 class="tile__title">Balloons</h3></div>
+            <p class="tile__desc">Red, blue, yellow. Pop by stepping; some chain with adjacent decorations.</p>
+          </article>
+        </div>
+
+        <div class="grid grid--2 stagger" style="margin-top: var(--s-7);">
+          <article class="card card--alt">
+            <div class="card__subtitle">Visiting other bases</div>
+            <h3 class="card__title mt-3">Mix Records</h3>
+            <p class="card__body">Mix Records via wireless adapter or link cable at any Pokemon Center. The other player&rsquo;s base appears in your overworld at their chosen spot. Talking to the trainer NPC inside lets you battle them &mdash; once per real-time day.</p>
+            <p class="card__body" style="margin-top: var(--s-3);">In 2026 with no native online, this is mostly emulator multi-cart save mixing or curated community packs.</p>
+          </article>
+
+          <article class="card card--ink">
+            <div class="card__subtitle" style="color: var(--sun);">Battle Frontier sync</div>
+            <h3 class="card__title mt-3" style="color: var(--paper);">Cosmetic only</h3>
+            <p class="card__body" style="color: var(--mist);">Battle Tower&rsquo;s Multi-Battle partner uses a copy of your party but does not interact with your base. Battles inside others&rsquo; bases are standard 3v3; mat-based weather effects are commonly rumored but not present in vanilla Emerald.</p>
+          </article>
+        </div>
+
+        <div class="callout callout--ocean" style="margin-top: var(--s-6);">
+          <span class="callout__label">Placement tips</span>
+          <ul class="bullet-list bullet-list--emerald" style="margin: var(--s-2) 0 0 0;">
+            <li>Use Secret Power on the tree directly outside Mauville &mdash; central, fastest fly access.</li>
+            <li>Set base near the Day Care for hatching trips.</li>
+            <li>Routes 111, 113, 114, 115, 116, 119, 120, 121, 127, 128 and a handful of caves all support bases.</li>
+            <li>Save before placing rare decorations &mdash; there is no &ldquo;undo&rdquo; for one-of-a-kind Trophies.</li>
+            <li>Combine slide mats with hop tiles for a tiny in-base arcade.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 4. MARTS / SERVICES ============================== -->
+    <section class="section section--alt" id="marts">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ocean">Section Four</span>
+          <h2 class="h1">Centers, marts<br>&amp; <em style="color:var(--ocean); font-style:italic; font-weight:400;">services</em></h2>
+          <p class="lede mt-4" style="max-width: 62ch;">
+            Healing is free and infinite. Lanette runs the PC system in Hoenn, not Bill. The Lilycove Department
+            Store is the single biggest cash sink in the game &mdash; here&rsquo;s the floor-by-floor breakdown.
+          </p>
+        </div>
+
+        <!-- Lilycove Dept Store -->
+        <article class="card card--ink offset-shadow" style="margin-bottom: var(--s-7);">
+          <div class="card__subtitle" style="color: var(--sun);">Money sink No. 1 &middot; Lilycove</div>
+          <h3 class="card__title mt-3" style="color: var(--paper);">Lilycove Department Store, top to bottom</h3>
+          <dl style="margin-top: var(--s-4);">
+            <div class="stat-row" style="border-color: var(--ink-soft);"><span class="stat-row__label" style="color:var(--mist);">1F</span><span class="stat-row__value" style="color:var(--paper);">Service desk &middot; full-floor inventory map</span><span class="stat-row__num" style="color:var(--sun);">INFO</span></div>
+            <div class="stat-row" style="border-color: var(--ink-soft);"><span class="stat-row__label" style="color:var(--mist);">2F</span><span class="stat-row__value" style="color:var(--paper);">X-Attack 500, X-Defend 550, X-Speed 350, X-Special 350, X-Accuracy 950, Dire Hit 650, Guard Spec 700</span><span class="stat-row__num" style="color:var(--sun);">FRONTIER</span></div>
+            <div class="stat-row" style="border-color: var(--ink-soft);"><span class="stat-row__label" style="color:var(--mist);">3F</span><span class="stat-row__value" style="color:var(--paper);">TM05 Roar, TM10 Hidden Power, TM11 Sunny Day, TM17 Protect, TM18 Rain Dance, TM20 Safeguard, TM33/16 Reflect/Light Screen, TM34 Shock Wave, TM39 Rock Tomb</span><span class="stat-row__num" style="color:var(--sun);">2-3K</span></div>
+            <div class="stat-row" style="border-color: var(--ink-soft);"><span class="stat-row__label" style="color:var(--mist);">4F</span><span class="stat-row__value" style="color:var(--paper);">HP Up, Protein, Iron, Calcium, Zinc, Carbos &mdash; all 9800 each</span><span class="stat-row__num" style="color:var(--sun);">VITS</span></div>
+            <div class="stat-row" style="border-color: var(--ink-soft);"><span class="stat-row__label" style="color:var(--mist);">5F</span><span class="stat-row__value" style="color:var(--paper);">Decoration superstore, 100+ items: dolls, mats, posters, plants</span><span class="stat-row__num" style="color:var(--sun);">DECOR</span></div>
+            <div class="stat-row" style="border-color: var(--ink-soft);"><span class="stat-row__label" style="color:var(--mist);">Rooftop</span><span class="stat-row__value" style="color:var(--paper);">Vending: Fresh Water 200, Soda Pop 300, Lemonade 400 (350 HP &mdash; best yen/HP in the game)</span><span class="stat-row__num" style="color:var(--sun);">VEND</span></div>
+          </dl>
+          <p class="card__body" style="color: var(--mist); margin-top: var(--s-4);">PP Up is <em>not</em> sold here in vanilla Emerald &mdash; common rumor, double-check on save. PP Up is rare (Stadium tutorial, 16 BP at the Frontier exchange).</p>
+        </article>
+
+        <!-- Other marts -->
+        <header style="margin-bottom: var(--s-5);">
+          <span class="kicker">By city</span>
+          <h2 class="h2 mt-3">The other <em style="color:var(--emerald); font-style:italic; font-weight:400;">nine marts</em></h2>
+        </header>
+
+        <div class="grid grid--auto stagger">
+          <article class="tile"><div><div class="tile__num">Oldale</div><h3 class="tile__title">Beginner stock</h3></div><p class="tile__desc">Basic Pokeballs, Potions. Teaches the buying UI.</p></article>
+          <article class="tile"><div><div class="tile__num">Petalburg</div><h3 class="tile__title">Status heals</h3></div><p class="tile__desc">Adds Antidote, Parlyz Heal, Awakening as you progress. Inventory expands per badge.</p></article>
+          <article class="tile"><div><div class="tile__num">Rustboro</div><h3 class="tile__title">Great Balls</h3></div><p class="tile__desc">Great Balls unlock here after the 1st badge. Stock up before Brawly.</p></article>
+          <article class="tile"><div><div class="tile__num">Slateport Market</div><h3 class="tile__title">Open-air specials</h3></div><p class="tile__desc">Harbor Mail, Soda Pop, TM10 Hidden Power (3000), and the rotating Berry vendor (Razz / Bluk / etc.).</p></article>
+          <article class="tile"><div><div class="tile__num">Mauville</div><h3 class="tile__title">X-Items hub</h3></div><p class="tile__desc">First place X-Defend, X-Attack, X-Speed, X-Special, X-Accuracy, Dire Hit, Guard Spec are sold. Crucial for Frontier prep.</p></article>
+          <article class="tile"><div><div class="tile__num">Lavaridge</div><h3 class="tile__title">Burn Heals + Hot Springs</h3></div><p class="tile__desc">Mart sells bulk Burn Heals. Hot Springs across the way heal walking Pokemon and fast-step Egg hatching.</p></article>
+          <article class="tile"><div><div class="tile__num">Mossdeep</div><h3 class="tile__title">Ultra Balls</h3></div><p class="tile__desc">First Ultra Ball mart outside Lilycove. Also sells Net Ball and Dive Ball.</p></article>
+          <article class="tile"><div><div class="tile__num">Sootopolis</div><h3 class="tile__title">Late tier</h3></div><p class="tile__desc">Max-tier potions, full restores. Sootopolis is gym-focused; small stock.</p></article>
+          <article class="tile"><div><div class="tile__num">Slateport Battle Tent</div><h3 class="tile__title">2-player terminal</h3></div><p class="tile__desc">Some Pokemon Centers (Slateport) host link Multi-Battle and wireless terminals.</p></article>
+        </div>
+
+        <!-- Lanette + repels -->
+        <div class="grid grid--3 stagger" style="margin-top: var(--s-7);">
+          <article class="card">
+            <div class="card__subtitle">Lanette&rsquo;s PC</div>
+            <h3 class="card__title mt-3">Hoenn&rsquo;s Bill</h3>
+            <p class="card__body">Hoenn&rsquo;s PC is run by Lanette, not Bill. 14 boxes (~30 each), Item Storage, Hall of Fame viewer, Decoration storage, Player profile.</p>
+            <div class="callout callout--emerald" style="margin-top:var(--s-3);">
+              <span class="callout__label">Easter egg</span>
+              <p style="margin:0;">Visit Lanette&rsquo;s house in Fallarbor for a free <strong>Surf Mat</strong> decoration.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Repels</div>
+            <h3 class="card__title mt-3">350 / 500 / 700</h3>
+            <dl style="margin-top: var(--s-3);">
+              <div class="stat-row"><span class="stat-row__label">Repel</span><span class="stat-row__value">100 steps</span><span class="stat-row__num">350</span></div>
+              <div class="stat-row"><span class="stat-row__label">Super Repel</span><span class="stat-row__value">200 steps</span><span class="stat-row__num">500</span></div>
+              <div class="stat-row"><span class="stat-row__label">Max Repel</span><span class="stat-row__value">250 steps</span><span class="stat-row__num">700</span></div>
+            </dl>
+            <p class="card__body" style="margin-top: var(--s-3);">Activates only when your party leader&rsquo;s level beats wild encounter levels. <strong>Does NOT auto-prompt</strong> for re-use when it expires &mdash; that prompt was added in HGSS.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__subtitle">Escape Rope</div>
+            <h3 class="card__title mt-3">Cave bail-out</h3>
+            <p class="card__body">Instant exit from caves &mdash; warps to last visited PC or cave entrance. 550 yen at Slateport / Mauville / Lavaridge.</p>
+            <div class="callout callout--sun" style="margin-top:var(--s-3);">
+              <span class="callout__label">Free alternative</span>
+              <p style="margin:0;">TM28 Dig is reusable and identical in function. Pair Strength + Dig on a cave mule and skip the rope budget.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 5. POKENAV ============================== -->
+    <section class="section" id="pokenav">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ember">Section Five</span>
+          <h2 class="h1">PokeNav &amp;<br><em style="color:var(--emerald); font-style:italic; font-weight:400;">Match Call</em></h2>
+          <p class="lede mt-4" style="max-width: 62ch;">
+            The PokeNav consolidates the trainer phone, map, condition viewer, and ribbon viewer. Match Call is
+            the rematch system &mdash; quietly the engine that powers most postgame money grinding.
+          </p>
+        </div>
+
+        <div class="grid grid--2 stagger">
+          <article class="card offset-shadow">
+            <div class="card__subtitle">The four screens</div>
+            <h3 class="card__title mt-3">PokeNav UI</h3>
+            <dl style="margin-top: var(--s-3);">
+              <div class="stat-row"><span class="stat-row__label">Map</span><span class="stat-row__value">Hoenn overview, current location</span><span class="stat-row__num">VIEW</span></div>
+              <div class="stat-row"><span class="stat-row__label">Match Call</span><span class="stat-row__value">Registered trainers + star = ready</span><span class="stat-row__num">CALL</span></div>
+              <div class="stat-row"><span class="stat-row__label">Ribbons</span><span class="stat-row__value">All party + box ribbon-holders</span><span class="stat-row__num">VANITY</span></div>
+              <div class="stat-row"><span class="stat-row__label">Condition</span><span class="stat-row__value">Cool/Beauty/Cute/Smart/Tough + Sheen</span><span class="stat-row__num">CONTEST</span></div>
+            </dl>
+            <p class="card__body" style="margin-top: var(--s-3);">The map cannot fast-travel &mdash; use Fly. Map zooms but does not show route encounters.</p>
+          </article>
+
+          <article class="card card--alt offset-shadow--ocean">
+            <div class="card__subtitle">Registration rules</div>
+            <h3 class="card__title mt-3">How trainers join your list</h3>
+            <p class="card__body">Most trainers register automatically right after defeat &mdash; they hand you their PokeNav number on the spot. A few require dialogue continuation. <strong>Always A through</strong> after route battles or registration may not stick.</p>
+            <ul class="bullet-list bullet-list--emerald" style="margin-top: var(--s-3);">
+              <li>Youngster Calvin (Route 102)</li>
+              <li>Lass Haley (Route 117)</li>
+              <li>Bug Maniac (Route 119, gives rotating Hyper Potion)</li>
+              <li>Hex Maniac, Kindler, Black Belt &mdash; common rematch sources</li>
+              <li>Ace Trainer pairs late-game (high payouts)</li>
+            </ul>
+          </article>
+        </div>
+
+        <article class="card" style="margin-top: var(--s-6);">
+          <div class="card__subtitle">Rematch mechanics</div>
+          <h3 class="card__title mt-3">Star = ready, scaling = automatic</h3>
+          <p class="card__body">Trainers level up randomly each time they call. The PokeNav star indicates &ldquo;wants to rematch.&rdquo; Approaching them on the route initiates the rematch &mdash; their party scales across <strong>4 power-up tiers</strong>. Final tier matches Frontier opening levels (~Lv 50-60). Each badge and the post-Champion flag advance their progression.</p>
+          <p class="card__body" style="margin-top: var(--s-3);"><strong>Gym leaders cannot be rematched in vanilla Emerald</strong> &mdash; no Trainer Hill rotation, no Sevii equivalent. The Elite Four can be re-challenged endlessly.</p>
+        </article>
+
+        <header style="margin-top: var(--s-7); margin-bottom: var(--s-5);">
+          <span class="kicker kicker--ocean">Best targets</span>
+          <h2 class="h2 mt-3">Where the <em style="color:var(--ocean); font-style:italic; font-weight:400;">money</em> is</h2>
+        </header>
+
+        <div class="grid grid--auto stagger">
+          <article class="tile">
+            <div><div class="tile__num">01</div><h3 class="tile__title">Aroma Lady Rose / Daisy</h3></div>
+            <p class="tile__desc">Routes 119/120. Roselia line &mdash; Sp.Atk EVs and decent payout.</p>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">02</div><h3 class="tile__title">Bird Keeper / Breeder pairs</h3></div>
+            <p class="tile__desc">Multi-Pokemon parties = more EVs per battle. Pairs grant per-trainer payouts for both.</p>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">03</div><h3 class="tile__title">Black Belt Nob chain</h3></div>
+            <p class="tile__desc">Route 115. Hariyama-line Atk EV training plus reliable money.</p>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">04</div><h3 class="tile__title">Cooltrainer pairs</h3></div>
+            <p class="tile__desc">Routes 120, 121, 123. Highest base payout outside the E4 &mdash; ~3000+ yen per battle by tier 4.</p>
+          </article>
+        </div>
+
+        <div class="callout callout--emerald" style="margin-top: var(--s-6);">
+          <span class="callout__label">Amulet Coin trick</span>
+          <p style="margin:0;">Lead with a Pokemon holding the <strong>Amulet Coin</strong>, switch out turn 1, KO with your main attacker. Effect persists once the holder has touched the field. Doubles payout. Schedule rematch loops by Fly route &mdash; Route 119 &rarr; 120 &rarr; 121 is dense with strong rematches.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 6. DAILY / WEEKLY ============================== -->
+    <section class="section section--alt" id="events">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ember">Section Six</span>
+          <h2 class="h1">The cartridge<br><em style="color:var(--ember); font-style:italic; font-weight:400;">clock</em></h2>
+          <p class="lede mt-4" style="max-width: 62ch;">
+            Emerald has a battery-backed real-time clock. On dead-battery cartridges, every event below freezes
+            and the boot screen warns &ldquo;time cannot be checked.&rdquo; A CR1616 replacement (or any emulator) restores it.
+          </p>
+        </div>
+
+        <div class="grid grid--auto stagger">
+          <article class="tile">
+            <div><div class="tile__num">Daily</div><h3 class="tile__title">Lottery (Lilycove PC)</h3></div>
+            <p class="tile__desc">5-digit roll vs. your party/box Pokemon IDs. Match consecutive digits from the right: 1 &rarr; PP Up, all 5 &rarr; Master Ball. Trade-acquired Pokemon vary OT &mdash; keep a few different IDs to maximize odds.</p>
+            <span class="tile__arrow">Daily roll, free entry</span>
+          </article>
+
+          <article class="tile">
+            <div><div class="tile__num">Continuous</div><h3 class="tile__title">Berry growth</h3></div>
+            <p class="tile__desc">5 stages real-time: planted &rarr; sprout &rarr; taller &rarr; bloom &rarr; fruit. Total time 3h (Cheri/Chesto/Pecha/Rawst) up to 96h+ (Liechi, Ganlon). Wailmer Pail halves per stage if watered each time.</p>
+            <span class="tile__arrow">Plant rotation by route</span>
+          </article>
+
+          <article class="tile">
+            <div><div class="tile__num">1 / 65,536</div><h3 class="tile__title">Mirage Island</h3></div>
+            <p class="tile__desc">A hidden 16-bit value rotates daily. If any party Pokemon&rsquo;s Personality Value matches, the island appears off Pacifidlog. Verify via the old man in Pacifidlog&rsquo;s leftmost house. Maximize 6 unique PVs in party.</p>
+            <span class="tile__arrow">Pacifidlog leftmost house</span>
+          </article>
+
+          <article class="tile">
+            <div><div class="tile__num">Live</div><h3 class="tile__title">Mauville TV broadcasts</h3></div>
+            <p class="tile__desc">TVs across Hoenn rotate Trainer Tips, Now Trending, Trainer Talk, Lottery winner. Walk-by trainer NPCs reference your last battle&rsquo;s lead. Mechanically useless but a fun verification of random gameplay tells.</p>
+            <span class="tile__arrow">Updates per fight / minutes</span>
+          </article>
+
+          <article class="tile">
+            <div><div class="tile__num">Daily</div><h3 class="tile__title">Berry Master&rsquo;s Wife</h3></div>
+            <p class="tile__desc">Tell her one of <strong>5 phrases</strong> for a rare berry &mdash; she&rsquo;s the only consistent source of Spelon, Pamtre, Watmel, Durin, Belue (the e-Reader berries). Phrase pool resets at midnight.</p>
+            <span class="tile__arrow">Route 123 &middot; midnight reset</span>
+          </article>
+
+          <article class="tile">
+            <div><div class="tile__num">Per badge</div><h3 class="tile__title">Trick House refresh</h3></div>
+            <p class="tile__desc">Each new gym badge unlocks the next Trick House puzzle. Eight rooms total. Easy to forget; check after every badge.</p>
+            <span class="tile__arrow">Route 110 scroll</span>
+          </article>
+
+          <article class="tile">
+            <div><div class="tile__num">Daily</div><h3 class="tile__title">Berry Master himself</h3></div>
+            <p class="tile__desc">Berry Master (Route 123) gives a random rare berry once per real day &mdash; different from his wife. Visit both for two free berries daily.</p>
+            <span class="tile__arrow">Two berries per day pair</span>
+          </article>
+
+          <article class="tile">
+            <div><div class="tile__num">~6h cycle</div><h3 class="tile__title">Shoal Cave tide</h3></div>
+            <p class="tile__desc">Real-time tide cycles, four ~6h windows per day. Low tide reveals Shoal Salt and Shoal Shell deposits. Collect <strong>4 of each</strong>, trade with the Shoal Cave NPC for the Shell Bell. Entrance NPC announces current state.</p>
+            <span class="tile__arrow">Route 125 east of Mossdeep</span>
+          </article>
+
+          <article class="tile">
+            <div><div class="tile__num">N/A</div><h3 class="tile__title">No day/night encounters</h3></div>
+            <p class="tile__desc">Emerald has no day/night spawn shifts. RTC tracks time but does not affect grass encounters. Some berry growth and lottery rolls use it; Pokemon spawns do not.</p>
+            <span class="tile__arrow">Skip the night-search</span>
+          </article>
+
+          <article class="tile">
+            <div><div class="tile__num">N/A</div><h3 class="tile__title">No swarms in Gen 3</h3></div>
+            <p class="tile__desc">Swarm Pokemon were added in Gen 4. Don&rsquo;t go looking for the daily swarm Pokegear ping; it doesn&rsquo;t exist here.</p>
+            <span class="tile__arrow">Gen 4+ feature</span>
+          </article>
+
+          <article class="tile">
+            <div><div class="tile__num">N/A</div><h3 class="tile__title">No daily weather rotation</h3></div>
+            <p class="tile__desc">Permanent route-bound weather: sandstorm Route 111 north, fog Route 120, rain 119/120, blizzard around Shoal Cave. No rotation.</p>
+            <span class="tile__arrow">Per-route fixed</span>
+          </article>
+
+          <article class="tile">
+            <div><div class="tile__num">Hardware</div><h3 class="tile__title">RTC battery (CR1616)</h3></div>
+            <p class="tile__desc">Original carts run a CR1616 battery. When dead, all daily events freeze. Replace with iFixit kit / soldering iron, or sidestep with an emulator entirely.</p>
+            <span class="tile__arrow">~$3 fix on hardware</span>
+          </article>
+        </div>
+
+        <div class="callout callout--sun" style="margin-top: var(--s-6);">
+          <span class="callout__label">Battery warning</span>
+          <p style="margin:0;">If you boot your cartridge in 2026 and see <em>&ldquo;The internal battery has run dry&rdquo;</em>, the lottery, berries, tides, and Berry Master daily phrases all stop. Pokemon you catch still save fine &mdash; only RTC events break. Do not panic; replace the battery, your save survives.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 7. GLASS WORKSHOP ============================== -->
+    <section class="section" id="glass">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ocean">Section Seven</span>
+          <h2 class="h1">The Glass<br><em style="color:var(--ocean); font-style:italic; font-weight:400;">Workshop</em></h2>
+          <p class="lede mt-4" style="max-width: 62ch;">
+            Route 113&rsquo;s Glass Workshop is the only sink for the soot you collect from the route&rsquo;s ash grass.
+            Trade soot for flutes (single-use battle items) and the unique Pretty Chair / Pretty Desk decorations.
+          </p>
+        </div>
+
+        <div class="grid grid--2 stagger">
+          <article class="card offset-shadow--ember">
+            <div class="card__subtitle">Soot collection</div>
+            <h3 class="card__title mt-3">+1 per ash-grass step</h3>
+            <p class="card__body">Equip the Soot Sack &mdash; auto-equipped from Key Items pocket. Walk through ash grass on Route 113 &mdash; each step adds 1 soot. Open the sack to view current count. Walking ~150 steps/min through ash is a typical farm rate.</p>
+            <div class="callout callout--emerald" style="margin-top: var(--s-3);">
+              <span class="callout__label">Tip</span>
+              <p style="margin:0;">Walking circles on a 5x5 ash patch is the fastest method. Bike on dirt skips collection &mdash; the bike-on-ash interaction is unverified, walking remains safe.</p>
+            </div>
+          </article>
+
+          <article class="card card--ink">
+            <div class="card__subtitle" style="color: var(--sun);">The 7-row exchange</div>
+            <h3 class="card__title mt-3" style="color: var(--paper);">Soot &rarr; flute or furniture</h3>
+            <dl style="margin-top: var(--s-3);">
+              <div class="stat-row" style="border-color: var(--ink-soft);"><span class="stat-row__label" style="color:var(--mist);">Blue Flute</span><span class="stat-row__value" style="color:var(--paper);">Wakes ally from Sleep</span><span class="stat-row__num" style="color:var(--sun);">250</span></div>
+              <div class="stat-row" style="border-color: var(--ink-soft);"><span class="stat-row__label" style="color:var(--mist);">Yellow Flute</span><span class="stat-row__value" style="color:var(--paper);">Snaps ally from Confusion</span><span class="stat-row__num" style="color:var(--sun);">500</span></div>
+              <div class="stat-row" style="border-color: var(--ink-soft);"><span class="stat-row__label" style="color:var(--mist);">Red Flute</span><span class="stat-row__value" style="color:var(--paper);">Cures Attract on ally</span><span class="stat-row__num" style="color:var(--sun);">500</span></div>
+              <div class="stat-row" style="border-color: var(--ink-soft);"><span class="stat-row__label" style="color:var(--mist);">White Flute</span><span class="stat-row__value" style="color:var(--paper);">Boost wild encounter rate</span><span class="stat-row__num" style="color:var(--sun);">1000</span></div>
+              <div class="stat-row" style="border-color: var(--ink-soft);"><span class="stat-row__label" style="color:var(--mist);">Black Flute</span><span class="stat-row__value" style="color:var(--paper);">Suppress wild encounter rate</span><span class="stat-row__num" style="color:var(--sun);">1000</span></div>
+              <div class="stat-row" style="border-color: var(--ink-soft);"><span class="stat-row__label" style="color:var(--mist);">Pretty Chair</span><span class="stat-row__value" style="color:var(--paper);">Secret Base decoration</span><span class="stat-row__num" style="color:var(--sun);">2000</span></div>
+              <div class="stat-row" style="border-color: var(--ink-soft);"><span class="stat-row__label" style="color:var(--mist);">Pretty Desk</span><span class="stat-row__value" style="color:var(--paper);">Secret Base decoration (large)</span><span class="stat-row__num" style="color:var(--sun);">8000</span></div>
+            </dl>
+          </article>
+        </div>
+
+        <div class="callout callout--ocean" style="margin-top: var(--s-6);">
+          <span class="callout__label">White Flute combo</span>
+          <p style="margin:0;"><strong>White Flute + Sweet Scent</strong> stack &mdash; the flute boosts wild rate, Sweet Scent forces an immediate encounter. The combination is the standard rare-spawn / shiny-grind setup. Each flute slot stays in shop after first purchase; farm again to buy more.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 8. MOVE TUTORS ============================== -->
+    <section class="section section--ink" id="tutors">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker">Section Eight</span>
+          <h2 class="h1" style="color: var(--paper);">Move<br><em style="color:var(--sun); font-style:italic; font-weight:400;">tutors</em></h2>
+          <p class="lede mt-4" style="max-width: 62ch; color: var(--mist);">
+            Three flavors of tutor in Hoenn: free Move Reminder (Slateport, Heart Scale-paid), free Move
+            Deleter (Fallarbor &mdash; the only legitimate way to forget an HM), and the Battle Frontier&rsquo;s
+            BP-paid menu of 21 utility moves. None of them are one-shots; tutor freely.
+          </p>
+        </div>
+
+        <div class="grid grid--3 stagger">
+          <article class="card card--alt">
+            <div class="card__subtitle">Slateport</div>
+            <h3 class="card__title mt-3">Move Reminder</h3>
+            <p class="card__body">House south of the Pokemon Center, the &ldquo;Move Maniac.&rdquo; Re-teaches any move in the target Pokemon&rsquo;s level-up movepool &mdash; including ones it hasn&rsquo;t reached the level for yet.</p>
+            <dl style="margin-top: var(--s-3);">
+              <div class="stat-row"><span class="stat-row__label">Cost</span><span class="stat-row__value">1 Heart Scale per move</span><span class="stat-row__num">SCALE</span></div>
+              <div class="stat-row"><span class="stat-row__label">Source</span><span class="stat-row__value">Wild Luvdisc held item</span><span class="stat-row__num">124-128</span></div>
+              <div class="stat-row"><span class="stat-row__label">Repeatable</span><span class="stat-row__value">Yes, infinite</span><span class="stat-row__num">YES</span></div>
+            </dl>
+            <p class="card__body" style="margin-top: var(--s-3);">Stockpile Heart Scales early. Critical for re-learning legendary signature moves (Latios&rsquo;s Luster Purge, Latias&rsquo;s Mist Ball).</p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">Fallarbor</div>
+            <h3 class="card__title mt-3">Move Deleter</h3>
+            <p class="card__body">House on the left side of Fallarbor Town. Deletes any move &mdash; <strong>including HMs</strong>. The only legitimate way to remove an HM in Gen 3.</p>
+            <dl style="margin-top: var(--s-3);">
+              <div class="stat-row"><span class="stat-row__label">Cost</span><span class="stat-row__value">Free, unlimited</span><span class="stat-row__num">FREE</span></div>
+              <div class="stat-row"><span class="stat-row__label">HMs</span><span class="stat-row__value">Yes, removable</span><span class="stat-row__num">YES</span></div>
+              <div class="stat-row"><span class="stat-row__label">Repeatable</span><span class="stat-row__value">Yes, infinite</span><span class="stat-row__num">YES</span></div>
+            </dl>
+            <p class="card__body" style="margin-top: var(--s-3);">Critical for clearing HM mules&rsquo; movesets when you&rsquo;re done with overworld traversal.</p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">Mossdeep</div>
+            <h3 class="card__title mt-3">Dive-house tutor</h3>
+            <p class="card__body">The same plot where Steven hands you HM08 hosts an NPC tutor. Single-move teach. Confirm exact move on a fresh playthrough &mdash; sources vary.</p>
+            <dl style="margin-top: var(--s-3);">
+              <div class="stat-row"><span class="stat-row__label">Cost</span><span class="stat-row__value">Free, one-time</span><span class="stat-row__num">FREE</span></div>
+              <div class="stat-row"><span class="stat-row__label">Repeatable</span><span class="stat-row__value">No</span><span class="stat-row__num">ONCE</span></div>
+            </dl>
+          </article>
+        </div>
+
+        <header style="margin-top: var(--s-7); margin-bottom: var(--s-5);">
+          <span class="kicker" style="color: var(--sun); border-color: var(--sun);">Battle Frontier exchange</span>
+          <h2 class="h2 mt-3" style="color: var(--paper);">21 BP <em style="color:var(--sun); font-style:italic; font-weight:400;">tutors</em></h2>
+          <p class="lede mt-3" style="max-width: 62ch; color: var(--mist);">All Frontier tutors are infinitely repeatable &mdash; you only spend BP. Earn BP by clearing facility streaks.</p>
+        </header>
+
+        <article class="card card--ink" style="border-color: var(--ink-soft);">
+          <div class="card__subtitle" style="color: var(--sun);">BP costs (verify on fresh playthrough)</div>
+          <ul class="bullet-list bullet-list--emerald" style="margin-top: var(--s-3); color: var(--paper);">
+            <li><strong>Defense Curl</strong> &middot; 16 BP &middot; generic Normal-type setup</li>
+            <li><strong>Mega Punch</strong> &middot; 48 BP &middot; 80 power Normal physical</li>
+            <li><strong>Mega Kick</strong> &middot; 48 BP &middot; 120 power Normal physical, lower accuracy</li>
+            <li><strong>Body Slam</strong> &middot; 48 BP &middot; 85 power + 30% paralysis</li>
+            <li><strong>Double-Edge</strong> &middot; 48 BP &middot; 120 power Normal recoil</li>
+            <li><strong>Counter</strong> &middot; 48 BP &middot; reflects physical damage 2x</li>
+            <li><strong>Mimic</strong> &middot; 48 BP &middot; copies opponent&rsquo;s last move for the battle</li>
+            <li><strong>Endure</strong> &middot; 48 BP &middot; survive at 1 HP this turn</li>
+            <li><strong>Substitute</strong> &middot; 48 BP &middot; 25% HP decoy</li>
+            <li><strong>Swagger</strong> &middot; 48 BP &middot; +2 enemy Atk + confusion</li>
+            <li><strong>Sleep Talk</strong> &middot; 48 BP &middot; random move while asleep</li>
+            <li><strong>Snore</strong> &middot; 48 BP &middot; 40 power asleep-only + 30% flinch</li>
+            <li><strong>Metronome</strong> &middot; 48 BP &middot; random move</li>
+            <li><strong>DynamicPunch</strong> &middot; 48 BP &middot; 100 power, 50% acc, 100% confusion</li>
+            <li><strong>Rollout</strong> &middot; 48 BP &middot; 30 power, doubles each consecutive hit, 5 turns</li>
+            <li><strong>Self-Destruct</strong> &middot; 64 BP &middot; 200 power, user faints</li>
+            <li><strong>Explosion</strong> &middot; 64 BP &middot; 250 power, user faints (Snorlax/Electrode staple)</li>
+            <li><strong>Dream Eater</strong> &middot; 48 BP &middot; 100 power Psychic, sleeping target only, recovers half damage</li>
+            <li><strong>Fury Cutter</strong> &middot; 48 BP &middot; 10 power doubling per hit</li>
+            <li><strong>Icy Wind</strong> &middot; 48 BP &middot; 55 power Ice, 100% Speed-1</li>
+            <li><strong>Swift</strong> &middot; 48 BP &middot; 60 power Normal, never misses</li>
+          </ul>
+          <div class="callout callout--sun" style="margin-top: var(--s-4);">
+            <span class="callout__label">No elemental punches in Emerald</span>
+            <p style="margin:0;">Fire Punch / Ice Punch / ThunderPunch tutors are <strong>Gen 4 only</strong> (HGSS / DPPt). In Emerald they&rsquo;re only available via natural learn lists (Hitmonchan&rsquo;s level-up). Use TM elemental coverage instead.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================== CLOSER ============================== -->
+    <section class="section">
+      <div class="container container--narrow text-center">
+        <span class="kicker kicker--ember">End of toolkit</span>
+        <h2 class="h2 mt-4" style="margin-inline:auto;">Pack the <em style="color:var(--ember); font-weight:400; font-style:italic;">scope.</em><br>Bring both bikes.</h2>
+        <p class="lede mt-5" style="margin-inline:auto;">
+          The bag is small but the choices it represents are most of the game. The Mach Bike opens Mt. Chimney
+          before the 4th gym; the Acro Bike unlocks Rayquaza. Read the floor before you ride. Read the rock
+          before you smash it. Read the water before you Dive.
+        </p>
+        <p class="mono mt-5" style="text-align:center;">
+          <a href="index.html" class="badge" style="text-decoration:none;">Back to hub</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">Hoenn <span>Field</span> Guide</div>
+          <p class="mt-3">An editorial companion to Pokemon Emerald, published in print-as-pixels.
+          Pokemon names, characters, and locations are property of Nintendo, Game Freak, and The Pokemon Company.
+          This is a fan reference; no affiliation.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Chapters</div>
+          <ul class="footer__links">
+            <li><a href="gyms.html">Gym Leaders</a></li>
+            <li><a href="elite-four.html">Elite Four</a></li>
+            <li><a href="legendaries.html">Legendaries</a></li>
+            <li><a href="tier-list.html">Tier List</a></li>
+            <li><a href="secrets.html">Secrets</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Reference</div>
+          <ul class="footer__links">
+            <li><a href="breeding.html">Breeding &amp; IVs</a></li>
+            <li><a href="early-game.html">Early Game</a></li>
+            <li><a href="tms-hms.html">TMs &amp; HMs</a></li>
+            <li><a href="post-game.html">Post Game</a></li>
+            <li><a href="https://github.com/" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span data-year>2025</span> &middot; Hoenn Field Guide &middot; Issue 001</span>
+        <span>Set in Fraunces, Instrument Sans &amp; JetBrains Mono</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&uarr; Top</button>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
