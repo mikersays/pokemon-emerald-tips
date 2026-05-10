@@ -232,6 +232,14 @@ p { max-width: 68ch; }
 .grid--3 { grid-template-columns: repeat(3, 1fr); }
 .grid--4 { grid-template-columns: repeat(4, 1fr); }
 .grid--auto { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+/* CSS Grid items default to min-width: auto (their min-content), which
+   forces tracks to grow past the container if any descendant has long
+   unbreakable text. Override so 1fr can actually shrink below content. */
+.grid > *,
+.split > *,
+.stagger > * {
+  min-width: 0;
+}
 
 .split {
   display: grid;
@@ -267,6 +275,20 @@ p { max-width: 68ch; }
 
 @media (max-width: 640px) {
   .grid--2, .grid--3, .grid--4 { grid-template-columns: 1fr; }
+  .grid--auto { grid-template-columns: 1fr; }
+}
+
+/* Body-text wrapping: long monospace strings, URLs, and concatenated
+   tokens shouldn't blow out their card on narrow viewports. */
+.card,
+.tile,
+.callout,
+.card-trainer,
+.tier-card,
+.stat-row__value,
+.stat-row__num {
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 /* -------------------------------------------------------------
@@ -953,12 +975,19 @@ p { max-width: 68ch; }
   list-style: none;
   display: grid;
   gap: 6px;
+  padding: 0;
+  margin: 0;
+}
+.bullet-list > li {
+  min-width: 0;
 }
 .bullet-list li {
   position: relative;
   padding-left: 22px;
   font-size: var(--fs-base);
   line-height: 1.5;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 .bullet-list li::before {
   content: '\25A0';
