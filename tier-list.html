@@ -4,7 +4,7 @@
   <script>document.documentElement.classList.add("js")</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A working tier list of Pokemon available in vanilla Emerald, sorted by playthrough viability and ceiling." />
+  <meta name="description" content="A working tier list of Pokemon available in vanilla Emerald, sorted by playthrough viability with availability, niche, and gym/E4-specific justifications." />
   <title>Tier List &middot; Hoenn Field Guide</title>
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
@@ -71,8 +71,23 @@
         </h1>
         <p class="lede mt-4" style="max-width: 60ch;">
           A working ranking of Pokemon available in <strong>vanilla Emerald</strong>, sorted by playthrough viability,
-          movepool depth, and raw ceiling. S is broken; A is excellent; B is solid; honorable mentions are situational
-          standouts.
+          movepool depth, and how cleanly each one handles the gym &amp; Elite Four ladder. Five tiers, sixty-seven
+          picks, every justification tied to a specific matchup.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================== EDITORIAL OPENER ============================== -->
+    <section class="section section--tight">
+      <div class="container container--narrow">
+        <p class="dropcap" style="font-size:var(--fs-md); line-height:1.6;">
+          Tier lists travel poorly. A Smogon OU ranking and a Battle Frontier streak ranking and a casual playthrough
+          ranking all disagree on the same forty Pokemon &mdash; and they should, because the questions are different.
+          This list answers exactly one question: <em>given a fresh save of vanilla Emerald, which Pokemon will get you
+          to the credits with the least friction?</em> We weight availability against the level cap, movepool against
+          gym typings, and time-to-payoff against your patience for grinding Bagon in Meteor Falls. Frontier viability
+          is a tiebreaker, not the headline. Competitive ladder placement does not enter the room. Trades from
+          FireRed/LeafGreen are excluded. Legendaries live on their <a href="legendaries.html">own page</a>.
         </p>
       </div>
     </section>
@@ -81,13 +96,12 @@
     <section class="section">
       <div class="container">
 
-        <!-- =============== S TIER =============== -->
         <article class="tier-row reveal" data-tier="S" id="tier-s">
           <div class="tier-row__letter">S</div>
           <div class="tier-row__body">
             <header style="display:flex; align-items:baseline; justify-content:space-between; gap:var(--s-3); flex-wrap:wrap;">
-              <h2 class="h3" style="font-size:var(--fs-lg);">Run-defining</h2>
-              <span class="mono" style="font-size:var(--fs-xs); letter-spacing:0.12em; color:var(--ink-soft);">5 PICKS</span>
+              <h2 class="h3" style="font-size:var(--fs-lg);">Run-defining &mdash; trivializes major battles</h2>
+              <span class="mono" style="font-size:var(--fs-xs); letter-spacing:0.12em; color:var(--ink-soft);">7 PICKS</span>
             </header>
             <div class="tier-pokemon">
               <div class="tier-card">
@@ -97,25 +111,18 @@
                   <span class="type-chip" data-type="water">water</span>
                 </div>
                 <div><span class="type-chip" data-type="ground">ground</span></div>
-                <p class="tier-card__just">Best starter. Only one weakness (4&times; Grass). Incredible bulk and movepool. Solos most gyms.</p>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Starter (Mudkip @ Littleroot)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Bulky physical anchor; only Grass-weak.</strong> Mud Shot one-shots Wattson, Earthquake/Ice Beam erase Drake's Salamence and Flygon, and the 4x Grass weakness is a non-issue against Wallace. Solos five of eight gyms with no babying.</p>
               </div>
               <div class="tier-card">
-                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/373.png" alt="Salamence" loading="lazy">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/254.png" alt="Sceptile" loading="lazy">
                 <div class="tier-card__head">
-                  <h3 class="tier-card__name">Salamence</h3>
-                  <span class="type-chip" data-type="dragon">dragon</span>
+                  <h3 class="tier-card__name">Sceptile</h3>
+                  <span class="type-chip" data-type="grass">grass</span>
                 </div>
-                <div><span class="type-chip" data-type="flying">flying</span></div>
-                <p class="tier-card__just">Pseudo-legendary, 600 BST. Bagon caught in Meteor Falls (post-7th). Late but world-ending.</p>
-              </div>
-              <div class="tier-card">
-                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/376.png" alt="Metagross" loading="lazy">
-                <div class="tier-card__head">
-                  <h3 class="tier-card__name">Metagross</h3>
-                  <span class="type-chip" data-type="steel">steel</span>
-                </div>
-                <div><span class="type-chip" data-type="psychic">psychic</span></div>
-                <p class="tier-card__just">Pseudo-legendary; Beldum is a gift from Steven post-game. Insane bulk; Meteor Mash sweeps Frontier.</p>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Starter (Treecko @ Littleroot)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Hyper-fast Leaf Blade attacker.</strong> Base 120 Speed outpaces every E4 lead. Leaf Blade two-shots Wallace's Whiscash and Milotic; Crunch lets it pierce Tate & Liza without dying to Psychic.</p>
               </div>
               <div class="tier-card">
                 <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/257.png" alt="Blaziken" loading="lazy">
@@ -124,7 +131,28 @@
                   <span class="type-chip" data-type="fire">fire</span>
                 </div>
                 <div><span class="type-chip" data-type="fighting">fighting</span></div>
-                <p class="tier-card__just">Best dual-STAB starter. Sky Uppercut + Blaze Kick covers most of Hoenn.</p>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Starter (Torchic @ Littleroot)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Dual-STAB sweeper from gym 1 onward.</strong> Double Kick at Lv 16 carries Roxanne; Sky Uppercut at Lv 36 cleaves Norman's Slaking and Glacia's Walrein. Blaze Kick + Bulk Up is the cleanest Phoebe answer the starter trio offers.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/373.png" alt="Salamence" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Salamence</h3>
+                  <span class="type-chip" data-type="dragon">dragon</span>
+                </div>
+                <div><span class="type-chip" data-type="flying">flying</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Bagon @ Meteor Falls B1F (post-7th badge, Lv 25 surf area)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Pseudo-legendary 600 BST closer.</strong> 135 Attack with Dragon Claw + Earthquake + Aerial Ace + Crunch hits the entire E4 super-effectively somewhere. Intimidate softens physical hits long enough to set up a single Dragon Dance and end the run.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/376.png" alt="Metagross" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Metagross</h3>
+                  <span class="type-chip" data-type="steel">steel</span>
+                </div>
+                <div><span class="type-chip" data-type="psychic">psychic</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Beldum gift from Steven (post-game, Steven's house in Mossdeep)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Frontier-tier wall-breaker.</strong> 70/130/95 bulk eats Sidney's Dark moves while Meteor Mash two-shots them, and Earthquake dismantles Magma/Aqua leaders. Post-game only, but remains the single best Frontier mon you can build.</p>
               </div>
               <div class="tier-card">
                 <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/310.png" alt="Manectric" loading="lazy">
@@ -132,46 +160,41 @@
                   <h3 class="tier-card__name">Manectric</h3>
                   <span class="type-chip" data-type="electric">electric</span>
                 </div>
-                <p class="tier-card__just">Lightning Rod ability, fast, learns Thunderbolt/Thunder. Solos Winona and Wallace.</p>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Electrike @ Route 110 (pre-Wattson)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Fast Electric with Intimidate utility.</strong> Available before Wattson, who he then trivializes via Quick Attack + Howl. Thunderbolt OHKOes Winona's Pelipper and Skarmory and 2HKOs Wallace's Milotic; Intimidate keeps Sharpedo and Crawdaunt out of Crunch range.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/289.png" alt="Slaking" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Slaking</h3>
+                  <span class="type-chip" data-type="normal">normal</span>
+                </div>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Slakoth @ Petalburg Woods (pre-Brawly)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">670 BST brick that loafs every other turn.</strong> Truant is the price for a 160 Attack Earthquake that two-shots most E4 leads. Schedule Hyper Potions on the loaf turn and it functionally trades 1-for-1 with anything Glacia, Phoebe, or Sidney bring.</p>
               </div>
             </div>
           </div>
         </article>
 
-        <!-- =============== A TIER =============== -->
         <article class="tier-row reveal" data-tier="A" id="tier-a">
           <div class="tier-row__letter">A</div>
           <div class="tier-row__body">
             <header style="display:flex; align-items:baseline; justify-content:space-between; gap:var(--s-3); flex-wrap:wrap;">
               <h2 class="h3" style="font-size:var(--fs-lg);">Excellent &mdash; build a team around any of these</h2>
-              <span class="mono" style="font-size:var(--fs-xs); letter-spacing:0.12em; color:var(--ink-soft);">9 PICKS</span>
+              <span class="mono" style="font-size:var(--fs-xs); letter-spacing:0.12em; color:var(--ink-soft);">21 PICKS</span>
             </header>
             <div class="tier-pokemon">
               <div class="tier-card">
-                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/286.png" alt="Breloom" loading="lazy">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/282.png" alt="Gardevoir" loading="lazy">
                 <div class="tier-card__head">
-                  <h3 class="tier-card__name">Breloom</h3>
-                  <span class="type-chip" data-type="grass">grass</span>
+                  <h3 class="tier-card__name">Gardevoir</h3>
+                  <span class="type-chip" data-type="psychic">psychic</span>
                 </div>
-                <div><span class="type-chip" data-type="fighting">fighting</span></div>
-                <p class="tier-card__just">Mach Punch priority, Effect Spore (status on contact), Sky Uppercut. Beats Roxanne, Norman, Sidney solo.</p>
-              </div>
-              <div class="tier-card">
-                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/254.png" alt="Sceptile" loading="lazy">
-                <div class="tier-card__head">
-                  <h3 class="tier-card__name">Sceptile</h3>
-                  <span class="type-chip" data-type="grass">grass</span>
-                </div>
-                <p class="tier-card__just">120 base Speed. Leaf Blade is the best physical Grass move in the game.</p>
-              </div>
-              <div class="tier-card">
-                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/330.png" alt="Flygon" loading="lazy">
-                <div class="tier-card__head">
-                  <h3 class="tier-card__name">Flygon</h3>
-                  <span class="type-chip" data-type="ground">ground</span>
-                </div>
-                <div><span class="type-chip" data-type="dragon">dragon</span></div>
-                <p class="tier-card__just">Trapinch in the desert &rarr; Vibrava (Lv 35) &rarr; Flygon (Lv 45). Levitate immunity to Ground.</p>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Ralts @ Route 102 (4% encounter)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Calm Mind sweeper with full coverage tutors.</strong> Calm Mind + Psychic boosts past Phoebe's Dusclops, and Thunderbolt/Ice Punch tutors round it out for Wallace and Drake. Trace ability copies Levitate against Claydol in Tate & Liza.</p>
               </div>
               <div class="tier-card">
                 <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/306.png" alt="Aggron" loading="lazy">
@@ -180,15 +203,28 @@
                   <span class="type-chip" data-type="steel">steel</span>
                 </div>
                 <div><span class="type-chip" data-type="rock">rock</span></div>
-                <p class="tier-card__just">Sturdy/Rock Head. Spam Double-Edge with no recoil. Massive Defense.</p>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Aron @ Granite Cave B2F (pre-Brawly grind)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Physical wall with Rock Head Double-Edge.</strong> Rock Head zeroes Double-Edge recoil for spam-killing Winona's birds, and 180 base Defense soaks Drake's Dragon Claws. Earthquake patches the 4x Fighting/Ground hole for the rest of the team.</p>
               </div>
               <div class="tier-card">
-                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/282.png" alt="Gardevoir" loading="lazy">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/330.png" alt="Flygon" loading="lazy">
                 <div class="tier-card__head">
-                  <h3 class="tier-card__name">Gardevoir</h3>
-                  <span class="type-chip" data-type="psychic">psychic</span>
+                  <h3 class="tier-card__name">Flygon</h3>
+                  <span class="type-chip" data-type="ground">ground</span>
                 </div>
-                <p class="tier-card__just">Ralts on Route 102 is rare but evolves at Lv 20 and Lv 30. Calm Mind + Psychic + T-Bolt + Ice Punch is end-game tier.</p>
+                <div><span class="type-chip" data-type="dragon">dragon</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Trapinch @ Route 111 desert (Goggles required, post-Flannery)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Levitating dual-STAB pivot.</strong> Levitate gives a free switch on Wattson and Norman's Earthquake, while Dragon Claw + Earthquake + Rock Slide hits 14 of 17 types neutrally or better. Crunch from tutor cleans up Tate & Liza without tanking Psychic.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/365.png" alt="Walrein" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Walrein</h3>
+                  <span class="type-chip" data-type="ice">ice</span>
+                </div>
+                <div><span class="type-chip" data-type="water">water</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Spheal @ Shoal Cave (post-Winona)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Thick Fat Ice tank that walls Drake.</strong> Thick Fat halves Fire damage so Glacia's Walrein mirror-match goes your way; Surf + Ice Beam two-shots all four of Drake's dragons. Body Slam paralysis keeps Salamence in check after Intimidate fades.</p>
               </div>
               <div class="tier-card">
                 <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/297.png" alt="Hariyama" loading="lazy">
@@ -196,16 +232,19 @@
                   <h3 class="tier-card__name">Hariyama</h3>
                   <span class="type-chip" data-type="fighting">fighting</span>
                 </div>
-                <p class="tier-card__just">Massive HP, Thick Fat, Vital Throw + Brick Break. Hard counter to Sidney and Glacia.</p>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Makuhita @ Granite Cave 1F (pre-Dewford)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Massive HP brick with Thick Fat.</strong> 144 base HP plus Thick Fat means Glacia's Ice moves chip rather than KO, and Vital Throw never misses Sidney's Cacturne. Belly Drum at full HP one-shots most non-Ghost E4 leads.</p>
               </div>
               <div class="tier-card">
-                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/277.png" alt="Swellow" loading="lazy">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/214.png" alt="Heracross" loading="lazy">
                 <div class="tier-card__head">
-                  <h3 class="tier-card__name">Swellow</h3>
-                  <span class="type-chip" data-type="normal">normal</span>
+                  <h3 class="tier-card__name">Heracross</h3>
+                  <span class="type-chip" data-type="bug">bug</span>
                 </div>
-                <div><span class="type-chip" data-type="flying">flying</span></div>
-                <p class="tier-card__just">Taillow caught Route 104 day one. Guts + Toxic Orb + Facade is a Frontier staple.</p>
+                <div><span class="type-chip" data-type="fighting">fighting</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Safari Zone Northeast (post-Winona)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Megahorn nuke with Guts.</strong> Megahorn at 120 BP is the single hardest hit you can land on Phoebe's Dusclops short of a Crit. Guts + a Flame Orb turns Brick Break into a 270 BP nuke for Sidney's whole team.</p>
               </div>
               <div class="tier-card">
                 <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/169.png" alt="Crobat" loading="lazy">
@@ -214,71 +253,8 @@
                   <span class="type-chip" data-type="poison">poison</span>
                 </div>
                 <div><span class="type-chip" data-type="flying">flying</span></div>
-                <p class="tier-card__just">Zubat &rarr; Golbat &rarr; Crobat (high friendship). Mean Look catches roaming Latios/Latias.</p>
-              </div>
-              <div class="tier-card">
-                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/350.png" alt="Milotic" loading="lazy">
-                <div class="tier-card__head">
-                  <h3 class="tier-card__name">Milotic</h3>
-                  <span class="type-chip" data-type="water">water</span>
-                </div>
-                <p class="tier-card__just">Marvel Scale + Recover + Ice Beam. Tedious to evolve (Feebas / Beauty contest stat) but elite.</p>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- =============== B TIER =============== -->
-        <article class="tier-row reveal" data-tier="B" id="tier-b">
-          <div class="tier-row__letter">B</div>
-          <div class="tier-row__body">
-            <header style="display:flex; align-items:baseline; justify-content:space-between; gap:var(--s-3); flex-wrap:wrap;">
-              <h2 class="h3" style="font-size:var(--fs-lg);">Solid contributors</h2>
-              <span class="mono" style="font-size:var(--fs-xs); letter-spacing:0.12em; color:var(--ink-soft);">6 PICKS</span>
-            </header>
-            <div class="tier-pokemon">
-              <div class="tier-card">
-                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/365.png" alt="Walrein" loading="lazy">
-                <div class="tier-card__head">
-                  <h3 class="tier-card__name">Walrein</h3>
-                  <span class="type-chip" data-type="ice">ice</span>
-                </div>
-                <div><span class="type-chip" data-type="water">water</span></div>
-                <p class="tier-card__just">Spheal in Shoal Cave &rarr; Sealeo (Lv 32) &rarr; Walrein (Lv 44). Thick Fat Ice attacker that survives Fire moves.</p>
-              </div>
-              <div class="tier-card">
-                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/323.png" alt="Camerupt" loading="lazy">
-                <div class="tier-card__head">
-                  <h3 class="tier-card__name">Camerupt</h3>
-                  <span class="type-chip" data-type="fire">fire</span>
-                </div>
-                <div><span class="type-chip" data-type="ground">ground</span></div>
-                <p class="tier-card__just">Numel from Route 112. Magnitude + Flamethrower covers a lot &mdash; but 4&times; Water weak.</p>
-              </div>
-              <div class="tier-card">
-                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/264.png" alt="Linoone" loading="lazy">
-                <div class="tier-card__head">
-                  <h3 class="tier-card__name">Linoone</h3>
-                  <span class="type-chip" data-type="normal">normal</span>
-                </div>
-                <p class="tier-card__just">Belly Drum + Extreme Speed + Pickup ability for free items. Best HM slave with Cut/Surf/Strength/Dig support.</p>
-              </div>
-              <div class="tier-card">
-                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/359.png" alt="Absol" loading="lazy">
-                <div class="tier-card__head">
-                  <h3 class="tier-card__name">Absol</h3>
-                  <span class="type-chip" data-type="dark">dark</span>
-                </div>
-                <p class="tier-card__just">Route 120 (rare). Super Luck + Slash for crit fishing; Swords Dance + Aerial Ace devastates Phoebe.</p>
-              </div>
-              <div class="tier-card">
-                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/73.png" alt="Tentacruel" loading="lazy">
-                <div class="tier-card__head">
-                  <h3 class="tier-card__name">Tentacruel</h3>
-                  <span class="type-chip" data-type="water">water</span>
-                </div>
-                <div><span class="type-chip" data-type="poison">poison</span></div>
-                <p class="tier-card__just">Liquid Ooze prevents drain heals against you. Sludge Bomb + Surf + Ice Beam coverage.</p>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Zubat @ Granite Cave / Rusturf (Lv 5+)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Friendship-evo speed demon.</strong> 130 Speed outruns Winona's Altaria and Drake's Salamence. Cross Poison + Aerial Ace handles every Grass and Fighting type the game throws, and Mean Look + Fly is the standard catch tool for the Latios/Latias roamer.</p>
               </div>
               <div class="tier-card">
                 <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/82.png" alt="Magneton" loading="lazy">
@@ -287,19 +263,149 @@
                   <span class="type-chip" data-type="electric">electric</span>
                 </div>
                 <div><span class="type-chip" data-type="steel">steel</span></div>
-                <p class="tier-card__just">Sturdy/Magnet Pull, traps Steels. Magneton-locked in Emerald (Magnezone is a later-gen evo).</p>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">New Mauville (post-Wattson) — Magnemite encounter</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Skarmory check and Wallace counter.</strong> 11 resistances and a Steel immunity to Poison let it wall Winona's Skarmory while Thunderbolt OHKOs it back. Two-shots every member of Wallace's gym except Whiscash, who eats a switch into Flygon.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/286.png" alt="Breloom" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Breloom</h3>
+                  <span class="type-chip" data-type="grass">grass</span>
+                </div>
+                <div><span class="type-chip" data-type="fighting">fighting</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Shroomish @ Petalburg Woods (pre-Roxanne)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Spore + Sky Uppercut priority.</strong> Spore is a 100% accuracy sleep — opens any matchup, including Norman's Slaking and Sidney's Absol. Sky Uppercut + Mach Punch + Giga Drain cover Rock, Dark, and Water without items.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/264.png" alt="Linoone" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Linoone</h3>
+                  <span class="type-chip" data-type="normal">normal</span>
+                </div>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Zigzagoon @ Route 101 (Lv 2, day one)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Pickup utility plus Belly Drum + ExtremeSpeed.</strong> Pickup ability nets Nuggets, Rare Candies, and Full Restores across a playthrough. Belly Drum + ExtremeSpeed (TM/breeding) is a legitimate cleanup option once the Frontier opens; otherwise it carries Cut, Surf, Strength, Rock Smash, and Dig.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/277.png" alt="Swellow" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Swellow</h3>
+                  <span class="type-chip" data-type="normal">normal</span>
+                </div>
+                <div><span class="type-chip" data-type="flying">flying</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Taillow @ Route 104 (day one)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Guts + Facade revenge killer.</strong> Aerial Ace at Lv 13 trivializes Brawly. Held Toxic Orb + Guts + Facade is a 140 BP STAB that two-shots most of Phoebe's Banettes and the bulk of Drake's team after Intimidate-free entries.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/227.png" alt="Skarmory" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Skarmory</h3>
+                  <span class="type-chip" data-type="steel">steel</span>
+                </div>
+                <div><span class="type-chip" data-type="flying">flying</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Route 113 / 114 (post-Norman)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Spikes-laying physical wall.</strong> 140 Defense plus 9 resistances means Sidney's Mightyena and Cacturne plink for nothing while Steel Wing + Drill Peck chip back. Spikes flips Phoebe's bulky Dusclops switch-ins into 2HKOs.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/323.png" alt="Camerupt" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Camerupt</h3>
+                  <span class="type-chip" data-type="fire">fire</span>
+                </div>
+                <div><span class="type-chip" data-type="ground">ground</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Numel @ Route 112 (pre-Flannery)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Earthquake/Eruption physical-special hybrid.</strong> Solid Rock halves the 4x Water hit just enough to survive a Surf and OHKO back with Earthquake. Eruption at full HP melts Phoebe and most of Sidney; switch out before any Hydro Pump.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/73.png" alt="Tentacruel" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Tentacruel</h3>
+                  <span class="type-chip" data-type="water">water</span>
+                </div>
+                <div><span class="type-chip" data-type="poison">poison</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Surf encounters @ Route 103 onward</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Bulky special Water with Liquid Ooze.</strong> Liquid Ooze punishes Sidney's Cacturne Giga Drain. Sludge Bomb + Ice Beam + Surf is a clean Drake answer, and 120 Sp.Def shrugs off Wallace's special threats.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/130.png" alt="Gyarados" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Gyarados</h3>
+                  <span class="type-chip" data-type="water">water</span>
+                </div>
+                <div><span class="type-chip" data-type="flying">flying</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Magikarp @ Route 119 fishing (Old Rod) or Old Man trade</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Intimidate + Dragon Dance cleaner.</strong> Intimidate + 125 Attack means a single Dragon Dance turns Earthquake/Bite/Surf into one-shot fodder against Drake. Magikarp grind is brutal but no other physical Water hits this hard pre-Frontier.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/232.png" alt="Donphan" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Donphan</h3>
+                  <span class="type-chip" data-type="ground">ground</span>
+                </div>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Phanpy @ Safari Zone (post-Mauville)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Sturdy Earthquake spammer.</strong> 120 base Attack and Defense let it eat a Thunderbolt from Wattson before flattening him with Magnitude. Rapid Spin clears Spikes for the team during Frontier streaks.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/319.png" alt="Sharpedo" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Sharpedo</h3>
+                  <span class="type-chip" data-type="water">water</span>
+                </div>
+                <div><span class="type-chip" data-type="dark">dark</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Carvanha @ Route 118 (Good Rod, post-Norman)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Glass-cannon Crunch + Surf.</strong> Rough Skin chips contact attackers and 95 Speed lets it Crunch Tate & Liza's Lunatone before Calm Mind ever lands. Frail enough to fold to a stiff breeze, but it earns the slot in any rush comp.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/230.png" alt="Kingdra" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Kingdra</h3>
+                  <span class="type-chip" data-type="water">water</span>
+                </div>
+                <div><span class="type-chip" data-type="dragon">dragon</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Horsea @ Route 132 surf (post-Wallace)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Drake-counter with no 4x weakness.</strong> The only Dragon in Hoenn with no 4x weakness — Ice does neutral damage. Hydro Pump + Dragon Breath is a clean Drake mirror, and Sleep Talk gives a Frontier-grade safety net.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/362.png" alt="Glalie" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Glalie</h3>
+                  <span class="type-chip" data-type="ice">ice</span>
+                </div>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Snorunt @ Shoal Cave inner ice room (post-Winona)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Self-Destruct closer with Ice Beam.</strong> Inner Focus blocks Hypnosis from Tate & Liza's Lunatone. Ice Beam two-shots Drake; Self-Destruct from a Choice-less attacker still cleanly removes any single Phoebe/Glacia ace.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/346.png" alt="Cradily" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Cradily</h3>
+                  <span class="type-chip" data-type="rock">rock</span>
+                </div>
+                <div><span class="type-chip" data-type="grass">grass</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Lileep fossil @ Mirage Tower (Claw Fossil pick) — one-time</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Suction Cup wall with Ingrain + Giga Drain.</strong> Six resistances including Wallace's STAB Water (with Recover support via Ingrain). Giga Drain + Ancient Power covers Wallace, Glacia's Sealeo, and Drake's Flygon in one moveset.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/348.png" alt="Armaldo" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Armaldo</h3>
+                  <span class="type-chip" data-type="rock">rock</span>
+                </div>
+                <div><span class="type-chip" data-type="bug">bug</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Anorith fossil @ Mirage Tower (Root Fossil pick) — one-time</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Battle Armor offensive fossil.</strong> Battle Armor blocks crits from Sidney's Slash spam and Phoebe's Banette Pursuit. Rock Slide + Brick Break + Ancient Power is one of the cleanest Sidney sweeps available pre-Frontier.</p>
               </div>
             </div>
           </div>
         </article>
 
-        <!-- =============== HONORABLE MENTIONS =============== -->
-        <article class="tier-row reveal" data-tier="HM" id="tier-honorable">
-          <div class="tier-row__letter">HM</div>
+        <article class="tier-row reveal" data-tier="B" id="tier-b">
+          <div class="tier-row__letter">B</div>
           <div class="tier-row__body">
             <header style="display:flex; align-items:baseline; justify-content:space-between; gap:var(--s-3); flex-wrap:wrap;">
-              <h2 class="h3" style="font-size:var(--fs-lg);">Honorable mentions &mdash; situational standouts</h2>
-              <span class="mono" style="font-size:var(--fs-xs); letter-spacing:0.12em; color:var(--ink-soft);">3 PICKS</span>
+              <h2 class="h3" style="font-size:var(--fs-lg);">Solid contributors &mdash; niche or compromised</h2>
+              <span class="mono" style="font-size:var(--fs-xs); letter-spacing:0.12em; color:var(--ink-soft);">22 PICKS</span>
             </header>
             <div class="tier-pokemon">
               <div class="tier-card">
@@ -309,16 +415,353 @@
                   <span class="type-chip" data-type="water">water</span>
                 </div>
                 <div><span class="type-chip" data-type="grass">grass</span></div>
-                <p class="tier-card__just">Lotad on Route 102 (rare). Rain Dish + Swift Swim. Unique typing &mdash; only weak to Bug/Flying/Poison.</p>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Lotad @ Route 102 (4% encounter); needs Water Stone</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Rain Dish stallbreaker.</strong> After the Water Stone (sold at Mossdeep), Ludicolo only fears Bug/Flying/Poison. Giga Drain + Ice Beam handles Wallace and Drake; Leech Seed + Substitute is a legitimate Frontier set.</p>
               </div>
               <div class="tier-card">
-                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/289.png" alt="Slaking" loading="lazy">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/275.png" alt="Shiftry" loading="lazy">
                 <div class="tier-card__head">
-                  <h3 class="tier-card__name">Slaking</h3>
+                  <h3 class="tier-card__name">Shiftry</h3>
+                  <span class="type-chip" data-type="grass">grass</span>
+                </div>
+                <div><span class="type-chip" data-type="dark">dark</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Seedot @ Route 102 (4% encounter); needs Leaf Stone</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Sun-Day-into-Solar Beam abuser.</strong> Early Bullet Seed + Faint Attack covers gym 1 and is the only mid-tier Dark with Explosion. Falls off without a Leaf Stone (purchasable post-Wallace) and slow Speed limits Frontier viability.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/279.png" alt="Pelipper" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Pelipper</h3>
+                  <span class="type-chip" data-type="water">water</span>
+                </div>
+                <div><span class="type-chip" data-type="flying">flying</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Wingull @ Route 104 (day one)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Cheap early Surfer with Roost-tier longevity.</strong> Carries Surf and Fly at the same time, freeing two team slots. Ice Beam + Surf + Fly is enough to limp through Wallace and Drake's Flygon, but offensive stats are mediocre.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/315.png" alt="Roselia" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Roselia</h3>
+                  <span class="type-chip" data-type="grass">grass</span>
+                </div>
+                <div><span class="type-chip" data-type="poison">poison</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Roselia @ Route 117 (post-Wattson)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Special tank with Toxic + Giga Drain.</strong> Natural Cure clears burns/sleep on switch. Synthesis + Giga Drain self-heals through Wallace's Whiscash, but stays Roselia in Gen 3 (Roserade requires later-gen Shiny Stone).</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/178.png" alt="Xatu" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Xatu</h3>
+                  <span class="type-chip" data-type="psychic">psychic</span>
+                </div>
+                <div><span class="type-chip" data-type="flying">flying</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Natu @ Safari Zone (post-Mauville)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Synchronize utility breeder.</strong> Synchronize transfers natures for breeding, and Psychic + Steel Wing covers most B-tier matchups. Outclassed offensively by Gardevoir but fills the early Flying-Psychic dual-coverage slot.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/344.png" alt="Claydol" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Claydol</h3>
+                  <span class="type-chip" data-type="ground">ground</span>
+                </div>
+                <div><span class="type-chip" data-type="psychic">psychic</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Baltoy @ Route 111 desert (Goggles required)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Levitate wall with Earthquake.</strong> Immune to Wattson and Norman's Earthquake spam. Rapid Spin + Light Screen + Reflect makes it a Frontier doubles staple, but mediocre 70/70 offenses cap its solo carry.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/340.png" alt="Whiscash" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Whiscash</h3>
+                  <span class="type-chip" data-type="water">water</span>
+                </div>
+                <div><span class="type-chip" data-type="ground">ground</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Barboach @ Route 114 fishing (Good Rod)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Earthquake + Surf with Spark immunity.</strong> Same dual STAB as Swampert with Amnesia for boosting against Wallace. Quad Grass weakness and lower bulk relegate it to B; works well as a Swampert understudy if your starter was Treecko or Torchic.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/342.png" alt="Crawdaunt" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Crawdaunt</h3>
+                  <span class="type-chip" data-type="water">water</span>
+                </div>
+                <div><span class="type-chip" data-type="dark">dark</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Corphish @ Route 102 fishing (Old Rod, post-Wattson)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Hyper-Cutter + Crabhammer-style raw power.</strong> Hyper Cutter blocks Intimidate, so it goes toe-to-toe with Sharpedo. Slow Speed (55) is the killer — it always trades, never sweeps.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/354.png" alt="Banette" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Banette</h3>
+                  <span class="type-chip" data-type="ghost">ghost</span>
+                </div>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Shuppet @ Mt. Pyre (post-Winona)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Insomnia Shadow Ball striker.</strong> Insomnia blocks Lunatone's Hypnosis at Tate & Liza. Will-O-Wisp + Shadow Ball cripples physical attackers, but 64 Speed and zero recovery keep it out of A.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/356.png" alt="Dusclops" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Dusclops</h3>
+                  <span class="type-chip" data-type="ghost">ghost</span>
+                </div>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Duskull @ Mt. Pyre (post-Winona)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Pure wall with Will-O-Wisp + Pain Split.</strong> 135/135 Defense/SpDef. Will-O-Wisp + Pain Split is the textbook Frontier stall set. No reliable recovery and pitiful offense — a true wall, nothing more.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/311.png" alt="Plusle" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Plusle</h3>
+                  <span class="type-chip" data-type="electric">electric</span>
+                </div>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Route 110 (pre-Wattson)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Doubles support specialist.</strong> Helping Hand + Encore + Thunder Wave is the cleanest doubles assist Hoenn offers, especially for Tate & Liza prep. Solo offense is too low for singles main story.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/312.png" alt="Minun" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Minun</h3>
+                  <span class="type-chip" data-type="electric">electric</span>
+                </div>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Route 110 (pre-Wattson)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Doubles support specialist (mirror of Plusle).</strong> Higher base SpDef than Plusle; identical role. Pair with a heavy hitter in the Battle Tent doubles for free wins.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/313.png" alt="Volbeat" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Volbeat</h3>
+                  <span class="type-chip" data-type="bug">bug</span>
+                </div>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Route 117 grass (male only)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Tail Glow + Baton Pass setup mon.</strong> Tail Glow is a +3 Sp.Atk boost — Baton Pass it to Manectric or Gardevoir for an instant sweep. Gimmick, but the only legal Tail Glow user pre-Frontier.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/314.png" alt="Illumise" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Illumise</h3>
+                  <span class="type-chip" data-type="bug">bug</span>
+                </div>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Route 117 grass (female only)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Charm + Encore setup mon (Volbeat partner).</strong> Encore traps setup moves (looking at you, Bulk Up Slaking). Pairs with Volbeat for the only legal +3 SpAtk Baton Pass chain in Hoenn.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/267.png" alt="Beautifly" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Beautifly</h3>
+                  <span class="type-chip" data-type="bug">bug</span>
+                </div>
+                <div><span class="type-chip" data-type="flying">flying</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Wurmple @ Route 101 (50/50 evo into Silcoon)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Silver Wind RNG-boost specialist.</strong> Silver Wind has a 10% chance to boost every stat — practical setup over a 5-turn Frontier streak. Acceptable Brawly answer, irrelevant by mid-game.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/269.png" alt="Dustox" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Dustox</h3>
+                  <span class="type-chip" data-type="bug">bug</span>
+                </div>
+                <div><span class="type-chip" data-type="poison">poison</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Wurmple @ Route 101 (50/50 evo into Cascoon)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Toxic + Light Screen staller.</strong> Shield Dust ignores secondary effects. Toxic + Light Screen + Whirlwind shuffles set-up sweepers, but offense is nonexistent.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/327.png" alt="Spinda" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Spinda</h3>
                   <span class="type-chip" data-type="normal">normal</span>
                 </div>
-                <p class="tier-card__just">Insane stats but Truant halves uptime. Only viable in Frontier with Skill Swap support.</p>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Route 113 (post-Mauville)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Confusion-spam gimmick mon.</strong> Own Tempo + Teeter Dance flips a doubles match upside-down. Each Spinda has a unique sprite pattern; offensive ceiling is low but the Frontier doubles utility is real.</p>
               </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/358.png" alt="Chimecho" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Chimecho</h3>
+                  <span class="type-chip" data-type="psychic">psychic</span>
+                </div>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Mt. Pyre summit grass (~1% encounter)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Bulky Psychic with Heal Bell.</strong> Heal Bell + Psychic + Calm Mind makes it the one Frontier cleric you can catch. Encounter rate is the only reason it's not A-tier; bring Sweet Scent and a Repel.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/303.png" alt="Mawile" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Mawile</h3>
+                  <span class="type-chip" data-type="steel">steel</span>
+                </div>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Granite Cave / Victory Road (rare)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Intimidate trickster with Iron Defense.</strong> Intimidate + Iron Defense + Baton Pass is a Frontier doubles staple. Iron Head from move tutor lands flinches, but 50/85 offenses cap it solo.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/337.png" alt="Lunatone" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Lunatone</h3>
+                  <span class="type-chip" data-type="rock">rock</span>
+                </div>
+                <div><span class="type-chip" data-type="psychic">psychic</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Meteor Falls (Sapphire/Emerald exclusive)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Levitate special wall.</strong> Calm Mind + Psychic + Ice Beam handles Drake's Flygon and Salamence in one set. Available right after Brawly and stays serviceable through E4 if leveled.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/338.png" alt="Solrock" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Solrock</h3>
+                  <span class="type-chip" data-type="rock">rock</span>
+                </div>
+                <div><span class="type-chip" data-type="psychic">psychic</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Meteor Falls (Ruby/Emerald exclusive)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Sunny Day SolarBeam + Levitate.</strong> Levitate + four resistances. SolarBeam under sun handles Wallace's Whiscash; underwhelming Speed and weak Special movepool keep it out of A.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/302.png" alt="Sableye" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Sableye</h3>
+                  <span class="type-chip" data-type="dark">dark</span>
+                </div>
+                <div><span class="type-chip" data-type="ghost">ghost</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Granite Cave B1F (Sapphire/Emerald), Smeltery / Rusturf for Ruby trade — natively in Emerald</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Two type-immunities (Normal, Psychic, Fighting).</strong> Pre-Fairy era, Dark/Ghost has only one weakness: nothing. Recover + Knock Off + Shadow Ball is a Frontier stall package; low stats limit single-mon dominance.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="tier-row reveal" data-tier="C" id="tier-c">
+          <div class="tier-row__letter">C</div>
+          <div class="tier-row__body">
+            <header style="display:flex; align-items:baseline; justify-content:space-between; gap:var(--s-3); flex-wrap:wrap;">
+              <h2 class="h3" style="font-size:var(--fs-lg);">Workable but slow &mdash; bench-tier or transitional</h2>
+              <span class="mono" style="font-size:var(--fs-xs); letter-spacing:0.12em; color:var(--ink-soft);">11 PICKS</span>
+            </header>
+            <div class="tier-pokemon">
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/332.png" alt="Cacturne" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Cacturne</h3>
+                  <span class="type-chip" data-type="grass">grass</span>
+                </div>
+                <div><span class="type-chip" data-type="dark">dark</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Cacnea @ Route 111 desert (Goggles)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Spikes + Needle Arm flincher.</strong> Sand Veil in the desert turns it into an evasion menace. Spikes + Needle Arm + Faint Attack is workable, but 55 Speed and middling bulk make it a B-minus pick.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/329.png" alt="Vibrava" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Vibrava</h3>
+                  <span class="type-chip" data-type="ground">ground</span>
+                </div>
+                <div><span class="type-chip" data-type="dragon">dragon</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Trapinch evo (Lv 35) — pre-Flygon stage</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Mid-evo with Levitate, no real STAB until Lv 45.</strong> Decent enough to hold the slot until Lv 45 Flygon. Don't fight Drake with Vibrava — wait the ten levels, the spike is real.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/321.png" alt="Wailord" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Wailord</h3>
+                  <span class="type-chip" data-type="water">water</span>
+                </div>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Wailmer @ Route 129 surf (post-Wallace)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Bulkiest HP in Gen 3.</strong> 170 HP soaks Drake's Dragon Claws long enough to set up Water Spout. Outclassed by Walrein and Sharpedo for offensive Water duty, but matchless as a Frontier mixed wall.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/351.png" alt="Castform" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Castform</h3>
+                  <span class="type-chip" data-type="normal">normal</span>
+                </div>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Gift from Weather Institute (post-Wattson)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Forecast weather-form gimmick.</strong> Changes type with weather. Useful in doubles with a Sunny Day partner; outright bad in singles. Take it for the Pokedex slot.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/352.png" alt="Kecleon" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Kecleon</h3>
+                  <span class="type-chip" data-type="normal">normal</span>
+                </div>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Route 119 invisible static encounter (Devon Scope)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Color Change brawler.</strong> Color Change resists the move it just took, so Sidney's Knock Off + Slash combo never lands a super-effective hit. Slow as molasses; pure novelty pick.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/359.png" alt="Absol" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Absol</h3>
+                  <span class="type-chip" data-type="dark">dark</span>
+                </div>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Route 120 (rare)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Crit-stacked physical Dark.</strong> Super Luck + Razor Claw (Frontier prize) push crit rate to 50%. Swords Dance + Aerial Ace one-shots Phoebe's whole team; frailness keeps it from A.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/335.png" alt="Zangoose" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Zangoose</h3>
+                  <span class="type-chip" data-type="normal">normal</span>
+                </div>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Route 114 grass (Emerald exclusive)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Immunity Toxic Orb Facade attacker.</strong> Immunity prevents poison, so Toxic Orb skips it — Facade alone needs another item. Slash + Crush Claw is a passable physical Sidney check, but lacks a true 6th-slot win condition.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/336.png" alt="Seviper" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Seviper</h3>
+                  <span class="type-chip" data-type="poison">poison</span>
+                </div>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Route 114 grass (Sapphire exclusive — trade-only in Emerald)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Poison Tail / Glare paralysis support.</strong> Glare paralyzes Ground types and Crunch handles Phoebe. Trade-locked in Emerald; bring it only if you want type variety.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/374.png" alt="Beldum" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Beldum</h3>
+                  <span class="type-chip" data-type="steel">steel</span>
+                </div>
+                <div><span class="type-chip" data-type="psychic">psychic</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Steven gift (Mossdeep, post-game)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Patience-tax mon — only knows Take Down + Hold Back until Lv 20.</strong> Pre-Metang stage is terrible. Listed only as a bridge note: grind it to Lv 45 and it becomes the S-tier Metagross — until then, bench it.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/371.png" alt="Bagon" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Bagon</h3>
+                  <span class="type-chip" data-type="dragon">dragon</span>
+                </div>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Meteor Falls B1F (post-7th badge)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Pre-Salamence grind — slow until Lv 50.</strong> Same trap as Beldum: a 600-BST payoff at Lv 50. Grind in Meteor Falls Lv 35-40 wild battles or bring an Exp Share.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/322.png" alt="Numel" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Numel</h3>
+                  <span class="type-chip" data-type="fire">fire</span>
+                </div>
+                <div><span class="type-chip" data-type="ground">ground</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Route 112 (pre-Flannery)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Pre-Camerupt stage with abysmal Speed.</strong> Listed because the Numel-to-Camerupt jump at Lv 33 is enormous; treat the pre-evo as a setup phase rather than a battler.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="tier-row reveal" data-tier="HM" id="tier-hm">
+          <div class="tier-row__letter">HM</div>
+          <div class="tier-row__body">
+            <header style="display:flex; align-items:baseline; justify-content:space-between; gap:var(--s-3); flex-wrap:wrap;">
+              <h2 class="h3" style="font-size:var(--fs-lg);">Honorable mentions &mdash; situational standouts &amp; bridge-stage notes</h2>
+              <span class="mono" style="font-size:var(--fs-xs); letter-spacing:0.12em; color:var(--ink-soft);">6 PICKS</span>
+            </header>
+            <div class="tier-pokemon">
               <div class="tier-card">
                 <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/334.png" alt="Altaria" loading="lazy">
                 <div class="tier-card__head">
@@ -326,7 +769,58 @@
                   <span class="type-chip" data-type="dragon">dragon</span>
                 </div>
                 <div><span class="type-chip" data-type="flying">flying</span></div>
-                <p class="tier-card__just">Swablu evolves at Lv 35. Bulky Dragon with Dragon Dance + Earthquake.</p>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Swablu @ Route 114 (post-4th badge); evolves Lv 35</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Bulky Dragon Dance pivot.</strong> Sing + Dragon Dance + Earthquake + Aerial Ace is a fine alternative to Salamence if you want a Hoenn-native Dragon ten levels earlier. Loses out only because Salamence outclasses it after Lv 50.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/350.png" alt="Milotic" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Milotic</h3>
+                  <span class="type-chip" data-type="water">water</span>
+                </div>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Feebas @ Route 119 specific tiles (or Beauty contest evo)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Marvel Scale + Recover special wall.</strong> Marvel Scale boosts Defense by 1.5x when statused. Recover + Ice Beam + Surf + Toxic is a true Frontier-tier set. Listed in HM only because the catch process is brutal — six tiles on Route 119 with a 50% encounter rate.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/305.png" alt="Lairon" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Lairon</h3>
+                  <span class="type-chip" data-type="steel">steel</span>
+                </div>
+                <div><span class="type-chip" data-type="rock">rock</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Aron evo @ Lv 32 — Granite Cave / Iron Island</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Bridge-stage tank.</strong> Strong enough to anchor against Norman and Winona before the Lv 42 Aggron evolution. Use as a holdover — don't expect more.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/288.png" alt="Vigoroth" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Vigoroth</h3>
+                  <span class="type-chip" data-type="normal">normal</span>
+                </div>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Slakoth evo @ Lv 18 — Petalburg Woods</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Vital Spirit, no Truant penalty.</strong> Hyper-active intermediate before Slaking. Faint Attack + Slash + Bulk Up keeps it real until Lv 36 Slaking — at which point Truant returns and you swap roles.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/360.png" alt="Wynaut" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Wynaut</h3>
+                  <span class="type-chip" data-type="psychic">psychic</span>
+                </div>
+                
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Egg gift @ Lavaridge old woman (post-Flannery)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Counter / Mirror Coat trap mon.</strong> Shadow Tag + Counter/Mirror Coat is a Frontier favourite for trapping single-target attackers. Singles main story role is essentially zero.</p>
+              </div>
+              <div class="tier-card">
+                <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/357.png" alt="Tropius" loading="lazy">
+                <div class="tier-card__head">
+                  <h3 class="tier-card__name">Tropius</h3>
+                  <span class="type-chip" data-type="grass">grass</span>
+                </div>
+                <div><span class="type-chip" data-type="flying">flying</span></div>
+                <p class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft); margin:0;">Route 119 (rare)</p>
+                <p class="tier-card__just"><strong style="font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--emerald-deep);">Listed again here as a 4-of-a-kind HM slave (Cut/Fly/Strength/Flash).</strong> The only Pokemon in Hoenn that can legally hold Cut, Fly, Strength, AND Flash simultaneously. Frees four party slots.</p>
               </div>
             </div>
           </div>
@@ -336,12 +830,113 @@
         <div class="callout callout--emerald" style="margin-top: var(--s-7);">
           <span class="callout__label">Method note</span>
           <p style="margin:0;">
-            Rankings consider availability timing (when you can catch it), evolution speed, movepool, type matchups across
-            Hoenn&rsquo;s gyms and Elite Four, and Battle Frontier ceiling. Trades from FireRed/LeafGreen are excluded.
-            Legendaries are ranked separately on the <a href="legendaries.html">Legendaries</a> page.
+            Rankings prioritize main-story efficiency: how cleanly each Pokemon handles Hoenn's eight gyms, the rivals, the Magma/Aqua plot, and the Sidney/Phoebe/Glacia/Drake/Wallace E4 ladder. We weight (1) availability timing relative to level cap, (2) movepool depth without TM hoarding, (3) gym/E4 matchup coverage, and (4) time-investment-to-payoff. We DO NOT rank by competitive Smogon ladder performance — Frontier viability is a tiebreaker, not the headline.
           </p>
         </div>
 
+      </div>
+    </section>
+
+    <!-- ============================== TEAM ARCHETYPES ============================== -->
+    <section class="section section--alt">
+      <div class="container">
+        <header style="margin-bottom:var(--s-6);">
+          <span class="kicker kicker--ember">Three rosters</span>
+          <h2 class="h2 mt-3" style="font-size:var(--fs-xl);">Pre-built six-Pokemon teams</h2>
+          <p class="lede mt-3" style="max-width:60ch; font-size:var(--fs-md);">If you want to skip the deliberation, lift one of these rosters wholesale. Each is internally coherent &mdash; coverage, role distribution, and gym matchups are accounted for.</p>
+        </header>
+        <div class="grid grid--3">
+            <div class="card card" style="padding:var(--s-5);">
+              <span class="kicker ">Pure Pressure</span>
+              <p class="lede" style="font-size:var(--fs-md); margin-top:var(--s-2); margin-bottom:var(--s-4);">Six attackers, no fillers. Built to sweep Hoenn before anyone gets to move twice.</p>
+              <ul style="list-style:none; padding:0; margin:0;">
+                <li style="display:flex; align-items:center; gap:var(--s-3); padding:var(--s-2) 0; border-bottom:1px dashed var(--ink);">
+                  <span style="font-family:var(--font-display); font-weight:800; font-size:var(--fs-md); min-width:120px;">Blaziken</span>
+                  <span class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft);">Lead — Sky Uppercut + Blaze Kick</span>
+                </li>
+                <li style="display:flex; align-items:center; gap:var(--s-3); padding:var(--s-2) 0; border-bottom:1px dashed var(--ink);">
+                  <span style="font-family:var(--font-display); font-weight:800; font-size:var(--fs-md); min-width:120px;">Sceptile</span>
+                  <span class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft);">Speed sweeper — Leaf Blade + Crunch</span>
+                </li>
+                <li style="display:flex; align-items:center; gap:var(--s-3); padding:var(--s-2) 0; border-bottom:1px dashed var(--ink);">
+                  <span style="font-family:var(--font-display); font-weight:800; font-size:var(--fs-md); min-width:120px;">Salamence</span>
+                  <span class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft);">Closer — Dragon Dance + Earthquake</span>
+                </li>
+                <li style="display:flex; align-items:center; gap:var(--s-3); padding:var(--s-2) 0; border-bottom:1px dashed var(--ink);">
+                  <span style="font-family:var(--font-display); font-weight:800; font-size:var(--fs-md); min-width:120px;">Manectric</span>
+                  <span class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft);">Wattson/Winona/Wallace — Thunderbolt</span>
+                </li>
+                <li style="display:flex; align-items:center; gap:var(--s-3); padding:var(--s-2) 0; border-bottom:1px dashed var(--ink);">
+                  <span style="font-family:var(--font-display); font-weight:800; font-size:var(--fs-md); min-width:120px;">Sharpedo</span>
+                  <span class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft);">Crunch revenge killer for Tate & Liza</span>
+                </li>
+                <li style="display:flex; align-items:center; gap:var(--s-3); padding:var(--s-2) 0; border-bottom:1px dashed var(--ink);">
+                  <span style="font-family:var(--font-display); font-weight:800; font-size:var(--fs-md); min-width:120px;">Heracross</span>
+                  <span class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft);">Phoebe/Sidney nuke — Megahorn + Brick Break</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card card card--alt" style="padding:var(--s-5);">
+              <span class="kicker ">All-Weather Field Team</span>
+              <p class="lede" style="font-size:var(--fs-md); margin-top:var(--s-2); margin-bottom:var(--s-4);">Two attackers, two pivots, one wall, one cleric. The textbook playthrough roster.</p>
+              <ul style="list-style:none; padding:0; margin:0;">
+                <li style="display:flex; align-items:center; gap:var(--s-3); padding:var(--s-2) 0; border-bottom:1px dashed var(--ink);">
+                  <span style="font-family:var(--font-display); font-weight:800; font-size:var(--fs-md); min-width:120px;">Swampert</span>
+                  <span class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft);">Anchor — Earthquake + Ice Beam + Surf</span>
+                </li>
+                <li style="display:flex; align-items:center; gap:var(--s-3); padding:var(--s-2) 0; border-bottom:1px dashed var(--ink);">
+                  <span style="font-family:var(--font-display); font-weight:800; font-size:var(--fs-md); min-width:120px;">Gardevoir</span>
+                  <span class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft);">Calm Mind + Psychic + Thunderbolt</span>
+                </li>
+                <li style="display:flex; align-items:center; gap:var(--s-3); padding:var(--s-2) 0; border-bottom:1px dashed var(--ink);">
+                  <span style="font-family:var(--font-display); font-weight:800; font-size:var(--fs-md); min-width:120px;">Flygon</span>
+                  <span class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft);">Pivot — Levitate + Dragon Claw</span>
+                </li>
+                <li style="display:flex; align-items:center; gap:var(--s-3); padding:var(--s-2) 0; border-bottom:1px dashed var(--ink);">
+                  <span style="font-family:var(--font-display); font-weight:800; font-size:var(--fs-md); min-width:120px;">Aggron</span>
+                  <span class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft);">Wall — Rock Head Double-Edge</span>
+                </li>
+                <li style="display:flex; align-items:center; gap:var(--s-3); padding:var(--s-2) 0; border-bottom:1px dashed var(--ink);">
+                  <span style="font-family:var(--font-display); font-weight:800; font-size:var(--fs-md); min-width:120px;">Crobat</span>
+                  <span class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft);">Speed control + Mean Look + Cross Poison</span>
+                </li>
+                <li style="display:flex; align-items:center; gap:var(--s-3); padding:var(--s-2) 0; border-bottom:1px dashed var(--ink);">
+                  <span style="font-family:var(--font-display); font-weight:800; font-size:var(--fs-md); min-width:120px;">Linoone</span>
+                  <span class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft);">HM slave + Pickup utility</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card card" style="padding:var(--s-5);">
+              <span class="kicker ">The Long Stall</span>
+              <p class="lede" style="font-size:var(--fs-md); margin-top:var(--s-2); margin-bottom:var(--s-4);">Walls, Recover, Toxic, switch. Made for Frontier streaks; main story works fine too.</p>
+              <ul style="list-style:none; padding:0; margin:0;">
+                <li style="display:flex; align-items:center; gap:var(--s-3); padding:var(--s-2) 0; border-bottom:1px dashed var(--ink);">
+                  <span style="font-family:var(--font-display); font-weight:800; font-size:var(--fs-md); min-width:120px;">Walrein</span>
+                  <span class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft);">Thick Fat Ice tank — Surf + Ice Beam + Body Slam</span>
+                </li>
+                <li style="display:flex; align-items:center; gap:var(--s-3); padding:var(--s-2) 0; border-bottom:1px dashed var(--ink);">
+                  <span style="font-family:var(--font-display); font-weight:800; font-size:var(--fs-md); min-width:120px;">Skarmory</span>
+                  <span class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft);">Spikes + Roar + Steel Wing</span>
+                </li>
+                <li style="display:flex; align-items:center; gap:var(--s-3); padding:var(--s-2) 0; border-bottom:1px dashed var(--ink);">
+                  <span style="font-family:var(--font-display); font-weight:800; font-size:var(--fs-md); min-width:120px;">Dusclops</span>
+                  <span class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft);">Will-O-Wisp + Pain Split + Shadow Ball</span>
+                </li>
+                <li style="display:flex; align-items:center; gap:var(--s-3); padding:var(--s-2) 0; border-bottom:1px dashed var(--ink);">
+                  <span style="font-family:var(--font-display); font-weight:800; font-size:var(--fs-md); min-width:120px;">Milotic</span>
+                  <span class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft);">Marvel Scale + Recover + Toxic + Ice Beam</span>
+                </li>
+                <li style="display:flex; align-items:center; gap:var(--s-3); padding:var(--s-2) 0; border-bottom:1px dashed var(--ink);">
+                  <span style="font-family:var(--font-display); font-weight:800; font-size:var(--fs-md); min-width:120px;">Cradily</span>
+                  <span class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft);">Suction Cups + Ingrain + Giga Drain</span>
+                </li>
+                <li style="display:flex; align-items:center; gap:var(--s-3); padding:var(--s-2) 0; border-bottom:1px dashed var(--ink);">
+                  <span style="font-family:var(--font-display); font-weight:800; font-size:var(--fs-md); min-width:120px;">Magneton</span>
+                  <span class="mono" style="font-size:var(--fs-xs); color:var(--ink-soft);">Sturdy + Thunderbolt — Wallace/Skarmory check</span>
+                </li>
+              </ul>
+            </div>
+        </div>
       </div>
     </section>
 

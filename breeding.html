@@ -656,6 +656,150 @@
       </div>
     </section>
 
+    <!-- ============================== EGG CYCLES & FAST HATCH ============================== -->
+    <section class="section" id="egg-cycles">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ember">Sub-section</span>
+          <h2 class="h2 mt-3">Egg cycles &amp; <em style="color:var(--ember); font-style:italic; font-weight:400;">fast hatch</em></h2>
+          <p class="lede mt-3" style="max-width: 56ch;">Each species has an egg-cycle count. One cycle = 256 overworld steps. Magma Armor or Flame Body in your party halves cycles &mdash; the only legitimate way to halve egg time in Gen 3.</p>
+        </div>
+
+        <div class="grid grid--2 stagger">
+          <article class="card offset-shadow--ember">
+            <div class="card__subtitle">Step counts (cycles &times; 256)</div>
+            <h3 class="card__title mt-3">Common species</h3>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Wurmple / Zigzagoon / Poochyena</span><span class="stat-row__value">15 cycles</span><span class="stat-row__num">3840</span></div>
+              <div class="stat-row"><span class="stat-row__label">Hoenn starters</span><span class="stat-row__value">20 cycles</span><span class="stat-row__num">5120</span></div>
+              <div class="stat-row"><span class="stat-row__label">Wynaut</span><span class="stat-row__value">20 cycles</span><span class="stat-row__num">5120</span></div>
+              <div class="stat-row"><span class="stat-row__label">Pichu / Igglybuff / Cleffa</span><span class="stat-row__value">10 cycles</span><span class="stat-row__num">2560</span></div>
+              <div class="stat-row"><span class="stat-row__label">Bagon (pseudo-legendary)</span><span class="stat-row__value">40 cycles</span><span class="stat-row__num">10240</span></div>
+              <div class="stat-row"><span class="stat-row__label">Beldum (no eggs &mdash; gift only)</span><span class="stat-row__value">N/A</span><span class="stat-row__num">N/A</span></div>
+            </dl>
+            <p class="card__body" style="margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--ink-soft);">Halve all step counts when carrying a Magma Armor / Flame Body Pokemon in party.</p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">Halving abilities</div>
+            <h3 class="card__title mt-3">Magma Armor / Flame Body</h3>
+            <div class="poke-row mt-3">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/218.png" alt="Slugma" loading="lazy">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/219.png" alt="Magcargo" loading="lazy">
+              <span class="mono" style="font-size:var(--fs-xs);">Slugma / Magcargo &middot; Magma Armor</span>
+            </div>
+            <p class="card__body mt-3">
+              <strong>Slugma</strong> is wild on Route 113 &mdash; about 5% rate. It evolves into Magcargo at Lv 38. Either form
+              halves egg cycles when carried in party. ONE Pokemon in your party with the ability is enough &mdash; stacking
+              does NOT compound. Flame Body equivalents (Magmar, Magby) are FRLG imports only.
+            </p>
+            <div class="callout callout--ember mt-4">
+              <span class="callout__label">Fast-hatch loop</span>
+              <p style="margin:0;">
+                Slugma in any party slot &rarr; mount Mach Bike on Route 119 or Cycling Road &rarr; ride back-and-forth (each
+                tile = 1 step) &rarr; a 5120-step starter egg hatches in roughly 5 minutes of biking, halved.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="callout callout--sun" style="margin-top: var(--s-5);">
+          <span class="callout__label">Battles don&rsquo;t count</span>
+          <p style="margin:0;">Eggs ONLY count overworld steps. Battles, fly-warps, and dialogue do not advance the timer. Save state-skipping in mGBA / VBA-M speeds this up massively for emulator users.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== EGG MOVE CHAINS ============================== -->
+    <section class="section section--alt" id="egg-moves">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ocean">Sub-section</span>
+          <h2 class="h2 mt-3">Egg move <em style="color:var(--ocean); font-style:italic; font-weight:400;">chains</em></h2>
+          <p class="lede mt-3" style="max-width: 56ch;">An egg move passes from the FATHER if he knows it AND the species can legitimately learn it. Chains stack moves through generations.</p>
+        </div>
+
+        <div class="grid grid--2 stagger">
+          <article class="card offset-shadow">
+            <div class="card__subtitle">Example A &middot; Belly Drum</div>
+            <h3 class="card__title mt-3">Marill with Belly Drum</h3>
+            <div class="poke-row mt-3">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/60.png" alt="Poliwag" loading="lazy">
+              <span class="mono">&rarr;</span>
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/183.png" alt="Marill" loading="lazy">
+            </div>
+            <ol class="bullet-list bullet-list--emerald" style="margin-top: var(--s-4);">
+              <li>Marill&rsquo;s egg-move list includes Belly Drum.</li>
+              <li>Belly Drum is naturally on Polywag&rsquo;s line. Polywhirl shares the Water 1 egg group with Marill.</li>
+              <li>Catch (or breed) a male Polywhirl that knows Belly Drum.</li>
+              <li>Breed male Polywhirl &times; female Marill &rarr; egg = Marill with Belly Drum.</li>
+              <li>Bonus: female Marill holding Everstone passes nature 50%. So you can stack nature-lock + Belly Drum in one cross.</li>
+            </ol>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">Example B &middot; Dragon Dance</div>
+            <h3 class="card__title mt-3">Bagon with Dragon Dance</h3>
+            <div class="poke-row mt-3">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/117.png" alt="Seadra" loading="lazy">
+              <span class="mono">&rarr;</span>
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/371.png" alt="Bagon" loading="lazy">
+            </div>
+            <ol class="bullet-list bullet-list--ember" style="margin-top: var(--s-4);">
+              <li>Bagon&rsquo;s egg-move list includes Dragon Dance.</li>
+              <li>Dragon Dance is learned naturally by Horsea/Seadra. Both share Dragon egg group with Bagon.</li>
+              <li>Catch a male Horsea/Seadra (FRLG / Pacifidlog trade). Level Seadra to Lv 35 for Dragon Dance.</li>
+              <li>Breed male Seadra &times; female Bagon &rarr; egg = Bagon with Dragon Dance &mdash; the foundation of every competitive Salamence.</li>
+            </ol>
+          </article>
+        </div>
+
+        <div class="callout callout--ocean" style="margin-top: var(--s-5);">
+          <span class="callout__label">Limits</span>
+          <p style="margin:0;">Chains are limited by egg-group compatibility. Cross-reference Bulbapedia&rsquo;s Gen 3 egg-move tables before committing &mdash; some chains are 4+ generations long. The father always loses an existing move when an egg move is added; build him deliberately.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== LIGHT BALL & DAY CARE MAN ============================== -->
+    <section class="section" id="light-ball">
+      <div class="container">
+        <div class="grid grid--2 stagger">
+          <article class="card offset-shadow--ember">
+            <div class="card__subtitle">Light Ball clarification</div>
+            <h3 class="card__title mt-3">No Volt Tackle in Emerald</h3>
+            <div class="poke-row mt-3">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/172.png" alt="Pichu" loading="lazy">
+              <img class="poke-sprite poke-sprite--sm" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/25.png" alt="Pikachu" loading="lazy">
+            </div>
+            <p class="card__body mt-3">
+              The famous &ldquo;Light Ball + Pikachu mom = Volt Tackle Pichu&rdquo; trick is <strong>Gen 4+</strong>. Light Ball
+              held by a Pikachu in Emerald only doubles its Atk and SpA in battle &mdash; it does NOT pass Volt Tackle, and
+              Volt Tackle as a move <em>does not exist in Gen 3</em>.
+            </p>
+            <p class="card__body mt-3" style="font-size: var(--fs-sm); color: var(--ink-soft);">
+              If you transfer Pichu to Gen 4 (Pal Park) and breed there with Light Ball, you can get Volt Tackle. Not in Emerald.
+            </p>
+          </article>
+
+          <article class="card card--alt">
+            <div class="card__subtitle">Day Care Man</div>
+            <h3 class="card__title mt-3">Tracks levels, charges 100 P each</h3>
+            <ul class="bullet-list bullet-list--ocean mt-4">
+              <li>Levels grow proportionally to overworld steps you take (NOT battles).</li>
+              <li>Pokemon do NOT prompt to keep level-up moves in the Day Care &mdash; old moves are auto-replaced silently. Pull a Pokemon out before key level-ups if you want specific moves.</li>
+              <li>Withdrawal cost = 100 P &times; (levels gained + 1).</li>
+              <li>The egg counter and the level counter are independent &mdash; eggs cost no extra fee.</li>
+            </ul>
+            <div class="callout callout--ocean mt-4">
+              <span class="callout__label">Pace check</span>
+              <p style="margin:0;">If the Day Care man is facing the FENCE, an egg is ready. Facing the road = no egg yet. He paces continuously &mdash; check on every Mauville-Verdanturf trip.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- ============================== 05. EFFORT RIBBON ============================== -->
     <section class="section" id="effort-ribbon">
       <div class="container">

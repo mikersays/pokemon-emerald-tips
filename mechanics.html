@@ -89,6 +89,7 @@
           <a href="#natures" class="tile" style="padding: var(--s-3) var(--s-4);"><span class="tile__num">04</span><span class="tile__title" style="font-size:var(--fs-base);">Natures</span></a>
           <a href="#friendship" class="tile" style="padding: var(--s-3) var(--s-4);"><span class="tile__num">05</span><span class="tile__title" style="font-size:var(--fs-base);">Friendship</span></a>
           <a href="#balls" class="tile" style="padding: var(--s-3) var(--s-4);"><span class="tile__num">06</span><span class="tile__title" style="font-size:var(--fs-base);">Pokeballs</span></a>
+          <a href="#damage" class="tile" style="padding: var(--s-3) var(--s-4);"><span class="tile__num">07</span><span class="tile__title" style="font-size:var(--fs-base);">Damage &amp; crits</span></a>
         </div>
       </div>
     </section>
@@ -1238,6 +1239,202 @@
             Pair with a status setter (Hypnosis Gengar, Spore Breloom) and Timer Ball after 30 turns. This is the optimal
             non-Master-Ball legendary capture stack.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 07. DAMAGE & PRIORITY ============================== -->
+    <section class="section" id="damage">
+      <div class="container">
+        <div style="margin-bottom: var(--s-6);">
+          <span class="kicker kicker--ember">Section VII</span>
+          <h2 class="h1 mt-3">Damage, crits<br>&amp; <em style="color:var(--ember); font-style:italic; font-weight:400;">priority</em></h2>
+          <p class="lede mt-4" style="max-width: 60ch;">
+            The math under every hit. Gen 3 critical hits double damage AND ignore beneficial defensive buffs &mdash; not the
+            1.5x of Gen 6+. Move priority brackets settle ties. Weather doubles or halves whole types.
+          </p>
+        </div>
+
+        <article class="card offset-shadow--ember" style="margin-bottom: var(--s-5);">
+          <div class="card__subtitle">Formula</div>
+          <h3 class="card__title mt-3">The simplified Gen 3 damage formula</h3>
+          <p class="card__body mono" style="font-size: var(--fs-sm); margin-top: var(--s-3);">
+            damage = ((((2 &times; level / 5 + 2) &times; BasePower &times; Atk / Def) / 50) + 2)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&times; STAB &times; TypeEff &times; Burn &times; Random(0.85&ndash;1.0)
+          </p>
+          <ul class="bullet-list bullet-list--ember mt-4">
+            <li><strong>STAB</strong> = 1.5&times; if move type matches user&rsquo;s type, else 1.0&times;</li>
+            <li><strong>TypeEff</strong> = 0 / 0.25 / 0.5 / 1 / 2 / 4 (multiplicative on dual-type)</li>
+            <li><strong>Burn</strong> = 0.5&times; if attacker is burned and the move is Physical (Gen 3 splits damage class by TYPE: Fire/Water/Grass/Electric/Ice/Psychic/Dark/Dragon = Special; Normal/Fighting/Poison/Ground/Flying/Bug/Rock/Ghost/Steel = Physical)</li>
+            <li><strong>Random</strong> = 85&ndash;100% per hit (&plusmn;15% spread)</li>
+          </ul>
+        </article>
+
+        <!-- CRITICAL HITS -->
+        <header style="margin-bottom: var(--s-5);">
+          <span class="kicker">Crit math</span>
+          <h3 class="h2 mt-3">Gen 3 crits: <em style="color:var(--ember); font-style:italic; font-weight:400;">2&times;</em> &amp; ignore buffs</h3>
+        </header>
+
+        <div class="grid grid--2 stagger">
+          <article class="card">
+            <div class="card__subtitle">Quirk</div>
+            <h3 class="card__title mt-3">2&times; damage, not 1.5&times;</h3>
+            <p class="card__body">Gen 3 crits deal double damage (Gen 6+ nerfed to 1.5&times;). Crits IGNORE positive Def/SpD on the target (Light Screen, Reflect, Cosmic Power) AND ignore negative Atk/SpA on the user (Burn&rsquo;s halved Atk, Intimidate). Still respect STAB, type, and weather.</p>
+          </article>
+          <article class="card card--alt">
+            <div class="card__subtitle">Stages</div>
+            <h3 class="card__title mt-3">Stack the crit ladder</h3>
+            <dl style="margin-top: var(--s-4);">
+              <div class="stat-row"><span class="stat-row__label">Base</span><span class="stat-row__value">No modifier</span><span class="stat-row__num">1/16 = 6.25%</span></div>
+              <div class="stat-row"><span class="stat-row__label">+1 stage</span><span class="stat-row__value">Razor Leaf, Slash, Cross Chop, Karate Chop, Aeroblast</span><span class="stat-row__num">1/8 = 12.5%</span></div>
+              <div class="stat-row"><span class="stat-row__label">+2 stages</span><span class="stat-row__value">Focus Energy used (works in Emerald)</span><span class="stat-row__num">1/4 = 25%</span></div>
+              <div class="stat-row"><span class="stat-row__label">+3 stages</span><span class="stat-row__value">High-crit move + Focus Energy</span><span class="stat-row__num">1/3 = 33%</span></div>
+              <div class="stat-row"><span class="stat-row__label">+4 stages</span><span class="stat-row__value">High-crit + Scope Lens + Focus Energy</span><span class="stat-row__num">1/2 = 50%</span></div>
+            </dl>
+            <p class="card__body" style="margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--ink-soft);">Heracross with Scope Lens + Focus Energy + Megahorn = Frontier-grade nuke.</p>
+          </article>
+        </div>
+
+        <!-- WEATHER -->
+        <div class="divider-rule"></div>
+
+        <header style="margin-bottom: var(--s-5);">
+          <span class="kicker kicker--ocean">Section VIII</span>
+          <h3 class="h2 mt-3">Weather <em style="color:var(--ocean); font-style:italic; font-weight:400;">effects</em></h3>
+          <p class="lede mt-3" style="max-width: 56ch;">Five-turn duration on standard moves; permanent under the Drizzle / Drought / Sand Stream abilities.</p>
+        </header>
+
+        <div class="grid grid--auto stagger">
+          <article class="tile">
+            <div><div class="tile__num">Rain Dance</div><h3 class="tile__title">Water boost, Thunder accuracy</h3></div>
+            <p class="tile__desc">Water moves &times;1.5; Fire &times;0.5; Thunder 100% acc; SolarBeam &times;0.5; Synthesis/Moonlight/Morning Sun heal 1/4.</p>
+            <span class="tile__arrow">Kyogre &middot; Drizzle (permanent)</span>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">Sunny Day</div><h3 class="tile__title">Fire boost, Solar Beam instant</h3></div>
+            <p class="tile__desc">Fire &times;1.5; Water &times;0.5; SolarBeam no charge; Thunder 50% acc; Synthesis heals 2/3; Chlorophyll &times;2 Speed.</p>
+            <span class="tile__arrow">Groudon &middot; Drought (permanent)</span>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">Sandstorm</div><h3 class="tile__title">Damage all non-Rock/Ground/Steel</h3></div>
+            <p class="tile__desc">1/16 max HP / turn EXCEPT Rock/Ground/Steel + Sand Veil. Rock-type SpD &times;1.5. SolarBeam &times;0.5.</p>
+            <span class="tile__arrow">Tyranitar &middot; Sand Stream (permanent)</span>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">Hail</div><h3 class="tile__title">Damage all non-Ice</h3></div>
+            <p class="tile__desc">1/16 max HP / turn EXCEPT Ice. Blizzard 100% acc. Ice Body is Gen 4 &mdash; not in Emerald.</p>
+            <span class="tile__arrow">5-turn move only</span>
+          </article>
+        </div>
+
+        <!-- PRIORITY -->
+        <div class="divider-rule"></div>
+
+        <header style="margin-bottom: var(--s-5);">
+          <span class="kicker">Move order</span>
+          <h3 class="h2 mt-3">Priority <em style="color:var(--ember); font-style:italic; font-weight:400;">brackets</em></h3>
+          <p class="lede mt-3" style="max-width: 56ch;">Within a bracket, faster Pokemon goes first; ties resolve randomly. Brackets are absolute &mdash; a +1 priority Quick Attack always outspeeds a slower Speed-tier 0 move.</p>
+        </header>
+
+        <div class="card offset-shadow">
+          <dl style="margin-top: var(--s-4);">
+            <div class="stat-row"><span class="stat-row__label">+5</span><span class="stat-row__value">Helping Hand, Snatch (support priority)</span><span class="stat-row__num">SUPPORT</span></div>
+            <div class="stat-row"><span class="stat-row__label">+4</span><span class="stat-row__value">Detect, Endure, Follow Me, Magic Coat, Protect</span><span class="stat-row__num">PROTECT</span></div>
+            <div class="stat-row"><span class="stat-row__label">+3</span><span class="stat-row__value">Fake Out (first turn out only)</span><span class="stat-row__num">OPENER</span></div>
+            <div class="stat-row"><span class="stat-row__label">+2</span><span class="stat-row__value">ExtremeSpeed</span><span class="stat-row__num">DRAGONITE</span></div>
+            <div class="stat-row"><span class="stat-row__label">+1</span><span class="stat-row__value">Quick Attack, Mach Punch, Vital Throw (varies)</span><span class="stat-row__num">JAB</span></div>
+            <div class="stat-row"><span class="stat-row__label">0</span><span class="stat-row__value">Default (almost everything)</span><span class="stat-row__num">NORMAL</span></div>
+            <div class="stat-row"><span class="stat-row__label">-3</span><span class="stat-row__value">Focus Punch (executes after charge; easy to disrupt)</span><span class="stat-row__num">CHARGE</span></div>
+            <div class="stat-row"><span class="stat-row__label">-4</span><span class="stat-row__value">Revenge (after taking damage)</span><span class="stat-row__num">REACT</span></div>
+            <div class="stat-row"><span class="stat-row__label">-5</span><span class="stat-row__value">Counter, Mirror Coat, Roar / Whirlwind</span><span class="stat-row__num">REACT</span></div>
+          </dl>
+          <div class="callout callout--ember mt-4">
+            <span class="callout__label">Field tip</span>
+            <p style="margin:0;">Mach Punch on Breloom (+1 priority, 40 BP STAB) outspeeds anything in its bracket, fixing Breloom&rsquo;s 70 base Speed. Quick Attack on Crobat / Linoone for clean revenge KOs.</p>
+          </div>
+        </div>
+
+        <!-- MULTI-TARGET REDUCTION -->
+        <div class="callout callout--ocean" style="margin-top: var(--s-5);">
+          <span class="callout__label">Multi-target damage in doubles</span>
+          <p style="margin:0;">Moves that hit multiple targets deal 50% damage to each. Surf 95 BP &rarr; ~47.5 BP per target. Earthquake 100 BP &rarr; 50 BP per target AND hits allies (use a Levitate / Flying / Wonder Guard partner to spam Quake safely). Explosion / Self-Destruct halve too. Rock Slide is single-target hitting two &mdash; full damage on each.</p>
+        </div>
+
+        <!-- HELD ITEMS -->
+        <div class="divider-rule"></div>
+
+        <header style="margin-bottom: var(--s-5);">
+          <span class="kicker kicker--ember">Section IX</span>
+          <h3 class="h2 mt-3">Held items <em style="color:var(--ember); font-style:italic; font-weight:400;">in battle</em></h3>
+          <p class="lede mt-3" style="max-width: 56ch;">The Gen 3 inventory is sparse compared to Gen 4+. Choice Band/Specs/Scarf are NOT in Emerald. Leftovers, Sitrus, Lum, Soothe Bell, Macho Brace are the workhorses.</p>
+        </header>
+
+        <div class="grid grid--auto stagger">
+          <article class="tile">
+            <div><div class="tile__num">Heal</div><h3 class="tile__title">Sitrus Berry</h3></div>
+            <p class="tile__desc">Restores 30 HP when HP &lt; 50%; consumed. Plant on soft soil; harvests 2&ndash;4.</p>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">Status cure</div><h3 class="tile__title">Lum Berry</h3></div>
+            <p class="tile__desc">Cures ANY status (incl. confusion, attract); consumed. Universal Frontier hold.</p>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">Recurring</div><h3 class="tile__title">Leftovers</h3></div>
+            <p class="tile__desc">Restores 1/16 max HP at end of each turn. Wild Snorlax (FRLG); hidden in Lilycove.</p>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">Crit boost</div><h3 class="tile__title">Scope Lens</h3></div>
+            <p class="tile__desc">+1 crit stage. Stacks with Focus Energy + high-crit move = 50% crit rate.</p>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">1-HP save</div><h3 class="tile__title">Focus Band</h3></div>
+            <p class="tile__desc">10% chance to survive a KO with 1 HP. Wild encounter holds; Lilycove Dept.</p>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">Acc nerf</div><h3 class="tile__title">Bright Powder</h3></div>
+            <p class="tile__desc">Lowers opponent accuracy by ~10%. Pickup Linoone / wild encounter holds.</p>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">Attract cure</div><h3 class="tile__title">Mental Herb</h3></div>
+            <p class="tile__desc">Cures Attract once; consumed. Wanda&rsquo;s husband (Verdanturf, post-Rusturf); Pickup.</p>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">EV double</div><h3 class="tile__title">Macho Brace</h3></div>
+            <p class="tile__desc">2&times; EV gain; halves Speed in battle. Trick Master (verify puzzle).</p>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">Friendship</div><h3 class="tile__title">Soothe Bell</h3></div>
+            <p class="tile__desc">1.5&times; friendship gain. Pacifidlog Mr. Briney&rsquo;s house / Lilycove Dept.</p>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">Pikachu only</div><h3 class="tile__title">Light Ball</h3></div>
+            <p class="tile__desc">Doubles Pikachu&rsquo;s Atk and SpA. Wild Safari Pikachu holds it ~5%. (No Volt Tackle in Gen 3.)</p>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">Latios/Latias</div><h3 class="tile__title">Soul Dew</h3></div>
+            <p class="tile__desc">+50% SpA AND SpD on Latios/Latias. Southern Island event (Aurora Ticket / Mystery Gift).</p>
+          </article>
+          <article class="tile">
+            <div><div class="tile__num">Berries</div><h3 class="tile__title">Auto-cure berries</h3></div>
+            <p class="tile__desc">Cheri (paralysis), Chesto (sleep), Pecha (poison), Rawst (burn), Aspear (freeze), Persim (confusion).</p>
+          </article>
+        </div>
+
+        <!-- PINCH BERRIES -->
+        <div class="callout callout--sun" style="margin-top: var(--s-6);">
+          <span class="callout__label">Pinch berries (HP &lt; 25%)</span>
+          <p style="margin:0;">
+            <strong>Liechi</strong> +1 Atk &middot; <strong>Ganlon</strong> +1 Def &middot; <strong>Salac</strong> +1 Spe &middot;
+            <strong>Petaya</strong> +1 SpA &middot; <strong>Apicot</strong> +1 SpD &middot; <strong>Lansat</strong> +1 crit stage &middot;
+            <strong>Starf</strong> +2 random stat. All trigger at HP &lt; 25%. Endure + Salac on a fast Pokemon is a classic
+            Frontier sweep setup. Pinch berries are RARE &mdash; Berry Master daily phrases or Mirage Island Liechi.
+          </p>
+        </div>
+
+        <div class="callout callout--emerald" style="margin-top: var(--s-4);">
+          <span class="callout__label">Sitrus / Oran proc threshold</span>
+          <p style="margin:0;">Sitrus heals <strong>30 HP flat</strong> at &lt;50% HP. Oran heals <strong>10 HP flat</strong> at &lt;50%. Sitrus is strictly better &mdash; plant once, harvest forever.</p>
         </div>
       </div>
     </section>
